@@ -1,0 +1,19 @@
+.timeline {
+	background: red;
+	width: 20px;
+	display: block;
+	position: relative;
+}
+
+.version {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	background-color: yellow;
+}
+
+.hidden {
+	display: none;
+}
+
