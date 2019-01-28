@@ -1,8 +1,8 @@
 {
 
-  "editions": {
+  "editions": [
 
-    "java": {
+    {
 
       "title": "Minecraft Java Edition",
       "description": "The original game by Notch",
@@ -19,6 +19,6 @@
 
     }
 
-  }
+  ]
 
 }
