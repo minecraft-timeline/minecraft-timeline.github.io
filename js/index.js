@@ -1,7 +1,7 @@
 // --- Constant values ----------------------------------------
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/ec9d9007e2600fdf8178f39408ca4d65600cda50/version_data_development.json";
-const YEAR_HEIGHT_PX = 365 * 4;
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/89eee7712ec906b9c904bda5990b24884f73e632/version_data_development.json";
+const YEAR_HEIGHT_PX = 365 * 2;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
 const LEAP_YEAR_MS = YEAR_MS + DAY_MS;
@@ -39,29 +39,6 @@ function isLeapYear(year) {
 	return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0);
 }
 
-// --- Worker functions ---------------------------------------
-
-function loadEditions(editions) {
-
-	let tabsDOM = id("editions_tab");
-	let rootDOM = id("editions_root");
-
-	for (let i = 0; i<editions.length; i++) {
-
-		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
-
-		let tabDOM = document.createElement("span");
-		tabDOM.appendChild(document.createTextNode(editions[i].title));
-		tabDOM.id = "edition_panel_" + i;
-		tabsDOM.appendChild(tabDOM);
-		let panelDOM = document.createElement("div");
-		if (i !== 0)
-			hide(panelDOM);
-		rootDOM.appendChild(panelDOM);
-		loadVersions(editions[i].versions, panelDOM);
-	}
-}
-
 function parseUTC(str) {
 
 	if (str.length === 10) {
@@ -75,6 +52,37 @@ function parseUTC(str) {
 	}
 
 }
+
+// --- Worker functions ---------------------------------------
+
+function loadEditions(editions) {
+
+	let tabsDOM = id("editions_tab");
+	let rootDOM = id("editions_root");
+
+	for (let i = 0; i<editions.length; i++) {
+
+		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
+
+		let tabDOM = document.createElement("span");
+		tabDOM.appendChild(document.createTextNode(editions[i].title));
+		tabDOM.id = "edition_tab_" + i;
+		tabsDOM.classList.add("edition_tab");
+
+		tabsDOM.appendChild(tabDOM);
+
+		let panelDOM = document.createElement("div");
+		panelDOM.id = "edition_panel_" + i;
+		panelDOM.classList.add("edition_panel");
+
+		if (i !== 0) hide(panelDOM);
+
+		rootDOM.appendChild(panelDOM);
+		loadVersions(editions[i].versions, panelDOM);
+
+	}
+}
+
 
 function loadVersions(versions, panelDOM) {
 
@@ -152,58 +160,40 @@ function loadVersions(versions, panelDOM) {
 			let versionDOM = document.createElement("div");
 			versionDOM.classList.add("version");
 
-			let debug = "";
-
-			debug += "\n\n\n";
-			debug += "toyN        = " + timeOfYear + "\n";
-			debug += "date        = " + date.toISOString() + "\n";
-			debug += "day         = " + date.getDate() + "\n";
-			debug += "year        = " + date.getFullYear() + "\n";
-			debug += "is leap     = " + isLeapYear(date.getFullYear()) + "\n";
-			debug += "time        = " + date.getTime() + "\n";
+			if (i === 0) {
+				versionDOM.classList.add("endpoint");
+				versionDOM.classList.add("first");
+			}
+			else if (versions[i].today) {
+				versionDOM.classList.add("endpoint");
+				versionDOM.classList.add("today");
+				versionDOM.classList.add("nointeract");
+			}
+			else {
+				versionDOM.classList.add("update-" + versions[i].type);
+			}
 
 			if (date.getFullYear() === firstDate.getFullYear() || date.getFullYear() === lastDate.getFullYear()) {
 				if (date.getFullYear() === firstDate.getFullYear()) {
 
 					let firstTimeOfYear = msOfYear(firstTimeMs);
-
 					let multi = ((timeOfYear/yearLength)-(firstTimeOfYear/yearLength))/(1-(firstTimeOfYear/yearLength));
-
-					debug += "toyN/year   = " + (timeOfYear/yearLength) + "\n";
-					debug += "toy0/year   = " + (firstTimeOfYear/yearLength) + "\n";
-					debug += "1-toy0/year = " + (1-(firstTimeOfYear/yearLength)) + "\n";
-					debug += "multi       = " + multi + "\n";
-
 					versionDOM.style.top = (multi * 100) + "%";
 
 				}
 				else {
 
 					let lastTimeOfYear = msOfYear(lastTimeMs);
-
 					let multi = timeOfYear / lastTimeOfYear;
-
-					debug += "toyN/toyL   = " + (timeOfYear/lastTimeOfYear) + "\n";
-					debug += "multi       = " + multi + "\n";
-
 					versionDOM.style.top = (multi * 100) + "%";
 
 				}
-				// versionDOM.style.bottom = ((1 - multi) * 100) + "%";
 			} else {
 				let multi = timeOfYear/yearLength;
 				versionDOM.style.top = (multi * 100) + "%";
-
-				debug += "multi       = " + multi + "\n";
-
 			}
-			debug += "\n\n\n";
 
 			yearDOMs[date.getFullYear()].appendChild(versionDOM);
-
-			versionDOM.addEventListener("click", function () {
-				console.log(debug);
-			});
 
 		}
 

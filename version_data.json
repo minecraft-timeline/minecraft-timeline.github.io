@@ -10,34 +10,23 @@
 
       "versions": [
 
-        {"title": "Update 0", "date": "2009-10-01"},
-
-        {"title": "Update 0.5", "date": "2009-11-01"},
-
-        {"title": "Update 1", "date": "2010-01-01"},
-        {"title": "Update 2", "date": "2010-12-01"},
-
-        {"title": "Update 3", "date": "2011-01-01"},
-        {"title": "Update 4", "date": "2011-12-01"},
-
-        {"title": "Update 5", "date": "2012-01-01"},
-        {"title": "Update 6", "date": "2012-12-01"},
-
-        {"title": "Update 7", "date": "2013-01-01"},
-        {"title": "Update 8", "date": "2013-12-01"},
-
-        {"title": "Update 9", "date": "2014-01-01"},
-        {"title": "Update 10", "date": "2014-12-01"},
-
-
-        {"title": "Update 11", "date": "2015-01-01"},
-        {"title": "Update 12", "date": "2015-12-01"},
-
-
-        {"title": "Update 13", "date": "2016-01-01"},
-        {"title": "Update 14", "date": "2016-12-01"},
-
-        {"title": "Update 15", "date": "2019-01-01"}
+        {"title": "Update 0", "date": "2009-10-01", "type": "major"},
+        {"title": "Update 0.5", "date": "2009-11-01", "type": "minor"},
+        {"title": "Update 1", "date": "2010-01-01", "type": "major"},
+        {"title": "Update 2", "date": "2010-12-01", "type": "major"},
+        {"title": "Update 3", "date": "2011-01-01", "type": "minor"},
+        {"title": "Update 4", "date": "2011-12-01", "type": "major"},
+        {"title": "Update 5", "date": "2012-01-01", "type": "major"},
+        {"title": "Update 6", "date": "2012-12-01", "type": "major"},
+        {"title": "Update 7", "date": "2013-01-01", "type": "minor"},
+        {"title": "Update 8", "date": "2013-12-01", "type": "major"},
+        {"title": "Update 9", "date": "2014-01-01", "type": "major"},
+        {"title": "Update 10", "date": "2014-12-01", "type": "major"},
+        {"title": "Update 11", "date": "2015-01-01", "type": "major"},
+        {"title": "Update 12", "date": "2015-12-01", "type": "minor"},
+        {"title": "Update 13", "date": "2016-01-01", "type": "minor"},
+        {"title": "Update 14", "date": "2016-12-01", "type": "major"},
+        {"title": "Update 15", "date": "2019-01-01", "type": "major"}
 
       ]
 
@@ -51,10 +40,10 @@
 
       "versions": [
 
-        {"title": "Test 1", "date": "2015-04-01"},
-        {"title": "Test 2", "date": "2016-01-01"},
-        {"title": "Test 3", "date": "2017-12-01"},
-        {"title": "Test 4", "date": "2018-01-01"}
+        {"title": "Test 1", "date": "2015-04-01", "type": "major"},
+        {"title": "Test 2", "date": "2016-01-01", "type": "major"},
+        {"title": "Test 3", "date": "2017-12-01", "type": "major"},
+        {"title": "Test 4", "date": "2018-01-01", "type": "major"}
 
       ]
 
