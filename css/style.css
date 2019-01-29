@@ -1,19 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
 .timeline {
-	background: red;
-	width: 20px;
-	display: block;
+	display: flex;
 	position: relative;
+	width: 36px;
+	flex-direction: column;
+}
+
+.year {
+	/*border-image-source: url("../images/timeline/timeline.png");*/
+	/*border-image-slice: 30 50% 30 50% fill;*/
+	/*border-image-width: 30px 50% 30px 50%;*/
+	/*border-image-repeat: stretch stretch;*/
+
+	position: relative;
+	background: chocolate;
+	/*border: 1px solid black;*/
+
+
+}
+
+.year:nth-child(2n) {
+	background: brown;
 }
 
 .version {
 	position: absolute;
-	width: 30px;
-	height: 30px;
-	margin-top: -15px;
+	width: 8px;
+	height: 4px;
+	margin-top: -2px;
 	background-color: yellow;
+	z-index: 10;
+	cursor: pointer;
 }
 
 .hidden {
 	display: none;
 }
+
+
 
