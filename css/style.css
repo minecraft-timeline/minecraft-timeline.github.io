@@ -8,7 +8,11 @@ h1, h2, .edition_tab {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 16px;
 }
 
 header {
@@ -20,6 +24,7 @@ header {
 }
 
 .edition_panel {
+	background: #554428;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -72,7 +77,7 @@ header {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	background: #7c5334;
+	background: #685231;
 	width: 80px;
 	padding-bottom: 144px;
 	box-sizing: content-box;
@@ -94,6 +99,10 @@ header {
 	background: brown;
 	z-index: 10;
 	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .version.update-major {
@@ -105,9 +114,9 @@ header {
 
 .version.update-minor {
 	background: url("../images/timeline/icon_update_minor.png");
-	width: 20px;
-	height: 20px;
-	margin-top: -5px;
+	width: 44px;
+	height: 44px;
+	margin-top: -22px;
 }
 
 .version.endpoint {
@@ -127,6 +136,40 @@ header {
 
 .version.nointeract {
 	cursor: unset;
+}
+
+.preview {
+	position: absolute;
+	left: 100%;
+	margin-left: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.preview>*{
+	margin-right: 16px;
+}
+
+.preview img {
+	height: 64px;
+}
+
+.preview .title, .preview .subtitle, .preview h1 {
+	white-space: nowrap;
+}
+
+.preview .title {
+	font-weight: bold;
+}
+
+.preview .box {
+	background: #a09172;
+	padding: 10px;
+}
+
+.preview .box h1 {
+	text-align: center;
 }
 
 .hidden {

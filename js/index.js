@@ -1,12 +1,15 @@
-// --- Constant values ----------------------------------------
+// +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/89eee7712ec906b9c904bda5990b24884f73e632/version_data_development.json";
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/26532fd49cc2a55fd762de39fc70b8720ab1fd06/version_data_development.json";
 const YEAR_HEIGHT_PX = 365 * 2;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
 const LEAP_YEAR_MS = YEAR_MS + DAY_MS;
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
+	"July", "August", "September", "October", "November", "December"
+];
 
-// --- Helper functions ---------------------------------------
+// +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
 function ajaxGET(requestStr,done) {
 	let xhr = new XMLHttpRequest();
@@ -19,6 +22,31 @@ function ajaxGET(requestStr,done) {
 
 function id(id) {
 	return document.getElementById(id);
+}
+
+function make(tagName,classes = undefined, text = undefined, id = undefined) {
+	let dom = document.createElement(tagName);
+	if (classes !== undefined) {
+		if (typeof classes === "string" && classes.length > 0) {
+			classes = classes.trim().split(" ");
+		}
+		if (typeof classes === "object") {
+			for (let i = 0; i < classes.length; i++) {
+				dom.classList.add(classes[i]);
+			}
+		}
+	}
+	if (text !== undefined) {
+		dom.appendChild(textNode(text));
+	}
+	if (id !== undefined) {
+		dom.id = id;
+	}
+	return dom;
+}
+
+function textNode(text) {
+	return document.createTextNode(text);
 }
 
 function hide(element) {
@@ -53,7 +81,7 @@ function parseUTC(str) {
 
 }
 
-// --- Worker functions ---------------------------------------
+// +++ Worker functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
 function loadEditions(editions) {
 
@@ -64,27 +92,24 @@ function loadEditions(editions) {
 
 		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
 
-		let tabDOM = document.createElement("span");
-		tabDOM.appendChild(document.createTextNode(editions[i].title));
-		tabDOM.id = "edition_tab_" + i;
-		tabsDOM.classList.add("edition_tab");
+		let tabDOM = make("span", "edition_tab", editions[i].title, "edition_tab_" + i);
 
 		tabsDOM.appendChild(tabDOM);
 
-		let panelDOM = document.createElement("div");
-		panelDOM.id = "edition_panel_" + i;
-		panelDOM.classList.add("edition_panel");
+		let panelDOM = make("div", "edition_panel", undefined, "edition_panel_" + i);
 
 		if (i !== 0) hide(panelDOM);
 
 		rootDOM.appendChild(panelDOM);
-		loadVersions(editions[i].versions, panelDOM);
+		loadVersions(editions[i], panelDOM);
 
 	}
 }
 
 
-function loadVersions(versions, panelDOM) {
+function loadVersions(edition, panelDOM) {
+
+	let versions = edition.versions;
 
 	// Adds today as a special "version"
 
@@ -103,32 +128,25 @@ function loadVersions(versions, panelDOM) {
 
 	if (versions.length > 0) {
 
+		versions[0].first = true;
+
 		let firstTimeMs = parseUTC(versions[0].date);
 		let lastTimeMs = parseUTC(versions[versions.length-1].date);
-		let totalTimeMs = lastTimeMs - firstTimeMs;
 
 		let firstDate = new Date(firstTimeMs);
 		let lastDate = new Date(lastTimeMs);
 
 		let yearAmount = lastDate.getFullYear() - firstDate.getFullYear();
 
-		let timelineHeight = (totalTimeMs/YEAR_MS) * YEAR_HEIGHT_PX;
-
-		let rulerDOM = document.createElement("div");
-		rulerDOM.classList.add("ruler");
-
-		let timelineDOM = document.createElement("div");
-		timelineDOM.classList.add("timeline");
+		let rulerDOM = make("div", "ruler");
+		let timelineDOM = make("div", "timeline");
 
 		let yearDOMs = [];
 
 		for (let i = 0; i <= yearAmount; i++) {
 
-			let tlYearDOM = document.createElement("div");
-			tlYearDOM.classList.add("year");
-
-			let rulerYearDOM = document.createElement("div");
-			rulerYearDOM.classList.add("year");
+			let tlYearDOM = make("div", "year");
+			let rulerYearDOM = make("div", "year");
 
 			let multi = 1;
 
@@ -147,15 +165,13 @@ function loadVersions(versions, panelDOM) {
 			tlYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
 			rulerYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
 
-			let h1DOM = document.createElement("h1");
-			h1DOM.appendChild(document.createTextNode(firstDate.getFullYear() + i));
+			let h1DOM = make("h1", "", firstDate.getFullYear() + i);
 
-			let h2DOM = document.createElement("h2");
-			h2DOM.appendChild(document.createTextNode((
+			let h2DOM = make("h2", "",
 				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
 				(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
 				"Now"
-			)));
+			);
 
 			rulerYearDOM.appendChild(h1DOM);
 			rulerYearDOM.appendChild(h2DOM);
@@ -174,8 +190,9 @@ function loadVersions(versions, panelDOM) {
 			let yearLength = (isLeapYear(date.getFullYear()) ? LEAP_YEAR_MS : YEAR_MS);
 			let timeOfYear = msOfYear(date.getTime());
 
-			let versionDOM = document.createElement("div");
-			versionDOM.classList.add("version");
+			let versionDOM = make("div", "version");
+
+			versionDOM.appendChild(createPreview(versions[i], edition, date));
 
 			if (i === 0) {
 				versionDOM.classList.add("endpoint");
@@ -220,7 +237,53 @@ function loadVersions(versions, panelDOM) {
 
 }
 
-// --- Main ---------------------------------------------------
+function createPreview(version, edition, date) {
+
+	let previewDOM = make("div", "preview");
+
+	if (version.first) {
+
+		let text1 = make("h1", "",edition.firstMessage);
+		let text2 = make("h1", "", MONTH_NAMES[date.getMonth()] + " " + date.getFullYear());
+		let box = make("div", "box");
+		box.appendChild(text1);
+		box.appendChild(text2);
+
+		previewDOM.appendChild(box);
+
+	}
+
+	if (version.today) {
+
+		let text1 = make("h1", "","Today");
+		let text2 = make("h1", "", MONTH_NAMES[date.getMonth()] + " " + date.getFullYear());
+		let box = make("div", "box");
+		box.appendChild(text1);
+		box.appendChild(text2);
+
+		previewDOM.appendChild(box);
+
+	}
+
+	if (version.icon !== undefined) {
+		let icon = make("img");
+		icon.src = version.icon;
+		previewDOM.appendChild(icon);
+	}
+
+	if (version.title !== undefined) {
+		previewDOM.appendChild(make("h2", "title", version.title + (version.subtitle !== undefined ? "•" : "")));
+	}
+
+	if (version.subtitle !== undefined) {
+		previewDOM.appendChild(make("h2", "title", version.subtitle));
+	}
+
+	return previewDOM;
+	
+}
+
+// +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ajaxGET(JSON_URL, function (data, status) {
 	if (status === 200) {

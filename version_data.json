@@ -6,6 +6,7 @@
 
       "title": "Java Edition",
       "description": "The original game by Notch",
+      "firstMessage": "Minecraft is born",
       "logo": "logo_java.png",
 
       "versions": [
@@ -36,6 +37,7 @@
 
       "title": "Bedrock Edition",
       "description": "The cross-platform game by Microsoft",
+      "firstMessage": "Bedrock Edition is born",
       "logo": "logo_bedrock.png",
 
       "versions": [
