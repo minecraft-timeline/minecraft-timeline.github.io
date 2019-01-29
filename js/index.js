@@ -108,24 +108,27 @@ function loadVersions(versions, panelDOM) {
 		let totalTimeMs = lastTimeMs - firstTimeMs;
 
 		let firstDate = new Date(firstTimeMs);
-
 		let lastDate = new Date(lastTimeMs);
-		console.log(lastDate);
 
 		let yearAmount = lastDate.getFullYear() - firstDate.getFullYear();
 
 		let timelineHeight = (totalTimeMs/YEAR_MS) * YEAR_HEIGHT_PX;
 
+		let rulerDOM = document.createElement("div");
+		rulerDOM.classList.add("ruler");
+
 		let timelineDOM = document.createElement("div");
 		timelineDOM.classList.add("timeline");
-		timelineDOM.style.height = timelineHeight + "px";
 
 		let yearDOMs = [];
 
 		for (let i = 0; i <= yearAmount; i++) {
 
-			let yearDOM = document.createElement("div");
-			yearDOM.classList.add("year");
+			let tlYearDOM = document.createElement("div");
+			tlYearDOM.classList.add("year");
+
+			let rulerYearDOM = document.createElement("div");
+			rulerYearDOM.classList.add("year");
 
 			let multi = 1;
 
@@ -141,14 +144,28 @@ function loadVersions(versions, panelDOM) {
 				multi = LEAP_YEAR_MS/YEAR_MS;
 			}
 
-			yearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
-			yearDOMs[firstDate.getFullYear() + i] = yearDOM;
+			tlYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
+			rulerYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
 
-			timelineDOM.appendChild(yearDOM);
+			let h1DOM = document.createElement("h1");
+			h1DOM.appendChild(document.createTextNode(firstDate.getFullYear() + i));
+
+			let h2DOM = document.createElement("h2");
+			h2DOM.appendChild(document.createTextNode((
+				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
+				(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
+				"Now"
+			)));
+
+			rulerYearDOM.appendChild(h1DOM);
+			rulerYearDOM.appendChild(h2DOM);
+
+			yearDOMs[firstDate.getFullYear() + i] = tlYearDOM;
+
+			timelineDOM.appendChild(tlYearDOM);
+			rulerDOM.appendChild(rulerYearDOM);
 
 		}
-
-
 
 		for (let i = 0; i < versions.length; i++) {
 
@@ -197,6 +214,7 @@ function loadVersions(versions, panelDOM) {
 
 		}
 
+		panelDOM.appendChild(rulerDOM);
 		panelDOM.appendChild(timelineDOM);
 	}
 
