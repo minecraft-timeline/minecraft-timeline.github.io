@@ -1,6 +1,6 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/26532fd49cc2a55fd762de39fc70b8720ab1fd06/version_data_development.json";
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/8e382987221e7fbe4ff0d7dff5a588ac71e75752/version_data_development.json";
 const YEAR_HEIGHT_PX = 365 * 2;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
@@ -88,6 +88,9 @@ function loadEditions(editions) {
 	let tabsDOM = id("editions_tab");
 	let rootDOM = id("editions_root");
 
+	let tabDOMs = [];
+	let panelDOMs = [];
+
 	for (let i = 0; i<editions.length; i++) {
 
 		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
@@ -99,6 +102,27 @@ function loadEditions(editions) {
 		let panelDOM = make("div", "edition_panel", undefined, "edition_panel_" + i);
 
 		if (i !== 0) hide(panelDOM);
+
+		if (i === 0) id("edition_description").innerText = editions[i].description;
+		if (i === 0) tabDOM.classList.add("selected");
+
+		tabDOM.addEventListener("click", function () {
+
+			tabDOM.classList.add("selected");
+
+			for (let j = 0; j < tabDOMs.length; j++) {
+				if (tabDOMs[j] !== tabDOM) {
+					hide(panelDOMs[j]);
+					tabDOMs[j].classList.remove("selected");
+				}
+			}
+
+			show(panelDOM);
+
+		});
+
+		tabDOMs.push(tabDOM);
+		panelDOMs.push(panelDOM);
 
 		rootDOM.appendChild(panelDOM);
 		loadVersions(editions[i], panelDOM);
@@ -165,9 +189,9 @@ function loadVersions(edition, panelDOM) {
 			tlYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
 			rulerYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
 
-			let h1DOM = make("h1", "", firstDate.getFullYear() + i);
+			let h1DOM = make("h2", "", firstDate.getFullYear() + i);
 
-			let h2DOM = make("h2", "",
+			let h2DOM = make("h3", "",
 				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
 				(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
 				"Now"
@@ -190,20 +214,24 @@ function loadVersions(edition, panelDOM) {
 			let yearLength = (isLeapYear(date.getFullYear()) ? LEAP_YEAR_MS : YEAR_MS);
 			let timeOfYear = msOfYear(date.getTime());
 
-			let versionDOM = make("div", "version");
+			let versionDOM = make("div", "version" + (i%2===0 ? "" : " alt"));
 
-			versionDOM.appendChild(createPreview(versions[i], edition, date));
-
-			if (i === 0) {
-				versionDOM.classList.add("endpoint");
-				versionDOM.classList.add("first");
-			}
-			else if (versions[i].today) {
-				versionDOM.classList.add("endpoint");
-				versionDOM.classList.add("today");
-				versionDOM.classList.add("nointeract");
+			if (versions[i].first || versions[i].today) {
+				if (versions[i].first) {
+					versionDOM.classList.add("endpoint");
+					versionDOM.classList.add("first");
+				}
+				else if (versions[i].today) {
+					versionDOM.classList.add("endpoint");
+					versionDOM.classList.add("today");
+					versionDOM.classList.add("nointeract");
+				}
+				let box = makeBox(versions[i], edition, date);
+				box.appendChild(makePreview(versions[i]));
+				versionDOM.appendChild(box);
 			}
 			else {
+				versionDOM.appendChild(makePreview(versions[i]));
 				versionDOM.classList.add("update-" + versions[i].type);
 			}
 
@@ -231,25 +259,69 @@ function loadVersions(edition, panelDOM) {
 
 		}
 
+		let timelinePanelDOM = make("div", "timeline-panel");
+		timelinePanelDOM.appendChild(timelineDOM);
+
 		panelDOM.appendChild(rulerDOM);
-		panelDOM.appendChild(timelineDOM);
+		panelDOM.appendChild(timelinePanelDOM);
+		panelDOM.appendChild(make("div","ruler"));
+
 	}
 
 }
 
-function createPreview(version, edition, date) {
+function makePreview(version) {
 
 	let previewDOM = make("div", "preview");
+
+	if (version.icon !== undefined) {
+		let icon = make("img");
+		icon.src = version.icon;
+		previewDOM.appendChild(icon);
+	}
+
+	let hasTitle = version.title !== undefined;
+	let hasSubtitle = version.subtitle !== undefined;
+	let hasDesc = version.description !== undefined;
+
+	if (hasTitle || hasSubtitle || hasDesc) {
+		let textBoxDOM = make("div", "text-box");
+		if (hasTitle || hasSubtitle) {
+			let titleBoxDOM = make("div", "title-box");
+			if (hasTitle) {
+				titleBoxDOM.appendChild(make("h2", "title", version.title + (hasSubtitle ? " • " : "")));
+			}
+			if (hasSubtitle) {
+				titleBoxDOM.appendChild(make("h2", "subtitle", version.subtitle));
+			}
+			textBoxDOM.appendChild(titleBoxDOM);
+		}
+		if (hasDesc) {
+			textBoxDOM.appendChild(make("h2", "description", version.description));
+		}
+		previewDOM.appendChild(textBoxDOM);
+	}
+
+	return previewDOM;
+	
+}
+
+function makeBox(version, edition, date) {
 
 	if (version.first) {
 
 		let text1 = make("h1", "",edition.firstMessage);
 		let text2 = make("h1", "", MONTH_NAMES[date.getMonth()] + " " + date.getFullYear());
 		let box = make("div", "box");
-		box.appendChild(text1);
-		box.appendChild(text2);
 
-		previewDOM.appendChild(box);
+		let content = make("div", "content");
+
+		content.appendChild(text1);
+		content.appendChild(text2);
+
+		box.appendChild(content);
+
+		return box;
 
 	}
 
@@ -258,29 +330,17 @@ function createPreview(version, edition, date) {
 		let text1 = make("h1", "","Today");
 		let text2 = make("h1", "", MONTH_NAMES[date.getMonth()] + " " + date.getFullYear());
 		let box = make("div", "box");
-		box.appendChild(text1);
-		box.appendChild(text2);
 
-		previewDOM.appendChild(box);
+		let content = make("div", "content");
+
+		content.appendChild(text1);
+		content.appendChild(text2);
+
+		box.appendChild(content);
+
+		return box;
 
 	}
-
-	if (version.icon !== undefined) {
-		let icon = make("img");
-		icon.src = version.icon;
-		previewDOM.appendChild(icon);
-	}
-
-	if (version.title !== undefined) {
-		previewDOM.appendChild(make("h2", "title", version.title + (version.subtitle !== undefined ? "•" : "")));
-	}
-
-	if (version.subtitle !== undefined) {
-		previewDOM.appendChild(make("h2", "title", version.subtitle));
-	}
-
-	return previewDOM;
-	
 }
 
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

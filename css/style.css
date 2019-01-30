@@ -1,34 +1,122 @@
 * {
 	box-sizing: border-box;
+	-webkit-user-select: none;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
-h1, h2, .edition_tab {
-	font-family: sans-serif;
+h1, h2, h3, .edition_tab {
+	font-family: "Minecrafton", "Minecraftia", monospace, sans-serif;
 	color: white;
 }
 
 h1 {
-	font-size: 32px;
+	font-size: 48px;
+	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 h2 {
+	font-size: 32px;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+h3 {
 	font-size: 16px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	background: url("../images/backgrounds/plank_old.png") repeat left top, #54442A;
 }
 
 header {
-	background: #454545;
+	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	height: 100px;
+}
+
+header .vline {
+	margin: 0 30px;
+}
+
+header .vbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+header h2 {
+	margin-top: -6px;
+}
+
+header .vbox.info {
+	margin-left: auto;
+	align-items: flex-end;
+}
+
+.vline, .hline {
+	background: white;
+	border-right: 1px solid rgba(0, 0, 0, 0.8);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.vline {
+	width: 2px;
+	height: 100%;
+}
+
+.hline {
+	height: 2px;
+	width: 100%;
 }
 
 #editions_tab {
-	background: #3b3b3b;
+	background: url("../images/backgrounds/stone_dark.png") repeat left top, #343434;
+	font-size: 32px;
+	/*height: 1.2em;*/
+}
+
+.edition_tab {
+	cursor: pointer;
+	display: inline-block;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+	padding: 5px 10px;
+}
+
+.edition_tab.selected {
+	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
 }
 
 .edition_panel {
-	background: #554428;
+	background: url("../images/backgrounds/plank_new.png") repeat-x left bottom,
+				url("../images/backgrounds/plank_veryold.png") repeat-x left top,
+				url("../images/backgrounds/plank_old.png") repeat left top,
+				#54442A;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: stretch;
 	justify-content: flex-start;
+}
+
+.timeline-panel {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75) inset;
 }
 
 .timeline, .ruler {
@@ -38,13 +126,21 @@ header {
 }
 
 .timeline {
+	margin: 180px 0;
 	width: 36px;
-	margin-top: 40px;
-	margin-left: 40px;
+}
+
+.ruler {
+	padding-top: 180px;
+	padding-bottom: 188px;
+	width: 64px;
+	background: url("../images/backgrounds/log_new.png") repeat-x left bottom,
+				url("../images/backgrounds/log_old.png") repeat left top,
+				#6B5432;
 }
 
 .timeline .year {
-	background: url("../images/timeline/timeline.png") top center repeat-y;
+	background: url("../images/timeline/timeline.png") top center repeat-y, #A6A6A6;
 	margin: 72px 0;
 	position: relative;
 	display: flex;
@@ -77,18 +173,29 @@ header {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	background: #685231;
-	width: 80px;
 	padding-bottom: 144px;
 	box-sizing: content-box;
 }
 
-.ruler .year:first-child {
-	padding-top: 40px;
+.ruler .year:after {
+	display: block;
+	content: '';
+	background: url("../images/ruler/arrow.png") no-repeat;
+	width: 76px;
+	height: 76px;
+	position: absolute;
+	left: 100%;
+	margin-top: -21px;
 }
 
-.ruler .year:last-child {
-	padding-bottom: 184px;
+.ruler .year:first-child:after {
+	display: block;
+	content: '';
+	background: url("../images/ruler/arrow.png") no-repeat;
+	width: 76px;
+	height: 76px;
+	position: absolute;
+	left: 100%;
 }
 
 .version {
@@ -128,10 +235,14 @@ header {
 
 .version.first {
 	margin-top: -108px;
+	justify-content: center;
+	align-items: center;
 }
 
 .version.today {
 	margin-top: 0;
+	justify-content: center;
+	align-items: center;
 }
 
 .version.nointeract {
@@ -147,8 +258,21 @@ header {
 	align-items: center;
 }
 
+.version.alt .preview {
+	left: unset;
+	right: 100%;
+	margin-left: unset;
+	margin-right: 16px;
+	flex-direction: row-reverse;
+}
+
 .preview>*{
 	margin-right: 16px;
+}
+
+.version.alt .preview>*{
+	margin-right: unset;
+	margin-left: 16px;
 }
 
 .preview img {
@@ -160,16 +284,59 @@ header {
 }
 
 .preview .title {
-	font-weight: bold;
+	text-shadow: 2px 0 rgb(255, 255, 255), 4px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
-.preview .box {
-	background: #a09172;
+.preview .text-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.version.alt .preview .text-box {
+	align-items: flex-end;
+}
+
+.preview .title-box>*{
+	display: inline;
+}
+
+.version .box {
+	position: relative;
+	border: 8px solid transparent;
+	border-image: url("../images/borders/panel_basic.png") 8 fill stretch stretch;
 	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	align-self: flex-end;
 }
 
-.preview .box h1 {
+.version.today .box {
+	align-self: flex-start;
+}
+
+.version .box .preview {
+	margin-left: 26px;
+}
+
+.version.alt .box .preview {
+	margin-right: 26px;
+}
+
+.version .box .content h1 {
+	white-space: nowrap;
 	text-align: center;
+	margin: -16px 0 -10px 0;
+}
+
+.version.first .box {
+	margin-bottom: 135px;
+}
+
+.version.today .box {
+	margin-top: 135px;
 }
 
 .hidden {
