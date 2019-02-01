@@ -153,6 +153,25 @@
 						{"text": "Buckets"},
 						{"text": "Golden Apples"}
 					]
+				},
+
+				{
+					"title": "Alpha 1.0",
+					"description": "Redstone",
+					"type": "major",
+					"date": "2010-07-03",
+					"learnMore": "#Alpha_v1.0.1",
+					"mainFeatures": [
+						{"text": "Redstone Dust"},
+						{"text": "Redstone Torch"},
+						{"text": "Levers"},
+						{"text": "Buttons"},
+						{"text": "Pressure Plates"},
+						{"text": "Iron Doors"}
+					],
+					"minorFeatures": [
+						{"text": "Redstone Ore"}
+					]
 				}
 
 			],
