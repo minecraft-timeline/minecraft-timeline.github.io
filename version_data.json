@@ -226,6 +226,26 @@
 					"mainFeatures": [
 						{"text": "Better Leaf Decay"}
 					]
+				},
+
+				{
+					"title": "Beta 1.2",
+					"description": "Note Blocks & Cakes",
+					"type": "major",
+					"date": "2011-01-13",
+					"learnMore": "#Beta_1.2",
+					"mainFeatures": [
+						{"text": "Note Blocks"},
+						{"text": "Cakes"},
+						{"text": "Dispensers"},
+						{"text": "Lapis Lazuli"}
+					],
+					"minorFeatures": [
+						{"text": "Squids"},
+						{"text": "Sugar"},
+						{"text": "Sandstone"},
+						{"text": "Wool Dyes"}
+					]
 				}
 
 			],
