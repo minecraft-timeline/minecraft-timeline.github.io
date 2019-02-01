@@ -276,6 +276,22 @@
 					"minorFeatures": [
 						{"text": "Cookies"}
 					]
+				},
+
+				{
+					"title": "Beta 1.5",
+					"description": "Achievements & Powered Rails",
+					"type": "major",
+					"date": "2011-04-19",
+					"learnMore": "#Beta_1.5",
+					"mainFeatures": [
+						{"text": "Achievements"},
+						{"text": "Powered Rails"},
+						{"text": "Rain, snow and thunderstorms"}
+					],
+					"minorFeatures": [
+						{"text": "More saplings"}
+					]
 				}
 
 			],
