@@ -509,6 +509,30 @@
 					"minorFeatures": [
 						{"text": "Custom Nether Portals"}
 					]
+				},
+
+				{
+					"title": "Bountiful Update",
+					"subtitle": "1.8",
+					"description": "Ocean Monuments & Slime Blocks",
+					"type": "major",
+					"date": "2014-09-02",
+					"learnMore": "#Bountiful_Update",
+					"mainFeatures": [
+						{"text": "Ocean Monuments"},
+						{"text": "Slime Blocks"},
+						{"text": "Granite, Andesite and Diorite"},
+						{"text": "Rabbits"},
+						{"text": "Endermites"}
+					],
+					"minorFeatures": [
+						{"text": "Sheep Mutton"},
+						{"text": "Armor Stands"},
+						{"text": "Coarse Dirt"},
+						{"text": "Iron Trapdoors"},
+						{"text": "Banners"},
+						{"text": "Enchanting requires Lapis Lazuli"}
+					]
 				}
 
 			],
