@@ -172,6 +172,20 @@
 					"minorFeatures": [
 						{"text": "Redstone Ore"}
 					]
+				},
+
+				{
+					"title": "Alpha 1.1",
+					"description": "Compasses",
+					"type": "major",
+					"date": "2010-09-10",
+					"learnMore": "#Alpha_v1.1.0",
+					"mainFeatures": [
+						{"text": "Compasses"}
+					],
+					"minorFeatures": [
+						{"text": "Lava buckets as furnace fuel"}
+					]
 				}
 
 			],
