@@ -4,14 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Minecraft Timeline</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fonts/minecrafton.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 	<body>
 
 		<header>
-			<img src="images/logos/logo_java.png" alt="Minecraft" id="edition_logo" class="logo">
+			<img src="images/logos/logo_default.png" alt="Minecraft" id="edition_logo" class="logo">
 			<div class="vline"></div>
 			<div class="vbox">
 				<h2>Version Timeline</h2>
@@ -25,13 +23,22 @@
 			</div>
 		</header>
 
-		<div id="editions_tab"></div>
+		<nav id="editions_tab" class="hidden"></nav>
 		<div id="editions_root"></div>
 
-		<div id="gizmo_loading">Loading...</div>
-		<p id="gizmo_old" style="display: none;">Your browser is too old to load this page properly. Please use a newer browser, such as Chrome, Firefox or Edge.</p>
+		<div id="gizmo_loading" class="start-message">
+			<h2>Downloading versions</h2>
+			<h2>Building timeline</h2>
+		</div>
 
-		<p id="data"></p>
+		<div id="gizmo_old" class="start-message hidden">
+			<h2>
+				Your browser is too old to load this page properly.
+				Please use a newer browser, such as
+				<a href="https://www.google.com/chrome/">Chrome</a>,
+				<a href="https://www.mozilla.org/firefox">Firefox</a>
+				or <a href="https://www.microsoft.com/windows/microsoft-edge">Edge</a>.</h2>
+		</div>
 
 		<script type="application/javascript" src="js/index.js"></script>
 

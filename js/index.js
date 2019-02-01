@@ -1,7 +1,9 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/8e382987221e7fbe4ff0d7dff5a588ac71e75752/version_data_development.json";
-const YEAR_HEIGHT_PX = 365 * 2;
+const LOGO_PATH = "images/logos";
+const YEAR_PX = 365 * 2;
+const UPCOMING_PX = YEAR_PX / 3;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
 const LEAP_YEAR_MS = YEAR_MS + DAY_MS;
@@ -90,25 +92,27 @@ function loadEditions(editions) {
 
 	let tabDOMs = [];
 	let panelDOMs = [];
+	let firstPanelDOM;
+	let firstTabDOM;
 
 	for (let i = 0; i<editions.length; i++) {
 
 		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
 
-		let tabDOM = make("span", "edition_tab", editions[i].title, "edition_tab_" + i);
+		let tabDOM = make("h2", "edition_tab", editions[i].title, "edition_tab_" + i);
 
 		tabsDOM.appendChild(tabDOM);
 
 		let panelDOM = make("div", "edition_panel", undefined, "edition_panel_" + i);
 
-		if (i !== 0) hide(panelDOM);
+		hide(panelDOM);
 
-		if (i === 0) id("edition_description").innerText = editions[i].description;
-		if (i === 0) tabDOM.classList.add("selected");
+		if (i === 0) {
+			firstPanelDOM = panelDOM;
+			firstTabDOM = tabDOM;
+		}
 
 		tabDOM.addEventListener("click", function () {
-
-			tabDOM.classList.add("selected");
 
 			for (let j = 0; j < tabDOMs.length; j++) {
 				if (tabDOMs[j] !== tabDOM) {
@@ -116,6 +120,10 @@ function loadEditions(editions) {
 					tabDOMs[j].classList.remove("selected");
 				}
 			}
+
+			id("edition_logo").src = LOGO_PATH + "/" + editions[i].logo;
+			id("edition_description").innerText = editions[i].description;
+			tabDOM.classList.add("selected");
 
 			show(panelDOM);
 
@@ -128,6 +136,18 @@ function loadEditions(editions) {
 		loadVersions(editions[i], panelDOM);
 
 	}
+
+	if (editions.length > 0) {
+
+		show(firstPanelDOM);
+		show(tabsDOM);
+
+		id("edition_logo").src = LOGO_PATH + "/" + editions[0].logo;
+		id("edition_description").innerText = editions[0].description;
+		firstTabDOM.classList.add("selected");
+
+	}
+
 }
 
 
@@ -186,8 +206,8 @@ function loadVersions(edition, panelDOM) {
 				multi = LEAP_YEAR_MS/YEAR_MS;
 			}
 
-			tlYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
-			rulerYearDOM.style.height = (multi * YEAR_HEIGHT_PX) + "px";
+			tlYearDOM.style.height = (multi * YEAR_PX) + "px";
+			rulerYearDOM.style.height = (multi * YEAR_PX) + "px";
 
 			let h1DOM = make("h2", "", firstDate.getFullYear() + i);
 
@@ -259,7 +279,12 @@ function loadVersions(edition, panelDOM) {
 
 		}
 
+		for (let i = 0; i < edition.upcomings; i++) {
+
+		}
+
 		let timelinePanelDOM = make("div", "timeline-panel");
+
 		timelinePanelDOM.appendChild(timelineDOM);
 
 		panelDOM.appendChild(rulerDOM);
@@ -289,10 +314,10 @@ function makePreview(version) {
 		if (hasTitle || hasSubtitle) {
 			let titleBoxDOM = make("div", "title-box");
 			if (hasTitle) {
-				titleBoxDOM.appendChild(make("h2", "title", version.title + (hasSubtitle ? " • " : "")));
+				titleBoxDOM.appendChild(make("h2", "title", version.title));
 			}
 			if (hasSubtitle) {
-				titleBoxDOM.appendChild(make("h2", "subtitle", version.subtitle));
+				titleBoxDOM.appendChild(make("h2", "subtitle", (hasTitle ? " • " : "") + version.subtitle));
 			}
 			textBoxDOM.appendChild(titleBoxDOM);
 		}
@@ -346,19 +371,20 @@ function makeBox(version, edition, date) {
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ajaxGET(JSON_URL, function (data, status) {
+
 	if (status === 200) {
-		hide(id("gizmo_loading"));
 
 		let json;
-		try {
+
+		if (JSON.parse) {
 			json = JSON.parse(data);
-		}
-		catch (e) {
-			show(id("gizmo_old"));
-		}
-		finally {
 			loadEditions(json.editions);
 		}
+		else {
+			show(id("gizmo_old"));
+		}
+
+		hide(id("gizmo_loading"));
 
 	}
 	else {
