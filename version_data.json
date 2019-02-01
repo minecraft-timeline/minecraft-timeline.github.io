@@ -36,19 +36,19 @@
 				{
 					"title": "Village and Pillage Update",
 					"subtitle": "1.14",
-					"description": "Village, texture & crafting overhaul",
+					"description": "Village overhaul, new textures & Bamboo Forests",
 					"type": "major",
 					"possibleDate": "Early 2019",
 					"learnMore": "#1.14",
 					"mainFeatures": [
 						{"text": "Village overhaul"},
 						{"text": "Pillagers"},
-						{"text": "New crafting stations"},
+						{"text": "Foxes"},
 						{"text": "Bamboo forests with pandas"}
 					],
 					"minorFeatures": [
 						{"text": "Updated all textures of the game"},
-						{"text": "Foxes"}
+						{"text": "New crafting stations"}
 					]
 				}
 

@@ -1,6 +1,6 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/fd039856d50fa97b5722c339926f1630b195877d/version_data_development.json";
+const JSON_URL = "https://raw.githubusercontent.com/minecraft-timeline/minecraft-timeline.github.io/master/version_data.json";
 const LOGO_PATH = "images/logos";
 const WIKI_PATH = "https://minecraft.gamepedia.com/";
 const YEAR_PX = 365 * 2;
