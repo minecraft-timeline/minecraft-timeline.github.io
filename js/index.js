@@ -460,8 +460,7 @@ function showInfopanel(version) {
 
 	if (hasDate) {
 		let date = new Date(parseUTC(version.date));
-		let daySuffix = date.getDate() === 1 ? "st" : date.getDate() === 2 ? "nd" : date.getDate() === 3 ? "rd" : "th";
-		iPanelDateDOM.innerText = MONTH_NAMES[date.getMonth()] + " " + date.getDate() + daySuffix + ", " + date.getFullYear();
+		iPanelDateDOM.innerText = MONTH_NAMES[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
 	}
 	else if (hasPossibleDate) {
 		iPanelDateDOM.innerText = version.possibleDate;
