@@ -12,7 +12,7 @@
 			"versions": [
 
 				{
-					"title": "Cave Game",
+					"subtitle": "Cave Game",
 					"description": "Cobble & Grass",
 					"type": "major",
 					"date": "2009-05-10",
@@ -29,7 +29,7 @@
 				},
 
 				{
-					"title": "Early Classic Creative",
+					"subtitle": "Early Classic Creative",
 					"description": "Trees & Ores",
 					"type": "major",
 					"date": "2009-05-16",
@@ -46,7 +46,7 @@
 				},
 
 				{
-					"title": "Multiplayer Test",
+					"subtitle": "Multiplayer Test",
 					"description": "Flowers & Glass",
 					"type": "major",
 					"date": "2009-05-31",
@@ -64,7 +64,7 @@
 				},
 
 				{
-					"title": "Survival Test",
+					"subtitle": "Survival Test",
 					"description": "Health & Creepers",
 					"type": "major",
 					"date": "2009-09-01",
@@ -84,7 +84,7 @@
 				},
 
 				{
-					"title": "Late Classic Creative",
+					"subtitle": "Late Classic Creative",
 					"description": "Block Placement Controls",
 					"type": "major",
 					"date": "2009-10-27",
@@ -96,7 +96,7 @@
 				},
 
 				{
-					"title": "Indev 0.31",
+					"subtitle": "Indev 0.31",
 					"description": "Crafting Tables, Tools & Diamonds",
 					"type": "major",
 					"date": "2009-12-23",
@@ -117,7 +117,7 @@
 				},
 
 				{
-					"title": "Minecraft Indev",
+					"subtitle": "Minecraft Indev",
 					"description": "Farming & Armor",
 					"type": "major",
 					"date": "2010-02-06",
@@ -136,7 +136,7 @@
 				},
 
 				{
-					"title": "Minecraft Infdev",
+					"subtitle": "Minecraft Infdev",
 					"description": "Dungeons, Rails & Infinite World",
 					"type": "major",
 					"date": "2010-02-27",
@@ -156,7 +156,7 @@
 				},
 
 				{
-					"title": "Alpha 1.0",
+					"subtitle": "Alpha 1.0",
 					"description": "Redstone",
 					"type": "major",
 					"date": "2010-07-03",
@@ -175,7 +175,7 @@
 				},
 
 				{
-					"title": "Alpha 1.1",
+					"subtitle": "Alpha 1.1",
 					"description": "Compasses",
 					"type": "major",
 					"date": "2010-09-10",
@@ -207,7 +207,7 @@
 				},
 
 				{
-					"title": "Beta 1.0",
+					"subtitle": "Beta 1.0",
 					"description": "Eggs",
 					"type": "major",
 					"date": "2010-12-20",
@@ -218,7 +218,7 @@
 				},
 
 				{
-					"title": "Beta 1.1",
+					"subtitle": "Beta 1.1",
 					"description": "Leaf Decay",
 					"type": "major",
 					"date": "2010-12-22",
@@ -229,7 +229,7 @@
 				},
 
 				{
-					"title": "Beta 1.2",
+					"subtitle": "Beta 1.2",
 					"description": "Note Blocks & Cakes",
 					"type": "major",
 					"date": "2011-01-13",
@@ -249,7 +249,7 @@
 				},
 
 				{
-					"title": "Beta 1.3",
+					"subtitle": "Beta 1.3",
 					"description": "Beds & Repeaters",
 					"type": "major",
 					"date": "2011-02-22",
@@ -264,7 +264,7 @@
 				},
 
 				{
-					"title": "Beta 1.4",
+					"subtitle": "Beta 1.4",
 					"description": "Wolves & New Logo",
 					"type": "major",
 					"date": "2011-03-31",
@@ -280,7 +280,7 @@
 				},
 
 				{
-					"title": "Beta 1.5",
+					"subtitle": "Beta 1.5",
 					"description": "Achievements & Powered Rails",
 					"type": "major",
 					"date": "2011-04-19",
@@ -296,7 +296,7 @@
 				},
 
 				{
-					"title": "Beta 1.6",
+					"subtitle": "Beta 1.6",
 					"description": "Maps & Trapdoors",
 					"type": "major",
 					"date": "2011-05-26",
@@ -312,7 +312,7 @@
 				},
 
 				{
-					"title": "Beta 1.7",
+					"subtitle": "Beta 1.7",
 					"description": "Pistons",
 					"type": "major",
 					"date": "2011-06-30",

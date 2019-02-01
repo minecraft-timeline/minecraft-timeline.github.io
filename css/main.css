@@ -207,9 +207,6 @@ header.main .vbox.info {
   flex-direction: column;
   align-items: flex-start;
 }
-.preview .title-box > * {
-  display: inline;
-}
 
 .timeline {
   margin: 276px 0 266px 0;
@@ -265,9 +262,6 @@ header.main .vbox.info {
 }
 .timeline .year .version.alt .preview .text-box {
   align-items: flex-end;
-}
-.timeline .year .version.alt .preview .text-box .title-box {
-  text-align: right;
 }
 .timeline .year .version.alt .box .preview {
   margin-right: 26px;
