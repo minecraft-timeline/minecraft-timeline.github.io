@@ -329,7 +329,7 @@
 				},
 
 				{
-					"title": "Adventure Update (1)",
+					"title": "Adventure Update 1",
 					"subtitle": "Beta 1.8",
 					"description": "Endermen & Hunger",
 					"type": "major",
@@ -353,7 +353,7 @@
 				},
 
 				{
-					"title": "Adventure Update (2)",
+					"title": "Adventure Update 2",
 					"subtitle": "1.0",
 					"description": "The End & Enchanting",
 					"type": "major",
@@ -372,6 +372,40 @@
 						{"text": "Nether Fortresses"},
 						{"text": "More Nether mobs"},
 						{"text": "Snow golems"}
+					]
+				},
+
+				{
+					"subtitle": "1.1",
+					"description": "Spawn Eggs",
+					"type": "major",
+					"date": "2012-01-12",
+					"learnMore": "#1.1",
+					"mainFeatures": [
+						{"text": "Spawn Eggs"}
+					],
+					"minorFeatures": [
+						{"text": "Superflat worlds"},
+						{"text": "Beaches"}
+					]
+				},
+
+				{
+					"subtitle": "1.2",
+					"description": "Jungles & Iron Golems",
+					"type": "major",
+					"date": "2012-01-03",
+					"learnMore": "#1.2.1",
+					"mainFeatures": [
+						{"text": "Jungles"},
+						{"text": "Iron Golems"},
+						{"text": "Ocelots"},
+						{"text": "Redstone Lamps"}
+					],
+					"minorFeatures": [
+						{"text": "Bottles o' Enchanting"},
+						{"text": "Abandoned Mineshafts"},
+						{"text": "Zombie Sieges"}
 					]
 				}
 
