@@ -85,13 +85,35 @@
 
 				{
 					"title": "Late Classic Creative",
-					"description": "Dynamic Lighting",
+					"description": "Block Placement Controls",
 					"type": "major",
 					"date": "2009-10-27",
 					"funFact": "Did you know? This update overlapped with \"Survival Test\".",
 					"learnMore": "#Late_Classic_Creative",
 					"mainFeatures": [
-						{"text": "Dynamic Lighting"}
+						{"text": "Block Placement Controls"}
+					]
+				},
+
+				{
+					"title": "Indev 0.31",
+					"description": "Crafting Tables, Tools & Diamonds",
+					"type": "major",
+					"date": "2009-12-23",
+					"funFact": "Did you know? Notch released 24 updates under this name.",
+					"learnMore": "#Indev_0.31",
+					"mainFeatures": [
+						{"text": "Crafting Tables"},
+						{"text": "Chests"},
+						{"text": "Diamonds"},
+						{"text": "Tools "},
+						{"text": "Survival Mode"}
+					],
+					"minorFeatures": [
+						{"text": "Apples"},
+						{"text": "Fire"},
+						{"text": "Torches"},
+						{"text": "Mob drops"}
 					]
 				}
 
