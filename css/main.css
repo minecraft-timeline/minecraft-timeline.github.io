@@ -266,6 +266,9 @@ header.main .vbox.info {
 .timeline .year .version.alt .preview .text-box {
   align-items: flex-end;
 }
+.timeline .year .version.alt .preview .text-box .title-box {
+  text-align: right;
+}
 .timeline .year .version.alt .box .preview {
   margin-right: 26px;
 }

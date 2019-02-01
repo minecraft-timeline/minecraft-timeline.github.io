@@ -350,6 +350,29 @@
 						{"text": "More world structures"},
 						{"text": "Far Lands"}
 					]
+				},
+
+				{
+					"title": "Adventure Update (2)",
+					"subtitle": "1.0",
+					"description": "The End & Enchanting",
+					"type": "major",
+					"date": "2011-11-18",
+					"funFact": "Did you know? The game was fully released during Minecon 2011.",
+					"learnMore": "#1.0.0",
+					"mainFeatures": [
+						{"text": "The End"},
+						{"text": "Enchanting"},
+						{"text": "Potions"},
+						{"text": "Breeding"}
+					],
+					"minorFeatures": [
+						{"text": "Villagers"},
+						{"text": "Mushroom Islands"},
+						{"text": "Nether Fortresses"},
+						{"text": "More Nether mobs"},
+						{"text": "Snow golems"}
+					]
 				}
 
 			],
