@@ -580,6 +580,24 @@
 						{"text": "Nether Wart Blocks"},
 						{"text": "Red Nether Bricks"}
 					]
+				},
+
+				{
+					"title": "Exploration Update",
+					"subtitle": "1.11",
+					"description": "Woodland Mansions & Shulker Boxes",
+					"type": "major",
+					"date": "2016-11-14",
+					"learnMore": "#Exploration_Update",
+					"mainFeatures": [
+						{"text": "Woodland Mansions"},
+						{"text": "Shulker Boxes"},
+						{"text": "Totems of Undying"},
+						{"text": "Llamas"}
+					],
+					"minorFeatures": [
+						{"text": "Nitwit and Cartographer Villagers"}
+					]
 				}
 
 			],
