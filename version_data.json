@@ -261,6 +261,21 @@
 					"minorFeatures": [
 						{"text": "Graphics Settings"}
 					]
+				},
+
+				{
+					"title": "Beta 1.4",
+					"description": "Wolves & New Logo",
+					"type": "major",
+					"date": "2011-03-31",
+					"learnMore": "#Beta_1.4",
+					"mainFeatures": [
+						{"text": "Wolves"},
+						{"text": "New Logo"}
+					],
+					"minorFeatures": [
+						{"text": "Cookies"}
+					]
 				}
 
 			],
