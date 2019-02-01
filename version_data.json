@@ -125,12 +125,33 @@
 					"mainFeatures": [
 						{"text": "Farming"},
 						{"text": "Armor"},
-						{"text": "Furnace"}
+						{"text": "Furnace"},
+						{"text": "Day-night cycle"}
 					],
 					"minorFeatures": [
 						{"text": "Bread"},
 						{"text": "Paintings"},
 						{"text": "Mob drops"}
+					]
+				},
+
+				{
+					"title": "Minecraft Infdev",
+					"description": "Dungeons, Rails & Infinite World",
+					"type": "major",
+					"date": "2010-02-27",
+					"funFact": "\"Infdev\" stands for \"Infinite Development\".",
+					"learnMore": "#Minecraft_Infdev",
+					"mainFeatures": [
+						{"text": "Dungeons"},
+						{"text": "Rails"},
+						{"text": "Infinite World"}
+					],
+					"minorFeatures": [
+						{"text": "Arrows"},
+						{"text": "Doors"},
+						{"text": "Buckets"},
+						{"text": "Golden Apples"}
 					]
 				}
 
