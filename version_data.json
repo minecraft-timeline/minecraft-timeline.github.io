@@ -473,6 +473,46 @@
 						{"text": "Weighted Pressure Plates"},
 						{"text": "Better Lighting"}
 					]
+				},
+
+				{
+					"title": "Redstone Update",
+					"subtitle": "1.5",
+					"description": "More Redstone components & Quartz",
+					"type": "major",
+					"date": "2013-03-13",
+					"learnMore": "#Redstone_Update",
+					"mainFeatures": [
+						{"text": "Hopper"},
+						{"text": "Block of Redstone"},
+						{"text": "Daylight Sensor"},
+						{"text": "Redstone Comparator"},
+						{"text": "Trapped Chest"},
+						{"text": "Nether Quartz"}
+					],
+					"minorFeatures": [
+						{"text": "Weighted Pressure Plates"},
+						{"text": "Better Lighting"}
+					]
+				},
+
+				{
+					"title": "Horse Update",
+					"subtitle": "1.6",
+					"description": "Horses",
+					"type": "major",
+					"date": "2013-07-01",
+					"funFact": "Did you know? Horses were originally from the mod \"Mo' Creatures.\"",
+					"learnMore": "#Horse_Update",
+					"mainFeatures": [
+						{"text": "Horses"}
+					],
+					"minorFeatures": [
+						{"text": "Leads"},
+						{"text": "Coal Blocks"},
+						{"text": "Carpets"},
+						{"text": "Horses"}
+					]
 				}
 
 			],
