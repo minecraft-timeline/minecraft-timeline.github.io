@@ -81,6 +81,18 @@
 						{"text": "Skeletons"},
 						{"text": "Spiders"}
 					]
+				},
+
+				{
+					"title": "Late Classic Creative",
+					"description": "Dynamic Lighting",
+					"type": "major",
+					"date": "2009-10-27",
+					"funFact": "Did you know? This update overlapped with \"Survival Test\".",
+					"learnMore": "#Late_Classic_Creative",
+					"mainFeatures": [
+						{"text": "Dynamic Lighting"}
+					]
 				}
 
 			],
