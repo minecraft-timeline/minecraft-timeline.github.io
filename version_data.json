@@ -186,6 +186,24 @@
 					"minorFeatures": [
 						{"text": "Lava buckets as furnace fuel"}
 					]
+				},
+
+				{
+					"title": "Halloween Update",
+					"subtitle": "Alpha 1.2",
+					"description": "The Nether",
+					"type": "major",
+					"date": "2010-10-30",
+					"learnMore": "#Halloween_Update",
+					"mainFeatures": [
+						{"text": "The Nether"},
+						{"text": "Nether Portal"},
+						{"text": "Pumpkins"}
+					],
+					"minorFeatures": [
+						{"text": "Biomes"},
+						{"text": "Fishing"}
+					]
 				}
 
 			],
