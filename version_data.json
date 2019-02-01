@@ -140,7 +140,7 @@
 					"description": "Dungeons, Rails & Infinite World",
 					"type": "major",
 					"date": "2010-02-27",
-					"funFact": "\"Infdev\" stands for \"Infinite Development\".",
+					"funFact": "Did you know? \"Infdev\" stands for \"Infinite Development\".",
 					"learnMore": "#Minecraft_Infdev",
 					"mainFeatures": [
 						{"text": "Dungeons"},
@@ -606,7 +606,7 @@
 					"description": "Colorful Blocks & Parrots",
 					"type": "major",
 					"date": "2017-06-07",
-					"funFact": "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now cookies instantly kill parrots. Tame them with seeds instead.",
+					"funFact": "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now, cookies instantly kill parrots. Tame them with seeds instead.",
 					"learnMore": "#World_of_Color_Update",
 					"mainFeatures": [
 						{"text": "Colored Concrete"},
@@ -619,6 +619,36 @@
 						{"text": "Dyeable beds"},
 						{"text": "Replaced Achievements with Advancements"},
 						{"text": "Functions"}
+					]
+				},
+
+				{
+					"title": "Update Aquatic",
+					"subtitle": "1.13",
+					"description": "Ocean Overhaul & Phantoms",
+					"type": "major",
+					"date": "2018-07-18",
+					"funFact": "Did you know? The name of this update is a reference to the movie \"The Life Aquatic\".",
+					"learnMore": "#Update_Aquatic",
+					"mainFeatures": [
+						{"text": "Kelp and Seagrass"},
+						{"text": "Fish mobs"},
+						{"text": "Dolphins"},
+						{"text": "Turtles"},
+						{"text": "The Drowned"},
+						{"text": "Tridents"},
+						{"text": "Coral Reefs"},
+						{"text": "Phantoms"},
+						{"text": "Conduits"}
+					],
+					"minorFeatures": [
+						{"text": "Submerged Caves"},
+						{"text": "Swimming"},
+						{"text": "Shipwrecks"},
+						{"text": "Treasure Maps"},
+						{"text": "Icebergs"},
+						{"text": "Bubble Columns"},
+						{"text": "New water physics"}
 					]
 				}
 
