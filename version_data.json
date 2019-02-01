@@ -215,6 +215,17 @@
 					"mainFeatures": [
 						{"text": "Throwable Eggs"}
 					]
+				},
+
+				{
+					"title": "Beta 1.1",
+					"description": "Leaf Decay",
+					"type": "major",
+					"date": "2010-12-22",
+					"learnMore": "#Beta_1.1",
+					"mainFeatures": [
+						{"text": "Better Leaf Decay"}
+					]
 				}
 
 			],
