@@ -560,6 +560,26 @@
 						{"text": "Removed Enchanted Golden Apples"},
 						{"text": "Better Command Blocks"}
 					]
+				},
+
+				{
+					"title": "Frostburn Update",
+					"subtitle": "1.10",
+					"description": "Polar Bears & Magma Blocks",
+					"type": "major",
+					"date": "2016-06-08",
+					"learnMore": "#Frostburn_Update",
+					"mainFeatures": [
+						{"text": "Polar Bears"},
+						{"text": "Magma Blocks"},
+						{"text": "Strays"},
+						{"text": "Husks"}
+					],
+					"minorFeatures": [
+						{"text": "Bone Blocks"},
+						{"text": "Nether Wart Blocks"},
+						{"text": "Red Nether Bricks"}
+					]
 				}
 
 			],
