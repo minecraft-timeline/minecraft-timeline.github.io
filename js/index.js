@@ -1,9 +1,9 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/8e382987221e7fbe4ff0d7dff5a588ac71e75752/version_data_development.json";
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/7acd7717f66a733483803356ff95c4d5109b86b6/version_data_development.json";
 const LOGO_PATH = "images/logos";
 const YEAR_PX = 365 * 2;
-const UPCOMING_PX = YEAR_PX / 3;
+const UPCOMING_PX = YEAR_PX / 6;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
 const LEAP_YEAR_MS = YEAR_MS + DAY_MS;
@@ -279,7 +279,36 @@ function loadVersions(edition, panelDOM) {
 
 		}
 
-		for (let i = 0; i < edition.upcomings; i++) {
+		if (edition.upcomings.length > 0) {
+			let upcTimelineDOM = make("div", "upcoming-timeline");
+			let upcRulerDOM = make("div", "upcoming-ruler");
+
+			for (let i = 0; i < edition.upcomings.length; i++) {
+
+				let upcYearDOM = make("div", "year");
+				upcYearDOM.style.height = UPCOMING_PX + "px";
+
+				let upcVersionDOM = make("div", "version"+ (i%2 === 0 ? "" : " alt"));
+				upcVersionDOM.style.top = "50%";
+
+				let upcRulerYearDOM = make("div", "year");
+
+				upcRulerYearDOM.style.height = UPCOMING_PX + "px";
+
+				upcRulerYearDOM.appendChild(make("h2", "", "????"));
+				upcRulerYearDOM.appendChild(make("h3", "","Future"));
+
+				upcVersionDOM.appendChild(makePreview(versions[i]));
+				upcVersionDOM.classList.add("update-" + versions[i].type);
+
+				upcYearDOM.appendChild(upcVersionDOM);
+				upcTimelineDOM.appendChild(upcYearDOM);
+				upcRulerDOM.appendChild(upcRulerYearDOM);
+
+			}
+
+			timelineDOM.appendChild(upcTimelineDOM);
+			rulerDOM.appendChild(upcRulerDOM);
 
 		}
 

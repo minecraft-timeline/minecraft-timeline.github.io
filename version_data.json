@@ -1,56 +1,68 @@
 {
 
-  "editions": [
+	"editions": [
 
-    {
+		{
 
-      "title": "Java Edition",
-      "description": "The original game by Notch",
-      "firstMessage": "Minecraft is born",
-      "logo": "logo_java.png",
+			"title": "Java Edition",
+			"description": "The original game by Notch",
+			"firstMessage": "Minecraft is born",
+			"logo": "logo_java.png",
 
-      "versions": [
+			"versions": [
 
-        {"title": "Update 0", "date": "2009-10-01", "type": "major"},
-        {"title": "Update 0.5", "date": "2009-11-01", "type": "minor"},
-        {"title": "Update 1", "date": "2010-01-01", "type": "major"},
-        {"title": "Update 2", "date": "2010-12-01", "type": "major"},
-        {"title": "Update 3", "date": "2011-01-01", "type": "minor"},
-        {"title": "Update 4", "date": "2011-12-01", "type": "major"},
-        {"title": "Update 5", "date": "2012-01-01", "type": "major"},
-        {"title": "Update 6", "date": "2012-12-01", "type": "major"},
-        {"title": "Update 7", "date": "2013-01-01", "type": "minor"},
-        {"title": "Update 8", "date": "2013-12-01", "type": "major"},
-        {"title": "Update 9", "date": "2014-01-01", "type": "major"},
-        {"title": "Update 10", "date": "2014-12-01", "type": "major"},
-        {"title": "Update 11", "date": "2015-01-01", "type": "major"},
-        {"title": "Update 12", "date": "2015-12-01", "type": "minor"},
-        {"title": "Update 13", "date": "2016-01-01", "type": "minor"},
-        {"title": "Update 14", "date": "2016-12-01", "type": "major"},
-        {"title": "Update 15", "date": "2019-01-01", "type": "major"}
+				{"subtitle": "Update 0", "date": "2009-10-01", "type": "major"},
+				{"subtitle": "Update 0.5", "date": "2009-11-01", "type": "minor"},
+				{"title":"Cool Update", "subtitle": "Update 1", "date": "2010-01-01", "type": "major"},
+				{"subtitle": "Update 2", "date": "2010-12-01", "type": "major"},
+				{"subtitle": "Update 3", "date": "2011-01-01", "type": "minor"},
+				{"subtitle": "Update 4", "date": "2011-12-01", "type": "major"},
+				{"title":"Supercool Update","subtitle": "Update 5", "date": "2012-01-01", "type": "major"},
+				{"subtitle": "Update 6", "date": "2012-12-01", "type": "major"},
+				{"subtitle": "Update 7", "date": "2013-01-01", "type": "minor"},
+				{"subtitle": "Update 8", "date": "2013-12-01", "type": "major"},
+				{"subtitle": "Update 9", "date": "2014-01-01", "type": "major"},
+				{"title":"Nice Update", "subtitle": "Update 10", "date": "2014-12-01", "type": "major"},
+				{"subtitle": "Update 11", "date": "2015-01-01", "type": "major"},
+				{"subtitle": "Update 12", "date": "2015-12-01", "type": "minor"},
+				{"title":"Neat Update", "subtitle": "Update 13", "date": "2016-01-01", "type": "minor"},
+				{"subtitle": "Update 14", "date": "2016-12-01", "type": "major"},
+				{"subtitle": "Update 15", "date": "2019-01-01", "type": "major"}
 
-      ]
+			],
 
-    },
+			"upcomings": [
 
-    {
+				{"subtitle": "Update 16", "type": "minor"},
+				{"subtitle": "Update 17", "type": "minor"},
+				{"title":"Incredible Update", "subtitle": "Update 18", "type": "major"},
+				{"subtitle": "Update 19", "type": "minor"},
+				{"subtitle": "Update 20", "type": "minor"}
 
-      "title": "Bedrock Edition",
-      "description": "The cross-platform game by Microsoft",
-      "firstMessage": "Bedrock Edition is born",
-      "logo": "logo_bedrock.png",
+			]
 
-      "versions": [
+		},
 
-        {"title": "Test 1", "date": "2015-04-01", "type": "major"},
-        {"title": "Test 2", "date": "2016-01-01", "type": "major"},
-        {"title": "Test 3", "date": "2017-12-01", "type": "major"},
-        {"title": "Test 4", "date": "2018-01-01", "type": "major"}
+		{
 
-      ]
+			"title": "Bedrock Edition",
+			"description": "The cross-platform game by Microsoft",
+			"firstMessage": "Bedrock Edition is born",
+			"logo": "logo_bedrock.png",
 
-    }
+			"versions": [
 
-  ]
+				{"title": "Test 1", "date": "2015-04-01", "type": "major"},
+				{"title": "Test 2", "date": "2016-01-01", "type": "major"},
+				{"title": "Test 3", "date": "2017-12-01", "type": "major"},
+				{"title": "Test 4", "date": "2018-01-01", "type": "major"}
+
+			],
+
+			"upcomings": []
+
+		}
+
+	]
 
 }

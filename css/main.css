@@ -168,7 +168,7 @@ header .vbox.info {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75) inset;
 }
 
-.timeline, .ruler {
+.timeline, .ruler, .upcoming-timeline {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -193,6 +193,7 @@ header .vbox.info {
 }
 .preview .title {
   text-shadow: 2px 0 white, 4px 2px 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
 }
 .preview .text-box {
   font-size: 32px;
@@ -207,7 +208,7 @@ header .vbox.info {
 }
 
 .timeline {
-  margin: 276px 0;
+  margin: 276px 0 266px 0;
   width: 46px;
 }
 .timeline .year {
@@ -331,9 +332,22 @@ header .vbox.info {
   text-align: center;
   margin: -10px 0;
 }
+.timeline .upcoming-timeline {
+  margin-top: 472px;
+  margin-bottom: -206px;
+}
+.timeline .upcoming-timeline:before {
+  display: block;
+  content: "";
+  background: url("../images/timeline/timeline_upcoming.png") no-repeat;
+  width: 46px;
+  height: 206px;
+  position: absolute;
+  top: -206px;
+}
 
 .ruler {
-  padding: 276px 0;
+  padding: 276px 0 266px 0;
   width: 64px;
   background: url("../images/backgrounds/log_new.png") repeat-x left bottom, url("../images/backgrounds/log_old.png") repeat left top, #6B5432;
 }
@@ -364,6 +378,10 @@ header .vbox.info {
   height: 76px;
   position: absolute;
   left: 100%;
+}
+.ruler .upcoming-ruler {
+  margin-top: 472px;
+  margin-bottom: -206px;
 }
 
 .hidden {

@@ -143,7 +143,7 @@ header {
 
 }
 
-.timeline, .ruler {
+.timeline, .ruler, .upcoming-timeline {
 
 	display: flex;
 	position: relative;
@@ -163,7 +163,7 @@ $box-height: (2 * $box-padding) + (2 * $box-border) + $box-content-height;
 $year-start-height: 72px;
 $year-end-height: 82px;
 
-$real-timeline-margins: 60px;
+$real-timeline-margin: 60px;
 
 .preview {
 
@@ -195,6 +195,7 @@ $real-timeline-margins: 60px;
 	.title {
 
 		text-shadow: 2px 0 rgb(255, 255, 255), 4px 2px 0 rgba(0, 0, 0, 0.5);
+		letter-spacing: 2px;
 
 	}
 
@@ -221,11 +222,14 @@ $real-timeline-margins: 60px;
 
 }
 
+$upcoming-label-height: 206px;
+
 .timeline {
 
 	$timeline-width: 46px;
 
-	margin: ($real-timeline-margins + $endpoint-width + $real-timeline-margins + $box-height - $year-start-height) 0;
+	margin: ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-start-height) 0
+			((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height) 0;
 	width: $timeline-width;
 
 	.year {
@@ -353,7 +357,7 @@ $real-timeline-margins: 60px;
 
 				.box {
 
-					margin-bottom: $real-timeline-margins + $endpoint-width;
+					margin-bottom: $real-timeline-margin + $endpoint-width;
 
 				}
 
@@ -368,7 +372,7 @@ $real-timeline-margins: 60px;
 				.box {
 
 					align-self: flex-start;
-					margin-top: $real-timeline-margins + $endpoint-width;
+					margin-top: $real-timeline-margin + $endpoint-width;
 
 				}
 
@@ -425,11 +429,31 @@ $real-timeline-margins: 60px;
 
 	}
 
+	.upcoming-timeline {
+
+		margin-top: (2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height + $upcoming-label-height;
+		margin-bottom: -(($real-timeline-margin) + $endpoint-width + $box-height - $year-end-height);
+
+		&:before {
+
+			display: block;
+			content: "";
+			background: url("../images/timeline/timeline_upcoming.png") no-repeat;
+			width: $timeline-width;
+			height: $upcoming-label-height;
+			position: absolute;
+			top: -$upcoming-label-height;
+
+		}
+
+	}
+
 }
 
 .ruler {
 
-	padding: ($real-timeline-margins + $endpoint-width + $real-timeline-margins + $box-height - $year-start-height) 0;
+	padding: ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-start-height) 0
+			 ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height) 0;
 	width: 64px;
 	background: url("../images/backgrounds/log_new.png") repeat-x left bottom,
 				url("../images/backgrounds/log_old.png") repeat left top,
@@ -469,6 +493,13 @@ $real-timeline-margins: 60px;
 			left: 100%;
 
 		}
+
+	}
+
+	.upcoming-ruler {
+
+		margin-top: (2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height + $upcoming-label-height;
+		margin-bottom: -(($real-timeline-margin) + $endpoint-width + $box-height - $year-end-height);
 
 	}
 
