@@ -26,6 +26,23 @@
 						{"text": "The player"},
 						{"text": "Basic caves"}
 					]
+				},
+
+				{
+					"title": "Early Classic Creative",
+					"description": "Trees & Ores",
+					"type": "major",
+					"date": "2009-05-28",
+					"learnMore": "#Cave_game_tech_test",
+					"mainFeatures": [
+						{"text": "Trees"},
+						{"text": "Coal, iron and gold ores"}
+					],
+					"minorFeatures": [
+						{"text": "Bedrock"},
+						{"text": "Sand"},
+						{"text": "Gravel"}
+					]
 				}
 
 			],
