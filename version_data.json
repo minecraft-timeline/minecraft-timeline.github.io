@@ -429,6 +429,29 @@
 						{"text": "Enchanted Golden Apples"},
 						{"text": "Adventure Mode"}
 					]
+				},
+
+				{
+					"title": "Pretty Scary Update",
+					"subtitle": "1.4",
+					"description": "Withers, Anvils & Cmd. Blocks",
+					"type": "major",
+					"date": "2012-10-25",
+					"learnMore": "#Pretty_Scary_Update",
+					"mainFeatures": [
+						{"text": "Withers"},
+						{"text": "Anvils"},
+						{"text": "Command Blocks"},
+						{"text": "Beacons"},
+						{"text": "Bats"}
+					],
+					"minorFeatures": [
+						{"text": "Carrots"},
+						{"text": "Potatoes"},
+						{"text": "Pumpkin Pies"},
+						{"text": "Item Frames"},
+						{"text": "Flower Pots"}
+					]
 				}
 
 			],
