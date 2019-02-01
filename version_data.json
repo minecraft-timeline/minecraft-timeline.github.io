@@ -598,6 +598,28 @@
 					"minorFeatures": [
 						{"text": "Nitwit and Cartographer Villagers"}
 					]
+				},
+
+				{
+					"title": "World of Color Update",
+					"subtitle": "1.12",
+					"description": "Colorful Blocks & Parrots",
+					"type": "major",
+					"date": "2017-06-07",
+					"funFact": "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now cookies instantly kill parrots. Tame them with seeds instead.",
+					"learnMore": "#World_of_Color_Update",
+					"mainFeatures": [
+						{"text": "Colored Concrete"},
+						{"text": "Colored Concrete Powder"},
+						{"text": "Glazed Terracotta"},
+						{"text": "Parrots"}
+					],
+					"minorFeatures": [
+						{"text": "Improved wool colors"},
+						{"text": "Dyeable beds"},
+						{"text": "Replaced Achievements with Advancements"},
+						{"text": "Functions"}
+					]
 				}
 
 			],
