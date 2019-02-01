@@ -476,27 +476,6 @@
 				},
 
 				{
-					"title": "Redstone Update",
-					"subtitle": "1.5",
-					"description": "More Redstone components & Quartz",
-					"type": "major",
-					"date": "2013-03-13",
-					"learnMore": "#Redstone_Update",
-					"mainFeatures": [
-						{"text": "Hopper"},
-						{"text": "Block of Redstone"},
-						{"text": "Daylight Sensor"},
-						{"text": "Redstone Comparator"},
-						{"text": "Trapped Chest"},
-						{"text": "Nether Quartz"}
-					],
-					"minorFeatures": [
-						{"text": "Weighted Pressure Plates"},
-						{"text": "Better Lighting"}
-					]
-				},
-
-				{
 					"title": "Horse Update",
 					"subtitle": "1.6",
 					"description": "Horses",
