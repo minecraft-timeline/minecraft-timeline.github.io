@@ -204,6 +204,17 @@
 						{"text": "Biomes"},
 						{"text": "Fishing"}
 					]
+				},
+
+				{
+					"title": "Beta 1.0",
+					"description": "Eggs",
+					"type": "major",
+					"date": "2010-12-20",
+					"learnMore": "#Beta_1.0",
+					"mainFeatures": [
+						{"text": "Throwable Eggs"}
+					]
 				}
 
 			],
