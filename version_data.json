@@ -292,6 +292,22 @@
 					"minorFeatures": [
 						{"text": "More saplings"}
 					]
+				},
+
+				{
+					"title": "Beta 1.6",
+					"description": "Maps & Trapdoors",
+					"type": "major",
+					"date": "2011-05-26",
+					"learnMore": "#Beta_1.6",
+					"mainFeatures": [
+						{"text": "Maps"},
+						{"text": "Trapdoors"},
+						{"text": "Grass"}
+					],
+					"minorFeatures": [
+						{"text": "Dead Bushes"}
+					]
 				}
 
 			],
