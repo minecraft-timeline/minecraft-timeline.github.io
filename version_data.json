@@ -334,7 +334,7 @@
 					"description": "Endermen & Hunger",
 					"type": "major",
 					"date": "2011-09-14",
-					"funFact": "Did you know? The hunger system was highly controversial.",
+					"funFact": "Did you know? The hunger system was somewhat controversial.",
 					"learnMore": "#Beta_1.8",
 					"mainFeatures": [
 						{"text": "Endermen"},
@@ -532,6 +532,33 @@
 						{"text": "Iron Trapdoors"},
 						{"text": "Banners"},
 						{"text": "Enchanting requires Lapis Lazuli"}
+					]
+				},
+
+				{
+					"title": "The Combat Update",
+					"subtitle": "1.9",
+					"description": "End Cities, Elytra Wings & Combat Changes",
+					"type": "major",
+					"date": "2016-02-29",
+					"funFact": "Did you know? This update is considered the most controversial one so far, due to the combat changes.",
+					"learnMore": "#Combat_Update",
+					"mainFeatures": [
+						{"text": "End Cities"},
+						{"text": "Elytra Wings"},
+						{"text": "Combat Changes"},
+						{"text": "Outer End Islands"},
+						{"text": "Shulkers"},
+						{"text": "Shields"}
+					],
+					"minorFeatures": [
+						{"text": "Subtitles"},
+						{"text": "Igloos"},
+						{"text": "New arrows"},
+						{"text": "Ability to respawn the Ender Dragon"},
+						{"text": "Ability to use your second hand"},
+						{"text": "Removed Enchanted Golden Apples"},
+						{"text": "Better Command Blocks"}
 					]
 				}
 
