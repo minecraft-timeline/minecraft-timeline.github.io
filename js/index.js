@@ -1,6 +1,6 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/7acd7717f66a733483803356ff95c4d5109b86b6/version_data_development.json";
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/f01c7515fb1cdcf06784162736aef50a18fbb37e/version_data_development.json";
 const LOGO_PATH = "images/logos";
 const YEAR_PX = 365 * 2;
 const UPCOMING_PX = YEAR_PX / 6;
@@ -154,6 +154,7 @@ function loadEditions(editions) {
 function loadVersions(edition, panelDOM) {
 
 	let versions = edition.versions;
+	let upcomings = edition.upcomings;
 
 	// Adds today as a special "version"
 
@@ -279,11 +280,11 @@ function loadVersions(edition, panelDOM) {
 
 		}
 
-		if (edition.upcomings.length > 0) {
+		if (upcomings.length > 0) {
 			let upcTimelineDOM = make("div", "upcoming-timeline");
 			let upcRulerDOM = make("div", "upcoming-ruler");
 
-			for (let i = 0; i < edition.upcomings.length; i++) {
+			for (let i = 0; i < upcomings.length; i++) {
 
 				let upcYearDOM = make("div", "year");
 				upcYearDOM.style.height = UPCOMING_PX + "px";
@@ -298,8 +299,8 @@ function loadVersions(edition, panelDOM) {
 				upcRulerYearDOM.appendChild(make("h2", "", "????"));
 				upcRulerYearDOM.appendChild(make("h3", "","Future"));
 
-				upcVersionDOM.appendChild(makePreview(versions[i]));
-				upcVersionDOM.classList.add("update-" + versions[i].type);
+				upcVersionDOM.appendChild(makePreview(upcomings[i]));
+				upcVersionDOM.classList.add("update-" + upcomings[i].type);
 
 				upcYearDOM.appendChild(upcVersionDOM);
 				upcTimelineDOM.appendChild(upcYearDOM);
