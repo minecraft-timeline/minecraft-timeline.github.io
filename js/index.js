@@ -370,15 +370,11 @@ function makePreview(version) {
 
 	if (hasTitle || hasSubtitle || hasDesc) {
 		let textBoxDOM = make("div", "text-box");
-		if (hasTitle || hasSubtitle) {
-			let titleBoxDOM = make("div", "title-box");
-			if (hasTitle) {
-				titleBoxDOM.appendChild(make("h2", "title", version.title));
-			}
-			if (hasSubtitle) {
-				titleBoxDOM.appendChild(make("h2", "subtitle", (hasTitle ? " • " : "") + version.subtitle));
-			}
-			textBoxDOM.appendChild(titleBoxDOM);
+		if (hasTitle) {
+			textBoxDOM.appendChild(make("h2", "title", version.title));
+		}
+		if (hasSubtitle) {
+			textBoxDOM.appendChild(make("h2", "subtitle", version.subtitle));
 		}
 		if (hasDesc) {
 			textBoxDOM.appendChild(make("h2", "description", version.description));

@@ -214,16 +214,6 @@ $real-timeline-margin: 60px;
 
 	}
 
-	.title-box {
-
-		&>*{
-
-			display: inline;
-
-		}
-
-	}
-
 }
 
 $upcoming-label-height: 206px;
@@ -302,12 +292,6 @@ $upcoming-label-height: 206px;
 					.text-box {
 
 						align-items: flex-end;
-
-						.title-box {
-
-							text-align: right;
-
-						}
 
 					}
 
