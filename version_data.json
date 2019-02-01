@@ -61,6 +61,26 @@
 						{"text": "Commands"},
 						{"text": "Mushrooms"}
 					]
+				},
+
+				{
+					"title": "Survival Test",
+					"description": "Health & Creepers",
+					"type": "major",
+					"date": "2009-09-01",
+					"funFact": "Did you know? Creepers were originally broken Pigs.",
+					"learnMore": "#Survival_Test",
+					"mainFeatures": [
+						{"text": "Health"},
+						{"text": "Creepers"},
+						{"text": "Sheeps"},
+						{"text": "Pigs"}
+					],
+					"minorFeatures": [
+						{"text": "Zombies"},
+						{"text": "Skeletons"},
+						{"text": "Spiders"}
+					]
 				}
 
 			],
