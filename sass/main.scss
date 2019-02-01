@@ -8,6 +8,7 @@ $font-size-standard: 2 * $font-size-small;
 $font-size-big: 3 * $font-size-small;
 
 $color-text: white;
+$color-text-secondary: black;
 $color-text-shadow: rgba(0, 0, 0, 0.5);
 
 * {
@@ -18,7 +19,7 @@ $color-text-shadow: rgba(0, 0, 0, 0.5);
 	-ms-user-select: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, li, a, p {
 	font-family: $font-family;
 	color: $color-text;
 }
@@ -28,7 +29,7 @@ h1 {
 	text-shadow: 3px 3px 0 $color-text-shadow;
 }
 
-h2 {
+h2, li, p {
 	font-size: 32px;
 	text-shadow: 2px 2px 0 $color-text-shadow;
 }
@@ -39,7 +40,7 @@ h3 {
 }
 
 a {
-	color: $color-text;
+	cursor: pointer;
 	text-decoration: underline;
 
 	&:hover {
@@ -63,9 +64,12 @@ a {
 
 body {
 	background: url("../images/backgrounds/dirt_dark.png") repeat left top, #281C13;
+	&.locked {
+		overflow: hidden;
+	}
 }
 
-header {
+header.main {
 
 	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
 	z-index: 10;
@@ -100,7 +104,7 @@ header {
 
 }
 
-#editions_tab {
+.editions_tab {
 
 	background: url("../images/backgrounds/stone_dark.png") repeat left top, #343434;
 	font-size: 32px;
@@ -454,7 +458,7 @@ $upcoming-label-height: 206px;
 
 	padding: ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-start-height) 0
 			 ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height) 0;
-	width: 64px;
+	width: 128px;
 	background: url("../images/backgrounds/log_new.png") repeat-x left bottom,
 				url("../images/backgrounds/log_old.png") repeat left top,
 				#6B5432;
@@ -500,6 +504,102 @@ $upcoming-label-height: 206px;
 
 		margin-top: (2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height + $upcoming-label-height;
 		margin-bottom: -(($real-timeline-margin) + $endpoint-width + $box-height - $year-end-height);
+
+	}
+
+}
+
+.infopanel-wrapper {
+
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	background: rgba(0,0,0,0.49);
+
+}
+
+.infopanel {
+
+	border: 52px solid transparent;
+	border-image: url("../images/borders/panel_book.png") 52 fill repeat repeat;
+	width: 50%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+
+	h1,h2,h3,a,li, p {
+
+		text-shadow: none;
+		color: $color-text-secondary;
+
+	}
+
+	header {
+
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid transparentize($color-text-secondary,0.8);
+
+		#infopanel-fun-fact {
+
+			margin-top: 10px;
+			padding-top: 10px;
+			border-top: 2px solid transparentize($color-text-secondary,0.8);
+			font-style: italic;
+			line-height: 0.8em;
+
+		}
+
+		.title {
+
+			display: flex;
+			justify-content: space-between;
+
+			#infopanel-close {
+
+				outline: none;
+				border: none;
+				background: url("../images/icons/ui/button_close.png") no-repeat center center;
+				cursor: pointer;
+
+				width: 48px;
+				height: 48px;
+
+				&:hover {
+
+					filter: brightness(1.1);
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.content {
+		overflow-y: auto;
+	}
+
+	li {
+
+		margin-bottom: -0.2em;
+
+		&:before {
+
+			content: "• ";
+
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 	}
 

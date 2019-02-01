@@ -7,9 +7,21 @@ const UPCOMING_PX = YEAR_PX / 6;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
 const LEAP_YEAR_MS = YEAR_MS + DAY_MS;
-const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
-	"July", "August", "September", "October", "November", "December"
-];
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// +++ DOM Constants ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const iPanelWrapperDOM = id("infopanel-wrapper");
+const iPanelCloseDOM = id("infopanel-close");
+const iPanelTitleDOM = id("infopanel-title");
+const iPanelSubtitleDOM = id("infopanel-subtitle");
+const iPanelDateDOM = id("infopanel-date");
+const iPanelFunFactDOM = id("infopanel-fun-fact");
+const iPanelMainLabelDOM = id("infopanel-main-label");
+const iPanelMainFeatsDOM = id("infopanel-main-features");
+const iPanelMinorLabelDOM = id("infopanel-minor-label");
+const iPanelMinorFeatsDOM = id("infopanel-minor-features");
+const iPanelLearnMoreDOM = id("infopanel-learn-more");
 
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -45,6 +57,12 @@ function make(tagName,classes = undefined, text = undefined, id = undefined) {
 		dom.id = id;
 	}
 	return dom;
+}
+
+function destroyChildren(element) {
+	while (element.lastChild) {
+		element.removeChild(element.lastChild);
+	}
 }
 
 function textNode(text) {
@@ -210,7 +228,7 @@ function loadVersions(edition, panelDOM) {
 			tlYearDOM.style.height = (multi * YEAR_PX) + "px";
 			rulerYearDOM.style.height = (multi * YEAR_PX) + "px";
 
-			let h1DOM = make("h2", "", firstDate.getFullYear() + i);
+			let h1DOM = make("h1", "", firstDate.getFullYear() + i);
 
 			let h2DOM = make("h3", "",
 				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
@@ -274,6 +292,12 @@ function loadVersions(edition, panelDOM) {
 			} else {
 				let multi = timeOfYear/yearLength;
 				versionDOM.style.top = (multi * 100) + "%";
+			}
+
+			if (!versions[i].today) {
+				versionDOM.addEventListener("click", function () {
+					showInfopanel(versions[i]);
+				});
 			}
 
 			yearDOMs[date.getFullYear()].appendChild(versionDOM);
@@ -398,6 +422,102 @@ function makeBox(version, edition, date) {
 	}
 }
 
+// +++ User Interaction Functions +++++++++++++++++++++++++++++++++++++++
+
+function showInfopanel(version) {
+
+	let hasTitle = version.title !== undefined;
+	let hasSubtitle = version.subtitle !== undefined;
+	let hasDate = version.date !== undefined;
+	let hasPossibleDate = version.possibleDate !== undefined;
+	let hasFunFact = version.funFact !== undefined;
+	let hasMainFeat = version.mainFeatures !== undefined;
+	let hasMinorFeat = version.minorFeatures !== undefined;
+	let hasLearnMore = version.learnMore !== undefined;
+
+
+	if (hasTitle) {
+		iPanelTitleDOM.innerText = version.title;
+	}
+	else if (hasSubtitle) {
+		iPanelTitleDOM.innerText = version.subtitle;
+	}
+	else {
+		iPanelTitleDOM.innerText = "Unknown Update";
+	}
+
+	if (hasSubtitle && hasTitle) {
+		iPanelSubtitleDOM.innerText = version.subtitle + (hasDate ? " • " : "");
+	}
+	else {
+		iPanelSubtitleDOM.innerText = "";
+	}
+
+	if (hasDate) {
+		let date = new Date(parseUTC(version.date));
+		let daySuffix = date.getDate() === 1 ? "st" : date.getDate() === 2 ? "nd" : date.getDate() === 3 ? "rd" : "th";
+		iPanelDateDOM.innerText = MONTH_NAMES[date.getMonth()] + " " + date.getDate() + daySuffix + ", " + date.getFullYear();
+	}
+	else if (hasPossibleDate) {
+		iPanelDateDOM.innerText = version.possibleDate;
+	}
+	else {
+		iPanelDateDOM.innerText = "";
+	}
+
+	if (hasFunFact) {
+		show(iPanelFunFactDOM);
+		iPanelFunFactDOM.innerText = version.funFact;
+	}
+	else {
+		hide(iPanelFunFactDOM);
+	}
+
+	if (hasMainFeat) {
+		show(iPanelMainLabelDOM);
+		destroyChildren(iPanelMainFeatsDOM);
+
+		for (let i = 0; i < version.mainFeatures; i++) {
+
+			iPanelMainFeatsDOM.appendChild(make("li", "", version.mainFeatures[i].text));
+
+		}
+
+	}
+	else {
+		hide(iPanelMainLabelDOM);
+	}
+
+	if (hasMinorFeat) {
+		show(iPanelMinorLabelDOM);
+		destroyChildren(iPanelMinorFeatsDOM);
+
+		for (let i = 0; i < version.minorFeatures; i++) {
+
+			iPanelMinorFeatsDOM.appendChild(make("li", "", version.minorFeatures[i].text));
+
+		}
+
+	}
+	else {
+		hide(iPanelMinorLabelDOM);
+	}
+
+	if (hasLearnMore) {
+		show(iPanelLearnMoreDOM);
+		iPanelLearnMoreDOM.src = version.learnMore;
+	}
+	else {
+		hide(iPanelLearnMoreDOM);
+	}
+
+	show(iPanelWrapperDOM);
+}
+
+function hideInfopanel() {
+	hide(iPanelWrapperDOM);
+}
+
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ajaxGET(JSON_URL, function (data, status) {
@@ -421,3 +541,13 @@ ajaxGET(JSON_URL, function (data, status) {
 		alert('Fatal error: could not load version data. Error code: ' + xhr.status);
 	}
 });
+
+document.addEventListener("keydown", function keyDownTextField(e) {
+
+	if (e.key === "Escape" || e.key === "e") {
+		hideInfopanel();
+	}
+
+}, false);
+
+iPanelCloseDOM.addEventListener("click", hideInfopanel);

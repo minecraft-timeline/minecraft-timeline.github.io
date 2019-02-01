@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -69,7 +70,7 @@ table {
   -ms-user-select: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, li, a, p {
   font-family: "Minecrafton", "Minecraftia", monospace, sans-serif;
   color: white;
 }
@@ -79,7 +80,7 @@ h1 {
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-h2 {
+h2, li, p {
   font-size: 32px;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
@@ -90,7 +91,7 @@ h3 {
 }
 
 a {
-  color: white;
+  cursor: pointer;
   text-decoration: underline;
 }
 a:hover {
@@ -108,8 +109,11 @@ a:hover {
 body {
   background: url("../images/backgrounds/dirt_dark.png") repeat left top, #281C13;
 }
+body.locked {
+  overflow: hidden;
+}
 
-header {
+header.main {
   background: url("../images/backgrounds/stone.png") repeat left top, #505050;
   z-index: 10;
   display: flex;
@@ -117,7 +121,7 @@ header {
   padding: 20px;
   height: 100px;
 }
-header .vline {
+header.main .vline {
   width: 2px;
   height: 100%;
   background: white;
@@ -125,30 +129,30 @@ header .vline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
   margin: 0 30px;
 }
-header .vbox {
+header.main .vbox {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-header h2 {
+header.main h2 {
   margin-top: -6px;
 }
-header .vbox.info {
+header.main .vbox.info {
   margin-left: auto;
   align-items: flex-end;
 }
 
-#editions_tab {
+.editions_tab {
   background: url("../images/backgrounds/stone_dark.png") repeat left top, #343434;
   font-size: 32px;
 }
-#editions_tab .edition_tab {
+.editions_tab .edition_tab {
   cursor: pointer;
   display: inline-block;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
 }
-#editions_tab .edition_tab.selected {
+.editions_tab .edition_tab.selected {
   background: url("../images/backgrounds/stone.png") repeat left top, #505050;
 }
 
@@ -348,7 +352,7 @@ header .vbox.info {
 
 .ruler {
   padding: 276px 0 266px 0;
-  width: 64px;
+  width: 128px;
   background: url("../images/backgrounds/log_new.png") repeat-x left bottom, url("../images/backgrounds/log_old.png") repeat left top, #6B5432;
 }
 .ruler .year {
@@ -382,6 +386,71 @@ header .vbox.info {
 .ruler .upcoming-ruler {
   margin-top: 472px;
   margin-bottom: -206px;
+}
+
+.infopanel-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  background: rgba(0, 0, 0, 0.49);
+}
+
+.infopanel {
+  border: 52px solid transparent;
+  border-image: url("../images/borders/panel_book.png") 52 fill repeat repeat;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.infopanel h1, .infopanel h2, .infopanel h3, .infopanel a, .infopanel li, .infopanel p {
+  text-shadow: none;
+  color: black;
+}
+.infopanel header {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.infopanel header #infopanel-fun-fact {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  line-height: 0.8em;
+}
+.infopanel header .title {
+  display: flex;
+  justify-content: space-between;
+}
+.infopanel header .title #infopanel-close {
+  outline: none;
+  border: none;
+  background: url("../images/icons/ui/button_close.png") no-repeat center center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+.infopanel header .title #infopanel-close:hover {
+  filter: brightness(1.1);
+}
+.infopanel .content {
+  overflow-y: auto;
+}
+.infopanel li {
+  margin-bottom: -0.2em;
+}
+.infopanel li:before {
+  content: "• ";
+}
+.infopanel li:last-child {
+  margin-bottom: 0;
 }
 
 .hidden {

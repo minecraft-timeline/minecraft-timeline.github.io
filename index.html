@@ -8,7 +8,7 @@
 </head>
 	<body>
 
-		<header>
+		<header class="main">
 			<img src="images/logos/logo_default.png" alt="Minecraft" id="edition_logo" class="logo">
 			<div class="vline"></div>
 			<div class="vbox">
@@ -23,7 +23,7 @@
 			</div>
 		</header>
 
-		<nav id="editions_tab" class="hidden"></nav>
+		<nav id="editions_tab" class="hidden editions_tab"></nav>
 		<div id="editions_root"></div>
 
 		<div id="gizmo_loading" class="start-message">
@@ -38,6 +38,26 @@
 				<a href="https://www.google.com/chrome/">Chrome</a>,
 				<a href="https://www.mozilla.org/firefox">Firefox</a>
 				or <a href="https://www.microsoft.com/windows/microsoft-edge">Edge</a>.</h2>
+		</div>
+
+		<div class="infopanel-wrapper hidden" id="infopanel-wrapper">
+			<div class="infopanel">
+				<header>
+					<h1 class="title">
+						<span id="infopanel-title"></span>
+						<button id="infopanel-close"></button>
+					</h1>
+					<h2><span id="infopanel-subtitle"></span><span id="infopanel-date"></span></h2>
+					<p id="infopanel-fun-fact"></p>
+				</header>
+				<section class="content">
+					<h2 id="infopanel-main-label">The main features of this update are...</h2>
+					<ul id="infopanel-main-features"></ul>
+					<h2 id="infopanel-minor-label">But it also brings...</h2>
+					<ul id="infopanel-minor-features"></ul>
+					<a id="infopanel-learn-more"><h2>Learn more about this update</h2></a>
+				</section>
+			</div>
 		</div>
 
 		<script type="application/javascript" src="js/index.js"></script>
