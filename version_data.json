@@ -492,6 +492,23 @@
 						{"text": "Carpets"},
 						{"text": "Horses"}
 					]
+				},
+
+				{
+					"title": "The Update that Changed the World",
+					"subtitle": "1.7",
+					"description": "New Biomes & World Generator",
+					"type": "major",
+					"date": "2013-10-25",
+					"learnMore": "#The_Update_that_Changed_the_World",
+					"mainFeatures": [
+						{"text": "11 new Biomes such as Mesas and Mega Taigas"},
+						{"text": "New world generator"},
+						{"text": "Stained Glass"}
+					],
+					"minorFeatures": [
+						{"text": "Custom Nether Portals"}
+					]
 				}
 
 			],
