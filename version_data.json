@@ -326,6 +326,30 @@
 					"minorFeatures": [
 						{"text": "Shears"}
 					]
+				},
+
+				{
+					"title": "Adventure Update (1)",
+					"subtitle": "Beta 1.8",
+					"description": "Endermen & Hunger",
+					"type": "major",
+					"date": "2011-09-14",
+					"funFact": "Did you know? The hunger system was highly controversial.",
+					"learnMore": "#Beta_1.8",
+					"mainFeatures": [
+						{"text": "Endermen"},
+						{"text": "Hunger"},
+						{"text": "Creative Mode"},
+						{"text": "Villages"},
+						{"text": "Strongholds"}
+					],
+					"minorFeatures": [
+						{"text": "Melons"},
+						{"text": "Cave Spiders"},
+						{"text": "Swamps"},
+						{"text": "More world structures"},
+						{"text": "Far Lands"}
+					]
 				}
 
 			],
