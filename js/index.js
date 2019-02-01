@@ -3,7 +3,7 @@
 const JSON_URL = "https://raw.githubusercontent.com/minecraft-timeline/minecraft-timeline.github.io/master/version_data.json";
 const LOGO_PATH = "images/logos";
 const WIKI_PATH = "https://minecraft.gamepedia.com/";
-const YEAR_PX = 365 * 2;
+const YEAR_PX = 365 * 3;
 const UPCOMING_PX = YEAR_PX / 6;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const YEAR_MS = 365 * DAY_MS;
