@@ -268,6 +268,7 @@
 					"description": "Wolves & New Logo",
 					"type": "major",
 					"date": "2011-03-31",
+					"funFact": "Did you know? The mod \"Better than Wolves\" was created because its creator disliked this update.",
 					"learnMore": "#Beta_1.4",
 					"mainFeatures": [
 						{"text": "Wolves"},
@@ -307,6 +308,23 @@
 					],
 					"minorFeatures": [
 						{"text": "Dead Bushes"}
+					]
+				},
+
+				{
+					"title": "Beta 1.7",
+					"description": "Pistons",
+					"type": "major",
+					"date": "2011-06-30",
+					"funFact": "Did you know? Pistons were originally a mod.",
+					"learnMore": "#Beta_1.7",
+					"mainFeatures": [
+						{"text": "Pistons"},
+						{"text": "Sticky Pistons"},
+						{"text": "Grass"}
+					],
+					"minorFeatures": [
+						{"text": "Shears"}
 					]
 				}
 
