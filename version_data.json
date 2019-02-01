@@ -32,8 +32,8 @@
 					"title": "Early Classic Creative",
 					"description": "Trees & Ores",
 					"type": "major",
-					"date": "2009-05-28",
-					"learnMore": "#Cave_game_tech_test",
+					"date": "2009-05-16",
+					"learnMore": "#Early_Classic_Creative",
 					"mainFeatures": [
 						{"text": "Trees"},
 						{"text": "Coal, iron and gold ores"}
@@ -42,6 +42,24 @@
 						{"text": "Bedrock"},
 						{"text": "Sand"},
 						{"text": "Gravel"}
+					]
+				},
+
+				{
+					"title": "Multiplayer Test",
+					"description": "Flowers & Glass",
+					"type": "major",
+					"date": "2009-05-31",
+					"learnMore": "#Multiplayer_Test",
+					"mainFeatures": [
+						{"text": "Flowers"},
+						{"text": "Glass"},
+						{"text": "Wool"}
+					],
+					"minorFeatures": [
+						{"text": "Multiplayer"},
+						{"text": "Commands"},
+						{"text": "Mushrooms"}
 					]
 				}
 
