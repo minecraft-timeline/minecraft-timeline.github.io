@@ -246,6 +246,21 @@
 						{"text": "Sandstone"},
 						{"text": "Wool Dyes"}
 					]
+				},
+
+				{
+					"title": "Beta 1.3",
+					"description": "Beds & Repeaters",
+					"type": "major",
+					"date": "2011-02-22",
+					"learnMore": "#Beta_1.3",
+					"mainFeatures": [
+						{"text": "Beds"},
+						{"text": "Repeaters"}
+					],
+					"minorFeatures": [
+						{"text": "Graphics Settings"}
+					]
 				}
 
 			],
