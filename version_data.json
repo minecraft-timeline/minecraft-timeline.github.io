@@ -112,7 +112,24 @@
 					"minorFeatures": [
 						{"text": "Apples"},
 						{"text": "Fire"},
-						{"text": "Torches"},
+						{"text": "Torches"}
+					]
+				},
+
+				{
+					"title": "Minecraft Indev",
+					"description": "Farming & Armor",
+					"type": "major",
+					"date": "2010-02-06",
+					"learnMore": "#Minecraft_Indev",
+					"mainFeatures": [
+						{"text": "Farming"},
+						{"text": "Armor"},
+						{"text": "Furnace"}
+					],
+					"minorFeatures": [
+						{"text": "Bread"},
+						{"text": "Paintings"},
 						{"text": "Mob drops"}
 					]
 				}

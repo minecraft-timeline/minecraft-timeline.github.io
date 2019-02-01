@@ -288,6 +288,10 @@ $upcoming-label-height: 206px;
 					margin-right: 16px;
 					flex-direction: row-reverse;
 
+					h1,h2,h3 {
+						text-align: right;
+					}
+
 					&>*{
 
 						margin-right: unset;

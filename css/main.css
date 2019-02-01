@@ -256,6 +256,9 @@ header.main .vbox.info {
   margin-right: 16px;
   flex-direction: row-reverse;
 }
+.timeline .year .version.alt .preview h1, .timeline .year .version.alt .preview h2, .timeline .year .version.alt .preview h3 {
+  text-align: right;
+}
 .timeline .year .version.alt .preview > * {
   margin-right: unset;
   margin-left: 16px;
