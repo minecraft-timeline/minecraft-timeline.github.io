@@ -1,7 +1,8 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/f01c7515fb1cdcf06784162736aef50a18fbb37e/version_data_development.json";
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/fd039856d50fa97b5722c339926f1630b195877d/version_data_development.json";
 const LOGO_PATH = "images/logos";
+const WIKI_PATH = "https://minecraft.gamepedia.com/";
 const YEAR_PX = 365 * 2;
 const UPCOMING_PX = YEAR_PX / 6;
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -326,6 +327,10 @@ function loadVersions(edition, panelDOM) {
 				upcVersionDOM.appendChild(makePreview(upcomings[i]));
 				upcVersionDOM.classList.add("update-" + upcomings[i].type);
 
+				upcVersionDOM.addEventListener("click", function () {
+					showInfopanel(upcomings[i]);
+				});
+
 				upcYearDOM.appendChild(upcVersionDOM);
 				upcTimelineDOM.appendChild(upcYearDOM);
 				upcRulerDOM.appendChild(upcRulerYearDOM);
@@ -447,7 +452,7 @@ function showInfopanel(version) {
 	}
 
 	if (hasSubtitle && hasTitle) {
-		iPanelSubtitleDOM.innerText = version.subtitle + (hasDate ? " • " : "");
+		iPanelSubtitleDOM.innerText = version.subtitle + (hasDate || hasPossibleDate ? " • " : "");
 	}
 	else {
 		iPanelSubtitleDOM.innerText = "";
@@ -477,7 +482,7 @@ function showInfopanel(version) {
 		show(iPanelMainLabelDOM);
 		destroyChildren(iPanelMainFeatsDOM);
 
-		for (let i = 0; i < version.mainFeatures; i++) {
+		for (let i = 0; i < version.mainFeatures.length; i++) {
 
 			iPanelMainFeatsDOM.appendChild(make("li", "", version.mainFeatures[i].text));
 
@@ -486,13 +491,14 @@ function showInfopanel(version) {
 	}
 	else {
 		hide(iPanelMainLabelDOM);
+		destroyChildren(iPanelMainFeatsDOM);
 	}
 
 	if (hasMinorFeat) {
 		show(iPanelMinorLabelDOM);
 		destroyChildren(iPanelMinorFeatsDOM);
 
-		for (let i = 0; i < version.minorFeatures; i++) {
+		for (let i = 0; i < version.minorFeatures.length; i++) {
 
 			iPanelMinorFeatsDOM.appendChild(make("li", "", version.minorFeatures[i].text));
 
@@ -501,11 +507,12 @@ function showInfopanel(version) {
 	}
 	else {
 		hide(iPanelMinorLabelDOM);
+		destroyChildren(iPanelMinorFeatsDOM);
 	}
 
 	if (hasLearnMore) {
 		show(iPanelLearnMoreDOM);
-		iPanelLearnMoreDOM.src = version.learnMore;
+		iPanelLearnMoreDOM.href = version.learnMore.startsWith("#") ? WIKI_PATH + version.learnMore.substring(1,version.learnMore.length) : version.learnMore;
 	}
 	else {
 		hide(iPanelLearnMoreDOM);

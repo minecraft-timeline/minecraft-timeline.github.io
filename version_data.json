@@ -33,11 +33,24 @@
 
 			"upcomings": [
 
-				{"subtitle": "Update 16", "type": "minor"},
-				{"subtitle": "Update 17", "type": "minor"},
-				{"title":"Incredible Update", "subtitle": "Update 18", "type": "major"},
-				{"subtitle": "Update 19", "type": "minor"},
-				{"subtitle": "Update 20", "type": "minor"}
+				{
+					"title": "Village and Pillage Update",
+					"subtitle": "1.14",
+					"description": "Village, texture & crafting overhaul",
+					"type": "major",
+					"possibleDate": "Early 2019",
+					"learnMore": "#1.14",
+					"mainFeatures": [
+						{"text": "Village overhaul"},
+						{"text": "Pillagers"},
+						{"text": "New crafting stations"},
+						{"text": "Bamboo forests with pandas"}
+					],
+					"minorFeatures": [
+						{"text": "Updated all textures of the game"},
+						{"text": "Foxes"}
+					]
+				}
 
 			]
 
@@ -50,14 +63,7 @@
 			"firstMessage": "Bedrock Edition is born",
 			"logo": "logo_bedrock.png",
 
-			"versions": [
-
-				{"title": "Test 1", "date": "2015-04-01", "type": "major"},
-				{"title": "Test 2", "date": "2016-01-01", "type": "major"},
-				{"title": "Test 3", "date": "2017-12-01", "type": "major"},
-				{"title": "Test 4", "date": "2018-01-01", "type": "major"}
-
-			],
+			"versions": [],
 
 			"upcomings": []
 
