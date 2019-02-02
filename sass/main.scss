@@ -1,15 +1,41 @@
 @import "reset";
 @import "fonts/minecrafton";
 
+$color-text: white;
+$color-text-secondary: black;
+$color-text-shadow: rgba(0, 0, 0, 0.5);
+
 $font-family:  "Minecrafton", "Minecraftia", monospace, sans-serif;
 
 $font-size-small: 16px;
 $font-size-standard: 2 * $font-size-small;
 $font-size-big: 3 * $font-size-small;
 
-$color-text: white;
-$color-text-secondary: black;
-$color-text-shadow: rgba(0, 0, 0, 0.5);
+$text-shadow-small: 1px 1px 0 $color-text-shadow;
+$text-shadow-standard: 2px 2px 0 $color-text-shadow;
+$text-shadow-big: 3px 3px 0 $color-text-shadow;
+
+@mixin for-600-down {
+	@media (max-width: 599px) { @content; }
+}
+@mixin for-600-up {
+	@media (min-width: 600px) { @content; }
+}
+@mixin for-750-up {
+	@media (min-width: 750px) { @content; }
+}
+@mixin for-900-up {
+	@media (min-width: 900px) { @content; }
+}
+@mixin for-1200-up {
+	@media (min-width: 1200px) { @content; }
+}
+@mixin for-1600-up {
+	@media (min-width: 1600px) { @content; }
+}
+@mixin for-1800-up {
+	@media (min-width: 1800px) { @content; }
+}
 
 * {
 	box-sizing: border-box;
@@ -26,17 +52,17 @@ h1, h2, h3, li, a, p {
 
 h1 {
 	font-size: 48px;
-	text-shadow: 3px 3px 0 $color-text-shadow;
+	text-shadow: $text-shadow-big;
 }
 
 h2, li, p {
 	font-size: 32px;
-	text-shadow: 2px 2px 0 $color-text-shadow;
+	text-shadow: $text-shadow-standard;
 }
 
 h3 {
 	font-size: 16px;
-	text-shadow: 1px 1px 0 $color-text-shadow;
+	text-shadow: $text-shadow-small;
 }
 
 a {
@@ -64,6 +90,8 @@ a {
 
 body {
 	background: url("../images/backgrounds/dirt_dark.png") repeat left top, #281C13;
+	display: flex;
+	flex-direction: column;
 	&.locked {
 		overflow: hidden;
 	}
@@ -74,57 +102,167 @@ header.main {
 	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
 	z-index: 10;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	padding: 20px;
-	height: 100px;
 
-	.vline {
-		width: 2px;
-		height: 100%;
+	.separator {
+
+		height: 2px;
 		background: white;
 		border-right: 1px solid rgba(0, 0, 0, 0.8);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-		margin: 0 30px;
+		margin: 20px 0;
+		align-self: stretch;
+
 	}
 
-	.vbox {
+	.box {
+
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
+		flex-direction: row;
+		align-items: center;
+
+		.title, .content {
+
+			margin: 0 10px;
+
+		}
+		
+		.title {
+
+			text-align: right;
+			
+		}
+
+		.content {
+
+			display: flex;
+			flex-direction: column;
+
+		}
+
 	}
 
 	h2 {
 		margin-top: -6px;
 	}
 
-	.vbox.info {
-		margin-left: auto;
-		align-items: flex-end;
-	}
+	@include for-600-up {
 
-}
+		flex-direction: row;
 
-.editions_tab {
+		.separator {
 
-	background: url("../images/backgrounds/stone_dark.png") repeat left top, #343434;
-	font-size: 32px;
+			height: unset;
+			width: 2px;
+			margin: 0 30px;
 
-	.edition_tab {
+		}
 
-		cursor: pointer;
-		display: inline-block;
-		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-		padding: 5px 10px;
+		.box {
 
-		&.selected {
-			background: url("../images/backgrounds/stone.png") repeat left top, #505050;
+			flex-direction: column;
+			align-items: flex-start;
+
+			.title {
+
+				text-align: left;
+
+			}
+
+			.title, .content{
+
+				margin: 0;
+
+			}
+
 		}
 
 	}
 
 }
 
-.edition_panel {
+footer.main {
+
+	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
+	padding: 20px;
+
+	h3 {
+
+		text-align: right;
+
+	}
+
+	@include for-900-up {
+
+		h3 {
+
+			font-size: $font-size-standard;
+			text-shadow: $text-shadow-standard;
+
+		}
+
+	}
+
+}
+
+.editions-tab-list {
+
+	$shadow: inset 0 20px 15px -20px rgba(0,0,0,0.5);
+
+	background: url("../images/backgrounds/stone_dark.png") repeat left top, #343434;
+	font-size: 32px;
+	box-shadow: $shadow;
+
+	.edition-tab {
+
+		cursor: pointer;
+		display: block;
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+		padding: 5px 10px;
+
+		&.selected {
+
+			background: url("../images/backgrounds/stone.png") repeat left top, #505050;
+
+			&:first-child {
+
+				box-shadow: $shadow;
+
+			}
+
+		}
+
+		&.selected+.edition-tab {
+
+			box-shadow: $shadow;
+
+		}
+
+		@include for-750-up {
+
+			display: inline-block;
+
+			&.selected {
+
+				box-shadow: $shadow;
+
+			}
+
+			&.selected+.edition-tab {
+
+				box-shadow: none;
+
+			}
+
+		};
+
+	}
+
+}
+
+.edition-panel {
 
 	background: url("../images/backgrounds/plank_new.png") repeat-x left bottom,
 				url("../images/backgrounds/plank_veryold.png") repeat-x left top,
@@ -155,19 +293,50 @@ header.main {
 
 }
 
+// Jesus Christ.
+// This is possibly the ugliest code I've ever written.
+// Suggestions on ways to fix this are VERY welcome!
+
+// Image sizes ----------------------
+
 $major-width: 52px;
 $minor-width: 44px;
-$endpoint-width: 120px;
-
-$box-padding: 10px;
-$box-border: 8px;
-$box-content-height: 1.5 * $font-size-big;
-$box-height: (2 * $box-padding) + (2 * $box-border) + $box-content-height;
-
+$endpoint-width: 80px;
 $year-start-height: 72px;
 $year-end-height: 82px;
 
-$real-timeline-margin: 60px;
+// Endpoint Offsets -----------------
+
+$endpoint-start-offset: 10px;
+$endpoint-end-offset: 10px;
+
+// Box padding & borders ------------
+
+$box-padding: 10px;
+$box-border: 8px;
+
+// Calculated Box content height ----
+
+$box-content-height-standard: 1.5 * $font-size-standard;
+$box-content-height-big: 1.5 * $font-size-big;
+
+// Calculated Box height ------------
+
+$box-height-standard: (2 * $box-padding) + (2 * $box-border) + $box-content-height-standard;
+$box-height-big: (2 * $box-padding) + (2 * $box-border) + $box-content-height-big;
+
+// The effective box margins --------
+
+$real-box-margin-standard: 40px;
+$real-box-margin-big: 60px;
+
+// The calculated timeline margins --
+
+$faux-margin-standard-top: ((2 * $real-box-margin-standard) + $endpoint-width + $box-height-standard - $year-start-height + $endpoint-start-offset);
+$faux-margin-standard-bottom: ((2 * $real-box-margin-standard) + $endpoint-width + $box-height-standard - $year-end-height + $endpoint-end-offset);
+
+$faux-margin-big-top: ((2 * $real-box-margin-big) + $endpoint-width + $box-height-big - $year-start-height + $endpoint-start-offset);
+$faux-margin-big-bottom: ((2 * $real-box-margin-big) + $endpoint-width + $box-height-big - $year-end-height + $endpoint-end-offset);
 
 .preview {
 
@@ -186,32 +355,93 @@ $real-timeline-margin: 60px;
 
 	img {
 
-		height: 64px;
-
-	}
-
-	.title, .subtitle, h1 {
-
-		white-space: nowrap;
-
-	}
-
-	.title {
-
-		text-shadow: 2px 0 rgb(255, 255, 255), 4px 2px 0 rgba(0, 0, 0, 0.5);
-		letter-spacing: 2px;
+		height: 32px;
 
 	}
 
 	.text-box {
 
-		font-size: $font-size-standard;
-		width: 10em;
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: column;
-		align-items: flex-start;
+		width: 15em;
+		display: none;
 
+		h2 {
+
+			margin: 0.4em 0;
+			line-height: 0.8em;
+
+		}
+
+		.title {
+
+			text-shadow: 2px 0 rgb(255, 255, 255), 4px 2px 0 rgba(0, 0, 0, 0.5);
+			letter-spacing: 2px;
+
+		}
+
+		.subtitle {
+
+			font-style: italic;
+
+		}
+
+	}
+
+	@include for-600-up {
+
+		img {
+			height: 64px;
+		}
+
+	}
+
+	@include for-750-up {
+
+		.text-box {
+
+			display: block;
+			width: 8em;
+
+		}
+
+		img {
+			height: 32px;
+		}
+
+	}
+
+	@include for-900-up {
+
+		.text-box {
+
+			display: block;
+			width: 8em;
+
+		}
+
+		img {
+			height: 64px;
+		}
+
+	}
+
+	@include for-1200-up {
+
+		.text-box {
+
+			display: block;
+			width: 15em;
+
+		}
+
+	}
+
+	@include for-1600-up {
+		.text-box {
+
+			display: block;
+			width: 30em;
+
+		}
 	}
 
 }
@@ -222,8 +452,7 @@ $upcoming-label-height: 206px;
 
 	$timeline-width: 46px;
 
-	margin: ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-start-height) 0
-			((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height) 0;
+	margin: $faux-margin-standard-top 0 $faux-margin-standard-bottom;
 	width: $timeline-width;
 
 	.year {
@@ -289,12 +518,6 @@ $upcoming-label-height: 206px;
 
 					}
 
-					.text-box {
-
-						align-items: flex-end;
-
-					}
-
 				}
 
 				.box {
@@ -331,46 +554,41 @@ $upcoming-label-height: 206px;
 
 				width: $endpoint-width;
 				height: $endpoint-width;
-				margin-top: -($endpoint-width/2);
 
 				&.first {
 
-					background: url("../images/timeline/icon_first.png");
+					background: url("../images/timeline/icon_first.png") no-repeat;
+					margin-top: -$endpoint-width - $endpoint-start-offset;
+					justify-content: center;
+					align-items: center;
+
+					.box {
+
+						margin-bottom: $real-box-margin-standard + $endpoint-width;
+
+					}
+
+					.preview {
+
+						margin-left: 1px;
+
+					}
 
 				}
 
 				&.today {
 
-					background: url("../images/timeline/icon_today.png");
+					background: url("../images/timeline/icon_today.png") no-repeat;
+					margin-top: $endpoint-end-offset;
+					justify-content: center;
+					align-items: center;
 
-				}
+					.box {
 
-			}
+						align-self: flex-start;
+						margin-top: $real-box-margin-standard + $endpoint-width;
 
-			&.first {
-
-				margin-top: -$endpoint-width;
-				justify-content: center;
-				align-items: center;
-
-				.box {
-
-					margin-bottom: $real-timeline-margin + $endpoint-width;
-
-				}
-
-			}
-
-			&.today {
-
-				margin-top: 0;
-				justify-content: center;
-				align-items: center;
-
-				.box {
-
-					align-self: flex-start;
-					margin-top: $real-timeline-margin + $endpoint-width;
+					}
 
 				}
 
@@ -402,7 +620,7 @@ $upcoming-label-height: 206px;
 
 				.content {
 
-					height: $box-content-height;
+					height: $box-content-height-standard;
 
 					display: flex;
 					flex-direction: column;
@@ -415,7 +633,10 @@ $upcoming-label-height: 206px;
 
 						white-space: nowrap;
 						text-align: center;
-						margin: -10px 0;
+						margin: -7px 0;
+
+						font-size: $font-size-standard;
+						text-shadow: $text-shadow-standard;
 
 					}
 
@@ -429,8 +650,9 @@ $upcoming-label-height: 206px;
 
 	.upcoming-timeline {
 
-		margin-top: (2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height + $upcoming-label-height;
-		margin-bottom: -(($real-timeline-margin) + $endpoint-width + $box-height - $year-end-height);
+		margin-top: $faux-margin-standard-top + $upcoming-label-height;
+		margin-bottom: $real-box-margin-standard - $faux-margin-standard-bottom;
+	//              ((2 * $real-timeline-margin-standard) + $endpoint-width + $box-height-standard - $year-end-height + $endpoint-end-offset);
 
 		&:before {
 
@@ -446,13 +668,76 @@ $upcoming-label-height: 206px;
 
 	}
 
+	@include for-900-up {
+
+		margin: $faux-margin-big-top 0 $faux-margin-big-bottom 0;
+
+		.year {
+
+			.version {
+
+				&.endpoint {
+
+					&.first {
+
+						.box {
+
+							margin-bottom: $real-box-margin-big + $endpoint-width;
+
+						}
+
+					}
+
+					&.today {
+
+						.box {
+
+							margin-top: $real-box-margin-big + $endpoint-width;
+
+						}
+
+					}
+
+				}
+
+				.box {
+
+					.content {
+
+						height: $box-content-height-big;
+
+						h1 {
+
+							font-size: $font-size-big;
+							text-shadow: $text-shadow-big;
+							margin: -10px 0;
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.upcoming-timeline {
+
+			margin-top: $faux-margin-big-top + $upcoming-label-height;
+			margin-bottom: $real-box-margin-big - $faux-margin-big-bottom;
+
+		}
+
+	}
+
 }
 
 .ruler {
 
-	padding: ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-start-height) 0
-			 ((2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height) 0;
-	width: 128px;
+	padding: $faux-margin-standard-top 0 $faux-margin-standard-bottom 0;
+	flex-shrink: 0;
+	width: 32px;
 	background: url("../images/backgrounds/log_new.png") repeat-x left bottom,
 				url("../images/backgrounds/log_old.png") repeat left top,
 				#6B5432;
@@ -467,28 +752,30 @@ $upcoming-label-height: 206px;
 		padding-bottom: $year-end-height + $year-start-height;
 		box-sizing: content-box;
 
+		.number {
+
+			font-size: $font-size-small;
+			text-shadow: $text-shadow-small;
+
+		}
+
+		.number-ago {
+
+			display: none;
+			text-shadow: $text-shadow-small;
+
+		}
+
 		&:after {
 
 			display: block;
 			content: '';
-			background: url("../images/ruler/arrow.png") no-repeat;
-			width: 76px;
-			height: 76px;
+			background: url("../images/ruler/arrow_tiny.png") no-repeat;
+			width: 40px;
+			height: 40px;
 			position: absolute;
 			left: 100%;
-			margin-top: -21px;
-
-		}
-
-		&:first-child:after {
-
-			display: block;
-			content: '';
-			background: url("../images/ruler/arrow.png") no-repeat;
-			width: 76px;
-			height: 76px;
-			position: absolute;
-			left: 100%;
+			margin-top: -10px;
 
 		}
 
@@ -496,8 +783,72 @@ $upcoming-label-height: 206px;
 
 	.upcoming-ruler {
 
-		margin-top: (2 * $real-timeline-margin) + $endpoint-width + $box-height - $year-end-height + $upcoming-label-height;
-		margin-bottom: -(($real-timeline-margin) + $endpoint-width + $box-height - $year-end-height);
+		margin-top: $faux-margin-standard-top + $upcoming-label-height;
+		margin-bottom: $real-box-margin-standard - $faux-margin-standard-bottom;
+
+	}
+
+	@include for-600-up {
+
+		width: 64px;
+
+		.year {
+
+			.number {
+
+				font-size: $font-size-standard;
+				text-shadow: $text-shadow-standard;
+				margin-top: -0.25em;
+
+			}
+
+			.number-ago {
+
+				display: block;
+
+			}
+
+		}
+
+	}
+
+	@include for-750-up {
+
+		width: 128px;
+
+		.year {
+
+			.number {
+
+				font-size: $font-size-big;
+				text-shadow: $text-shadow-big;
+				margin-top: -0.35em;
+
+			}
+
+			&:after {
+
+				background: url("../images/ruler/arrow.png") no-repeat;
+				width: 76px;
+				height: 76px;
+				margin-top: -28px;
+
+			}
+
+		}
+
+	}
+
+	@include for-900-up {
+
+		padding: $faux-margin-big-top 0 $faux-margin-big-bottom 0;
+
+		.upcoming-ruler {
+
+			margin-top: $faux-margin-big-top + $upcoming-label-height;
+			margin-bottom: $real-box-margin-big - $faux-margin-big-bottom;
+
+		}
 
 	}
 
@@ -522,8 +873,8 @@ $upcoming-label-height: 206px;
 
 	border: 52px solid transparent;
 	border-image: url("../images/borders/panel_book.png") 52 fill repeat repeat;
-	width: 50%;
-	height: 60%;
+	width: 94%;
+	height: 96%;
 	display: flex;
 	flex-direction: column;
 
@@ -595,6 +946,27 @@ $upcoming-label-height: 206px;
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+	}
+
+	@include for-750-up {
+
+		width: 80%;
+		height: 80%;
+
+	}
+
+	@include for-900-up {
+
+		width: 70%;
+		height: 70%;
+
+	}
+
+	@include for-1200-up {
+
+		width: 50%;
+		height: 60%;
 
 	}
 

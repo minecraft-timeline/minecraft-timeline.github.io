@@ -2,6 +2,7 @@
 
 const JSON_URL = "https://raw.githubusercontent.com/minecraft-timeline/minecraft-timeline.github.io/master/version_data.json";
 const LOGO_PATH = "images/logos";
+const ICON_VERSION_PATH = "images/icons/updates/versions/";
 const WIKI_PATH = "https://minecraft.gamepedia.com/";
 const YEAR_PX = 365 * 3;
 const UPCOMING_PX = YEAR_PX / 6;
@@ -106,8 +107,8 @@ function parseUTC(str) {
 
 function loadEditions(editions) {
 
-	let tabsDOM = id("editions_tab");
-	let rootDOM = id("editions_root");
+	let tabListDOM = id("editions-tab-list");
+	let rootDOM = id("editions-root");
 
 	let tabDOMs = [];
 	let panelDOMs = [];
@@ -118,11 +119,11 @@ function loadEditions(editions) {
 
 		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
 
-		let tabDOM = make("h2", "edition_tab", editions[i].title, "edition_tab_" + i);
+		let tabDOM = make("h2", "edition-tab", editions[i].title, "edition-tab-" + i);
 
-		tabsDOM.appendChild(tabDOM);
+		tabListDOM.appendChild(tabDOM);
 
-		let panelDOM = make("div", "edition_panel", undefined, "edition_panel_" + i);
+		let panelDOM = make("div", "edition-panel", undefined, "edition-panel_" + i);
 
 		hide(panelDOM);
 
@@ -140,7 +141,7 @@ function loadEditions(editions) {
 				}
 			}
 
-			id("edition_logo").src = LOGO_PATH + "/" + editions[i].logo;
+			id("edition-logo").src = LOGO_PATH + "/" + editions[i].logo;
 			id("edition_description").innerText = editions[i].description;
 			tabDOM.classList.add("selected");
 
@@ -159,9 +160,9 @@ function loadEditions(editions) {
 	if (editions.length > 0) {
 
 		show(firstPanelDOM);
-		show(tabsDOM);
+		show(tabListDOM);
 
-		id("edition_logo").src = LOGO_PATH + "/" + editions[0].logo;
+		id("edition-logo").src = LOGO_PATH + "/" + editions[0].logo;
 		id("edition_description").innerText = editions[0].description;
 		firstTabDOM.classList.add("selected");
 
@@ -229,9 +230,9 @@ function loadVersions(edition, panelDOM) {
 			tlYearDOM.style.height = (multi * YEAR_PX) + "px";
 			rulerYearDOM.style.height = (multi * YEAR_PX) + "px";
 
-			let h1DOM = make("h1", "", firstDate.getFullYear() + i);
+			let h1DOM = make("h1", "number", firstDate.getFullYear() + i);
 
-			let h2DOM = make("h3", "",
+			let h2DOM = make("h3", "number-ago",
 				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
 				(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
 				"Now"
@@ -260,6 +261,7 @@ function loadVersions(edition, panelDOM) {
 				if (versions[i].first) {
 					versionDOM.classList.add("endpoint");
 					versionDOM.classList.add("first");
+					versionDOM.appendChild(makePreview(versions[i]));
 				}
 				else if (versions[i].today) {
 					versionDOM.classList.add("endpoint");
@@ -267,7 +269,6 @@ function loadVersions(edition, panelDOM) {
 					versionDOM.classList.add("nointeract");
 				}
 				let box = makeBox(versions[i], edition, date);
-				box.appendChild(makePreview(versions[i]));
 				versionDOM.appendChild(box);
 			}
 			else {
@@ -321,8 +322,8 @@ function loadVersions(edition, panelDOM) {
 
 				upcRulerYearDOM.style.height = UPCOMING_PX + "px";
 
-				upcRulerYearDOM.appendChild(make("h2", "", "????"));
-				upcRulerYearDOM.appendChild(make("h3", "","Future"));
+				upcRulerYearDOM.appendChild(make("h2", "number", "????"));
+				upcRulerYearDOM.appendChild(make("h3", "number-ago","Future"));
 
 				upcVersionDOM.appendChild(makePreview(upcomings[i]));
 				upcVersionDOM.classList.add("update-" + upcomings[i].type);
@@ -360,7 +361,7 @@ function makePreview(version) {
 
 	if (version.icon !== undefined) {
 		let icon = make("img");
-		icon.src = version.icon;
+		icon.src = ICON_VERSION_PATH + version.icon;
 		previewDOM.appendChild(icon);
 	}
 
@@ -533,10 +534,10 @@ ajaxGET(JSON_URL, function (data, status) {
 			loadEditions(json.editions);
 		}
 		else {
-			show(id("gizmo_old"));
+			show(id("message-old"));
 		}
 
-		hide(id("gizmo_loading"));
+		hide(id("message-loading"));
 
 	}
 	else {

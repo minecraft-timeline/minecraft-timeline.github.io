@@ -7,31 +7,27 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 	<body>
-
 		<header class="main">
-			<img src="images/logos/logo_default.png" alt="Minecraft" id="edition_logo" class="logo">
-			<div class="vline"></div>
-			<div class="vbox">
-				<h2>Version Timeline</h2>
-				<h3>With most relevant features of each update</h3>
-				<h3 id="edition_description"></h3>
-			</div>
-			<div class="vbox info">
-				<h3><a href="https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/">Created by HenryCGS •</a></h3>
-				<h3>"Minecraft" is a trademark of Mojang AB •</h3>
-				<h3>This website has no affiliation with Mojang AB •</h3>
+			<img src="images/logos/logo_default.png" alt="Minecraft" id="edition-logo" class="logo">
+			<div class="separator"></div>
+			<div class="box">
+				<h2 class="title">Version Timeline</h2>
+				<div class="content">
+					<h3>With most relevant features of each update</h3>
+					<h3 id="edition_description"></h3>
+				</div>
 			</div>
 		</header>
 
-		<nav id="editions_tab" class="hidden editions_tab"></nav>
-		<div id="editions_root"></div>
+		<nav id="editions-tab-list" class="hidden editions-tab-list"></nav>
+		<div id="editions-root"></div>
 
-		<div id="gizmo_loading" class="start-message">
+		<div id="message-loading" class="start-message">
 			<h2>Downloading versions</h2>
 			<h2>Building timeline</h2>
 		</div>
 
-		<div id="gizmo_old" class="start-message hidden">
+		<div id="message-old" class="start-message hidden">
 			<h2>
 				Your browser is too old to load this page properly.
 				Please use a newer browser, such as
@@ -59,6 +55,12 @@
 				</section>
 			</div>
 		</div>
+
+		<footer class="main">
+			<h3><a href="https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/">Created by HenryCGS •</a></h3>
+			<h3>"Minecraft" is a trademark of Mojang AB •</h3>
+			<h3>This website has no affiliation with Mojang AB •</h3>
+		</footer>
 
 		<script type="application/javascript" src="js/index.js"></script>
 
