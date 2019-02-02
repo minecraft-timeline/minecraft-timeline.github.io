@@ -12,6 +12,7 @@
 			"versions": [
 
 				{
+					"icon": "version_cave_game.png",
 					"subtitle": "Cave Game",
 					"description": "Cobble & Grass",
 					"type": "major",
