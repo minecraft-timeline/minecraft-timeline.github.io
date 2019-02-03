@@ -161,6 +161,8 @@ function loadEditions(editions) {
 
 		show(firstPanelDOM);
 		show(tabListDOM);
+		show(id("header"));
+		show(id("footer"));
 
 		id("edition-logo").src = LOGO_PATH + "/" + editions[0].logo;
 		id("edition_description").innerText = editions[0].description;
@@ -169,7 +171,6 @@ function loadEditions(editions) {
 	}
 
 }
-
 
 function loadVersions(edition, panelDOM) {
 
@@ -523,27 +524,31 @@ function hideInfopanel() {
 
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ajaxGET(JSON_URL, function (data, status) {
+setTimeout(function(){
 
-	if (status === 200) {
+	ajaxGET(JSON_URL, function (data, status) {
 
-		let json;
+		if (status === 200) {
 
-		if (JSON.parse) {
-			json = JSON.parse(data);
-			loadEditions(json.editions);
+			let json;
+
+			if (JSON.parse) {
+				json = JSON.parse(data);
+				loadEditions(json.editions);
+			}
+			else {
+				show(id("message-old"));
+			}
+
+			hide(id("message-loading"));
+
 		}
 		else {
-			show(id("message-old"));
+			alert('Fatal error: could not load version data. Error code: ' + xhr.status);
 		}
+	});
 
-		hide(id("message-loading"));
-
-	}
-	else {
-		alert('Fatal error: could not load version data. Error code: ' + xhr.status);
-	}
-});
+}, 0);
 
 document.addEventListener("keydown", function keyDownTextField(e) {
 

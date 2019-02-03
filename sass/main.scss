@@ -78,7 +78,7 @@ a {
 .start-message {
 
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 100px;
 
 	h2 {
 
@@ -973,5 +973,5 @@ $upcoming-label-height: 206px;
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
