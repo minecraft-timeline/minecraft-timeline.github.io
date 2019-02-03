@@ -485,7 +485,7 @@
 					"description": "More Redstone components & Quartz",
 					"type": "major",
 					"date": "2013-03-13",
-					"icon":  "version_1_5.png",
+					"icon": "java/version_1_5.png",
 					"learnMore": "#Redstone_Update",
 					"mainFeatures": [
 						{"text": "Hopper"},
@@ -507,7 +507,7 @@
 					"description": "Horses",
 					"type": "major",
 					"date": "2013-07-01",
-					"icon":  "version_1_6.png",
+					"icon": "java/version_1_6.png",
 					"funFact": "Did you know? Horses were originally from the mod \"Mo' Creatures.\"",
 					"learnMore": "#Horse_Update",
 					"mainFeatures": [
@@ -527,7 +527,7 @@
 					"description": "New Biomes & World Generator",
 					"type": "major",
 					"date": "2013-10-25",
-					"icon":  "version_1_7.png",
+					"icon": "java/version_1_7.png",
 					"learnMore": "#The_Update_that_Changed_the_World",
 					"mainFeatures": [
 						{"text": "11 new Biomes such as Mesas and Mega Taigas"},
@@ -545,7 +545,7 @@
 					"description": "Ocean Monuments & Slime Blocks",
 					"type": "major",
 					"date": "2014-09-02",
-					"icon":  "version_1_8.png",
+					"icon": "java/version_1_8.png",
 					"learnMore": "#Bountiful_Update",
 					"mainFeatures": [
 						{"text": "Ocean Monuments"},
@@ -570,7 +570,7 @@
 					"description": "End Cities, Elytra Wings & Combat Changes",
 					"type": "major",
 					"date": "2016-02-29",
-					"icon":  "version_1_9.png",
+					"icon": "java/version_1_9.png",
 					"funFact": "Did you know? This update is considered the most controversial one so far, due to the combat changes.",
 					"learnMore": "#Combat_Update",
 					"mainFeatures": [
@@ -598,7 +598,7 @@
 					"description": "Polar Bears & Magma Blocks",
 					"type": "major",
 					"date": "2016-06-08",
-					"icon":  "version_1_10.png",
+					"icon": "java/version_1_10.png",
 					"learnMore": "#Frostburn_Update",
 					"mainFeatures": [
 						{"text": "Polar Bears"},
@@ -619,7 +619,7 @@
 					"description": "Woodland Mansions & Shulker Boxes",
 					"type": "major",
 					"date": "2016-11-14",
-					"icon":  "version_1_11.png",
+					"icon": "java/version_1_11.png",
 					"learnMore": "#Exploration_Update",
 					"mainFeatures": [
 						{"text": "Woodland Mansions"},
@@ -638,7 +638,7 @@
 					"description": "Colorful Blocks & Parrots",
 					"type": "major",
 					"date": "2017-06-07",
-					"icon":  "version_1_12.png",
+					"icon": "java/version_1_12.png",
 					"funFact": "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now, cookies instantly kill parrots. Tame them with seeds instead.",
 					"learnMore": "#World_of_Color_Update",
 					"mainFeatures": [
@@ -661,7 +661,7 @@
 					"description": "Ocean Overhaul & Phantoms",
 					"type": "major",
 					"date": "2018-07-18",
-					"icon":  "version_1_13.png",
+					"icon": "java/version_1_13.png",
 					"funFact": "Did you know? The name of this update is a reference to the movie \"The Life Aquatic\".",
 					"learnMore": "#Update_Aquatic",
 					"mainFeatures": [
@@ -696,7 +696,7 @@
 					"description": "Village overhaul, new textures & Bamboo Forests",
 					"type": "major",
 					"possibleDate": "Early 2019",
-					"icon":  "version_1_14.png",
+					"icon": "java/version_1_14.png",
 					"learnMore": "#1.14",
 					"mainFeatures": [
 						{"text": "Village overhaul"},
