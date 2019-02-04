@@ -858,6 +858,25 @@
 						{"text": "Armor"},
 						{"text": "Sand and Gravel physics"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.7",
+					"description": "Buckets, Spawn Eggs & Sky features",
+					"type": "major",
+					"date": "2013-06-05",
+					"learnMore": "#Pocket_Edition_Alpha_0.7.0",
+					"mainFeatures": [
+						{"text": "Buckets"},
+						{"text": "Spawn Eggs"},
+						{"text": "Sun"},
+						{"text": "Moon"},
+						{"text": "Stars"}
+					],
+					"minorFeatures": [
+						{"text": "Fire"},
+						{"text": "Eggs"},
+						{"text": "Cakes"}
+					]
 				}
 			],
 
