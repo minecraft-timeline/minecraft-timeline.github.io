@@ -1071,7 +1071,7 @@
 					"description": "The End",
 					"type": "major",
 					"date": "2016-12-19",
-					"funFact": "Did you know? This update is nearly the same as Java Edition 1.9, without combat changes.",
+					"funFact": "This update is equivalent to Java Edition 1.9, without combat changes.",
 					"learnMore": "#Ender_Update",
 					"mainFeatures": [
 						{"text": "The End"},
@@ -1085,6 +1085,27 @@
 						{"text": "Pandas"},
 						{"text": "Endermites"},
 						{"text": "Increased Overworld height limit"}
+					]
+				},
+
+				{
+					"title": "Discovery Update",
+					"subtitle": "PE 1.1",
+					"description": "Woodland Mansions & The Marketplace",
+					"type": "major",
+					"date": "2017-06-01",
+					"funFact": "This update is equivalent to Java Edition 1.11.",
+					"learnMore": "#Discovery_Update",
+					"mainFeatures": [
+						{"text": "Woodland Mansions"},
+						{"text": "Minecraft Marketplace"},
+						{"text": "Shulker Boxes"},
+						{"text": "Colored Concrete"},
+						{"text": "Colored Concrete Powder"},
+						{"text": "Glazed Terracotta"}
+					],
+					"minorFeatures": [
+						{"text": "Llamas"}
 					]
 				}
 
