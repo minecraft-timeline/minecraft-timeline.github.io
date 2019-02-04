@@ -755,8 +755,7 @@
 						{"text": "Cobblestone, Stone and Obsidian"},
 						{"text": "Wooden blocks"},
 						{"text": "Ore blocks"},
-						{"text": "Water and Lava"},
-						{"text": "TNT"}
+						{"text": "Water and Lava"}
 					]
 				},
 				{
@@ -780,23 +779,47 @@
 				},
 				{
 					"subtitle": "PE Alpha 0.3",
-					"description": "Crafting & Wooden Tools",
+					"description": "Crafting Table & Furnaces",
 					"type": "major",
 					"date": "2012-04-24",
 					"learnMore": "#Pocket_Edition_Alpha_0.3.0",
 					"mainFeatures": [
-						{"text": "Crafting"},
+						{"text": "Crafting Tables"},
+						{"text": "Furnaces"},
 						{"text": "Wooden Tools"},
+						{"text": "Iron, Gold, Diamonds and their tools"},
+						{"text": "Spiders"},
+						{"text": "Skeletons"},
 						{"text": "Cows"},
 						{"text": "Chickens"},
-						{"text": "Iron Ore"},
 						{"text": "Coal"}
 					],
 					"minorFeatures": [
-						{"text": "Snowballs"},
+						{"text": "Bow and arrows"},
 						{"text": "Sticks"},
 						{"text": "Books and Bookshelves"},
+						{"text": "Saplings"},
 						{"text": "Sugar"}
+					]
+				},
+				{
+					"subtitle": "PE Alpha 0.4",
+					"description": "Creepers & Chests",
+					"type": "major",
+					"date": "2012-09-06",
+					"learnMore": "#Pocket_Edition_Alpha_0.4.0",
+					"mainFeatures": [
+						{"text": "Creepers"},
+						{"text": "Chests"},
+						{"text": "Beds"},
+						{"text": "Farming"},
+						{"text": "TNT"}
+					],
+					"minorFeatures": [
+						{"text": "Flint and Steel"},
+						{"text": "Many food items"},
+						{"text": "Dyes"},
+						{"text": "Gunpowder"}
 					]
 				}
 			],
