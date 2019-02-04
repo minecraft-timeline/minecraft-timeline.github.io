@@ -1078,7 +1078,8 @@
 						{"text": "The End"},
 						{"text": "Ender Dragon"},
 						{"text": "End Cities"},
-						{"text": "Ender Chests"}
+						{"text": "Ender Chests"},
+						{"text": "Elytra Wings"}
 					],
 					"minorFeatures": [
 						{"text": "Stained Glass"},
@@ -1169,6 +1170,21 @@
 						{"text": "Turtles"},
 						{"text": "Conduits"},
 						{"text": "Bubble Columns"}
+					]
+				},
+
+				{
+					"subtitle": "1.6",
+					"description": "Phantoms & Barriers",
+					"type": "major",
+					"date": "2018-08-28",
+					"learnMore": "#Bedrock_Edition_1.6.0",
+					"mainFeatures": [
+						{"text": "Phantoms"},
+						{"text": "Barriers"}
+					],
+					"minorFeatures": [
+						{"text": "Potions of Slow Falling"}
 					]
 				}
 
