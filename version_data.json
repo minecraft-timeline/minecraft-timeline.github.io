@@ -821,6 +821,23 @@
 						{"text": "Dyes"},
 						{"text": "Gunpowder"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.5",
+					"description": "Nether Reactor & Melons",
+					"type": "major",
+					"date": "2012-11-15",
+					"learnMore": "#Pocket_Edition_Alpha_0.5.0",
+					"mainFeatures": [
+						{"text": "Nether Reactor"},
+						{"text": "Melons"},
+						{"text": "Zombie Pigmen"},
+						{"text": "Glowstone"}
+					],
+					"minorFeatures": [
+						{"text": "Cobwebs"},
+						{"text": "Paintings"}
+					]
 				}
 			],
 
