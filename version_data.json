@@ -978,7 +978,32 @@
 						{"text": "Blazes"},
 						{"text": "Removed Nether Reactors"}
 					]
+				},
+
+				{
+					"subtitle": "PE Alpha 0.13",
+					"description": "Redstone",
+					"type": "major",
+					"date": "2015-11-19",
+					"learnMore": "#Pocket_Edition_Alpha_0.13.0",
+					"mainFeatures": [
+						{"text": "Redstone"},
+						{"text": "Redstone Torches"},
+						{"text": "Redstone Lamps"},
+						{"text": "Levers"},
+						{"text": "Tripwire Hooks"},
+						{"text": "Daylight Sensors"},
+						{"text": "Pressure Plates"},
+						{"text": "Buttons"}
+					],
+					"minorFeatures": [
+						{"text": "Activator Rails"},
+						{"text": "Detector Rails"},
+						{"text": "Trapped Chests"},
+						{"text": "Rabbits"}
+					]
 				}
+
 			],
 
 			"upcomings": []
