@@ -1204,6 +1204,7 @@
 				},
 
 				{
+					"title": "Village and Pillage Update 1",
 					"subtitle": "1.8",
 					"description": "Pandas & Scaffolding",
 					"type": "major",
@@ -1223,7 +1224,29 @@
 
 			],
 
-			"upcomings": []
+			"upcomings": [
+
+				{
+					"title": "Village and Pillage Update 2",
+					"subtitle": "1.9",
+					"description": "Revamped Crafting & Pillagers",
+					"type": "major",
+					"possibleDate": "February 2019",
+					"learnMore": "#Bedrock_Edition_1.9.0",
+					"mainFeatures": [
+						{"text": "More Crafting Stations"},
+						{"text": "Pillagers"},
+						{"text": "Bamboo Forests"},
+						{"text": "Lanterns"},
+						{"text": "Barrels"}
+					],
+					"minorFeatures": [
+						{"text": "Signs of each wood type"},
+						{"text": "Many more walls, stairs and slabs"}
+					]
+				}
+
+			]
 
 		},
 
