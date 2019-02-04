@@ -1273,6 +1273,18 @@
 					"type": "major",
 					"possibleDate": "Probably Late 2019",
 					"learnMore": "#Planned_versions#1.11"
+				},
+
+				{
+					"title": "4K Update",
+					"description": "4K HDR Option & Super Duper Graphics Pack",
+					"type": "major",
+					"possibleDate": "Far future",
+					"learnMore": "#Planned_versions#4K_Update",
+					"mainFeatures": [
+						{"text": "4K HDR Option"},
+						{"text": "Super Duper Graphics Pack"}
+					]
 				}
 
 			]
