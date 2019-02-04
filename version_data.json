@@ -1264,6 +1264,15 @@
 					"minorFeatures": [
 						{"text": "Banner Patterns"}
 					]
+				},
+
+				{
+					"title": "Village and Pillage Update 4",
+					"subtitle": "1.11",
+					"description": "???",
+					"type": "major",
+					"possibleDate": "Probably Late 2019",
+					"learnMore": "#Planned_versions#1.11"
 				}
 
 			]
