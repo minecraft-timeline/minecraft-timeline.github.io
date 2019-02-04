@@ -1115,7 +1115,7 @@
 					"subtitle": "1.2",
 					"description": "Merged Pocket Edition with Console Edition",
 					"type": "major",
-					"date": "2017-06-01",
+					"date": "2017-09-20",
 					"funFact": "Did you know? The PS4 did not receive this update because Sony didn't allow the game to have cross-play.",
 					"learnMore": "#Better_Together_Update",
 					"mainFeatures": [
@@ -1130,6 +1130,31 @@
 						{"text": "Parrots"},
 						{"text": "Java Edition-like Crafting"},
 						{"text": "Recipe Book"}
+					]
+				},
+
+				{
+					"title": "Update Aquatic 1",
+					"subtitle": "1.4",
+					"description": "Ocean Overhaul",
+					"type": "major",
+					"date": "2018-05-16",
+					"learnMore": "#Bedrock_Edition_1.4.0",
+					"mainFeatures": [
+						{"text": "Kelp and Seagrass"},
+						{"text": "Fish mobs"},
+						{"text": "Dolphins"},
+						{"text": "The Drowned"},
+						{"text": "Tridents"},
+						{"text": "Coral Reefs"}
+					],
+					"minorFeatures": [
+						{"text": "Submerged Caves"},
+						{"text": "Swimming"},
+						{"text": "Shipwrecks"},
+						{"text": "Treasure Maps"},
+						{"text": "Icebergs"},
+						{"text": "New water physics"}
 					]
 				}
 
