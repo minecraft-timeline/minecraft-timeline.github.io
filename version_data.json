@@ -1244,6 +1244,26 @@
 						{"text": "Signs of each wood type"},
 						{"text": "Many more walls, stairs and slabs"}
 					]
+				},
+
+				{
+					"title": "Village and Pillage Update 3",
+					"subtitle": "1.10",
+					"description": "Wandering Traders & Ravagers",
+					"type": "major",
+					"possibleDate": "Probably Mid 2019",
+					"learnMore": "#Bedrock_Edition_1.10.0",
+					"mainFeatures": [
+						{"text": "Wandering Traders"},
+						{"text": "Ravagers"},
+						{"text": "Campfire"},
+						{"text": "Berry Bushes"},
+						{"text": "Lecterns"},
+						{"text": "Even more Crafting Stations"}
+					],
+					"minorFeatures": [
+						{"text": "Banner Patterns"}
+					]
 				}
 
 			]
