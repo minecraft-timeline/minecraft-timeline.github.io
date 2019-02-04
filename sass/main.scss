@@ -934,16 +934,6 @@ $upcoming-label-height: 206px;
 		padding-bottom: 10px;
 		border-bottom: 2px solid transparentize($color-text-secondary,0.8);
 
-		#infopanel-fun-fact {
-
-			margin-top: 10px;
-			padding-top: 10px;
-			border-top: 2px solid transparentize($color-text-secondary,0.8);
-			font-style: italic;
-			line-height: 0.8em;
-
-		}
-
 		.title {
 
 			display: flex;
@@ -973,7 +963,19 @@ $upcoming-label-height: 206px;
 	}
 
 	.content {
+
 		overflow-y: auto;
+
+		#infopanel-fun-fact {
+
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid transparentize($color-text-secondary,0.8);
+			font-style: italic;
+			line-height: 0.8em;
+
+		}
+
 	}
 
 	li {
