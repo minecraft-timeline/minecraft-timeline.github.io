@@ -1199,7 +1199,25 @@
 						{"text": "/scoreboard Command"}
 					],
 					"minorFeatures": [
-						{"text": "Ability to eat food in Creative mode and in Peaceful Difficulty"}
+						{"text": "Ability to eat food in Creative Mode and in Peaceful Difficulty"}
+					]
+				},
+
+				{
+					"subtitle": "1.8",
+					"description": "Pandas & Scaffolding",
+					"type": "major",
+					"date": "2018-12-11",
+					"learnMore": "#Bedrock_Edition_1.8.0",
+					"mainFeatures": [
+						{"text": "Pandas"},
+						{"text": "Scaffolding"},
+						{"text": "Bamboo"},
+						{"text": "Crossbows"}
+					],
+					"minorFeatures": [
+						{"text": "Separated Cats from Ocelots"},
+						{"text": "More dyes"}
 					]
 				}
 
