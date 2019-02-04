@@ -918,6 +918,21 @@
 						{"text": "Many new structures"},
 						{"text": "Emeralds"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.10",
+					"description": "Creative Day-Night Cycle & More Fences",
+					"type": "major",
+					"date": "2014-11-18",
+					"learnMore": "#Pocket_Edition_Alpha_0.10.0",
+					"mainFeatures": [
+						{"text": "Day-Night Cycle for Creative Mode"},
+						{"text": "Fences and Gates for each wood type"}
+					],
+					"minorFeatures": [
+						{"text": "Mineshafts in Mesas"},
+						{"text": "Suspended Sand and Gravel particles"}
+					]
 				}
 			],
 
