@@ -921,7 +921,15 @@ $upcoming-label-height: 206px;
 	display: flex;
 	flex-direction: column;
 
-	h1,h2,h3,a,li, p {
+	h1 {
+		font-size: $font-size-standard;
+	}
+
+	h2,h3,a,li,p {
+		font-size: $font-size-small;
+	}
+
+	h1,h2,h3,a,li,p {
 
 		text-shadow: none;
 		color: $color-text-secondary;
@@ -994,6 +1002,16 @@ $upcoming-label-height: 206px;
 
 	}
 
+	@include for-600-up {
+		h1 {
+			font-size: $font-size-big;
+		}
+
+		h2,a,li,p {
+			font-size: $font-size-standard;
+		}
+	}
+
 	@include for-750-up {
 
 		width: 80%;
@@ -1008,10 +1026,10 @@ $upcoming-label-height: 206px;
 
 	}
 
-	@include for-1200-up {
+	@include for-1600-up {
 
-		width: 50%;
-		height: 60%;
+		width: 60%;
+		height: 65%;
 
 	}
 
