@@ -838,6 +838,26 @@
 						{"text": "Cobwebs"},
 						{"text": "Paintings"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.6",
+					"description": "Netherrack & Stonecutter",
+					"type": "major",
+					"date": "2013-01-30",
+					"learnMore": "#Pocket_Edition_Alpha_0.6.0",
+					"mainFeatures": [
+						{"text": "Netherrack"},
+						{"text": "Stonecutter"},
+						{"text": "Nether Quartz"},
+						{"text": "Nether Bricks"},
+						{"text": "Signs"}
+					],
+					"minorFeatures": [
+						{"text": "Baby Animals"},
+						{"text": "Sky and Clouds"},
+						{"text": "Armor"},
+						{"text": "Sand and Gravel physics"}
+					]
 				}
 			],
 
