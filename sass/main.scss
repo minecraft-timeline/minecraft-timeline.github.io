@@ -3,6 +3,7 @@
 
 $color-text: white;
 $color-text-secondary: black;
+$color-text-disabled: #6c6c6c;
 $color-text-shadow: rgba(0, 0, 0, 0.5);
 
 $font-family:  "Minecrafton", "Minecraftia", monospace, sans-serif;
@@ -78,7 +79,7 @@ a {
 .start-message {
 
 	text-align: center;
-	padding-top: 100px;
+	padding: 100px 0;
 
 	h2 {
 
@@ -88,92 +89,114 @@ a {
 
 }
 
+body, html, .base {
+	height: 100%;
+}
+
 body {
 	background: url("../images/backgrounds/dirt_dark.png") repeat left top, #281C13;
-	display: flex;
-	flex-direction: column;
 	&.locked {
 		overflow: hidden;
 	}
 }
 
-header.main {
+.base {
 
-	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
-	z-index: 10;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding: 20px;
+	align-items: stretch;
 
-	.separator {
-
-		height: 2px;
-		background: white;
-		border-right: 1px solid rgba(0, 0, 0, 0.8);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-		margin: 20px 0;
-		align-self: stretch;
-
+	.top, footer {
+		flex-shrink: 0;
 	}
 
-	.box {
+	main {
+		flex: 1;
+	}
 
-		display: flex;
-		flex-direction: row;
-		align-items: center;
+	.top {
 
-		.title, .content {
+		header {
 
-			margin: 0 10px;
-
-		}
-		
-		.title {
-
-			text-align: right;
-			
-		}
-
-		.content {
-
+			background: url("../images/backgrounds/stone.png") repeat left top, #505050;
+			z-index: 10;
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+			padding: 20px;
 
-		}
+			.separator {
 
-	}
-
-	h2 {
-		margin-top: -6px;
-	}
-
-	@include for-600-up {
-
-		flex-direction: row;
-
-		.separator {
-
-			height: unset;
-			width: 2px;
-			margin: 0 30px;
-
-		}
-
-		.box {
-
-			flex-direction: column;
-			align-items: flex-start;
-
-			.title {
-
-				text-align: left;
+				height: 2px;
+				background: white;
+				border-right: 1px solid rgba(0, 0, 0, 0.8);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+				margin: 20px 0;
+				align-self: stretch;
 
 			}
 
-			.title, .content{
+			.box {
 
-				margin: 0;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				.title, .content {
+
+					margin: 0 10px;
+
+				}
+
+				.title {
+
+					text-align: right;
+
+				}
+
+				.content {
+
+					display: flex;
+					flex-direction: column;
+
+				}
+
+			}
+
+			h2 {
+				margin-top: -6px;
+			}
+
+			@include for-600-up {
+
+				flex-direction: row;
+
+				.separator {
+
+					height: unset;
+					width: 2px;
+					margin: 0 30px;
+
+				}
+
+				.box {
+
+					flex-direction: column;
+					align-items: flex-start;
+
+					.title {
+
+						text-align: left;
+
+					}
+
+					.title, .content{
+
+						margin: 0;
+
+					}
+
+				}
 
 			}
 
@@ -181,25 +204,25 @@ header.main {
 
 	}
 
-}
+	footer {
 
-footer.main {
-
-	background: url("../images/backgrounds/stone.png") repeat left top, #505050;
-	padding: 20px;
-
-	h3 {
-
-		text-align: right;
-
-	}
-
-	@include for-900-up {
+		background: url("../images/backgrounds/stone.png") repeat left top, #505050;
+		padding: 20px;
 
 		h3 {
 
-			font-size: $font-size-standard;
-			text-shadow: $text-shadow-standard;
+			text-align: right;
+
+		}
+
+		@include for-900-up {
+
+			h3 {
+
+				font-size: $font-size-standard;
+				text-shadow: $text-shadow-standard;
+
+			}
 
 		}
 
@@ -221,6 +244,26 @@ footer.main {
 		display: block;
 		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 		padding: 5px 10px;
+
+		&.empty {
+
+			cursor: unset;
+			display: inline-block;
+			color: $color-text-disabled;
+			position: relative;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: url("../images/misc/soon.png") no-repeat bottom right;
+			}
+
+		}
 
 		&.selected {
 

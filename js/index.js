@@ -28,9 +28,13 @@ const iPanelLearnMoreDOM = id("infopanel-learn-more");
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
 function ajaxGET(requestStr,done) {
+
+	console.log("Sending GET request to " + requestStr);
+
 	let xhr = new XMLHttpRequest();
 	xhr.open('GET', requestStr);
 	xhr.onload = function() {
+		console.log("Received data from " + requestStr);
 		done(xhr.responseText, xhr.status);
 	};
 	xhr.send();
@@ -40,7 +44,8 @@ function id(id) {
 	return document.getElementById(id);
 }
 
-function make(tagName,classes = undefined, text = undefined, id = undefined) {
+function make(tagName,classes, text, id) {
+
 	let dom = document.createElement(tagName);
 	if (classes !== undefined) {
 		if (typeof classes === "string" && classes.length > 0) {
@@ -109,6 +114,7 @@ function loadEditions(editions) {
 
 	let tabListDOM = id("editions-tab-list");
 	let rootDOM = id("editions-root");
+	let emptyMessageDOM = id("message-nothing");
 
 	let tabDOMs = [];
 	let panelDOMs = [];
@@ -117,15 +123,25 @@ function loadEditions(editions) {
 
 	for (let i = 0; i<editions.length; i++) {
 
-		console.log("+++++++++++++++++++++++++\nWORKING ON " + editions[i].title + "\n+++++++++++++++++++++++++");
-
 		let tabDOM = make("h2", "edition-tab", editions[i].title, "edition-tab-" + i);
-
 		tabListDOM.appendChild(tabDOM);
 
-		let panelDOM = make("div", "edition-panel", undefined, "edition-panel_" + i);
+		tabDOMs.push(tabDOM);
 
-		hide(panelDOM);
+		let panelDOM = undefined;
+
+		if (editions[i].versions.length + editions[i].upcomings.length > 0) {
+
+			panelDOM = make("div", "edition-panel hidden", undefined, "edition-panel_" + i);
+			panelDOMs.push(panelDOM);
+			rootDOM.appendChild(panelDOM);
+
+			loadVersions(editions[i], panelDOM);
+
+		}
+		else {
+			tabDOM.classList.add("empty");
+		}
 
 		if (i === 0) {
 			firstPanelDOM = panelDOM;
@@ -134,9 +150,13 @@ function loadEditions(editions) {
 
 		tabDOM.addEventListener("click", function () {
 
+			hide(emptyMessageDOM);
+
 			for (let j = 0; j < tabDOMs.length; j++) {
 				if (tabDOMs[j] !== tabDOM) {
-					hide(panelDOMs[j]);
+					if (panelDOMs[j]){
+						hide(panelDOMs[j]);
+					}
 					tabDOMs[j].classList.remove("selected");
 				}
 			}
@@ -145,21 +165,26 @@ function loadEditions(editions) {
 			id("edition_description").innerText = editions[i].description;
 			tabDOM.classList.add("selected");
 
-			show(panelDOM);
+			if (editions[i].versions.length + editions[i].upcomings.length > 0) {
+				show(panelDOM);
+			}
+			else {
+				show(emptyMessageDOM);
+			}
 
 		});
-
-		tabDOMs.push(tabDOM);
-		panelDOMs.push(panelDOM);
-
-		rootDOM.appendChild(panelDOM);
-		loadVersions(editions[i], panelDOM);
 
 	}
 
 	if (editions.length > 0) {
 
-		show(firstPanelDOM);
+		if (firstPanelDOM !== undefined) {
+			show(firstPanelDOM);
+		}
+		else {
+			show(emptyMessageDOM);
+		}
+
 		show(tabListDOM);
 		show(id("header"));
 		show(id("footer"));
@@ -524,31 +549,45 @@ function hideInfopanel() {
 
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-setTimeout(function(){
+let tooLong = true;
 
-	ajaxGET(JSON_URL, function (data, status) {
+ajaxGET(JSON_URL, function (data, status) {
 
-		if (status === 200) {
+	if (status === 200) {
 
-			let json;
+		let json;
 
-			if (JSON.parse) {
-				json = JSON.parse(data);
-				loadEditions(json.editions);
-			}
-			else {
-				show(id("message-old"));
-			}
-
-			hide(id("message-loading"));
-
+		if (JSON.parse) {
+			show(id("message-building"));
+			json = JSON.parse(data);
+			loadEditions(json.editions);
 		}
 		else {
-			alert('Fatal error: could not load version data. Error code: ' + xhr.status);
+			show(id("message-old"));
 		}
-	});
 
-}, 0);
+	}
+	else {
+		tooLong = false;
+		id("message-error-code").innerText = "Error code: " + status;
+		show(id("message-error"));
+	}
+
+	tooLong = false;
+
+	hide(id("message-loading"));
+	hide(id("message-building"));
+	hide(id("message-toolong"));
+
+});
+
+setTimeout(function () {
+
+	if (tooLong) {
+		show(id("message-toolong"));
+	}
+
+}, 10000);
 
 document.addEventListener("keydown", function keyDownTextField(e) {
 

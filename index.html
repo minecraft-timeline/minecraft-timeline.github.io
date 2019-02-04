@@ -7,33 +7,83 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 	<body>
-		<header class="main hidden" id="header">
-			<img src="images/logos/logo_default.png" alt="Minecraft" id="edition-logo" class="logo">
-			<div class="separator"></div>
-			<div class="box">
-				<h2 class="title">Version Timeline</h2>
-				<div class="content">
-					<h3>With most relevant features of each update</h3>
-					<h3 id="edition_description"></h3>
-				</div>
+
+		<div class="base">
+
+			<div class="top">
+
+				<header class="hidden" id="header">
+					<img src="images/logos/logo_default.png" alt="Minecraft" id="edition-logo" class="logo">
+					<div class="separator"></div>
+					<div class="box">
+						<h2 class="title">Version Timeline</h2>
+						<div class="content">
+							<h3>With most relevant features of each update</h3>
+							<h3 id="edition_description"></h3>
+						</div>
+					</div>
+				</header>
+
+				<nav id="editions-tab-list" class="hidden editions-tab-list"></nav>
+
 			</div>
-		</header>
 
-		<nav id="editions-tab-list" class="hidden editions-tab-list"></nav>
-		<div id="editions-root"></div>
+			<main>
+				<div id="editions-root"></div>
 
-		<div id="message-loading" class="start-message">
-			<h2>Downloading versions</h2>
-			<h2>Building timeline</h2>
-		</div>
+				<div id="message-loading" class="start-message">
+					<h2>Downloading versions</h2>
+				</div>
 
-		<div id="message-old" class="start-message hidden">
-			<h2>
-				Your browser is too old to load this page properly.
-				Please use a newer browser, such as
-				<a href="https://www.google.com/chrome/">Chrome</a>,
-				<a href="https://www.mozilla.org/firefox">Firefox</a>
-				or <a href="https://www.microsoft.com/windows/microsoft-edge">Edge</a>.</h2>
+				<div id="message-building" class="start-message hidden">
+					<h2>Building timeline</h2>
+				</div>
+
+				<div id="message-old" class="start-message hidden">
+					<h2>
+						Your browser is too old to load this page properly.
+						Please use a newer browser, such as
+					</h2>
+					<h2>
+						<a href="https://www.google.com/chrome/">Chrome</a>,
+						<a href="https://www.mozilla.org/firefox">Firefox</a>
+						or <a href="https://www.microsoft.com/windows/microsoft-edge">Edge</a>.
+					</h2>
+				</div>
+
+				<div id="message-nothing" class="start-message hidden">
+					<h2><img src="images/misc/empty_timeline.png"></h2>
+					<h2>There's nothing here!</h2>
+					<h2>Coming soon...</h2>
+				</div>
+
+				<div id="message-toolong" class="start-message hidden">
+					<h2>
+						This is taking unusually long. This probably means your browser is too outdated.
+						This page should be viewed using a modern browser such as</h2>
+					<h2>
+						<a href="https://www.google.com/chrome/">Chrome</a>,
+						<a href="https://www.mozilla.org/firefox">Firefox</a>
+						or <a href="https://www.microsoft.com/windows/microsoft-edge">Edge</a>.
+					</h2>
+					<h2>If you are using the most recent version of a modern browser and the problem persists, please <a
+							href="https://www.reddit.com/message/compose?to=/u/HenryFrenchFries">contact me</a>.</h2>
+				</div>
+
+				<div id="message-error" class="start-message hidden">
+					<h2>Fatal error: could not load version data! Please <a
+							href="https://www.reddit.com/message/compose?to=/u/HenryFrenchFries">contact me</a> immediately.</h2>
+					<h2 id="message-error-code"></h2>
+				</div>
+
+			</main>
+
+			<footer class="hidden" id="footer">
+				<h3><a href="https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/">Created by HenryCGS •</a></h3>
+				<h3>"Minecraft" is a trademark of Mojang AB •</h3>
+				<h3>This website has no affiliation with Mojang AB •</h3>
+			</footer>
+
 		</div>
 
 		<div class="infopanel-wrapper hidden" id="infopanel-wrapper">
@@ -55,12 +105,6 @@
 				</section>
 			</div>
 		</div>
-
-		<footer class="main hidden" id="footer">
-			<h3><a href="https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/">Created by HenryCGS •</a></h3>
-			<h3>"Minecraft" is a trademark of Mojang AB •</h3>
-			<h3>This website has no affiliation with Mojang AB •</h3>
-		</footer>
 
 		<script type="application/javascript" src="js/index.js"></script>
 
