@@ -1156,6 +1156,20 @@
 						{"text": "Icebergs"},
 						{"text": "New water physics"}
 					]
+				},
+
+				{
+					"title": "Update Aquatic 2",
+					"subtitle": "1.5",
+					"description": "Turtles & Conduits",
+					"type": "major",
+					"date": "2018-07-10",
+					"learnMore": "#Bedrock_Edition_1.5.0",
+					"mainFeatures": [
+						{"text": "Turtles"},
+						{"text": "Conduits"},
+						{"text": "Bubble Columns"}
+					]
 				}
 
 			],
