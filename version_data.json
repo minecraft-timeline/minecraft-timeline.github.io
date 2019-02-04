@@ -746,7 +746,7 @@
 					"funFact": "Did you know? This update added many blocks, being close to Java Edition Infdev.",
 					"learnMore": "#Pocket_Edition_Alpha_0.1.0",
 					"mainFeatures": [
-						{"text": "Random Worlds"},
+						{"text": "Random Worlds with Biomes"},
 						{"text": "Multiplayer"}
 					],
 					"minorFeatures": [
@@ -895,6 +895,28 @@
 						{"text": "Clocks"},
 						{"text": "Compasses"},
 						{"text": "Breeding"}
+					]
+				},
+				{
+					"subtitle": "PE Alpha 0.9",
+					"description": "Infinite Worlds & Endermen",
+					"type": "major",
+					"date": "2014-07-10",
+					"funFact": "Did you know? This huge update made the game almost equivalent to Java Edition 1.8.",
+					"learnMore": "#Pocket_Edition_Alpha_0.9.0",
+					"mainFeatures": [
+						{"text": "Infinite Worlds"},
+						{"text": "All Biomes from Java Edition 1.7"},
+						{"text": "Endermen"},
+						{"text": "Wolves"},
+						{"text": "Silverfish"},
+						{"text": "Slimes"},
+						{"text": "Villages with Villagers"}
+					],
+					"minorFeatures": [
+						{"text": "Granite, Andesite and Diorite"},
+						{"text": "Many new structures"},
+						{"text": "Emeralds"}
 					]
 				}
 			],
