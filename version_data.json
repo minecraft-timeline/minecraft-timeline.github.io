@@ -725,6 +725,19 @@
 
 			"upcomings": []
 
+		},
+
+		{
+
+			"title": "Legacy Console Edition",
+			"description": "The PS4 game by 4JStudios",
+			"firstMessage": "Console Edition is born",
+			"logo": "logo_console.png",
+
+			"versions": [],
+
+			"upcomings": []
+
 		}
 
 	]
