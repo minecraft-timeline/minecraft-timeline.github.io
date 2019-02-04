@@ -877,6 +877,25 @@
 						{"text": "Eggs"},
 						{"text": "Cakes"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.8",
+					"description": "Rails & Beetroots",
+					"type": "major",
+					"date": "2013-12-12",
+					"learnMore": "#Pocket_Edition_Alpha_0.8.0",
+					"mainFeatures": [
+						{"text": "Rails"},
+						{"text": "Powered Rails"},
+						{"text": "Beetroots, Carrots and Potatoes"},
+						{"text": "Pumpkins"},
+						{"text": "Carpets"}
+					],
+					"minorFeatures": [
+						{"text": "Clocks"},
+						{"text": "Compasses"},
+						{"text": "Breeding"}
+					]
 				}
 			],
 

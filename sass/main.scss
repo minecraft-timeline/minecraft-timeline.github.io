@@ -3,7 +3,7 @@
 
 $color-text: white;
 $color-text-secondary: black;
-$color-text-disabled: #6c6c6c;
+$color-text-disabled: #585858;
 $color-text-shadow: rgba(0, 0, 0, 0.5);
 
 $font-family:  "Minecrafton", "Minecraftia", monospace, sans-serif;
@@ -247,7 +247,6 @@ body {
 
 		&.empty {
 
-			cursor: unset;
 			color: $color-text-disabled;
 			position: relative;
 
