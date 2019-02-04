@@ -1186,6 +1186,21 @@
 					"minorFeatures": [
 						{"text": "Potions of Slow Falling"}
 					]
+				},
+
+				{
+					"subtitle": "1.7",
+					"description": "/scoreboard Command",
+					"type": "major",
+					"date": "2018-10-15",
+					"funFact": "Did you know? This is the major update with the least amount of content in Minecraft history.",
+					"learnMore": "#Bedrock_Edition_1.7.0",
+					"mainFeatures": [
+						{"text": "/scoreboard Command"}
+					],
+					"minorFeatures": [
+						{"text": "Ability to eat food in Creative mode and in Peaceful Difficulty"}
+					]
 				}
 
 			],
