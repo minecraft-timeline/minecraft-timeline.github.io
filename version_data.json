@@ -635,7 +635,7 @@
 				{
 					"title": "World of Color Update",
 					"subtitle": "1.12",
-					"description": "Colorful Blocks & Parrots",
+					"description": "Colorful Blocks, Parrots & Renamed Game",
 					"type": "major",
 					"date": "2017-06-07",
 					"icon": "java/version_1_12.png",
@@ -645,7 +645,8 @@
 						{"text": "Colored Concrete"},
 						{"text": "Colored Concrete Powder"},
 						{"text": "Glazed Terracotta"},
-						{"text": "Parrots"}
+						{"text": "Parrots"},
+						{"text": "Renamed game from \"Minecraft\" to \"Minecraft: Java Edition\""}
 					],
 					"minorFeatures": [
 						{"text": "Improved wool colors"},
@@ -1106,6 +1107,29 @@
 					],
 					"minorFeatures": [
 						{"text": "Llamas"}
+					]
+				},
+
+				{
+					"title": "Better Together Update",
+					"subtitle": "1.2",
+					"description": "Merged Pocket Edition with Console Edition",
+					"type": "major",
+					"date": "2017-06-01",
+					"funFact": "Did you know? The PS4 did not receive this update because Sony didn't allow the game to have cross-play.",
+					"learnMore": "#Better_Together_Update",
+					"mainFeatures": [
+						{"text": "Merged Pocket Edition with Console Edition"},
+						{"text": "Added Cross-Play between all platforms"},
+						{"text": "Renamed the game to just \"Minecraft\""},
+						{"text": "Named the engine \"Bedrock\""}
+					],
+					"minorFeatures": [
+						{"text": "Banners"},
+						{"text": "Jukeboxes"},
+						{"text": "Parrots"},
+						{"text": "Java Edition-like Crafting"},
+						{"text": "Recipe Book"}
 					]
 				}
 
