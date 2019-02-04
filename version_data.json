@@ -777,6 +777,27 @@
 						{"text": "Fences"},
 						{"text": "Day-Night cycle"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.3",
+					"description": "Crafting & Wooden Tools",
+					"type": "major",
+					"date": "2012-04-24",
+					"learnMore": "#Pocket_Edition_Alpha_0.3.0",
+					"mainFeatures": [
+						{"text": "Crafting"},
+						{"text": "Wooden Tools"},
+						{"text": "Cows"},
+						{"text": "Chickens"},
+						{"text": "Iron Ore"},
+						{"text": "Coal"}
+					],
+					"minorFeatures": [
+						{"text": "Snowballs"},
+						{"text": "Sticks"},
+						{"text": "Books and Bookshelves"},
+						{"text": "Sugar"}
+					]
 				}
 			],
 
