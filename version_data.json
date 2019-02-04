@@ -585,7 +585,7 @@
 						{"text": "Subtitles"},
 						{"text": "Igloos"},
 						{"text": "New arrows"},
-						{"text": "Ability to respawn the Ender Dragon"},
+						{"text": "Revamped Ender Dragon fight"},
 						{"text": "Ability to use your second hand"},
 						{"text": "Removed Enchanted Golden Apples"},
 						{"text": "Better Command Blocks"}
@@ -1053,8 +1053,8 @@
 					"subtitle": "PE Alpha 0.16",
 					"description": "Ocean Monuments & Withers",
 					"type": "major",
-					"date": "2016-06-10",
-					"learnMore": "#Friendly_Update",
+					"date": "2016-10-21",
+					"learnMore": "#Boss_Update",
 					"mainFeatures": [
 						{"text": "Ocean Monuments"},
 						{"text": "Withers"}
@@ -1062,6 +1062,29 @@
 					"minorFeatures": [
 						{"text": "Commands"},
 						{"text": "Add-ons"}
+					]
+				},
+
+				{
+					"title": "Ender Update",
+					"subtitle": "PE 1.0",
+					"description": "The End",
+					"type": "major",
+					"date": "2016-12-19",
+					"funFact": "Did you know? This update is nearly the same as Java Edition 1.9, without combat changes.",
+					"learnMore": "#Ender_Update",
+					"mainFeatures": [
+						{"text": "The End"},
+						{"text": "Ender Dragon"},
+						{"text": "End Cities"},
+						{"text": "Ender Chests"}
+					],
+					"minorFeatures": [
+						{"text": "Stained Glass"},
+						{"text": "Igloos"},
+						{"text": "Pandas"},
+						{"text": "Endermites"},
+						{"text": "Increased Overworld height limit"}
 					]
 				}
 
