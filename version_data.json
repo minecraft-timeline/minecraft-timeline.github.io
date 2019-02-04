@@ -1046,6 +1046,23 @@
 						{"text": "Leads"},
 						{"text": "Pig Riding"}
 					]
+				},
+
+				{
+					"title": "Boss Update",
+					"subtitle": "PE Alpha 0.16",
+					"description": "Ocean Monuments & Withers",
+					"type": "major",
+					"date": "2016-06-10",
+					"learnMore": "#Friendly_Update",
+					"mainFeatures": [
+						{"text": "Ocean Monuments"},
+						{"text": "Withers"}
+					],
+					"minorFeatures": [
+						{"text": "Commands"},
+						{"text": "Add-ons"}
+					]
 				}
 
 			],
