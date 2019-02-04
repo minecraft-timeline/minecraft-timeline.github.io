@@ -1025,6 +1025,27 @@
 						{"text": "Item Frames"},
 						{"text": "Slime Blocks"}
 					]
+				},
+
+				{
+					"title": "Friendly Update",
+					"subtitle": "PE Alpha 0.15",
+					"description": "Realms, Pistons & Horses",
+					"type": "major",
+					"date": "2016-06-10",
+					"learnMore": "#Friendly_Update",
+					"mainFeatures": [
+						{"text": "Realms"},
+						{"text": "Pistons"},
+						{"text": "Sticky Pistons"},
+						{"text": "Horses"},
+						{"text": "Observer"}
+					],
+					"minorFeatures": [
+						{"text": "Name Tags"},
+						{"text": "Leads"},
+						{"text": "Pig Riding"}
+					]
 				}
 
 			],
