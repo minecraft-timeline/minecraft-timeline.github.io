@@ -1002,6 +1002,29 @@
 						{"text": "Trapped Chests"},
 						{"text": "Rabbits"}
 					]
+				},
+
+				{
+					"title": "Overworld Update",
+					"subtitle": "PE Alpha 0.14",
+					"description": "More Redstone Components, Witches & Maps",
+					"type": "major",
+					"date": "2016-02-18",
+					"learnMore": "#Overworld_Update",
+					"mainFeatures": [
+						{"text": "Dispensers"},
+						{"text": "Droppers"},
+						{"text": "Comparators"},
+						{"text": "Hoppers"},
+						{"text": "Witches"},
+						{"text": "Maps"},
+						{"text": "Ender Pearls"}
+					],
+					"minorFeatures": [
+						{"text": "Cauldrons"},
+						{"text": "Item Frames"},
+						{"text": "Slime Blocks"}
+					]
 				}
 
 			],
