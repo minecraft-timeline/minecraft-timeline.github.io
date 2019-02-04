@@ -463,7 +463,6 @@ function showInfopanel(version) {
 	let hasMinorFeat = version.minorFeatures !== undefined;
 	let hasLearnMore = version.learnMore !== undefined;
 
-
 	if (hasTitle) {
 		iPanelTitleDOM.innerText = version.title;
 	}
@@ -481,7 +480,7 @@ function showInfopanel(version) {
 		iPanelSubtitleDOM.innerText = "";
 	}
 
-	if (hasDate) {
+	if (hasDate && !hasPossibleDate) {
 		let date = new Date(parseUTC(version.date));
 		iPanelDateDOM.innerText = MONTH_NAMES[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
 	}

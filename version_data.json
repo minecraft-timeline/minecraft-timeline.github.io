@@ -721,7 +721,29 @@
 			"firstMessage": "Bedrock Edition is born",
 			"logo": "logo_bedrock.png",
 
-			"versions": [],
+			"versions": [
+				{
+					"subtitle": "Pocket Edition Pre-Release",
+					"description": "Grass & Wool",
+					"type": "major",
+					"date": "2011-07-01",
+					"possibleDate": "Late 2011",
+					"learnMore": "#Pocket_Edition_Pre-release",
+					"mainFeatures": [
+						{"text": "Grass Block"},
+						{"text": "Wool"},
+						{"text": "Stone"},
+						{"text": "Glass"},
+						{"text": "Wood Planks"}
+					],
+					"minorFeatures": [
+						{"text": "The Player"},
+						{"text": "Dirt"},
+						{"text": "Blocks of Diamond"},
+						{"text": "Sandstone"}
+					]
+				}
+			],
 
 			"upcomings": []
 
@@ -730,7 +752,7 @@
 		{
 
 			"title": "Legacy Console Edition",
-			"description": "The PS4 game by 4JStudios",
+			"description": "The console game by 4JStudios",
 			"firstMessage": "Console Edition is born",
 			"logo": "logo_console.png",
 
