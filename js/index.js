@@ -84,6 +84,24 @@ function show(element) {
 	element.classList.remove("hidden");
 }
 
+let lockedBody = false;
+let lastScroll = 0;
+
+function lockBody() {
+	lockedBody = true;
+	lastScroll = document.documentElement.scrollTop;
+	document.body.style.top = (-lastScroll) + "px";
+	document.body.classList.add("locked");
+}
+
+function unlockBody() {
+	if (lockedBody) {
+		document.body.classList.remove("locked");
+		document.documentElement.scrollTop = lastScroll;
+		lockedBody = false;
+	}
+}
+
 function msOfYear(realDateMs) {
 	let realDate = new Date(realDateMs);
 	let start = new Date(realDate.getFullYear(), 0, 1);
@@ -540,10 +558,13 @@ function showInfopanel(version) {
 	}
 
 	show(iPanelWrapperDOM);
+	lockBody();
+
 }
 
 function hideInfopanel() {
 	hide(iPanelWrapperDOM);
+	unlockBody();
 }
 
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
