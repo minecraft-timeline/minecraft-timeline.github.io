@@ -955,6 +955,29 @@
 						{"text": "Ghasts"},
 						{"text": "Magma Cubes"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.12",
+					"description": "The Nether, Enchanting & Anvils",
+					"type": "major",
+					"date": "2015-07-29",
+					"funFact": "Did you know? This was the first version of the Windows 10 Edition.",
+					"learnMore": "#Pocket_Edition_Alpha_0.12.0",
+					"mainFeatures": [
+						{"text": "The Nether"},
+						{"text": "Enchanting Tables"},
+						{"text": "Anvils"},
+						{"text": "Hunger"},
+						{"text": "Potions"},
+						{"text": "Weather"}
+					],
+					"minorFeatures": [
+						{"text": "Iron Golems"},
+						{"text": "Snow Golems"},
+						{"text": "Ocelots"},
+						{"text": "Blazes"},
+						{"text": "Removed Nether Reactors"}
+					]
 				}
 			],
 
