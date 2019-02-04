@@ -758,6 +758,25 @@
 						{"text": "Water and Lava"},
 						{"text": "TNT"}
 					]
+				},
+				{
+					"subtitle": "PE Alpha 0.2",
+					"description": "Survival Mode & Mobs",
+					"type": "major",
+					"date": "2012-02-11",
+					"learnMore": "#Pocket_Edition_Alpha_0.2.0",
+					"mainFeatures": [
+						{"text": "Survival Mode"},
+						{"text": "Pigs"},
+						{"text": "Sheep"},
+						{"text": "Zombies"}
+					],
+					"minorFeatures": [
+						{"text": "True Creative Mode"},
+						{"text": "Stone Tools"},
+						{"text": "Fences"},
+						{"text": "Day-Night cycle"}
+					]
 				}
 			],
 
