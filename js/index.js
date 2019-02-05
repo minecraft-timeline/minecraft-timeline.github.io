@@ -24,6 +24,7 @@ const iPanelMainFeatsDOM = id("infopanel-main-features");
 const iPanelMinorLabelDOM = id("infopanel-minor-label");
 const iPanelMinorFeatsDOM = id("infopanel-minor-features");
 const iPanelLearnMoreDOM = id("infopanel-learn-more");
+const iPanelScrollerDOM = id("infopanel-scroller");
 
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -558,6 +559,7 @@ function showInfopanel(version) {
 	}
 
 	show(iPanelWrapperDOM);
+	iPanelScrollerDOM.scrollTop = 0;
 	lockBody();
 
 }
