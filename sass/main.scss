@@ -125,7 +125,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			padding: 20px;
+			padding: 15px 10px 10px 10px;
 
 			.separator {
 
@@ -133,7 +133,7 @@ body {
 				background: white;
 				border-right: 1px solid rgba(0, 0, 0, 0.8);
 				border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-				margin: 20px 0;
+				margin: 10px 0;
 				align-self: stretch;
 
 			}
@@ -141,7 +141,7 @@ body {
 			.box {
 
 				display: flex;
-				flex-direction: row;
+				flex-direction: column;
 				align-items: center;
 
 				.title, .content {
@@ -152,6 +152,8 @@ body {
 
 				.title {
 
+					font-size: $font-size-small;
+					text-shadow: $text-shadow-small;
 					text-align: right;
 
 				}
@@ -163,6 +165,16 @@ body {
 
 				}
 
+				.relevant {
+
+					display: none;
+
+				}
+
+				#edition_description {
+					font-style: italic;
+				}
+
 			}
 
 			h2 {
@@ -172,6 +184,7 @@ body {
 			@include for-600-up {
 
 				flex-direction: row;
+				padding: 20px;
 
 				.separator {
 
@@ -183,11 +196,12 @@ body {
 
 				.box {
 
-					flex-direction: column;
 					align-items: flex-start;
 
 					.title {
 
+						font-size: $font-size-standard;
+						text-shadow: $text-shadow-standard;
 						text-align: left;
 
 					}
@@ -195,6 +209,24 @@ body {
 					.title, .content{
 
 						margin: 0;
+
+					}
+
+					#edition_description {
+						font-style: normal;
+					}
+
+				}
+
+			}
+
+			@include for-750-up {
+
+				.box {
+
+					.relevant {
+
+						display: block;
 
 					}
 
@@ -234,7 +266,7 @@ body {
 		cursor: pointer;
 		display: block;
 		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-		padding: 5px 10px;
+		padding: 0 10px;
 
 		&.empty {
 
@@ -275,6 +307,7 @@ body {
 		@include for-750-up {
 
 			display: inline-block;
+			padding: 5px 10px;
 
 			&.selected {
 
