@@ -217,17 +217,6 @@ body {
 
 		}
 
-		@include for-900-up {
-
-			h3 {
-
-				font-size: $font-size-standard;
-				text-shadow: $text-shadow-standard;
-
-			}
-
-		}
-
 	}
 
 }
