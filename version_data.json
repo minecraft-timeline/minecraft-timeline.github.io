@@ -1254,7 +1254,7 @@
 				{
 					"title": "Village and Pillage Update 2",
 					"subtitle": "1.9",
-					"description": "Revamped Crafting & Pillagers",
+					"description": "Pillagers & Revamped Crafting",
 					"type": "major",
 					"possibleDate": "February 2019",
 					"icon": "bedrock/version_1_9.png",
@@ -1308,6 +1308,7 @@
 					"description": "4K HDR Option & Super Duper Graphics Pack",
 					"type": "major",
 					"possibleDate": "Far future",
+					"icon": "bedrock/version_4k.png",
 					"learnMore": "#Planned_versions#4K_Update",
 					"mainFeatures": [
 						{"text": "4K HDR Option"},
