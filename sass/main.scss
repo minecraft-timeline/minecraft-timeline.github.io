@@ -89,8 +89,8 @@ a {
 
 }
 
-body, html, .base {
-	height: 100%;
+html, body, .base {
+	min-height: 100vh;
 }
 
 body {
@@ -117,6 +117,11 @@ body {
 	}
 
 	.top {
+
+		z-index: 40;
+		top: 0;
+		position: sticky;
+		box-shadow: 0 0 20px rgba(0,0,0,0.7);
 
 		header {
 
@@ -421,7 +426,10 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75) inset;
+	box-shadow:
+			15px 0 30px -15px rgba(0,0,0,.75) inset,
+			-15px 0 30px -15px rgba(0,0,0,.75) inset,
+			0 -15px 30px -15px rgba(0,0,0,.75) inset;
 
 }
 

@@ -650,6 +650,7 @@ function showInfopanel(version) {
 	show(infoWrapperDOM);
 	infoScrollerDOM.scrollTop = 0;
 	lockBody();
+	hideNav();
 
 }
 
