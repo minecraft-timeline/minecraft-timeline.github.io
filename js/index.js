@@ -58,13 +58,9 @@ let player;
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
 function ajaxGET(requestStr,done) {
-
-	console.log("Sending GET request to " + requestStr);
-
 	let xhr = new XMLHttpRequest();
 	xhr.open('GET', requestStr);
 	xhr.onload = function() {
-		console.log("Received data from " + requestStr);
 		done(xhr.responseText, xhr.status);
 	};
 	xhr.send();
@@ -214,7 +210,10 @@ function loadEditions(editions) {
 			tabDOM.classList.add("selected");
 
 			if (editions[i].versions.length + editions[i].upcomings.length > 0) {
+
 				show(panelDOM);
+				offsetBackground(editions[i]);
+
 			}
 			else {
 				show(emptyMessageDOM);
@@ -233,6 +232,7 @@ function loadEditions(editions) {
 
 		if (firstPanelDOM !== undefined) {
 			show(firstPanelDOM);
+			offsetBackground(editions[0]);
 		}
 		else {
 			show(emptyMessageDOM);
@@ -249,6 +249,21 @@ function loadEditions(editions) {
 	}
 
 	updateVersionDisplays();
+
+}
+
+function offsetBackground(editionWithDOM) {
+
+	// Interesting hack I made. This aligns one of the backgrounds of a panel with a 32x32 grid.
+
+	let offset = (-(32-editionWithDOM.panelDOM.getBoundingClientRect().height%32))+"px";
+	let position = `left 0 bottom ${offset}, left 0 top 0, left 0 top 0`;
+
+	console.log(editionWithDOM.rulerDOM);
+
+	editionWithDOM.panelDOM.style.backgroundPosition = position;
+	editionWithDOM.rulerDOM.style.backgroundPosition = position;
+	editionWithDOM.fakeRulerDOM.style.backgroundPosition = position;
 
 }
 
@@ -444,7 +459,13 @@ function loadVersions(edition, panelDOM) {
 
 		panelDOM.appendChild(rulerDOM);
 		panelDOM.appendChild(timelinePanelDOM);
-		panelDOM.appendChild(make("div","ruler"));
+
+		let fakeRulerDOM = make("div","ruler");
+
+		panelDOM.appendChild(fakeRulerDOM);
+
+		edition.rulerDOM = rulerDOM;
+		edition.fakeRulerDOM = fakeRulerDOM;
 
 	}
 
