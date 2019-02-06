@@ -688,10 +688,10 @@
 				},
 
 				{
-					"title": "\"How to Survive your First Night\"",
-					"subtitle": "paulsoaresjr",
+					"title": "\"Paulsoaresjr's First Night\"",
 					"type": "memory",
 					"date": "2010-07-29",
+					"icon": "version_memory_youtube.png",
 					"video": "0VWnQHS-ffs"
 				},
 
@@ -699,6 +699,7 @@
 					"title": "\"X's Adventures in Minecraft\"",
 					"type": "memory",
 					"date": "2010-08-04",
+					"icon": "version_memory_youtube.png",
 					"video": "4bh4EexJO4I"
 				},
 
@@ -706,6 +707,7 @@
 					"title": "\"Revenge\"",
 					"type": "memory",
 					"date": "2010-08-19",
+					"icon": "version_memory_youtube.png",
 					"video": "cPJUBQd-PNM"
 				},
 
@@ -713,6 +715,7 @@
 					"title": "\"The Temple Of Notch\"",
 					"type": "memory",
 					"date": "2011-09-05",
+					"icon": "version_memory_youtube.png",
 					"video": "gZ9lNZrNhwQ"
 				},
 
@@ -720,6 +723,7 @@
 					"title": "\"How to Build a Fireplace in Minecraft\"",
 					"type": "memory",
 					"date": "2011-09-18",
+					"icon": "version_memory_youtube.png",
 					"video": "LnjSWPxJxNs"
 				},
 
@@ -727,22 +731,23 @@
 					"title": "\"Biome Test\"",
 					"type": "memory",
 					"date": "2010-10-27",
+					"icon": "version_memory_youtube.png",
 					"video": "nnvSFqIQh0U"
 				},
 
 				{
-					"title": "\"How to Survive the First Night\"",
-					"subtitle": "Yogscast",
+					"title": "\"Yogscast's First Night\"",
 					"type": "memory",
 					"date": "2010-12-02",
+					"icon": "version_memory_youtube.png",
 					"video": "4UdEFmxRmNE"
 				},
 
 				{
-					"title": "\"Let's Play Minecraft\"",
-					"subtitle": "EthosLab",
+					"title": "\"Etho's First Night\"",
 					"type": "memory",
 					"date": "2010-12-17",
+					"icon": "version_memory_youtube.png",
 					"video": "lHngf-CKCzk"
 				},
 
@@ -750,6 +755,7 @@
 					"title": "\"Shadow of Israphel\"",
 					"type": "memory",
 					"date": "2011-01-27",
+					"icon": "version_memory_youtube.png",
 					"video": "2Gi9-UZKYo4"
 				},
 
@@ -757,14 +763,23 @@
 					"title": "\"Wool\"",
 					"type": "memory",
 					"date": "2011-08-02",
+					"icon": "version_memory_youtube.png",
 					"video": "5NylmdC_uEM"
 				},
 
 				{
-					"title": "\"Let's Play Minecraft\"",
-					"subtitle": "Achievement Hunter",
+					"title": "\"Hermitcraft 1\"",
+					"type": "memory",
+					"date": "2012-04-24",
+					"icon": "version_memory_youtube.png",
+					"video": "mzmW-fQ_rzQ"
+				},
+
+				{
+					"title": "\"Achievement Hunter's First Night\"",
 					"type": "memory",
 					"date": "2012-05-11",
+					"icon": "version_memory_youtube.png",
 					"video": "FrLgREKD4kk"
 				},
 
@@ -772,6 +787,7 @@
 					"title": "\"The Bomb\"",
 					"type": "memory",
 					"date": "2013-02-21",
+					"icon": "version_memory_youtube.png",
 					"video": "F2ohslGivm8"
 				}
 
