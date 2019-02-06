@@ -44,10 +44,10 @@ let showMinor = false;
 let showEvents = false;
 let showMemories = false;
 
-let originalMajorText = buttonMajorDOM.innerText;
-let originalMinorText = buttonMinorDOM.innerText;
-let originalEventsText = buttonEventsDOM.innerText;
-let originalMemoriesText = buttonMemoriesDOM.innerText;
+let originalMajorText = "Major Updates";
+let originalMinorText = "Minor Updates";
+let originalEventsText = "Events";
+let originalMemoriesText = "Memories";
 
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
