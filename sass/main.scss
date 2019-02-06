@@ -441,6 +441,8 @@ body {
 
 $major-width: 52px;
 $minor-width: 44px;
+$event-width: 44px;
+$memory-width: 44px;
 $endpoint-width: 80px;
 $year-start-height: 72px;
 $year-end-height: 82px;
@@ -501,7 +503,7 @@ $faux-margin-big-bottom: ((2 * $real-box-margin-big) + $endpoint-width + $box-he
 
 	.text-box {
 
-		width: 15em;
+		width: 4em;
 		display: none;
 
 		h2 {
@@ -687,6 +689,35 @@ $upcoming-label-height: 206px;
 				width: $minor-width;
 				height: $minor-width;
 				margin-top: -($minor-width/2);
+				z-index: 15;
+
+			}
+
+			&.update-event {
+
+				background: url("../images/timeline/icon_update_event.png");
+				width: $event-width;
+				height: $event-width;
+				margin-top: -($event-width/2);
+				z-index: 15;
+
+			}
+
+			&.update-memory {
+
+				background: url("../images/timeline/icon_update_memory.png");
+				width: $memory-width;
+				height: $memory-width;
+				margin-top: -($memory-width/2);
+				z-index: 15;
+
+				.preview {
+					.text-box {
+
+						display: block;
+
+					}
+				}
 
 			}
 

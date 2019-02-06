@@ -1,6 +1,6 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://raw.githubusercontent.com/minecraft-timeline/minecraft-timeline.github.io/master/version_data.json";
+const JSON_URL = "https://gist.githubusercontent.com/minecraft-timeline/c088c35d0b9f2b362106cc21841dd17e/raw/242f2c1f5d01abfe58ec68da91b18112b2159cae/version_data_development.json";
 const LOGO_PATH = "images/logos";
 const ICON_VERSION_PATH = "images/icons/updates/versions/";
 const WIKI_PATH = "https://minecraft.gamepedia.com/";
@@ -330,7 +330,7 @@ function loadVersions(edition, panelDOM) {
 			let yearLength = (isLeapYear(date.getFullYear()) ? LEAP_YEAR_MS : YEAR_MS);
 			let timeOfYear = msOfYear(date.getTime());
 
-			let versionDOM = make("div", "version" + (i%2===0 ? "" : " alt"));
+			let versionDOM = make("div", "version");
 
 			if (versions[i].first || versions[i].today) {
 				if (versions[i].first) {
