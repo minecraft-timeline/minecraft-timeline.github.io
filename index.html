@@ -13,18 +13,34 @@
 			<div class="top">
 
 				<header class="hidden" id="header">
-					<img src="images/logos/logo_default.png" alt="Minecraft" id="edition-logo" class="logo">
-					<div class="separator"></div>
-					<div class="box">
-						<h2 class="title">Version Timeline</h2>
-						<div class="content">
-							<h3 class="relevant">With most relevant features of each update</h3>
-							<h3 id="edition_description"></h3>
+
+					<div class="header-content">
+
+						<img src="images/logos/logo_default.png" alt="Minecraft" id="edition-logo" class="logo">
+						<div class="separator"></div>
+						<div class="box">
+							<h2 class="title">Version Timeline</h2>
+							<div class="content">
+								<h3 class="relevant">With most relevant features of each update</h3>
+								<h3 id="edition_description" class="relevant"></h3>
+							</div>
 						</div>
+
 					</div>
+
+					<button id="button-nav-show"></button>
 				</header>
 
-				<nav id="editions-tab-list" class="hidden editions-tab-list"></nav>
+				<nav class="editions-nav" id="nav">
+					<button id="button-nav-hide"></button>
+					<div id="editions-tab-list" class="hidden editions-tab-list"></div>
+					<div class="options">
+						<button id="button-toggle-major">Major Updates</button>
+						<button id="button-toggle-minor">Minor Updates</button>
+						<button id="button-toggle-events">Events</button>
+						<button id="button-toggle-memories">Memories</button>
+					</div>
+				</nav>
 
 			</div>
 

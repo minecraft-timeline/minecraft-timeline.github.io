@@ -26,6 +26,29 @@ const iPanelMinorFeatsDOM = id("infopanel-minor-features");
 const iPanelLearnMoreDOM = id("infopanel-learn-more");
 const iPanelScrollerDOM = id("infopanel-scroller");
 
+const navDOM = id("nav");
+const navShowDOM = id("button-nav-show");
+const navHideDOM = id("button-nav-hide");
+
+const buttonMajorDOM = id("button-toggle-major");
+const buttonMinorDOM = id("button-toggle-minor");
+const buttonEventsDOM = id("button-toggle-events");
+const buttonMemoriesDOM = id("button-toggle-memories");
+
+// +++ Data Variables +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let editionsWithDOMs = [];
+
+let showMajor = true;
+let showMinor = false;
+let showEvents = false;
+let showMemories = false;
+
+let originalMajorText = buttonMajorDOM.innerText;
+let originalMinorText = buttonMinorDOM.innerText;
+let originalEventsText = buttonEventsDOM.innerText;
+let originalMemoriesText = buttonMemoriesDOM.innerText;
+
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
 function ajaxGET(requestStr,done) {
@@ -193,6 +216,11 @@ function loadEditions(editions) {
 
 		});
 
+		editions[i].tabDOM = tabDOM;
+		editions[i].panelDOM = panelDOM;
+
+		editionsWithDOMs.push(editions[i]);
+
 	}
 
 	if (editions.length > 0) {
@@ -213,6 +241,8 @@ function loadEditions(editions) {
 		firstTabDOM.classList.add("selected");
 
 	}
+
+	updateVersionDisplays();
 
 }
 
@@ -306,7 +336,11 @@ function loadVersions(edition, panelDOM) {
 				if (versions[i].first) {
 					versionDOM.classList.add("endpoint");
 					versionDOM.classList.add("first");
-					versionDOM.appendChild(makePreview(versions[i]));
+
+					let previewDOM = makePreview(versions[i]);
+
+					versionDOM.appendChild(previewDOM);
+					versions[i].previewDOM = previewDOM;
 				}
 				else if (versions[i].today) {
 					versionDOM.classList.add("endpoint");
@@ -317,8 +351,11 @@ function loadVersions(edition, panelDOM) {
 				versionDOM.appendChild(box);
 			}
 			else {
-				versionDOM.appendChild(makePreview(versions[i]));
+				let previewDOM = makePreview(versions[i]);
+				versionDOM.appendChild(previewDOM);
+
 				versionDOM.classList.add("update-" + versions[i].type);
+				versions[i].previewDOM = previewDOM;
 			}
 
 			if (date.getFullYear() === firstDate.getFullYear() || date.getFullYear() === lastDate.getFullYear()) {
@@ -349,6 +386,8 @@ function loadVersions(edition, panelDOM) {
 
 			yearDOMs[date.getFullYear()].appendChild(versionDOM);
 
+			versions[i].versionDOM = versionDOM;
+
 		}
 
 		if (upcomings.length > 0) {
@@ -370,7 +409,9 @@ function loadVersions(edition, panelDOM) {
 				upcRulerYearDOM.appendChild(make("h2", "number", "????"));
 				upcRulerYearDOM.appendChild(make("h3", "number-ago","Future"));
 
-				upcVersionDOM.appendChild(makePreview(upcomings[i]));
+				let previewDOM = makePreview(upcomings[i]);
+
+				upcVersionDOM.appendChild(previewDOM);
 				upcVersionDOM.classList.add("update-" + upcomings[i].type);
 
 				upcVersionDOM.addEventListener("click", function () {
@@ -380,6 +421,9 @@ function loadVersions(edition, panelDOM) {
 				upcYearDOM.appendChild(upcVersionDOM);
 				upcTimelineDOM.appendChild(upcYearDOM);
 				upcRulerDOM.appendChild(upcRulerYearDOM);
+
+				upcomings[i].versionDOM = upcVersionDOM;
+				upcomings[i].previewDOM = previewDOM;
 
 			}
 
@@ -569,6 +613,75 @@ function hideInfopanel() {
 	unlockBody();
 }
 
+function showNav() {
+	navDOM.style.width = "300px";
+	navDOM.style.borderWidth = "2px";
+}
+
+function hideNav() {
+	navDOM.style.width = "0";
+	navDOM.style.borderWidth = "0";
+}
+
+function updateVersionDisplays() {
+
+	buttonMajorDOM.innerText = originalMajorText + (showMajor ? ": ON" : ": OFF");
+	buttonMinorDOM.innerText = originalMinorText + (showMinor ? ": ON" : ": OFF");
+	buttonEventsDOM.innerText = originalEventsText + (showEvents ? ": ON" : ": OFF");
+	buttonMemoriesDOM.innerText = originalMemoriesText + (showMemories ? ": ON" : ": OFF");
+
+	for (let i = 0; i < editionsWithDOMs.length; i++) {
+
+		let alt = false;
+		let edition = editionsWithDOMs[i];
+
+		let totalVersions = edition.versions.concat(edition.upcomings);
+
+		for (let j = 0; j < totalVersions.length; j++) {
+
+			let version = totalVersions[j];
+
+			if (!version.today) {
+
+				if ((version.type === "major" && showMajor)
+					|| (version.type === "minor" && showMinor)
+					|| (version.type === "event" && showEvents)
+					|| (version.type === "memory" && showMemories)) {
+
+					version.versionDOM.classList.remove("alt");
+
+					if (version.first) {
+						version.previewDOM.classList.remove("hidden");
+					}
+					else {
+						version.versionDOM.classList.remove("hidden");
+					}
+
+					if (alt)
+						version.versionDOM.classList.add("alt");
+
+					alt = !alt;
+
+				}
+				else {
+
+					if (version.first) {
+						version.previewDOM.classList.add("hidden");
+					}
+					else {
+						version.versionDOM.classList.add("hidden");
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 let tooLong = true;
@@ -620,3 +733,27 @@ document.addEventListener("keydown", function keyDownTextField(e) {
 }, false);
 
 iPanelCloseDOM.addEventListener("click", hideInfopanel);
+
+navShowDOM.addEventListener("click", showNav);
+
+navHideDOM.addEventListener("click", hideNav);
+
+buttonMajorDOM.addEventListener("click", function(){
+	showMajor = !showMajor;
+	updateVersionDisplays();
+});
+
+buttonMinorDOM.addEventListener("click", function(){
+	showMinor = !showMinor;
+	updateVersionDisplays();
+});
+
+buttonEventsDOM.addEventListener("click", function(){
+	showEvents = !showEvents;
+	updateVersionDisplays();
+});
+
+buttonMemoriesDOM.addEventListener("click", function(){
+	showMemories = !showMemories;
+	updateVersionDisplays();
+});
