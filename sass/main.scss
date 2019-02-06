@@ -711,14 +711,6 @@ $upcoming-label-height: 206px;
 				margin-top: -($memory-width/2);
 				z-index: 15;
 
-				.preview {
-					.text-box {
-
-						display: block;
-
-					}
-				}
-
 			}
 
 			&.endpoint {
@@ -1112,6 +1104,48 @@ $upcoming-label-height: 206px;
 
 		}
 
+		#infopanel-video-link-wrapper {
+
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			&:before {
+
+				content: '';
+				width: 16px;
+				height: 11px;
+				display: inline-block;
+				margin-right: 5px;
+				background: url("../images/icons/ui/youtube.png") no-repeat center center;
+				background-size: cover;
+
+			}
+
+		}
+
+		#infopanel-video-wrapper {
+
+			position: relative;
+			padding-bottom: 0.8 * 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+			width: 80%;
+			margin-top: 10px;
+
+			iframe {
+
+				padding: 4px;
+				border: 2px solid transparentize($color-text-secondary,0.8);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+			}
+		}
+
 	}
 
 	li {
@@ -1138,6 +1172,23 @@ $upcoming-label-height: 206px;
 		h2,a,li,p {
 			font-size: $font-size-standard;
 		}
+
+		.content {
+
+			.infopanel-video-link-wrapper {
+
+				&:before {
+
+					content: '';
+					width: 32px;
+					height: 22px;
+					margin-right: 10px;
+
+				}
+
+			}
+
+		}
 	}
 
 	@include for-750-up {
@@ -1156,8 +1207,8 @@ $upcoming-label-height: 206px;
 
 	@include for-1600-up {
 
-		width: 60%;
-		height: 65%;
+		width: 65%;
+		height: 75%;
 
 	}
 

@@ -13,18 +13,21 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "Ju
 
 // +++ DOM Constants ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const iPanelWrapperDOM = id("infopanel-wrapper");
-const iPanelCloseDOM = id("infopanel-close");
-const iPanelTitleDOM = id("infopanel-title");
-const iPanelSubtitleDOM = id("infopanel-subtitle");
-const iPanelDateDOM = id("infopanel-date");
-const iPanelFunFactDOM = id("infopanel-fun-fact");
-const iPanelMainLabelDOM = id("infopanel-main-label");
-const iPanelMainFeatsDOM = id("infopanel-main-features");
-const iPanelMinorLabelDOM = id("infopanel-minor-label");
-const iPanelMinorFeatsDOM = id("infopanel-minor-features");
-const iPanelLearnMoreDOM = id("infopanel-learn-more");
-const iPanelScrollerDOM = id("infopanel-scroller");
+const infoWrapperDOM = id("infopanel-wrapper");
+const infoCloseDOM = id("infopanel-close");
+const infoTitleDOM = id("infopanel-title");
+const infoSubtitleDOM = id("infopanel-subtitle");
+const infoDateDOM = id("infopanel-date");
+const infoFunFactDOM = id("infopanel-fun-fact");
+const infoMainLabelDOM = id("infopanel-main-label");
+const infoMainFeatsDOM = id("infopanel-main-features");
+const infoMinorLabelDOM = id("infopanel-minor-label");
+const infoMinorFeatsDOM = id("infopanel-minor-features");
+const infoLearnMoreDOM = id("infopanel-learn-more");
+const infoScrollerDOM = id("infopanel-scroller");
+const infoVideoLinkWrapperDOM = id("infopanel-video-link-wrapper");
+const infoVideoLinkDOM = id("infopanel-video-link");
+const infoVideoWrapperDOM = id("infopanel-video-wrapper");
 
 const navDOM = id("nav");
 const navShowDOM = id("button-nav-show");
@@ -48,6 +51,8 @@ let originalMajorText = "Major Updates";
 let originalMinorText = "Minor Updates";
 let originalEventsText = "Events";
 let originalMemoriesText = "Memories";
+
+let player;
 
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -525,91 +530,123 @@ function showInfopanel(version) {
 	let hasMainFeat = version.mainFeatures !== undefined;
 	let hasMinorFeat = version.minorFeatures !== undefined;
 	let hasLearnMore = version.learnMore !== undefined;
+	let hasVideo = version.video !== undefined;
 
 	if (hasTitle) {
-		iPanelTitleDOM.innerText = version.title;
+		infoTitleDOM.innerText = version.title;
 	}
 	else if (hasSubtitle) {
-		iPanelTitleDOM.innerText = version.subtitle;
+		infoTitleDOM.innerText = version.subtitle;
 	}
 	else {
-		iPanelTitleDOM.innerText = "Unknown Update";
+		infoTitleDOM.innerText = "Unknown Update";
 	}
 
 	if (hasSubtitle && hasTitle) {
-		iPanelSubtitleDOM.innerText = version.subtitle + (hasDate || hasPossibleDate ? " • " : "");
+		infoSubtitleDOM.innerText = version.subtitle + (hasDate || hasPossibleDate ? " • " : "");
 	}
 	else {
-		iPanelSubtitleDOM.innerText = "";
+		infoSubtitleDOM.innerText = "";
 	}
 
 	if (hasDate && !hasPossibleDate) {
 		let date = new Date(parseUTC(version.date));
-		iPanelDateDOM.innerText = MONTH_NAMES[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+		infoDateDOM.innerText = MONTH_NAMES[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
 	}
 	else if (hasPossibleDate) {
-		iPanelDateDOM.innerText = version.possibleDate;
+		infoDateDOM.innerText = version.possibleDate;
 	}
 	else {
-		iPanelDateDOM.innerText = "";
+		infoDateDOM.innerText = "";
 	}
 
 	if (hasFunFact) {
-		show(iPanelFunFactDOM);
-		iPanelFunFactDOM.innerText = version.funFact;
+		show(infoFunFactDOM);
+		infoFunFactDOM.innerText = version.funFact;
 	}
 	else {
-		hide(iPanelFunFactDOM);
+		hide(infoFunFactDOM);
 	}
 
 	if (hasMainFeat) {
-		show(iPanelMainLabelDOM);
-		destroyChildren(iPanelMainFeatsDOM);
+		show(infoMainLabelDOM);
+		destroyChildren(infoMainFeatsDOM);
 
 		for (let i = 0; i < version.mainFeatures.length; i++) {
 
-			iPanelMainFeatsDOM.appendChild(make("li", "", version.mainFeatures[i].text));
+			infoMainFeatsDOM.appendChild(make("li", "", version.mainFeatures[i].text));
 
 		}
 
 	}
 	else {
-		hide(iPanelMainLabelDOM);
-		destroyChildren(iPanelMainFeatsDOM);
+		hide(infoMainLabelDOM);
+		destroyChildren(infoMainFeatsDOM);
 	}
 
 	if (hasMinorFeat) {
-		show(iPanelMinorLabelDOM);
-		destroyChildren(iPanelMinorFeatsDOM);
+		show(infoMinorLabelDOM);
+		destroyChildren(infoMinorFeatsDOM);
 
 		for (let i = 0; i < version.minorFeatures.length; i++) {
 
-			iPanelMinorFeatsDOM.appendChild(make("li", "", version.minorFeatures[i].text));
+			infoMinorFeatsDOM.appendChild(make("li", "", version.minorFeatures[i].text));
 
 		}
 
 	}
 	else {
-		hide(iPanelMinorLabelDOM);
-		destroyChildren(iPanelMinorFeatsDOM);
+		hide(infoMinorLabelDOM);
+		destroyChildren(infoMinorFeatsDOM);
 	}
 
 	if (hasLearnMore) {
-		show(iPanelLearnMoreDOM);
-		iPanelLearnMoreDOM.href = version.learnMore.startsWith("#") ? WIKI_PATH + version.learnMore.substring(1,version.learnMore.length) : version.learnMore;
+		show(infoLearnMoreDOM);
+		infoLearnMoreDOM.href = version.learnMore.startsWith("#") ? WIKI_PATH + version.learnMore.substring(1,version.learnMore.length) : version.learnMore;
+
+		switch (version.type) {
+			case "minor":
+			case "major":
+				infoLearnMoreDOM.innerText = "Learn more about this update";
+				break;
+			case "event":
+				infoLearnMoreDOM.innerText = "Learn more about this event";
+				break;
+			case "memory":
+				infoLearnMoreDOM.innerText = "Learn more about this memory";
+				break
+		}
+
 	}
 	else {
-		hide(iPanelLearnMoreDOM);
+		hide(infoLearnMoreDOM);
+	}
+	
+	if (hasVideo) {
+
+		infoVideoLinkDOM.href = "https://www.youtube.com/watch?v=" + version.video;
+		infoVideoLinkDOM.src = "https://www.youtube.com/embed/" + version.video;
+
+		player.cueVideoById(version.video);
+
+		show(infoVideoWrapperDOM);
+		show(infoVideoLinkWrapperDOM);
+	} 
+	else {
+		player.pauseVideo();
+		hide(infoVideoWrapperDOM);
+		hide(infoVideoLinkWrapperDOM)
 	}
 
-	show(iPanelWrapperDOM);
-	iPanelScrollerDOM.scrollTop = 0;
+	show(infoWrapperDOM);
+	infoScrollerDOM.scrollTop = 0;
 	lockBody();
 
 }
 
 function hideInfopanel() {
-	hide(iPanelWrapperDOM);
+	player.pauseVideo();
+	hide(infoWrapperDOM);
 	unlockBody();
 }
 
@@ -684,6 +721,11 @@ function updateVersionDisplays() {
 
 // +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+let youtubeLoader = make("script");
+youtubeLoader.src = "https://www.youtube.com/iframe_api";
+let firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(youtubeLoader, firstScriptTag);
+
 let tooLong = true;
 
 ajaxGET(JSON_URL, function (data, status) {
@@ -716,6 +758,12 @@ ajaxGET(JSON_URL, function (data, status) {
 
 });
 
+function onYouTubeIframeAPIReady() {
+
+	player = new YT.Player('infopanel-video',{playerVars: { 'autoplay': 0}});
+
+}
+
 setTimeout(function () {
 
 	if (tooLong) {
@@ -732,7 +780,7 @@ document.addEventListener("keydown", function keyDownTextField(e) {
 
 }, false);
 
-iPanelCloseDOM.addEventListener("click", hideInfopanel);
+infoCloseDOM.addEventListener("click", hideInfopanel);
 
 navShowDOM.addEventListener("click", showNav);
 
