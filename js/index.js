@@ -16,6 +16,7 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "Ju
 const infoWrapperDOM = id("infopanel-wrapper");
 const infoCloseDOM = id("infopanel-close");
 const infoTitleDOM = id("infopanel-title");
+const infoIconDOM = id("infopanel-icon");
 const infoSubtitleDOM = id("infopanel-subtitle");
 const infoDateDOM = id("infopanel-date");
 const infoFunFactDOM = id("infopanel-fun-fact");
@@ -522,6 +523,7 @@ function makeBox(version, edition, date) {
 
 function showInfopanel(version) {
 
+	let hasIcon = version.icon !== undefined;
 	let hasTitle = version.title !== undefined;
 	let hasSubtitle = version.subtitle !== undefined;
 	let hasDate = version.date !== undefined;
@@ -540,6 +542,14 @@ function showInfopanel(version) {
 	}
 	else {
 		infoTitleDOM.innerText = "Unknown Update";
+	}
+
+	if (hasIcon) {
+		show(infoIconDOM);
+		infoIconDOM.src = ICON_VERSION_PATH + version.icon;
+	}
+	else {
+		hide(infoIconDOM);
 	}
 
 	if (hasSubtitle && hasTitle) {
@@ -633,7 +643,6 @@ function showInfopanel(version) {
 		show(infoVideoLinkWrapperDOM);
 	} 
 	else {
-		player.pauseVideo();
 		hide(infoVideoWrapperDOM);
 		hide(infoVideoLinkWrapperDOM)
 	}

@@ -1034,55 +1034,43 @@ $upcoming-label-height: 206px;
 
 .infopanel {
 
-	border: 52px solid transparent;
-	border-image: url("../images/borders/panel_book.png") 52 fill repeat repeat;
-	width: 94%;
-	height: 96%;
 	display: flex;
 	flex-direction: column;
+	width: 94%;
+	height: 96%;
 
-	h1 {
-		font-size: $font-size-standard;
-	}
+	.top-bar {
 
-	h2,h3,a,li,p {
-		font-size: $font-size-small;
-	}
+		border: 12px solid transparent;
+		border-bottom-width: 4px;
+		border-image: url("../images/borders/panel_book_top.png") 12 12 4 12 fill repeat repeat;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-shrink: 0;
 
-	h1,h2,h3,a,li,p {
+		#infopanel-icon {
 
-		text-shadow: none;
-		color: $color-text-secondary;
+			height: 32px;
+			margin-right: 10px;
 
-	}
+		}
 
-	header {
+		#infopanel-close {
 
-		margin-bottom: 10px;
-		padding-bottom: 10px;
-		border-bottom: 2px solid transparentize($color-text-secondary,0.8);
+			outline: none;
+			border: none;
+			background: url("../images/icons/ui/button_close.png") no-repeat center center;
+			cursor: pointer;
+			width: 36px;
+			height: 36px;
+			margin-left: auto;
+			display: block;
 
-		.title {
+			&:hover {
 
-			display: flex;
-			justify-content: space-between;
-
-			#infopanel-close {
-
-				outline: none;
-				border: none;
-				background: url("../images/icons/ui/button_close.png") no-repeat center center;
-				cursor: pointer;
-				flex-shrink: 0;
-
-				width: 48px;
-				height: 48px;
-
-				&:hover {
-
-					filter: brightness(1.1);
-
-				}
+				filter: brightness(1.1);
 
 			}
 
@@ -1092,7 +1080,53 @@ $upcoming-label-height: 206px;
 
 	.content {
 
+		flex: 1;
+		border: 48px solid transparent;
+		border-top-width: 18px;
+		border-image: url("../images/borders/panel_book.png") 18 48 48 48 fill repeat repeat;
+		display: flex;
+		flex-direction: column;
 		overflow-y: auto;
+		overflow-x: hidden;
+
+		h1 {
+			font-size: $font-size-standard;
+		}
+
+		h2,h3,a,li,p {
+			font-size: $font-size-small;
+		}
+
+		h1,h2,h3,a,li,p {
+
+			text-shadow: none;
+			color: $color-text-secondary;
+
+		}
+
+		li {
+
+			margin-bottom: -0.2em;
+
+			&:before {
+
+				content: "• ";
+
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}
+
+		header {
+
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid transparentize($color-text-secondary,0.8);
+
+		}
 
 		#infopanel-fun-fact {
 
@@ -1148,32 +1182,17 @@ $upcoming-label-height: 206px;
 
 	}
 
-	li {
-
-		margin-bottom: -0.2em;
-
-		&:before {
-
-			content: "• ";
-
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
-	}
-
 	@include for-600-up {
-		h1 {
-			font-size: $font-size-big;
-		}
-
-		h2,a,li,p {
-			font-size: $font-size-standard;
-		}
 
 		.content {
+
+			h1 {
+				font-size: $font-size-big;
+			}
+
+			h2,a,li,p {
+				font-size: $font-size-standard;
+			}
 
 			.infopanel-video-link-wrapper {
 
@@ -1189,6 +1208,7 @@ $upcoming-label-height: 206px;
 			}
 
 		}
+
 	}
 
 	@include for-750-up {
