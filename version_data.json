@@ -16,7 +16,7 @@
 					"description": "Cobble & Grass",
 					"type": "major",
 					"date": "2009-05-10",
-					"icon": "java/version_cave_game.png",
+					"icon": "versions/java/version_cave_game.png",
 					"learnMore": "#Cave_game_tech_test",
 					"mainFeatures": [
 						{"text": "Cobblestone"},
@@ -34,7 +34,7 @@
 					"description": "Trees & Ores",
 					"type": "major",
 					"date": "2009-05-16",
-					"icon": "java/version_early_classic.png",
+					"icon": "versions/java/version_early_classic.png",
 					"learnMore": "#Early_Classic_Creative",
 					"mainFeatures": [
 						{"text": "Trees"},
@@ -52,7 +52,7 @@
 					"description": "Flowers & Glass",
 					"type": "major",
 					"date": "2009-05-31",
-					"icon": "java/version_multiplayer_test.png",
+					"icon": "versions/java/version_multiplayer_test.png",
 					"learnMore": "#Multiplayer_Test",
 					"mainFeatures": [
 						{"text": "Flowers"},
@@ -71,7 +71,7 @@
 					"description": "Health & Creepers",
 					"type": "major",
 					"date": "2009-09-01",
-					"icon": "java/version_survival_test.png",
+					"icon": "versions/java/version_survival_test.png",
 					"funFact": "Did you know? Creepers were originally broken Pigs.",
 					"learnMore": "#Survival_Test",
 					"mainFeatures": [
@@ -92,7 +92,7 @@
 					"description": "Block Placement Controls",
 					"type": "major",
 					"date": "2009-10-27",
-					"icon": "java/version_late_classic.png",
+					"icon": "versions/java/version_late_classic.png",
 					"funFact": "Did you know? This update overlapped with \"Survival Test\".",
 					"learnMore": "#Late_Classic_Creative",
 					"mainFeatures": [
@@ -105,7 +105,7 @@
 					"description": "Crafting Tables, Tools & Diamonds",
 					"type": "major",
 					"date": "2009-12-23",
-					"icon": "java/version_indev_0_31.png",
+					"icon": "versions/java/version_indev_0_31.png",
 					"funFact": "Did you know? Notch released 24 updates under this name.",
 					"learnMore": "#Indev_0.31",
 					"mainFeatures": [
@@ -127,7 +127,7 @@
 					"description": "Farming & Armor",
 					"type": "major",
 					"date": "2010-02-06",
-					"icon": "java/version_indev.png",
+					"icon": "versions/java/version_indev.png",
 					"learnMore": "#Minecraft_Indev",
 					"mainFeatures": [
 						{"text": "Farming"},
@@ -147,7 +147,7 @@
 					"description": "Dungeons, Rails & Infinite World",
 					"type": "major",
 					"date": "2010-02-27",
-					"icon": "java/version_infdev.png",
+					"icon": "versions/java/version_infdev.png",
 					"funFact": "Did you know? \"Infdev\" stands for \"Infinite Development\".",
 					"learnMore": "#Minecraft_Infdev",
 					"mainFeatures": [
@@ -168,7 +168,7 @@
 					"description": "Redstone",
 					"type": "major",
 					"date": "2010-07-03",
-					"icon": "java/version_alpha_1_0.png",
+					"icon": "versions/java/version_alpha_1_0.png",
 					"learnMore": "#Alpha_v1.0.1",
 					"mainFeatures": [
 						{"text": "Redstone Dust"},
@@ -188,7 +188,7 @@
 					"description": "Compasses",
 					"type": "major",
 					"date": "2010-09-10",
-					"icon": "java/version_alpha_1_1.png",
+					"icon": "versions/java/version_alpha_1_1.png",
 					"learnMore": "#Alpha_v1.1.0",
 					"mainFeatures": [
 						{"text": "Compasses"}
@@ -204,7 +204,7 @@
 					"description": "The Nether",
 					"type": "major",
 					"date": "2010-10-30",
-					"icon": "java/version_alpha_1_2.png",
+					"icon": "versions/java/version_alpha_1_2.png",
 					"learnMore": "#Halloween_Update",
 					"mainFeatures": [
 						{"text": "The Nether"},
@@ -222,7 +222,7 @@
 					"description": "Eggs",
 					"type": "major",
 					"date": "2010-12-20",
-					"icon": "java/version_beta_1_0.png",
+					"icon": "versions/java/version_beta_1_0.png",
 					"learnMore": "#Beta_1.0",
 					"mainFeatures": [
 						{"text": "Throwable Eggs"}
@@ -234,7 +234,7 @@
 					"description": "Leaf Decay",
 					"type": "major",
 					"date": "2010-12-22",
-					"icon": "java/version_beta_1_1.png",
+					"icon": "versions/java/version_beta_1_1.png",
 					"learnMore": "#Beta_1.1",
 					"mainFeatures": [
 						{"text": "Better Leaf Decay"}
@@ -246,7 +246,7 @@
 					"description": "Note Blocks & Cakes",
 					"type": "major",
 					"date": "2011-01-13",
-					"icon": "java/version_beta_1_2.png",
+					"icon": "versions/java/version_beta_1_2.png",
 					"learnMore": "#Beta_1.2",
 					"mainFeatures": [
 						{"text": "Note Blocks"},
@@ -267,7 +267,7 @@
 					"description": "Beds & Repeaters",
 					"type": "major",
 					"date": "2011-02-22",
-					"icon": "java/version_beta_1_3.png",
+					"icon": "versions/java/version_beta_1_3.png",
 					"learnMore": "#Beta_1.3",
 					"mainFeatures": [
 						{"text": "Beds"},
@@ -283,7 +283,7 @@
 					"description": "Wolves & New Logo",
 					"type": "major",
 					"date": "2011-03-31",
-					"icon": "java/version_beta_1_4.png",
+					"icon": "versions/java/version_beta_1_4.png",
 					"funFact": "Did you know? The mod \"Better than Wolves\" was created because its creator disliked this update.",
 					"learnMore": "#Beta_1.4",
 					"mainFeatures": [
@@ -300,7 +300,7 @@
 					"description": "Achievements & Powered Rails",
 					"type": "major",
 					"date": "2011-04-19",
-					"icon": "java/version_beta_1_5.png",
+					"icon": "versions/java/version_beta_1_5.png",
 					"learnMore": "#Beta_1.5",
 					"mainFeatures": [
 						{"text": "Achievements"},
@@ -317,7 +317,7 @@
 					"description": "Maps & Trapdoors",
 					"type": "major",
 					"date": "2011-05-26",
-					"icon": "java/version_beta_1_6.png",
+					"icon": "versions/java/version_beta_1_6.png",
 					"learnMore": "#Beta_1.6",
 					"mainFeatures": [
 						{"text": "Maps"},
@@ -334,7 +334,7 @@
 					"description": "Pistons",
 					"type": "major",
 					"date": "2011-06-30",
-					"icon": "java/version_beta_1_7.png",
+					"icon": "versions/java/version_beta_1_7.png",
 					"funFact": "Did you know? Pistons were originally a mod.",
 					"learnMore": "#Beta_1.7",
 					"mainFeatures": [
@@ -353,7 +353,7 @@
 					"description": "Endermen & Hunger",
 					"type": "major",
 					"date": "2011-09-14",
-					"icon": "java/version_beta_1_8.png",
+					"icon": "versions/java/version_beta_1_8.png",
 					"funFact": "Did you know? The hunger system was somewhat controversial.",
 					"learnMore": "#Beta_1.8",
 					"mainFeatures": [
@@ -378,7 +378,7 @@
 					"description": "The End & Enchanting",
 					"type": "major",
 					"date": "2011-11-18",
-					"icon": "java/version_1_0.png",
+					"icon": "versions/java/version_1_0.png",
 					"funFact": "Did you know? The game was fully released during Minecon 2011.",
 					"learnMore": "#1.0.0",
 					"mainFeatures": [
@@ -402,7 +402,7 @@
 					"description": "Spawn Eggs",
 					"type": "major",
 					"date": "2012-01-12",
-					"icon": "java/version_1_1.png",
+					"icon": "versions/java/version_1_1.png",
 					"learnMore": "#1.1",
 					"mainFeatures": [
 						{"text": "Spawn Eggs"}
@@ -418,7 +418,7 @@
 					"description": "Jungles & Iron Golems",
 					"type": "major",
 					"date": "2012-03-01",
-					"icon": "java/version_1_2.png",
+					"icon": "versions/java/version_1_2.png",
 					"learnMore": "#1.2.1",
 					"mainFeatures": [
 						{"text": "Jungles"},
@@ -438,7 +438,7 @@
 					"description": "Trading & Temples",
 					"type": "major",
 					"date": "2012-08-01",
-					"icon": "java/version_1_3.png",
+					"icon": "versions/java/version_1_3.png",
 					"learnMore": "#1.3.1",
 					"mainFeatures": [
 						{"text": "Villager Trading"},
@@ -461,7 +461,7 @@
 					"description": "Withers, Anvils & Cmd. Blocks",
 					"type": "major",
 					"date": "2012-10-25",
-					"icon": "java/version_1_4.png",
+					"icon": "versions/java/version_1_4.png",
 					"learnMore": "#Pretty_Scary_Update",
 					"mainFeatures": [
 						{"text": "Withers"},
@@ -485,7 +485,7 @@
 					"description": "More Redstone components & Quartz",
 					"type": "major",
 					"date": "2013-03-13",
-					"icon": "java/version_1_5.png",
+					"icon": "versions/java/version_1_5.png",
 					"learnMore": "#Redstone_Update",
 					"mainFeatures": [
 						{"text": "Hopper"},
@@ -507,7 +507,7 @@
 					"description": "Horses",
 					"type": "major",
 					"date": "2013-07-01",
-					"icon": "java/version_1_6.png",
+					"icon": "versions/java/version_1_6.png",
 					"funFact": "Did you know? Horses were originally from the mod \"Mo' Creatures.\"",
 					"learnMore": "#Horse_Update",
 					"mainFeatures": [
@@ -527,7 +527,7 @@
 					"description": "New Biomes & World Generator",
 					"type": "major",
 					"date": "2013-10-25",
-					"icon": "java/version_1_7.png",
+					"icon": "versions/java/version_1_7.png",
 					"learnMore": "#The_Update_that_Changed_the_World",
 					"mainFeatures": [
 						{"text": "11 new Biomes such as Mesas and Mega Taigas"},
@@ -545,7 +545,7 @@
 					"description": "Ocean Monuments & Slime Blocks",
 					"type": "major",
 					"date": "2014-09-02",
-					"icon": "java/version_1_8.png",
+					"icon": "versions/java/version_1_8.png",
 					"learnMore": "#Bountiful_Update",
 					"mainFeatures": [
 						{"text": "Ocean Monuments"},
@@ -570,7 +570,7 @@
 					"description": "End Cities, Elytra Wings & Combat Changes",
 					"type": "major",
 					"date": "2016-02-29",
-					"icon": "java/version_1_9.png",
+					"icon": "versions/java/version_1_9.png",
 					"funFact": "Did you know? This update is considered the most controversial one so far, due to the combat changes.",
 					"learnMore": "#Combat_Update",
 					"mainFeatures": [
@@ -598,7 +598,7 @@
 					"description": "Polar Bears & Magma Blocks",
 					"type": "major",
 					"date": "2016-06-08",
-					"icon": "java/version_1_10.png",
+					"icon": "versions/java/version_1_10.png",
 					"learnMore": "#Frostburn_Update",
 					"mainFeatures": [
 						{"text": "Polar Bears"},
@@ -619,7 +619,7 @@
 					"description": "Woodland Mansions & Shulker Boxes",
 					"type": "major",
 					"date": "2016-11-14",
-					"icon": "java/version_1_11.png",
+					"icon": "versions/java/version_1_11.png",
 					"learnMore": "#Exploration_Update",
 					"mainFeatures": [
 						{"text": "Woodland Mansions"},
@@ -638,7 +638,7 @@
 					"description": "Colorful Blocks, Parrots & Renamed Game",
 					"type": "major",
 					"date": "2017-06-07",
-					"icon": "java/version_1_12.png",
+					"icon": "versions/java/version_1_12.png",
 					"funFact": "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now, cookies instantly kill parrots. Tame them with seeds instead.",
 					"learnMore": "#World_of_Color_Update",
 					"mainFeatures": [
@@ -662,7 +662,7 @@
 					"description": "Ocean Overhaul & Phantoms",
 					"type": "major",
 					"date": "2018-07-18",
-					"icon": "java/version_1_13.png",
+					"icon": "versions/java/version_1_13.png",
 					"funFact": "Did you know? The name of this update is a reference to the movie \"The Life Aquatic\".",
 					"learnMore": "#Update_Aquatic",
 					"mainFeatures": [
@@ -691,7 +691,7 @@
 					"title": "Paulsoaresjr's First Night",
 					"type": "memory",
 					"date": "2010-07-29",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "0VWnQHS-ffs"
 				},
 
@@ -699,7 +699,7 @@
 					"title": "X's Adventures in Minecraft",
 					"type": "memory",
 					"date": "2010-08-04",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "4bh4EexJO4I"
 				},
 
@@ -707,7 +707,7 @@
 					"title": "Revenge",
 					"type": "memory",
 					"date": "2011-08-19",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "cPJUBQd-PNM"
 				},
 
@@ -715,7 +715,7 @@
 					"title": "How to Build a Fireplace in Minecraft",
 					"type": "memory",
 					"date": "2010-09-18",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "LnjSWPxJxNs"
 				},
 
@@ -723,7 +723,7 @@
 					"title": "The Temple Of Notch",
 					"type": "memory",
 					"date": "2011-09-05",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "gZ9lNZrNhwQ"
 				},
 
@@ -731,7 +731,7 @@
 					"title": "Biome Test",
 					"type": "memory",
 					"date": "2010-10-27",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "nnvSFqIQh0U"
 				},
 
@@ -739,7 +739,7 @@
 					"title": "Yogscast's First Night",
 					"type": "memory",
 					"date": "2010-12-02",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "4UdEFmxRmNE"
 				},
 
@@ -747,7 +747,7 @@
 					"title": "Etho's First Night",
 					"type": "memory",
 					"date": "2010-12-17",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "lHngf-CKCzk"
 				},
 
@@ -755,7 +755,7 @@
 					"title": "Shadow of Israphel",
 					"type": "memory",
 					"date": "2011-01-27",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "2Gi9-UZKYo4"
 				},
 
@@ -763,7 +763,7 @@
 					"title": "Wool",
 					"type": "memory",
 					"date": "2011-08-02",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "5NylmdC_uEM"
 				},
 
@@ -771,7 +771,7 @@
 					"title": "Hermitcraft 1",
 					"type": "memory",
 					"date": "2012-04-24",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "mzmW-fQ_rzQ"
 				},
 
@@ -779,7 +779,7 @@
 					"title": "Achievement Hunter's First Night",
 					"type": "memory",
 					"date": "2012-05-11",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "FrLgREKD4kk"
 				},
 
@@ -787,8 +787,22 @@
 					"title": "The Bomb",
 					"type": "memory",
 					"date": "2013-02-21",
-					"icon": "version_memory_youtube.png",
+					"icon": "memories/memory_youtube.png",
 					"video": "F2ohslGivm8"
+				},
+
+				{
+					"title": "Game bought by Microsoft",
+					"type": "event",
+					"date": "2014-11-06",
+					"icon": "events/event_microsoft.png",
+					"learnMore": "https://mojang.com/2014/09/yes-were-being-bought-by-microsoft/",
+					"longDescription": [
+						"On November of 2014, all of Mojang was acquired by Microsoft for $2.5 billion. This included Minecraft, of course.",
+						"The process began a few months earlier. Many suspected this acquisition was happening, but Mojang only confirmed it on September.",
+						"According to Notch, he sold Mojang because he didn't want the responsibility of owning a company of such global significance.",
+						"As soon as Mojang was sold, Notch and the other two founders (Carl and Jakob) left the company."
+					]
 				}
 
 			],
@@ -801,7 +815,7 @@
 					"description": "Village overhaul, new textures & Bamboo Forests",
 					"type": "major",
 					"possibleDate": "Early 2019",
-					"icon": "java/version_1_14.png",
+					"icon": "versions/java/version_1_14.png",
 					"learnMore": "#1.14",
 					"mainFeatures": [
 						{"text": "Village overhaul"},
@@ -833,7 +847,7 @@
 					"type": "major",
 					"date": "2011-07-01",
 					"possibleDate": "Late 2011",
-					"icon": "bedrock/version_pe_pre_release.png",
+					"icon": "versions/bedrock/version_pe_pre_release.png",
 					"funFact": "Not much is known about this version, as it was never publicly released.",
 					"learnMore": "#Pocket_Edition_Pre-release",
 					"mainFeatures": [
@@ -849,7 +863,7 @@
 					"description": "Random Worlds & Multiplayer",
 					"type": "major",
 					"date": "2011-08-16",
-					"icon": "bedrock/version_pe_alpha_0_1.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_1.png",
 					"funFact": "Did you know? This update added many blocks, being close to Java Edition Infdev.",
 					"learnMore": "#Pocket_Edition_Alpha_0.1.0",
 					"mainFeatures": [
@@ -870,7 +884,7 @@
 					"description": "Survival Mode & Mobs",
 					"type": "major",
 					"date": "2012-02-11",
-					"icon": "bedrock/version_pe_alpha_0_2.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_2.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.2.0",
 					"mainFeatures": [
 						{"text": "Survival Mode"},
@@ -890,7 +904,7 @@
 					"description": "Crafting Table & Furnaces",
 					"type": "major",
 					"date": "2012-04-24",
-					"icon": "bedrock/version_pe_alpha_0_3.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_3.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.3.0",
 					"mainFeatures": [
 						{"text": "Crafting Tables"},
@@ -916,7 +930,7 @@
 					"description": "Creepers & Chests",
 					"type": "major",
 					"date": "2012-09-06",
-					"icon": "bedrock/version_pe_alpha_0_4.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_4.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.4.0",
 					"mainFeatures": [
 						{"text": "Creepers"},
@@ -937,7 +951,7 @@
 					"description": "Nether Reactor & Melons",
 					"type": "major",
 					"date": "2012-11-15",
-					"icon": "bedrock/version_pe_alpha_0_5.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_5.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.5.0",
 					"mainFeatures": [
 						{"text": "Nether Reactor"},
@@ -955,7 +969,7 @@
 					"description": "Netherrack & Stonecutter",
 					"type": "major",
 					"date": "2013-01-30",
-					"icon": "bedrock/version_pe_alpha_0_6.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_6.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.6.0",
 					"mainFeatures": [
 						{"text": "Netherrack"},
@@ -976,7 +990,7 @@
 					"description": "Buckets, Spawn Eggs & Sky features",
 					"type": "major",
 					"date": "2013-06-05",
-					"icon": "bedrock/version_pe_alpha_0_7.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_7.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.7.0",
 					"mainFeatures": [
 						{"text": "Buckets"},
@@ -996,7 +1010,7 @@
 					"description": "Rails & Beetroots",
 					"type": "major",
 					"date": "2013-12-12",
-					"icon": "bedrock/version_pe_alpha_0_8.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_8.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.8.0",
 					"mainFeatures": [
 						{"text": "Rails"},
@@ -1016,7 +1030,7 @@
 					"description": "Infinite Worlds & Endermen",
 					"type": "major",
 					"date": "2014-07-10",
-					"icon": "bedrock/version_pe_alpha_0_9.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_9.png",
 					"funFact": "Did you know? This huge update made the game almost equivalent to Java Edition 1.8.",
 					"learnMore": "#Pocket_Edition_Alpha_0.9.0",
 					"mainFeatures": [
@@ -1039,7 +1053,7 @@
 					"description": "Creative Day-Night Cycle & More Fences",
 					"type": "major",
 					"date": "2014-11-18",
-					"icon": "bedrock/version_pe_alpha_0_10.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_10.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.10.0",
 					"mainFeatures": [
 						{"text": "Day-Night Cycle for Creative Mode"},
@@ -1055,7 +1069,7 @@
 					"description": "Boats & Skins",
 					"type": "major",
 					"date": "2015-06-04",
-					"icon": "bedrock/version_pe_alpha_0_11.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_11.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.11.0",
 					"mainFeatures": [
 						{"text": "Boats"},
@@ -1078,7 +1092,7 @@
 					"description": "The Nether, Enchanting & Anvils",
 					"type": "major",
 					"date": "2015-07-29",
-					"icon": "bedrock/version_pe_alpha_0_12.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_12.png",
 					"funFact": "Did you know? This was the first version of the Windows 10 Edition.",
 					"learnMore": "#Pocket_Edition_Alpha_0.12.0",
 					"mainFeatures": [
@@ -1103,7 +1117,7 @@
 					"description": "Redstone",
 					"type": "major",
 					"date": "2015-11-19",
-					"icon": "bedrock/version_pe_alpha_0_13.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_13.png",
 					"learnMore": "#Pocket_Edition_Alpha_0.13.0",
 					"mainFeatures": [
 						{"text": "Redstone"},
@@ -1129,7 +1143,7 @@
 					"description": "More Redstone Components, Witches & Maps",
 					"type": "major",
 					"date": "2016-02-18",
-					"icon": "bedrock/version_pe_alpha_0_14.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_14.png",
 					"learnMore": "#Overworld_Update",
 					"mainFeatures": [
 						{"text": "Dispensers"},
@@ -1153,7 +1167,7 @@
 					"description": "Realms, Pistons & Horses",
 					"type": "major",
 					"date": "2016-06-10",
-					"icon": "bedrock/version_pe_alpha_0_15.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_15.png",
 					"learnMore": "#Friendly_Update",
 					"mainFeatures": [
 						{"text": "Realms"},
@@ -1175,7 +1189,7 @@
 					"description": "Ocean Monuments & Withers",
 					"type": "major",
 					"date": "2016-10-21",
-					"icon": "bedrock/version_pe_alpha_0_16.png",
+					"icon": "versions/bedrock/version_pe_alpha_0_16.png",
 					"learnMore": "#Boss_Update",
 					"mainFeatures": [
 						{"text": "Ocean Monuments"},
@@ -1193,7 +1207,7 @@
 					"description": "The End",
 					"type": "major",
 					"date": "2016-12-19",
-					"icon": "bedrock/version_pe_1_0.png",
+					"icon": "versions/bedrock/version_pe_1_0.png",
 					"funFact": "This update is equivalent to Java Edition 1.9, without combat changes.",
 					"learnMore": "#Ender_Update",
 					"mainFeatures": [
@@ -1218,7 +1232,7 @@
 					"description": "Woodland Mansions & The Marketplace",
 					"type": "major",
 					"date": "2017-06-01",
-					"icon": "bedrock/version_pe_1_1.png",
+					"icon": "versions/bedrock/version_pe_1_1.png",
 					"funFact": "This update is equivalent to Java Edition 1.11.",
 					"learnMore": "#Discovery_Update",
 					"mainFeatures": [
@@ -1240,7 +1254,7 @@
 					"description": "Merged Pocket Edition with Console Edition",
 					"type": "major",
 					"date": "2017-09-20",
-					"icon": "bedrock/version_1_2.png",
+					"icon": "versions/bedrock/version_1_2.png",
 					"funFact": "Did you know? The PS4 did not receive this update because Sony didn't allow the game to have cross-play.",
 					"learnMore": "#Better_Together_Update",
 					"mainFeatures": [
@@ -1264,7 +1278,7 @@
 					"description": "Ocean Overhaul",
 					"type": "major",
 					"date": "2018-05-16",
-					"icon": "bedrock/version_1_4.png",
+					"icon": "versions/bedrock/version_1_4.png",
 					"learnMore": "#Bedrock_Edition_1.4.0",
 					"mainFeatures": [
 						{"text": "Kelp and Seagrass"},
@@ -1290,7 +1304,7 @@
 					"description": "Turtles & Conduits",
 					"type": "major",
 					"date": "2018-07-10",
-					"icon": "bedrock/version_1_5.png",
+					"icon": "versions/bedrock/version_1_5.png",
 					"learnMore": "#Bedrock_Edition_1.5.0",
 					"mainFeatures": [
 						{"text": "Turtles"},
@@ -1304,7 +1318,7 @@
 					"description": "Phantoms & Barriers",
 					"type": "major",
 					"date": "2018-08-28",
-					"icon": "bedrock/version_1_6.png",
+					"icon": "versions/bedrock/version_1_6.png",
 					"learnMore": "#Bedrock_Edition_1.6.0",
 					"mainFeatures": [
 						{"text": "Phantoms"},
@@ -1320,7 +1334,7 @@
 					"description": "/scoreboard Command",
 					"type": "major",
 					"date": "2018-10-15",
-					"icon": "bedrock/version_1_7.png",
+					"icon": "versions/bedrock/version_1_7.png",
 					"funFact": "Did you know? This is the major update with the least amount of content in Minecraft history.",
 					"learnMore": "#Bedrock_Edition_1.7.0",
 					"mainFeatures": [
@@ -1337,7 +1351,7 @@
 					"description": "Pandas & Scaffolding",
 					"type": "major",
 					"date": "2018-12-11",
-					"icon": "bedrock/version_1_8.png",
+					"icon": "versions/bedrock/version_1_8.png",
 					"learnMore": "#Bedrock_Edition_1.8.0",
 					"mainFeatures": [
 						{"text": "Pandas"},
@@ -1361,7 +1375,7 @@
 					"description": "Pillagers & Revamped Crafting",
 					"type": "major",
 					"possibleDate": "February 2019",
-					"icon": "bedrock/version_1_9.png",
+					"icon": "versions/bedrock/version_1_9.png",
 					"learnMore": "#Bedrock_Edition_1.9.0",
 					"mainFeatures": [
 						{"text": "More Crafting Stations"},
@@ -1382,7 +1396,7 @@
 					"description": "Wandering Traders & Ravagers",
 					"type": "major",
 					"possibleDate": "Probably Mid 2019",
-					"icon": "bedrock/version_1_10.png",
+					"icon": "versions/bedrock/version_1_10.png",
 					"learnMore": "#Bedrock_Edition_1.10.0",
 					"mainFeatures": [
 						{"text": "Wandering Traders"},
@@ -1403,7 +1417,7 @@
 					"description": "???",
 					"type": "major",
 					"possibleDate": "Probably Late 2019",
-					"icon": "version_unknown.png",
+					"icon": "versions/version_unknown.png",
 					"learnMore": "#Planned_versions#1.11"
 				},
 
@@ -1412,7 +1426,7 @@
 					"description": "4K HDR Option & Super Duper Graphics Pack",
 					"type": "major",
 					"possibleDate": "Far future",
-					"icon": "bedrock/version_4k.png",
+					"icon": "versions/bedrock/version_4k.png",
 					"learnMore": "#Planned_versions#4K_Update",
 					"mainFeatures": [
 						{"text": "4K HDR Option"},

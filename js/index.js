@@ -2,7 +2,7 @@
 
 const JSON_URL = "https://raw.githubusercontent.com/minecraft-timeline/minecraft-timeline.github.io/master/version_data.json";
 const LOGO_PATH = "images/logos";
-const ICON_VERSION_PATH = "images/icons/updates/versions/";
+const ICON_VERSION_PATH = "images/icons/timeline/";
 const WIKI_PATH = "https://minecraft.gamepedia.com/";
 const YEAR_PX = 365 * 3;
 const UPCOMING_PX = YEAR_PX / 6;
@@ -29,6 +29,7 @@ const infoScrollerDOM = id("infopanel-scroller");
 const infoVideoLinkWrapperDOM = id("infopanel-video-link-wrapper");
 const infoVideoLinkDOM = id("infopanel-video-link");
 const infoVideoWrapperDOM = id("infopanel-video-wrapper");
+const infoLongDescriptionDOM = id("infopanel-long-description");
 
 const navDOM = id("nav");
 const navShowDOM = id("button-nav-show");
@@ -45,7 +46,7 @@ let editionsWithDOMs = [];
 
 let showMajor = true;
 let showMinor = false;
-let showEvents = false;
+let showEvents = true;
 let showMemories = false;
 
 let originalMajorText = "Major Updates";
@@ -279,13 +280,13 @@ function loadVersions(edition, panelDOM) {
 		today: true
 	});
 
-	// Sorts versions by date
+	// Sorts timeline by date
 
 	versions.sort(function (v1, v2) {
 		return Date.parse(v1.date) - Date.parse(v2.date);
 	});
 
-	// Generate timeline, years and versions
+	// Generate timeline, years and timeline
 
 	if (versions.length > 0) {
 
@@ -554,6 +555,7 @@ function showInfopanel(version) {
 	let hasMinorFeat = version.minorFeatures !== undefined;
 	let hasLearnMore = version.learnMore !== undefined;
 	let hasVideo = version.video !== undefined;
+	let hasLongDesc = version.longDescription !== undefined;
 
 	if (hasTitle) {
 		infoTitleDOM.innerText = version.title;
@@ -666,6 +668,22 @@ function showInfopanel(version) {
 	else {
 		hide(infoVideoWrapperDOM);
 		hide(infoVideoLinkWrapperDOM)
+	}
+
+	if (hasLongDesc) {
+
+		destroyChildren(infoLongDescriptionDOM);
+		let desc = typeof (version.longDescription) === "string" ? [version.longDescription] : version.longDescription;
+
+		for (let i = 0; i < desc.length; i++) {
+
+			infoLongDescriptionDOM.appendChild(make("p",undefined,desc[i]));
+
+		}
+
+	}
+	else {
+		destroyChildren(infoLongDescriptionDOM);
 	}
 
 	show(infoWrapperDOM);
