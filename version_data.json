@@ -2090,6 +2090,27 @@
 				},
 
 				{
+					"title": "Village and Pillage Update 2",
+					"subtitle": "1.9",
+					"description": "Pillagers & Revamped Crafting",
+					"type": "major",
+					"date": "2019-02-05",
+					"icon": "versions/bedrock/version_1_9.png",
+					"learnMore": "#Bedrock_Edition_1.9.0",
+					"mainFeatures": [
+						{"text": "More Crafting Stations"},
+						{"text": "Pillagers"},
+						{"text": "Bamboo Forests"},
+						{"text": "Lanterns"},
+						{"text": "Barrels"}
+					],
+					"minorFeatures": [
+						{"text": "Signs of each wood type"},
+						{"text": "Many more walls, stairs and slabs"}
+					]
+				},
+
+				{
 					"subtitle": "1.8.1",
 					"type": "minor",
 					"date":"2019-01-08",
@@ -2729,27 +2750,6 @@
 			],
 
 			"upcomings": [
-
-				{
-					"title": "Village and Pillage Update 2",
-					"subtitle": "1.9",
-					"description": "Pillagers & Revamped Crafting",
-					"type": "major",
-					"possibleDate": "February 2019",
-					"icon": "versions/bedrock/version_1_9.png",
-					"learnMore": "#Bedrock_Edition_1.9.0",
-					"mainFeatures": [
-						{"text": "More Crafting Stations"},
-						{"text": "Pillagers"},
-						{"text": "Bamboo Forests"},
-						{"text": "Lanterns"},
-						{"text": "Barrels"}
-					],
-					"minorFeatures": [
-						{"text": "Signs of each wood type"},
-						{"text": "Many more walls, stairs and slabs"}
-					]
-				},
 
 				{
 					"title": "Village and Pillage Update 3",
