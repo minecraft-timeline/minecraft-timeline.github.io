@@ -687,6 +687,28 @@
 				},
 
 				{
+					"title": "Village & Pillage",
+					"subtitle": "1.14",
+					"description": "Village overhaul, New Textures & Bamboo Forests",
+					"type": "major",
+					"date": "2019-04-23",
+					"icon": "versions/java/version_1_14.png",
+					"learnMore": "#Village_%26_Pillage",
+					"mainFeatures": [
+						{"text": "Village overhaul"},
+						{"text": "Pillagers"},
+						{"text": "Raids"},
+						{"text": "Updated all textures of the game"},
+						{"text": "Foxes"},
+						{"text": "Pandas"},
+						{"text": "Bamboo forests"}
+					],
+					"minorFeatures": [
+						{"text": "New crafting stations"}
+					]
+				},
+
+				{
 					"subtitle": "1.13.2",
 					"type": "minor",
 					"date": "2018-10-22T11:41:07",
@@ -1535,29 +1557,7 @@
 
 			],
 
-			"upcomings": [
-
-				{
-					"title": "Village and Pillage",
-					"subtitle": "1.14",
-					"description": "Village overhaul, new textures & Bamboo Forests",
-					"type": "major",
-					"possibleDate": "Early 2019",
-					"icon": "versions/java/version_1_14.png",
-					"learnMore": "#1.14",
-					"mainFeatures": [
-						{"text": "Village overhaul"},
-						{"text": "Pillagers"},
-						{"text": "Foxes"},
-						{"text": "Bamboo forests with pandas"}
-					],
-					"minorFeatures": [
-						{"text": "Updated all textures of the game"},
-						{"text": "New crafting stations"}
-					]
-				}
-
-			]
+			"upcomings": []
 
 		},
 
@@ -2086,7 +2086,6 @@
 				},
 
 				{
-					"title": "Village and Pillage 1",
 					"subtitle": "1.8",
 					"description": "Pandas & Scaffolding",
 					"type": "major",
@@ -2096,8 +2095,7 @@
 					"mainFeatures": [
 						{"text": "Pandas"},
 						{"text": "Scaffolding"},
-						{"text": "Bamboo"},
-						{"text": "Crossbows"}
+						{"text": "Bamboo"}
 					],
 					"minorFeatures": [
 						{"text": "Separated Cats from Ocelots"},
@@ -2106,31 +2104,69 @@
 				},
 
 				{
-					"title": "Village and Pillage 2",
 					"subtitle": "1.9",
-					"description": "Pillagers & Revamped Crafting",
+					"description": "Many Walls, Slabs & Stairs",
 					"type": "major",
 					"date": "2019-02-05",
 					"icon": "versions/bedrock/version_1_9.png",
 					"learnMore": "#Bedrock_Edition_1.9.0",
 					"mainFeatures": [
-						{"text": "More Crafting Stations"},
-						{"text": "Pillagers"},
-						{"text": "Bamboo Forests"},
-						{"text": "Lanterns"},
-						{"text": "Barrels"}
-					],
-					"minorFeatures": [
-						{"text": "Signs of each wood type"},
-						{"text": "Many more walls, stairs and slabs"}
+						{"text": "Walls, Slabs and Stairs of most rock types"},
+						{"text": "Signs of all wood types"}
 					]
 				},
 
 				{
+					"subtitle": "1.10",
+					"description": "Looms, Lecterns & Shields",
+					"type": "major",
+					"date": "2019-03-19",
+					"icon": "versions/bedrock/version_1_10.png",
+					"learnMore": "#Bedrock_Edition_1.10.0",
+					"mainFeatures": [
+						{"text": "Looms"},
+						{"text": "Lecterns"},
+						{"text": "Shields"}
+					],
+					"minorFeatures": [
+						{"text": "Bark Blocks and Stripped Bark Blocks"}
+					]
+				},
+
+				{
+					"title": "Village & Pillage",
+					"subtitle": "1.11",
+					"description": "Village overhaul, New Textures & Bamboo Forests",
+					"type": "major",
+					"date": "2019-04-23",
+					"icon": "versions/bedrock/version_1_11.png",
+					"learnMore": "#Village_%26_Pillage",
+					"mainFeatures": [
+						{"text": "Village overhaul"},
+						{"text": "Pillagers"},
+						{"text": "Raids"},
+						{"text": "Updated all textures of the game"},
+						{"text": "Foxes"},
+						{"text": "Bamboo forests"}
+					],
+					"minorFeatures": [
+						{"text": "New crafting stations"}
+					]
+				},
+
+				{
+					"subtitle": "1.10.1",
+					"type": "minor",
+					"date":"2019-03-27",
+					"learnMore": "#Bedrock_Edition_1.8.1",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+				
+				{
 					"subtitle": "1.8.1",
 					"type": "minor",
 					"date":"2019-01-08",
-					"learnMore": "#Bedrock_Edtion_1.8.1",
+					"learnMore": "#Bedrock_Edition_1.8.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2138,7 +2174,7 @@
 					"subtitle": "1.7.1",
 					"type": "minor",
 					"date": "2018-11-07",
-					"learnMore": "#Bedrock_Edtion_1.7.1",
+					"learnMore": "#Bedrock_Edition_1.7.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2146,7 +2182,7 @@
 					"subtitle": "1.6.2",
 					"type": "minor",
 					"date": "2018-10-01",
-					"learnMore": "#Bedrock_Edtion_1.6.2",
+					"learnMore": "#Bedrock_Edition_1.6.2",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2154,7 +2190,7 @@
 					"subtitle": "1.6.1",
 					"type": "minor",
 					"date": "2018-09-17",
-					"learnMore": "#Bedrock_Edtion_1.6.1",
+					"learnMore": "#Bedrock_Edition_1.6.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2162,7 +2198,7 @@
 					"subtitle": "1.5.3",
 					"type": "minor",
 					"date": "2018-08-07",
-					"learnMore": "#Bedrock_Edtion_1.5.3",
+					"learnMore": "#Bedrock_Edition_1.5.3",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2170,7 +2206,7 @@
 					"subtitle": "1.5.2",
 					"type": "minor",
 					"date": "2018-07-24",
-					"learnMore": "#Bedrock_Edtion_1.5.2",
+					"learnMore": "#Bedrock_Edition_1.5.2",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2178,7 +2214,7 @@
 					"subtitle": "1.5.1",
 					"type": "minor",
 					"date": "2018-07-20",
-					"learnMore": "#Bedrock_Edtion_1.5.1",
+					"learnMore": "#Bedrock_Edition_1.5.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2186,7 +2222,7 @@
 					"subtitle": "1.4.4",
 					"type": "minor",
 					"date": "2018-06-07",
-					"learnMore": "#Bedrock_Edtion_1.4.4",
+					"learnMore": "#Bedrock_Edition_1.4.4",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2194,7 +2230,7 @@
 					"subtitle": "1.4.3",
 					"type": "minor",
 					"date": "2018-06-05",
-					"learnMore": "#Bedrock_Edtion_1.4.3",
+					"learnMore": "#Bedrock_Edition_1.4.3",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2202,7 +2238,7 @@
 					"subtitle": "1.4.2",
 					"type": "minor",
 					"date": "2018-05-23",
-					"learnMore": "#Bedrock_Edtion_1.4.2",
+					"learnMore": "#Bedrock_Edition_1.4.2",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2210,7 +2246,7 @@
 					"subtitle": "1.4.1",
 					"type": "minor",
 					"date": "2018-05-17",
-					"learnMore": "#Bedrock_Edtion_1.4.1",
+					"learnMore": "#Bedrock_Edition_1.4.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2218,7 +2254,7 @@
 					"subtitle": "1.2.16",
 					"type": "minor",
 					"date": "2018-04-20",
-					"learnMore": "#Bedrock_Edtion_1.2.16",
+					"learnMore": "#Bedrock_Edition_1.2.16",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2226,7 +2262,7 @@
 					"subtitle": "1.2.15",
 					"type": "minor",
 					"date": "2018-04-12",
-					"learnMore": "#Bedrock_Edtion_1.2.15",
+					"learnMore": "#Bedrock_Edition_1.2.15",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2234,7 +2270,7 @@
 					"subtitle": "1.2.14",
 					"type": "minor",
 					"date": "2018-04-04",
-					"learnMore": "#Bedrock_Edtion_1.2.14",
+					"learnMore": "#Bedrock_Edition_1.2.14",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2242,7 +2278,7 @@
 					"subtitle": "1.2.13",
 					"type": "minor",
 					"date": "2018-04-03",
-					"learnMore": "#Bedrock_Edtion_1.2.13",
+					"learnMore": "#Bedrock_Edition_1.2.13",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2250,7 +2286,7 @@
 					"subtitle": "1.2.11",
 					"type": "minor",
 					"date": "2018-03-09",
-					"learnMore": "#Bedrock_Edtion_1.2.11",
+					"learnMore": "#Bedrock_Edition_1.2.11",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2258,7 +2294,7 @@
 					"subtitle": "1.2.10",
 					"type": "minor",
 					"date": "2018-02-07",
-					"learnMore": "#Bedrock_Edtion_1.2.10",
+					"learnMore": "#Bedrock_Edition_1.2.10",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2266,7 +2302,7 @@
 					"subtitle": "1.2.9",
 					"type": "minor",
 					"date": "2018-01-16",
-					"learnMore": "#Bedrock_Edtion_1.2.9",
+					"learnMore": "#Bedrock_Edition_1.2.9",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2274,7 +2310,7 @@
 					"subtitle": "1.2.8",
 					"type": "minor",
 					"date": "2017-12-18",
-					"learnMore": "#Bedrock_Edtion_1.2.8",
+					"learnMore": "#Bedrock_Edition_1.2.8",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2282,7 +2318,7 @@
 					"subtitle": "1.2.7",
 					"type": "minor",
 					"date": "2017-12-14",
-					"learnMore": "#Bedrock_Edtion_1.2.7",
+					"learnMore": "#Bedrock_Edition_1.2.7",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2290,7 +2326,7 @@
 					"subtitle": "1.2.6.1",
 					"type": "minor",
 					"date": "2017-12-07",
-					"learnMore": "#Bedrock_Edtion_1.2.6.1",
+					"learnMore": "#Bedrock_Edition_1.2.6.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2298,7 +2334,7 @@
 					"subtitle": "1.2.6",
 					"type": "minor",
 					"date": "2017-12-06",
-					"learnMore": "#Bedrock_Edtion_1.2.6",
+					"learnMore": "#Bedrock_Edition_1.2.6",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2306,7 +2342,7 @@
 					"subtitle": "1.2.5",
 					"type": "minor",
 					"date": "2017-11-21",
-					"learnMore": "#Bedrock_Edtion_1.2.5",
+					"learnMore": "#Bedrock_Edition_1.2.5",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2314,7 +2350,7 @@
 					"subtitle": "1.2.3",
 					"type": "minor",
 					"date": "2017-10-18",
-					"learnMore": "#Bedrock_Edtion_1.2.3",
+					"learnMore": "#Bedrock_Edition_1.2.3",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2322,7 +2358,7 @@
 					"subtitle": "1.2.2",
 					"type": "minor",
 					"date": "2017-10-04",
-					"learnMore": "#Bedrock_Edtion_1.2.2",
+					"learnMore": "#Bedrock_Edition_1.2.2",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2330,7 +2366,7 @@
 					"subtitle": "1.2.1",
 					"type": "minor",
 					"date": "2017-09-26",
-					"learnMore": "#Bedrock_Edtion_1.2.1",
+					"learnMore": "#Bedrock_Edition_1.2.1",
 					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
@@ -2857,37 +2893,6 @@
 			],
 
 			"upcomings": [
-
-				{
-					"title": "Village and Pillage 3",
-					"subtitle": "1.10",
-					"description": "Wandering Traders & Ravagers",
-					"type": "major",
-					"possibleDate": "Probably Mid 2019",
-					"icon": "versions/bedrock/version_1_10.png",
-					"learnMore": "#Bedrock_Edition_1.10.0",
-					"mainFeatures": [
-						{"text": "Wandering Traders"},
-						{"text": "Ravagers"},
-						{"text": "Campfire"},
-						{"text": "Berry Bushes"},
-						{"text": "Lecterns"},
-						{"text": "Even more Crafting Stations"}
-					],
-					"minorFeatures": [
-						{"text": "Banner Patterns"}
-					]
-				},
-
-				{
-					"title": "Village and Pillage 4",
-					"subtitle": "1.11",
-					"description": "???",
-					"type": "major",
-					"possibleDate": "Probably Late 2019",
-					"icon": "versions/version_unknown.png",
-					"learnMore": "#Planned_versions#1.11"
-				},
 
 				{
 					"title": "4K Update",
