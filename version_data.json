@@ -2112,7 +2112,8 @@
 					"learnMore": "#Bedrock_Edition_1.9.0",
 					"mainFeatures": [
 						{"text": "Walls, Slabs and Stairs of most rock types"},
-						{"text": "Signs of all wood types"}
+						{"text": "Signs of all wood types"},
+						{"text": "Added many Village & Pillage features as experimental"}
 					]
 				},
 
@@ -2129,7 +2130,8 @@
 						{"text": "Shields"}
 					],
 					"minorFeatures": [
-						{"text": "Bark Blocks and Stripped Bark Blocks"}
+						{"text": "Bark Blocks and Stripped Bark Blocks"},
+						{"text": "Added many Village & Pillage features as experimental"}
 					]
 				},
 
