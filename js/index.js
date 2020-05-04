@@ -1,6 +1,6 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "https://raw.githubusercontent.com/minecraft-timeline/minecraft-timeline.github.io/master/version_data.json";
+const JSON_URL = "../version_data.json";
 const LOGO_PATH = "images/logos";
 const ICON_VERSION_PATH = "images/icons/timeline/";
 const WIKI_PATH = "https://minecraft.gamepedia.com/";
