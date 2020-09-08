@@ -732,6 +732,51 @@
 				},
 
 				{
+					"title": "Nether Update",
+					"subtitle": "1.16",
+					"description": "Nether Overhaul & Netherite",
+					"type": "major",
+					"date": "2020-06-23",
+					"icon": "versions/java/version_1_16.png",
+					"funFact": "Did you know? Netherite is the first new tool tier since diamonds (added over 10 years ago).",
+					"learnMore": "#Nether_Update",
+					"mainFeatures": [
+						{"text": "Warped Forests"},
+						{"text": "Crimsom Forests"},
+						{"text": "Soulsand Valleys"},
+						{"text": "Piglins"},
+						{"text": "Hoglins"},
+						{"text": "Striders"},
+						{"text": "Many new Nether blocks"},
+						{"text": "Netherite"},
+						{"text": "Netherite tools & armor"}
+					],
+					"minorFeatures": [
+						{"text": "Zombie Pigmen are now Zombified Piglins"}
+					]
+				},
+
+				{
+					"subtitle": "1.16.2",
+					"description": "Piglin Brutes",
+					"type": "minor",
+					"date": "2020-08-11T10:13:46",
+					"learnMore": "#Java_Edition_1.16.2",
+					"mainFeatures": [
+						{"text": "Piglin Brutes"},
+						{"text": "Small Changes and Bug Fixes"}
+					]
+				},
+
+				{
+					"subtitle": "1.16.1",
+					"type": "minor",
+					"date": "2020-06-24T10:31:40",
+					"learnMore": "#Java_Edition_1.16.1",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+
+				{
 					"subtitle": "1.15.2",
 					"type": "minor",
 					"date": "2020-01-17T10:03:52",
@@ -835,6 +880,7 @@
 					"date": "2016-12-20T14:05:34",
 					"icon": "versions/java/version_1_11_1.png",
 					"learnMore": "#Java_Edition_1.11.1",
+					"funFact": "Did you know? Rocket Elytras were suggested by a player. Despite being included in a minor update, this was a game changer.",
 					"mainFeatures": [
 						{"text": "Rocket Powered Elytras"},
 						{"text": "Small Changes and Bug Fixes"}
@@ -1632,32 +1678,7 @@
 
 			],
 
-			"upcomings": [
-				{
-					"title": "Nether Update",
-					"subtitle": "1.16",
-					"description": "Nether Overhaul & Netherite",
-					"type": "major",
-					"possibleDate": "Mid 2020",
-					"icon": "versions/java/version_1_16.png",
-					"funFact": "Did you know? Netherite is the first new tool tier since diamonds (added over 10 years ago).",
-					"learnMore": "#Nether_Update",
-					"mainFeatures": [
-						{"text": "Warped Forests"},
-						{"text": "Crimsom Forests"},
-						{"text": "Soulsand Valleys"},
-						{"text": "Piglins"},
-						{"text": "Hoglins"},
-						{"text": "Striders"},
-						{"text": "Many new Nether blocks"},
-						{"text": "Netherite"},
-						{"text": "Netherite tools & armor"}
-					],
-					"minorFeatures": [
-						{"text": "Zombie Pigmen are now Zombified Piglins"}
-					]
-				}
-			]
+			"upcomings": []
 
 		},
 
@@ -2313,6 +2334,91 @@
 					"minorFeatures": [
 						{"text": "The arrival of Bedrock Edition to the PS4"}
 					]
+				},
+
+				{
+					"title": "Nether Update",
+					"subtitle": "1.16",
+					"description": "Nether Overhaul & Netherite",
+					"type": "major",
+					"date": "2020-06-23",
+					"icon": "versions/bedrock/version_1_16.png",
+					"funFact": "Did you know? Netherite is the first new tool tier since diamonds (added 8 years ago).",
+					"learnMore": "#Nether_Update",
+					"mainFeatures": [
+						{"text": "Warped Forests"},
+						{"text": "Crimsom Forests"},
+						{"text": "Soulsand Valleys"},
+						{"text": "Piglins"},
+						{"text": "Hoglins"},
+						{"text": "Striders"},
+						{"text": "Many new Nether blocks"},
+						{"text": "Netherite"},
+						{"text": "Netherite tools & armor"}
+					],
+					"minorFeatures": [
+						{"text": "Zombie Pigmen are now Zombified Piglins"}
+					]
+				},
+
+				{
+					"subtitle": "1.16.40",
+					"type": "minor",
+					"date":"2020-09-03",
+					"learnMore": "#Bedrock_Edition_1.16.40",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+
+				{
+					"subtitle": "1.16.21",
+					"type": "minor",
+					"date":"2020-08-20",
+					"learnMore": "#Bedrock_Edition_1.16.21",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+
+				{
+					"subtitle": "1.16.20",
+					"description": "Piglin Brutes",
+					"type": "minor",
+					"date":"2020-08-11",
+					"learnMore": "#Bedrock_Edition_1.16.20",
+					"mainFeatures": [
+						{"text": "Piglin Brutes"},
+						{"text": "Small Changes and Bug Fixes"}
+					]
+				},
+
+				{
+					"subtitle": "1.16.10",
+					"type": "minor",
+					"date":"2020-07-21",
+					"learnMore": "#Bedrock_Edition_1.16.10",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+
+				{
+					"subtitle": "1.16.1.04",
+					"type": "minor",
+					"date":"2020-07-16",
+					"learnMore": "#Bedrock_Edition_1.16.1.04",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+
+				{
+					"subtitle": "1.16.1.03",
+					"type": "minor",
+					"date":"2020-07-08",
+					"learnMore": "#Bedrock_Edition_1.16.1.03",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
+				},
+
+				{
+					"subtitle": "1.16.1",
+					"type": "minor",
+					"date":"2020-06-29",
+					"learnMore": "#Bedrock_Edition_1.16.1",
+					"mainFeatures": [{"text": "Small Changes and Bug Fixes"}]
 				},
 
 				{
@@ -3166,31 +3272,6 @@
 			],
 
 			"upcomings": [
-
-				{
-					"title": "Nether Update",
-					"subtitle": "1.16",
-					"description": "Nether Overhaul & Netherite",
-					"type": "major",
-					"possibleDate": "Mid 2020",
-					"icon": "versions/bedrock/version_1_16.png",
-					"funFact": "Did you know? Netherite is the first new tool tier since diamonds (added 8 years ago).",
-					"learnMore": "#Nether_Update",
-					"mainFeatures": [
-						{"text": "Warped Forests"},
-						{"text": "Crimsom Forests"},
-						{"text": "Soulsand Valleys"},
-						{"text": "Piglins"},
-						{"text": "Hoglins"},
-						{"text": "Striders"},
-						{"text": "Many new Nether blocks"},
-						{"text": "Netherite"},
-						{"text": "Netherite tools & armor"}
-					],
-					"minorFeatures": [
-						{"text": "Zombie Pigmen are now Zombified Piglins"}
-					]
-				},
 
 				{
 					"title": "4K Update",
