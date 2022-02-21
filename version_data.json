@@ -2385,6 +2385,179 @@
         },
 
         {
+          "subtitle": "1.17.41",
+          "type": "minor",
+          "date": "2021-10-27",
+          "learnMore": "#Bedrock_Edition_1.17.41",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.40",
+          "type": "minor",
+          "date": "2021-10-19",
+          "learnMore": "#Bedrock_Edition_1.17.40",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.34",
+          "type": "minor",
+          "date": "2021-10-05",
+          "learnMore": "#Bedrock_Edition_1.17.34",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+        
+        {
+          "subtitle": "1.17.33",
+          "type": "minor",
+          "date": "2021-10-04",
+          "learnMore": "#Bedrock_Edition_1.17.33",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.30",
+          "type": "minor",
+          "date": "2021-09-21",
+          "learnMore": "#Bedrock_Edition_1.17.30",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.11",
+          "type": "minor",
+          "date": "2021-08-09",
+          "learnMore": "#Bedrock_Edition_1.17.11",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.10",
+          "type": "minor",
+          "date": "2021-07-13",
+          "learnMore": "#Bedrock_Edition_1.17.10",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.2",
+          "type": "minor",
+          "date": "2021-06-22",
+          "learnMore": "#Bedrock_Edition_1.17.2",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.17.1",
+          "type": "minor",
+          "date": "2021-06-14",
+          "learnMore": "#Bedrock_Edition_1.17.1",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.221",
+          "type": "minor",
+          "funFact": "Did you know? This update marks the end of support for the Fire TV.",
+          "date": "2021-04-22",
+          "learnMore": "#Bedrock_Edition_1.16.221",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.220",
+          "type": "minor",
+          "date": "2021-04-06",
+          "learnMore": "#Bedrock_Edition_1.16.220",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.210",
+          "type": "minor",
+          "date": "2021-03-09",
+          "learnMore": "#Bedrock_Edition_1.16.210",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.201",
+          "type": "minor",
+          "funFact": "Did you know? This update marks the end of support for the Fire Phone.",
+          "date": "2020-12-15",
+          "learnMore": "#Bedrock_Edition_1.16.201",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.200",
+          "description": "Ray Tracing",
+          "type": "minor",
+          "date": "2020-12-08",
+          "learnMore": "#Bedrock_Edition_1.16.200",
+          "mainFeatures": [
+            { "text": "RenderDragon on Windows 10" },
+            { "text": "Ray tracing features on Windows 10" },
+            { "text": "Removed support for third-party shader packs" },
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.16.101",
+          "type": "minor",
+          "date": "2020-11-23",
+          "learnMore": "#Bedrock_Edition_1.16.101",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.100",
+          "description": "Many new commands",
+          "type": "minor",
+          "date": "2020-11-16",
+          "learnMore": "#Bedrock_Edition_1.16.100",
+          "mainFeatures": [
+            { "text": "Many new commands" },
+            { "text": "More parity with Java Edition" },
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.16.61",
+          "type": "minor",
+          "date": "2020-09-25",
+          "learnMore": "#Bedrock_Edition_1.16.61",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.60",
+          "type": "minor",
+          "date": "2020-09-23",
+          "learnMore": "#Bedrock_Edition_1.16.60",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.50",
+          "type": "minor",
+          "date": "2020-09-22T00:00:01",
+          "learnMore": "#Bedrock_Edition_1.16.50",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.16.42",
+          "type": "minor",
+          "date": "2020-09-22T00:00:00",
+          "learnMore": "#Bedrock_Edition_1.16.42",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
           "subtitle": "1.16.40",
           "type": "minor",
           "date": "2020-09-03",
