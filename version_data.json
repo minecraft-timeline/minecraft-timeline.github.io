@@ -2358,6 +2358,33 @@
         },
 
         {
+          "title": "Caves & Cliffs pt. 1",
+          "subtitle": "1.17",
+          "description": "New Cave Blocks & Mobs",
+          "type": "major",
+          "date": "2021-06-08",
+          "icon": "versions/bedrock/version_1_17.png",
+          "funFact": "Did you know? Goats will target and ram all other mobs, including armor stands!",
+          "learnMore": "#Bedrock_Edition_1.17.0",
+          "mainFeatures": [
+            { "text": "Various cave plants" },
+            { "text": "Axolotls" },
+            { "text": "Glow squids" },
+            { "text": "Goats" },
+            { "text": "Copper" },
+            { "text": "Amethyst geodes" },
+            { "text": "Raw ore" },
+            { "text": "Candles" },
+            { "text": "More stone blocks" }
+          ],
+          "minorFeatures": [
+            { "text": "Improved various textures" },
+            { "text": "Light block" },
+            { "text": "Powdered snow" }
+          ]
+        },
+
+        {
           "subtitle": "1.16.40",
           "type": "minor",
           "date": "2020-09-03",
