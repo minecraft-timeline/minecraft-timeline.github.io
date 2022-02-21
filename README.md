@@ -45,6 +45,8 @@ All timeline icons must have 64px of height and at most 128px of width. They sho
 
 Thanks to everyone who shared, enjoyed and contributed to this small project. Over the years, I have received many kind messages of people thanking me for creating Minecraft Timeline, and if it wasn't for your support, I wouldn't be still mantaining this. So, thank you, and let's enjoy many Minecraft updates to come!
 
+\- Henry
+
 ---
 
 ```
