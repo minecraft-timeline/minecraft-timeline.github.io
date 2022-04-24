@@ -737,6 +737,39 @@
         },
 
         {
+          "title": "Caves & Cliffs pt. 2",
+          "subtitle": "1.18",
+          "description": "New Moutain & Underground Generation",
+          "type": "major",
+          "date": "2021-11-30",
+          "icon": "versions/java/version_1_18.png",
+          "funFact": "Did you know? Deepslate coal ore is now incredibly rare!",
+          "learnMore": "#Java_Edition_1.18",
+          "mainFeatures": [
+            { "text": "Lowest Y level is now -64, deepening the world." },
+            { "text": "Lush & Dripstone Cave biomes" },
+            { "text": "Overhauled mountains" },
+            { "text": "Updated ore distribution (including adding veins)" },
+            { "text": "New music (Ambient & Disc)" }
+          ],
+          "minorFeatures": [
+            { "text": "Terrain generation is now the same in Java & Bedrock" },
+            { "text": "Updated various textures" },
+            { "text": "Tweaked various mobs" }
+          ]
+        },
+
+        {
+          "subtitle": "1.17.1",
+          "type": "minor",
+          "date": "2021-07-06",
+          "learnMore": "#Java_Edition_1.17.1",
+          "mainFeatures": [
+            { "text": "Various tweaks & Bug fixes" }
+          ]
+        },
+
+        {
           "subtitle": "1.16.5",
           "type": "minor",
           "date": "2021-01-15",
