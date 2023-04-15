@@ -737,6 +737,53 @@
         },
 
         {
+          "title": "Caves & Cliffs pt. 2",
+          "subtitle": "1.18",
+          "description": "Complete World Generation Overhaul",
+          "type": "major",
+          "date": "2021-11-30",
+          "icon": "versions/java/version_1_18.png",
+          "funFact": "Did you know? This was the first major world generation update since 1.7 (over 7 years ago)!\nCaves & Cliffs was split into two updates mainly due to the 2020 COVID-19 Pandemic.",
+          "learnMore": "#Java_Edition_1.18",
+          "mainFeatures": [
+            { "text": "Completely overhauled world generation" },
+            { "text": "Added huge and complex cave systems" },
+            { "text": "Much more varied and extreme terrain generation" },
+            { "text": "Radically changed ore distribution" },
+            { "text": "Increased Overworld height limit 64 blocks downwards" }
+          ],
+          "minorFeatures": [
+            { "text": "New overworld music by Lena Raine" },
+            { "text": "New \"Otherside\" music disc by Lena Raine" },
+            { "text": "Mobs spawn only in complete darkness (light level 0)" }
+          ]
+        },
+
+        {
+          "title": "The Wild Update",
+          "subtitle": "1.19",
+          "description": "The Deep Dark & Mangrove Swamps",
+          "type": "major",
+          "date": "2022-06-07",
+          "icon": "versions/java/version_1_19.png",
+          "funFact": "Did you know? The Deep Dark was meant to come during Caves & Cliffs, but Mojang couldn't finish it in time.",
+          "learnMore": "#Java_Edition_1.19",
+          "mainFeatures": [
+            { "text": "The Deep Dark" },
+            { "text": "Ancient Cities" },
+            { "text": "The Warden" },
+            { "text": "Skulk Blocks" },
+            { "text": "Mangrove Swamps" },
+            { "text": "Frogs" },
+            { "text": "Allays" }
+          ],
+          "minorFeatures": [
+            { "text": "Recovery Compasses" },
+            { "text": "Boats with Chests" }
+          ]
+        },
+
+        {
           "subtitle": "1.16.5",
           "type": "minor",
           "date": "2021-01-15",
@@ -1698,7 +1745,32 @@
         }
       ],
 
-      "upcomings": []
+      "upcomings": [
+        {
+          "title": "Trails & Tales",
+          "subtitle": "1.20",
+          "description": "Archeology, Cherry Trees & Storytelling",
+          "type": "major",
+          "possibleDate": "2023",
+          "icon": "versions/java/version_1_20.png",
+          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
+          "learnMore": "#Java_Edition_1.20",
+          "mainFeatures": [
+            { "text": "Archeology Features" },
+            { "text": "Brushes and Suspicious Sand" },
+            { "text": "Ancient seeds and plants" },
+            { "text": "Pottery" },
+            { "text": "Camels" },
+            { "text": "Sniffers" },
+            { "text": "Cherry Trees" },
+            { "text": "Armor Trims" }
+          ],
+          "minorFeatures": [
+            { "text": "More bamboo blocks and items" },
+            { "text": "Hanging Signs" }
+          ]
+        }
+      ]
     },
 
     {
@@ -2381,6 +2453,53 @@
             { "text": "Improved various textures" },
             { "text": "Light block" },
             { "text": "Powdered snow" }
+          ]
+        },
+
+        {
+          "title": "Caves & Cliffs pt. 2",
+          "subtitle": "1.18",
+          "description": "Complete World Generation Overhaul",
+          "type": "major",
+          "date": "2021-11-30",
+          "icon": "versions/bedrock/version_1_18.png",
+          "funFact": "Did you know? For the first time, a Java Edition world seed generates the same world in Bedrock!\nCaves & Cliffs was split into two updates mainly due to the 2020 COVID-19 Pandemic.",
+          "learnMore": "#Bedrock_Edition_1.18.0",
+          "mainFeatures": [
+            { "text": "Completely overhauled world generation" },
+            { "text": "Added huge and complex cave systems" },
+            { "text": "Much more varied and extreme terrain generation" },
+            { "text": "Radically changed ore distribution" },
+            { "text": "Increased Overworld height limit 64 blocks downwards" }
+          ],
+          "minorFeatures": [
+            { "text": "New overworld music by Lena Raine" },
+            { "text": "New \"Otherside\" music disc by Lena Raine" },
+            { "text": "Mobs spawn only in complete darkness (light level 0)" }
+          ]
+        },
+
+        {
+          "title": "The Wild Update",
+          "subtitle": "1.19",
+          "description": "The Deep Dark & Mangrove Swamps",
+          "type": "major",
+          "date": "2022-06-07",
+          "icon": "versions/bedrock/version_1_19.png",
+          "funFact": "Did you know? The Deep Dark was meant to come during Caves & Cliffs, but Mojang couldn't finish it in time.",
+          "learnMore": "#Bedrock_Edition_1.19.0",
+          "mainFeatures": [
+            { "text": "The Deep Dark" },
+            { "text": "Ancient Cities" },
+            { "text": "The Warden" },
+            { "text": "Skulk Blocks" },
+            { "text": "Mangrove Swamps" },
+            { "text": "Frogs" },
+            { "text": "Allays" }
+          ],
+          "minorFeatures": [
+            { "text": "Recovery Compasses" },
+            { "text": "Boats with Chests" }
           ]
         },
 
@@ -3468,15 +3587,27 @@
 
       "upcomings": [
         {
-          "title": "4K Update",
-          "description": "4K HDR Option & Super Duper Graphics Pack",
+          "title": "Trails & Tales",
+          "subtitle": "1.20",
+          "description": "Archeology, Cherry Trees & Storytelling",
           "type": "major",
-          "possibleDate": "Far future",
-          "icon": "versions/bedrock/version_4k.png",
-          "learnMore": "#Planned_versions#4K_Update",
+          "possibleDate": "2023",
+          "icon": "versions/bedrock/version_1_20.png",
+          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
+          "learnMore": "#Bedrock_Edition_1.20.0",
           "mainFeatures": [
-            { "text": "4K HDR Option" },
-            { "text": "Super Duper Graphics Pack" }
+            { "text": "Archeology Features" },
+            { "text": "Brushes and Suspicious Sand" },
+            { "text": "Ancient seeds and plants" },
+            { "text": "Pottery" },
+            { "text": "Camels" },
+            { "text": "Sniffers" },
+            { "text": "Cherry Trees" },
+            { "text": "Armor Trims" }
+          ],
+          "minorFeatures": [
+            { "text": "More bamboo blocks and items" },
+            { "text": "Hanging Signs" }
           ]
         }
       ]
