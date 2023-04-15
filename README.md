@@ -3,7 +3,7 @@ Repository of the Minecraft Timeline project, listing every update to the game i
 
 ![Banner](images/banner.png)
 
-This began as a simple static image [posted on Reddit](https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/) that gained a lot of traction (even appearing briefly in some videos [[1]](https://www.youtube.com/watch?v=3m5BAIA2-4Q?t=35)); enough to motivate me to create this simple, interactable timeline easily available to all.
+This began as a simple static image [posted on Reddit](https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/) that gained a lot of traction (even appearing briefly in some videos [[1]](https://www.youtube.com/watch?v=3m5BAIA2-4Q?t=35) [[2]](https://youtu.be/tTLhWEXxtx4?t=174)); enough to motivate me to create this simple, interactable timeline easily available to all.
 
 You are welcome to contribute by fixing bugs, but mainly, by adding missing versions of the game to `version_data.json` :)
 
