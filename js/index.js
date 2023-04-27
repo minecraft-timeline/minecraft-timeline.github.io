@@ -694,7 +694,7 @@ function showInfopanel(version) {
 }
 
 function hideInfopanel() {
-	player.pauseVideo();
+	//fixed
 	hide(infoWrapperDOM);
 	unlockBody();
 }
