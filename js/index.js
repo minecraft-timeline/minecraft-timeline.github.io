@@ -3,7 +3,7 @@
 const JSON_URL = "../version_data.json";
 const LOGO_PATH = "images/logos";
 const ICON_VERSION_PATH = "images/icons/timeline/";
-const WIKI_PATH = "https://minecraft.gamepedia.com/";
+const WIKI_PATH = "https://minecraft.wiki/w/";
 const YEAR_PX = 365 * 3;
 const UPCOMING_PX = YEAR_PX / 6;
 const DAY_MS = 24 * 60 * 60 * 1000;
