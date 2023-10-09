@@ -783,6 +783,31 @@
           ]
         },
 
+         {
+          "title": "Trails & Tales",
+          "subtitle": "1.20",
+          "description": "Archeology, Cherry Trees & Storytelling",
+          "type": "major",
+          "date": "2023-06-07",
+          "icon": "versions/java/version_1_20.png",
+          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
+          "learnMore": "#Java_Edition_1.20",
+          "mainFeatures": [
+            { "text": "Archeology Features" },
+            { "text": "Brushes and Suspicious Sand" },
+            { "text": "Ancient seeds and plants" },
+            { "text": "Pottery" },
+            { "text": "Camels" },
+            { "text": "Sniffers" },
+            { "text": "Cherry Trees" },
+            { "text": "Armor Trims" }
+          ],
+          "minorFeatures": [
+            { "text": "More bamboo blocks and items" },
+            { "text": "Hanging Signs" }
+          ]
+        },
+        
         {
           "subtitle": "1.16.5",
           "type": "minor",
@@ -1746,31 +1771,7 @@
       ],
 
       "upcomings": [
-        {
-          "title": "Trails & Tales",
-          "subtitle": "1.20",
-          "description": "Archeology, Cherry Trees & Storytelling",
-          "type": "major",
-          "possibleDate": "2023",
-          "icon": "versions/java/version_1_20.png",
-          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
-          "learnMore": "#Java_Edition_1.20",
-          "mainFeatures": [
-            { "text": "Archeology Features" },
-            { "text": "Brushes and Suspicious Sand" },
-            { "text": "Ancient seeds and plants" },
-            { "text": "Pottery" },
-            { "text": "Camels" },
-            { "text": "Sniffers" },
-            { "text": "Cherry Trees" },
-            { "text": "Armor Trims" }
-          ],
-          "minorFeatures": [
-            { "text": "More bamboo blocks and items" },
-            { "text": "Hanging Signs" }
           ]
-        }
-      ]
     },
 
     {
@@ -2500,6 +2501,31 @@
           "minorFeatures": [
             { "text": "Recovery Compasses" },
             { "text": "Boats with Chests" }
+          ]
+        },
+
+         {
+          "title": "Trails & Tales",
+          "subtitle": "1.20",
+          "description": "Archeology, Cherry Trees & Storytelling",
+          "type": "major",
+          "date": "2023-06-07",
+          "icon": "versions/bedrock/version_1_20.png",
+          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
+          "learnMore": "#Bedrock_Edition_1.20.0",
+          "mainFeatures": [
+            { "text": "Archeology Features" },
+            { "text": "Brushes and Suspicious Sand" },
+            { "text": "Ancient seeds and plants" },
+            { "text": "Pottery" },
+            { "text": "Camels" },
+            { "text": "Sniffers" },
+            { "text": "Cherry Trees" },
+            { "text": "Armor Trims" }
+          ],
+          "minorFeatures": [
+            { "text": "More bamboo blocks and items" },
+            { "text": "Hanging Signs" }
           ]
         },
 
@@ -3586,30 +3612,6 @@
       ],
 
       "upcomings": [
-        {
-          "title": "Trails & Tales",
-          "subtitle": "1.20",
-          "description": "Archeology, Cherry Trees & Storytelling",
-          "type": "major",
-          "possibleDate": "2023",
-          "icon": "versions/bedrock/version_1_20.png",
-          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
-          "learnMore": "#Bedrock_Edition_1.20.0",
-          "mainFeatures": [
-            { "text": "Archeology Features" },
-            { "text": "Brushes and Suspicious Sand" },
-            { "text": "Ancient seeds and plants" },
-            { "text": "Pottery" },
-            { "text": "Camels" },
-            { "text": "Sniffers" },
-            { "text": "Cherry Trees" },
-            { "text": "Armor Trims" }
-          ],
-          "minorFeatures": [
-            { "text": "More bamboo blocks and items" },
-            { "text": "Hanging Signs" }
-          ]
-        }
       ]
     },
 
