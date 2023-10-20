@@ -1871,7 +1871,36 @@ const EDITIONS = [
       }
     ],
 
-    "upcomings": []
+    "upcomings": [
+      {
+        "subtitle": "1.20.3",
+        "description": "Better Decorated Pots",
+        "type": "minor",
+        "possibleDate": "Late 2023 - Early 2024",
+        "learnMore": "#Java_Edition_1.20.3",
+        "mainFeatures": [
+          { "text": "Decorated Pots can now hold items" },
+          { "text": "Decorated Pots now can be destroyed by projectiles" },
+          { "text": "Shields now can rotate vertically" }
+        ]
+      },
+      {
+        "title": "???",
+        "subtitle": "1.21",
+        "description": "Trial Chambers, Auto Crafting & Armadillos",
+        "type": "major",
+        "possibleDate": "Mid 2024",
+        "icon": "versions/java/version_1_21.png",
+        "learnMore": "#Java_Edition_1.21",
+        "mainFeatures": [
+          { "text": "Trial Chambers" },
+          { "text": "Auto Crafter Block" },
+          { "text": "Many New Copper Blocks" },
+          { "text": "The Breeze" },
+          { "text": "Many unnanounced feaures" }
+        ]
+      },
+    ]
   },
 
   {
@@ -4036,7 +4065,38 @@ const EDITIONS = [
       }
     ],
 
-    "upcomings": []
+    "upcomings": [
+      {
+        "subtitle": "1.20.50",
+        "type": "minor",
+        "possibleDate": "Late 2023",
+        "learnMore": "#Bedrock_Edition_1.20.50",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      {
+        "subtitle": "1.20.40",
+        "type": "minor",
+        "possibleDate": "Late 2023",
+        "learnMore": "#Bedrock_Edition_1.20.40",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      {
+        "title": "???",
+        "subtitle": "1.21",
+        "description": "Trial Chambers, Auto Crafting & Armadillos",
+        "type": "major",
+        "possibleDate": "Mid 2024",
+        "icon": "versions/bedrock/version_1_21.png",
+        "learnMore": "#Bedrock_Edition_1.21.0",
+        "mainFeatures": [
+          { "text": "Trial Chambers" },
+          { "text": "Auto Crafter Block" },
+          { "text": "Many New Copper Blocks" },
+          { "text": "The Breeze" },
+          { "text": "Many unnanounced feaures" }
+        ]
+      },
+    ]
   },
 
   {
