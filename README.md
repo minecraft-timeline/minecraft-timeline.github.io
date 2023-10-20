@@ -5,11 +5,13 @@ Repository of the Minecraft Timeline project, listing every update to the game i
 
 This began as a simple static image [posted on Reddit](https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/) that gained a lot of traction (even appearing briefly in some videos [[1]](https://www.youtube.com/watch?v=3m5BAIA2-4Q?t=35) [[2]](https://youtu.be/tTLhWEXxtx4?t=174)); enough to motivate me to create this simple, interactable timeline easily available to all.
 
-You are welcome to contribute by fixing bugs, but mainly, by adding missing versions of the game to `version_data.json` :)
+You are welcome to contribute by fixing bugs, but mainly, by adding missing versions of the game to `editions.js` :)
 
-## version_data.json
+## editions.js
 
-The versions file follows a simple structure. It's divided in `editions` which contain `versions` and `upcomings`. Both are lists of the same type (Version) that have the following fields:
+All timeline data is stored in a single JS file (formerly a JSON file) that gets loaded alongside other scripts, in an array of game editions called `EDITIONS`.
+
+Each edition has `versions` and `upcomings`. Both are lists of the same type (Version) that have the following fields:
 
 - `type`: Either `major` (major updates, appears big on the timeline), `minor` (minor updates, appears small on the timeline), `event` (for important events to the history of the edition, appears as an exclamation mark on the timeline) or `memory` (for famous nostalgic moments, appears as a heart on the timeline). **Required.**
 - `date`: The date of the version, in the format yyyy-MM-dd[T[hh][:mm][:ss]]. **Required for `versions`**.

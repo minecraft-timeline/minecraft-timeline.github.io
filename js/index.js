@@ -1,6 +1,5 @@
 // +++ Constant values ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const JSON_URL = "../version_data.json";
 const LOGO_PATH = "images/logos";
 const ICON_VERSION_PATH = "images/versions/";
 const WIKI_PATH = "https://minecraft.wiki/w/";
@@ -802,5 +801,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	youtubeLoader.src = "https://www.youtube.com/iframe_api";
 	let firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(youtubeLoader, firstScriptTag);
-	loadEditions(VERSION_DATA);
+	loadEditions(EDITIONS);
 })

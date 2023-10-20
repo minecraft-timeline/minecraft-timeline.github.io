@@ -1,4 +1,4 @@
-const VERSION_DATA = [
+const EDITIONS = [
   {
     "title": "Java Edition",
     "description": "The original game by Notch",
