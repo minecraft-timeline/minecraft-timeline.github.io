@@ -784,6 +784,133 @@
         },
 
         {
+          "title": "Trails & Tales",
+          "subtitle": "1.20",
+          "description": "Archeology, Cherry Trees & Storytelling",
+          "type": "major",
+          "date": "2023-06-07",
+          "icon": "versions/java/version_1_20.png",
+          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
+          "learnMore": "#Java_Edition_1.20",
+          "mainFeatures": [
+            { "text": "Archeology Features" },
+            { "text": "Brushes and Suspicious Sand" },
+            { "text": "Ancient seeds and plants" },
+            { "text": "Pottery" },
+            { "text": "Camels" },
+            { "text": "Sniffers" },
+            { "text": "Cherry Trees" },
+            { "text": "Armor Trims" }
+          ],
+          "minorFeatures": [
+            { "text": "More bamboo blocks and items" },
+            { "text": "Hanging Signs" }
+          ]
+        },
+
+        {
+          "subtitle": "1.20.2",
+          "type": "minor",
+          "date": "2023-09-21",
+          "learnMore": "#Java_Edition_1.20.2",
+          "mainFeatures": [
+            { "text": "Added /random command" },
+            { "text": "Added experimental Villager Trade Rebalancing" },
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.20.1",
+          "type": "minor",
+          "date": "2023-06-12",
+          "learnMore": "#Java_Edition_1.20.1",
+          "mainFeatures": [
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.19.4",
+          "type": "minor",
+          "date": "2023-03-14",
+          "learnMore": "#Java_Edition_1.19.4",
+          "mainFeatures": [
+            { "text": "Added /ride and /damage commands" },
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.19.3",
+          "type": "minor",
+          "date": "2022-12-07",
+          "learnMore": "#Java_Edition_1.19.3",
+          "mainFeatures": [
+            { "text": "Creative Mode inventory overhaul" },
+            { "text": "Many new spawn eggs" },
+            { "text": "Added /fillbiome command to change biomes" },
+            { "text": "Added many new game rules" },
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.19.2",
+          "type": "minor",
+          "date": "2022-08-05",
+          "learnMore": "#Java_Edition_1.19.2",
+          "mainFeatures": [
+            { "text": "Critical Bug Fixes" }
+          ]
+        },
+        
+        {
+          "subtitle": "1.19.1",
+          "type": "minor",
+          "date": "2022-07-27",
+          "learnMore": "#Java_Edition_1.19.1",
+          "mainFeatures": [
+            { "text": "Allay Duplication" },
+            { "text": "Player Chat reporting" },
+            { "text": "Chat security indicators" },
+            { "text": "Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.18.2",
+          "type": "minor",
+          "date": "2022-02-28",
+          "learnMore": "#Java_Edition_1.18.2",
+          "mainFeatures": [
+            { "text": "Added the /placefeature command" },
+            { "text": "Small Changes to custom world generation and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.18.1",
+          "type": "minor",
+          "date": "2021-12-10",
+          "learnMore": "#Java_Edition_1.18.1",
+          "mainFeatures": [
+            { "text": "Fixed various bugs and tweaked fog" },
+            { "text": "Fixed a severe vulnerability in the Log4j logging library, that affected many Java programs worldwide" }
+          ]
+        },
+
+        {
+          "subtitle": "1.17.1",
+          "type": "minor",
+          "date": "2021-07-06",
+          "learnMore": "#Java_Edition_1.17.1",
+          "mainFeatures": [
+            { "text": "Fixed various bugs and tweaked game mechanics" }
+          ]
+        },
+
+        {
           "subtitle": "1.16.5",
           "type": "minor",
           "date": "2021-01-15",
@@ -1745,32 +1872,7 @@
         }
       ],
 
-      "upcomings": [
-        {
-          "title": "Trails & Tales",
-          "subtitle": "1.20",
-          "description": "Archeology, Cherry Trees & Storytelling",
-          "type": "major",
-          "possibleDate": "2023",
-          "icon": "versions/java/version_1_20.png",
-          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
-          "learnMore": "#Java_Edition_1.20",
-          "mainFeatures": [
-            { "text": "Archeology Features" },
-            { "text": "Brushes and Suspicious Sand" },
-            { "text": "Ancient seeds and plants" },
-            { "text": "Pottery" },
-            { "text": "Camels" },
-            { "text": "Sniffers" },
-            { "text": "Cherry Trees" },
-            { "text": "Armor Trims" }
-          ],
-          "minorFeatures": [
-            { "text": "More bamboo blocks and items" },
-            { "text": "Hanging Signs" }
-          ]
-        }
-      ]
+      "upcomings": []
     },
 
     {
@@ -2501,6 +2603,356 @@
             { "text": "Recovery Compasses" },
             { "text": "Boats with Chests" }
           ]
+        },
+
+        {
+          "title": "Trails & Tales",
+          "subtitle": "1.20",
+          "description": "Archeology, Cherry Trees & Storytelling",
+          "type": "major",
+          "date": "2023-06-07",
+          "icon": "versions/bedrock/version_1_20.png",
+          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
+          "learnMore": "#Bedrock_Edition_1.20.0",
+          "mainFeatures": [
+            { "text": "Archeology Features" },
+            { "text": "Brushes and Suspicious Sand" },
+            { "text": "Ancient seeds and plants" },
+            { "text": "Pottery" },
+            { "text": "Camels" },
+            { "text": "Sniffers" },
+            { "text": "Cherry Trees" },
+            { "text": "Armor Trims" }
+          ],
+          "minorFeatures": [
+            { "text": "More bamboo blocks and items" },
+            { "text": "Hanging Signs" }
+          ]
+        },
+
+        {
+          "subtitle": "1.20.32",
+          "type": "minor",
+          "date": "2023-10-05",
+          "learnMore": "#Bedrock_Edition_1.20.32",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.31",
+          "type": "minor",
+          "date": "2023-09-26",
+          "learnMore": "#Bedrock_Edition_1.20.31",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.30",
+          "type": "minor",
+          "date": "2023-09-19",
+          "learnMore": "#Bedrock_Edition_1.20.30",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.15",
+          "type": "minor",
+          "date": "2023-08-16",
+          "learnMore": "#Bedrock_Edition_1.20.15",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.14",
+          "type": "minor",
+          "date": "2023-08-08",
+          "learnMore": "#Bedrock_Edition_1.20.14",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.13",
+          "type": "minor",
+          "date": "2023-07-24",
+          "learnMore": "#Bedrock_Edition_1.20.13",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.12",
+          "type": "minor",
+          "date": "2023-06-18",
+          "learnMore": "#Bedrock_Edition_1.20.12",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.10",
+          "type": "minor",
+          "date": "2023-07-11",
+          "learnMore": "#Bedrock_Edition_1.20.10",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.20.1",
+          "type": "minor",
+          "date": "2023-06-21",
+          "learnMore": "#Bedrock_Edition_1.20.1",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.83",
+          "type": "minor",
+          "date": "2023-05-17",
+          "learnMore": "#Bedrock_Edition_1.19.83",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.81",
+          "type": "minor",
+          "date": "2023-04-27",
+          "learnMore": "#Bedrock_Edition_1.19.81",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.80",
+          "type": "minor",
+          "date": "2023-04-26",
+          "learnMore": "#Bedrock_Edition_1.19.80",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.73",
+          "type": "minor",
+          "date": "2023-03-29",
+          "learnMore": "#Bedrock_Edition_1.19.73",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.72",
+          "type": "minor",
+          "date": "2023-03-20",
+          "learnMore": "#Bedrock_Edition_1.19.72",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.71",
+          "type": "minor",
+          "date": "2023-03-17",
+          "learnMore": "#Bedrock_Edition_1.19.71",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.70",
+          "type": "minor",
+          "date": "2023-03-14",
+          "learnMore": "#Bedrock_Edition_1.19.70",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.63",
+          "type": "minor",
+          "date": "2023-02-24",
+          "learnMore": "#Bedrock_Edition_1.19.63",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.62",
+          "type": "minor",
+          "date": "2023-02-16",
+          "learnMore": "#Bedrock_Edition_1.19.62",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.60",
+          "type": "minor",
+          "date": "2023-02-07",
+          "learnMore": "#Bedrock_Edition_1.19.60",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.51",
+          "type": "minor",
+          "date": "2022-12-13",
+          "learnMore": "#Bedrock_Edition_1.19.51",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.50",
+          "type": "minor",
+          "date": "2022-11-29",
+          "learnMore": "#Bedrock_Edition_1.19.50",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.41",
+          "type": "minor",
+          "date": "2022-11-03",
+          "learnMore": "#Bedrock_Edition_1.19.41",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.40",
+          "type": "minor",
+          "date": "2022-10-25",
+          "learnMore": "#Bedrock_Edition_1.19.40",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.31",
+          "type": "minor",
+          "date": "2022-10-04",
+          "learnMore": "#Bedrock_Edition_1.19.31",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.30",
+          "type": "minor",
+          "date": "2022-09-20",
+          "learnMore": "#Bedrock_Edition_1.19.30",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.22",
+          "type": "minor",
+          "date": "2022-09-01",
+          "learnMore": "#Bedrock_Edition_1.19.22",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.21",
+          "type": "minor",
+          "date": "2022-08-23",
+          "learnMore": "#Bedrock_Edition_1.19.21",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.20",
+          "type": "minor",
+          "date": "2022-08-09",
+          "learnMore": "#Bedrock_Edition_1.19.20",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.11",
+          "type": "minor",
+          "date": "2022-07-26",
+          "learnMore": "#Bedrock_Edition_1.19.11",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.10",
+          "type": "minor",
+          "date": "2022-07-12",
+          "learnMore": "#Bedrock_Edition_1.19.10",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.19.2",
+          "type": "minor",
+          "date": "2022-06-22",
+          "learnMore": "#Bedrock_Edition_1.19.2",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.33",
+          "type": "minor",
+          "date": "2022-05-13",
+          "learnMore": "#Bedrock_Edition_1.18.33",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.32",
+          "type": "minor",
+          "date": "2022-05-05",
+          "learnMore": "#Bedrock_Edition_1.18.32",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.31",
+          "type": "minor",
+          "date": "2022-04-27",
+          "learnMore": "#Bedrock_Edition_1.18.31",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.30",
+          "type": "minor",
+          "date": "2022-04-19",
+          "learnMore": "#Bedrock_Edition_1.18.30",
+          "mainFeatures": [
+            { "text": "Spectator mode" },
+            { "text": "Bigger world seeds" },
+            { "text": "Hunger, damage and armor fixes and rebalancing" },
+            { "text": "Small Changes and Bug Fixes" }
+          ]
+        },
+
+        {
+          "subtitle": "1.18.12",
+          "type": "minor",
+          "date": "2022-02-16",
+          "learnMore": "#Bedrock_Edition_1.18.12",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.11",
+          "type": "minor",
+          "date": "2022-02-11",
+          "learnMore": "#Bedrock_Edition_1.18.11",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.10",
+          "type": "minor",
+          "date": "2022-02-08",
+          "learnMore": "#Bedrock_Edition_1.18.10",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.2",
+          "type": "minor",
+          "date": "2021-12-09",
+          "learnMore": "#Bedrock_Edition_1.18.2",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        },
+
+        {
+          "subtitle": "1.18.1",
+          "type": "minor",
+          "date": "2021-12-02",
+          "learnMore": "#Bedrock_Edition_1.18.1",
+          "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
         },
 
         {
@@ -3585,32 +4037,7 @@
         }
       ],
 
-      "upcomings": [
-        {
-          "title": "Trails & Tales",
-          "subtitle": "1.20",
-          "description": "Archeology, Cherry Trees & Storytelling",
-          "type": "major",
-          "possibleDate": "2023",
-          "icon": "versions/bedrock/version_1_20.png",
-          "funFact": "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
-          "learnMore": "#Bedrock_Edition_1.20.0",
-          "mainFeatures": [
-            { "text": "Archeology Features" },
-            { "text": "Brushes and Suspicious Sand" },
-            { "text": "Ancient seeds and plants" },
-            { "text": "Pottery" },
-            { "text": "Camels" },
-            { "text": "Sniffers" },
-            { "text": "Cherry Trees" },
-            { "text": "Armor Trims" }
-          ],
-          "minorFeatures": [
-            { "text": "More bamboo blocks and items" },
-            { "text": "Hanging Signs" }
-          ]
-        }
-      ]
+      "upcomings": []
     },
 
     {
