@@ -278,9 +278,10 @@ body {
 		padding: 20px;
 
 		h3 {
-
 			text-align: right;
-
+			&::after {
+				content: ' •';
+			}
 		}
 
 	}

@@ -2,7 +2,7 @@
 
 const JSON_URL = "../version_data.json";
 const LOGO_PATH = "images/logos";
-const ICON_VERSION_PATH = "images/icons/timeline/";
+const ICON_VERSION_PATH = "images/versions/";
 const WIKI_PATH = "https://minecraft.wiki/w/";
 const YEAR_PX = 365 * 3;
 const UPCOMING_PX = YEAR_PX / 6;
@@ -58,20 +58,11 @@ let player;
 
 // +++ Helper Functions +++++++++++++++++++++++++++++++++++++++++++++++++
 
-function ajaxGET(requestStr,done) {
-	let xhr = new XMLHttpRequest();
-	xhr.open('GET', requestStr);
-	xhr.onload = function() {
-		done(xhr.responseText, xhr.status);
-	};
-	xhr.send();
-}
-
 function id(id) {
 	return document.getElementById(id);
 }
 
-function make(tagName,classes, text, id) {
+function make(tagName, classes, text, id) {
 
 	let dom = document.createElement(tagName);
 	if (classes !== undefined) {
@@ -166,7 +157,7 @@ function loadEditions(editions) {
 	let firstPanelDOM;
 	let firstTabDOM;
 
-	for (let i = 0; i<editions.length; i++) {
+	for (let i = 0; i < editions.length; i++) {
 
 		let tabDOM = make("h2", "edition-tab", editions[i].title, "edition-tab-" + i);
 		tabListDOM.appendChild(tabDOM);
@@ -199,7 +190,7 @@ function loadEditions(editions) {
 
 			for (let j = 0; j < tabDOMs.length; j++) {
 				if (tabDOMs[j] !== tabDOM) {
-					if (panelDOMs[j]){
+					if (panelDOMs[j]) {
 						hide(panelDOMs[j]);
 					}
 					tabDOMs[j].classList.remove("selected");
@@ -257,10 +248,8 @@ function offsetBackground(editionWithDOM) {
 
 	// Interesting hack I made. This aligns one of the backgrounds of a panel with a 32x32 grid.
 
-	let offset = (-(32-editionWithDOM.panelDOM.getBoundingClientRect().height%32))+"px";
+	let offset = (-(32 - editionWithDOM.panelDOM.getBoundingClientRect().height % 32)) + "px";
 	let position = `left 0 bottom ${offset}, left 0 top 0, left 0 top 0`;
-
-	console.log(editionWithDOM.rulerDOM);
 
 	editionWithDOM.panelDOM.style.backgroundPosition = position;
 	editionWithDOM.rulerDOM.style.backgroundPosition = position;
@@ -276,7 +265,7 @@ function loadVersions(edition, panelDOM) {
 	// Adds today as a special "version"
 
 	versions.push({
-		date: new Date().toISOString().substr(0,10),
+		date: new Date().toISOString().substr(0, 10),
 		today: true
 	});
 
@@ -293,7 +282,7 @@ function loadVersions(edition, panelDOM) {
 		versions[0].first = true;
 
 		let firstTimeMs = parseUTC(versions[0].date);
-		let lastTimeMs = parseUTC(versions[versions.length-1].date);
+		let lastTimeMs = parseUTC(versions[versions.length - 1].date);
 
 		let firstDate = new Date(firstTimeMs);
 		let lastDate = new Date(lastTimeMs);
@@ -321,7 +310,7 @@ function loadVersions(edition, panelDOM) {
 			}
 
 			else if (isLeapYear(firstDate.getFullYear() + i)) {
-				multi = LEAP_YEAR_MS/YEAR_MS;
+				multi = LEAP_YEAR_MS / YEAR_MS;
 			}
 
 			tlYearDOM.style.height = (multi * YEAR_PX) + "px";
@@ -331,8 +320,8 @@ function loadVersions(edition, panelDOM) {
 
 			let h2DOM = make("h3", "number-ago",
 				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
-				(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
-				"Now"
+					(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
+					"Now"
 			);
 
 			rulerYearDOM.appendChild(h1DOM);
@@ -384,7 +373,7 @@ function loadVersions(edition, panelDOM) {
 				if (date.getFullYear() === firstDate.getFullYear()) {
 
 					let firstTimeOfYear = msOfYear(firstTimeMs);
-					let multi = ((timeOfYear/yearLength)-(firstTimeOfYear/yearLength))/(1-(firstTimeOfYear/yearLength));
+					let multi = ((timeOfYear / yearLength) - (firstTimeOfYear / yearLength)) / (1 - (firstTimeOfYear / yearLength));
 					versionDOM.style.top = (multi * 100) + "%";
 
 				}
@@ -396,7 +385,7 @@ function loadVersions(edition, panelDOM) {
 
 				}
 			} else {
-				let multi = timeOfYear/yearLength;
+				let multi = timeOfYear / yearLength;
 				versionDOM.style.top = (multi * 100) + "%";
 			}
 
@@ -421,7 +410,7 @@ function loadVersions(edition, panelDOM) {
 				let upcYearDOM = make("div", "year");
 				upcYearDOM.style.height = UPCOMING_PX + "px";
 
-				let upcVersionDOM = make("div", "version"+ (i%2 === 0 ? "" : " alt"));
+				let upcVersionDOM = make("div", "version" + (i % 2 === 0 ? "" : " alt"));
 				upcVersionDOM.style.top = "50%";
 
 				let upcRulerYearDOM = make("div", "year");
@@ -429,7 +418,7 @@ function loadVersions(edition, panelDOM) {
 				upcRulerYearDOM.style.height = UPCOMING_PX + "px";
 
 				upcRulerYearDOM.appendChild(make("h2", "number", "????"));
-				upcRulerYearDOM.appendChild(make("h3", "number-ago","Future"));
+				upcRulerYearDOM.appendChild(make("h3", "number-ago", "Future"));
 
 				let previewDOM = makePreview(upcomings[i]);
 
@@ -461,7 +450,7 @@ function loadVersions(edition, panelDOM) {
 		panelDOM.appendChild(rulerDOM);
 		panelDOM.appendChild(timelinePanelDOM);
 
-		let fakeRulerDOM = make("div","ruler");
+		let fakeRulerDOM = make("div", "ruler");
 
 		panelDOM.appendChild(fakeRulerDOM);
 
@@ -501,14 +490,14 @@ function makePreview(version) {
 	}
 
 	return previewDOM;
-	
+
 }
 
 function makeBox(version, edition, date) {
 
 	if (version.first) {
 
-		let text1 = make("h1", "",edition.firstMessage);
+		let text1 = make("h1", "", edition.firstMessage);
 		let text2 = make("h1", "", MONTH_NAMES[date.getMonth()] + " " + date.getFullYear());
 		let box = make("div", "box");
 
@@ -525,7 +514,7 @@ function makeBox(version, edition, date) {
 
 	if (version.today) {
 
-		let text1 = make("h1", "","Today");
+		let text1 = make("h1", "", "Today");
 		let text2 = make("h1", "", MONTH_NAMES[date.getMonth()] + " " + date.getFullYear());
 		let box = make("div", "box");
 
@@ -635,7 +624,7 @@ function showInfopanel(version) {
 
 	if (hasLearnMore) {
 		show(infoLearnMoreDOM);
-		infoLearnMoreDOM.href = version.learnMore.startsWith("#") ? WIKI_PATH + version.learnMore.substring(1,version.learnMore.length) : version.learnMore;
+		infoLearnMoreDOM.href = version.learnMore.startsWith("#") ? WIKI_PATH + version.learnMore.substring(1, version.learnMore.length) : version.learnMore;
 
 		switch (version.type) {
 			case "minor":
@@ -654,7 +643,7 @@ function showInfopanel(version) {
 	else {
 		hide(infoLearnMoreDOM);
 	}
-	
+
 	if (hasVideo) {
 
 		infoVideoLinkDOM.href = "https://www.youtube.com/watch?v=" + version.video;
@@ -664,7 +653,7 @@ function showInfopanel(version) {
 
 		show(infoVideoWrapperDOM);
 		show(infoVideoLinkWrapperDOM);
-	} 
+	}
 	else {
 		hide(infoVideoWrapperDOM);
 		hide(infoVideoLinkWrapperDOM)
@@ -677,7 +666,7 @@ function showInfopanel(version) {
 
 		for (let i = 0; i < desc.length; i++) {
 
-			infoLongDescriptionDOM.appendChild(make("p",undefined,desc[i]));
+			infoLongDescriptionDOM.appendChild(make("p", undefined, desc[i]));
 
 		}
 
@@ -768,65 +757,18 @@ function updateVersionDisplays() {
 
 }
 
-// +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-let youtubeLoader = make("script");
-youtubeLoader.src = "https://www.youtube.com/iframe_api";
-let firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(youtubeLoader, firstScriptTag);
-
-let tooLong = true;
-
-ajaxGET(JSON_URL, function (data, status) {
-
-	if (status === 200) {
-
-		let json;
-
-		if (JSON.parse) {
-			show(id("message-building"));
-			json = JSON.parse(data);
-			loadEditions(json.editions);
-		}
-		else {
-			show(id("message-old"));
-		}
-
-	}
-	else {
-		tooLong = false;
-		id("message-error-code").innerText = "Error code: " + status;
-		show(id("message-error"));
-	}
-
-	tooLong = false;
-
-	hide(id("message-loading"));
-	hide(id("message-building"));
-	hide(id("message-toolong"));
-
-});
-
 function onYouTubeIframeAPIReady() {
 
-	player = new YT.Player('infopanel-video',{playerVars: { 'autoplay': 0}});
+	player = new YT.Player('infopanel-video', { playerVars: { 'autoplay': 0 } });
 
 }
 
-setTimeout(function () {
-
-	if (tooLong) {
-		show(id("message-toolong"));
-	}
-
-}, 10000);
+// +++ Main +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 document.addEventListener("keydown", function keyDownTextField(e) {
-
 	if (e.key === "Escape" || e.key === "e") {
 		hideInfopanel();
 	}
-
 }, false);
 
 infoCloseDOM.addEventListener("click", hideInfopanel);
@@ -835,22 +777,30 @@ navShowDOM.addEventListener("click", showNav);
 
 navHideDOM.addEventListener("click", hideNav);
 
-buttonMajorDOM.addEventListener("click", function(){
+buttonMajorDOM.addEventListener("click", function () {
 	showMajor = !showMajor;
 	updateVersionDisplays();
 });
 
-buttonMinorDOM.addEventListener("click", function(){
+buttonMinorDOM.addEventListener("click", function () {
 	showMinor = !showMinor;
 	updateVersionDisplays();
 });
 
-buttonEventsDOM.addEventListener("click", function(){
+buttonEventsDOM.addEventListener("click", function () {
 	showEvents = !showEvents;
 	updateVersionDisplays();
 });
 
-buttonMemoriesDOM.addEventListener("click", function(){
+buttonMemoriesDOM.addEventListener("click", function () {
 	showMemories = !showMemories;
 	updateVersionDisplays();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+	let youtubeLoader = make("script");
+	youtubeLoader.src = "https://www.youtube.com/iframe_api";
+	let firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(youtubeLoader, firstScriptTag);
+	loadEditions(VERSION_DATA);
+})
