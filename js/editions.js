@@ -694,7 +694,7 @@ const EDITIONS = [
         "learnMore": "#Nether_Update",
         "mainFeatures": [
           { "text": "Warped Forests" },
-          { "text": "Crimsom Forests" },
+          { "text": "Crimson Forests" },
           { "text": "Soulsand Valleys" },
           { "text": "Piglins" },
           { "text": "Hoglins" },
