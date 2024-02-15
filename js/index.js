@@ -318,9 +318,11 @@ function loadVersions(edition, panelDOM) {
 			let h1DOM = make("h1", "number", firstDate.getFullYear() + i);
 
 			let h2DOM = make("h3", "number-ago",
-				(lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
-					(lastDate.getFullYear() - firstDate.getFullYear() - i) + " y ago" :
-					"Now"
+			    (lastDate.getFullYear() - firstDate.getFullYear() - i !== 0) ?
+			        (lastDate.getFullYear() - firstDate.getFullYear() - i !== 1) ?
+			            (lastDate.getFullYear() - firstDate.getFullYear() - i) + " years ago" :
+			            	(lastDate.getFullYear() - firstDate.getFullYear() - i) + " year ago" :
+			        "Now"
 			);
 
 			rulerYearDOM.appendChild(h1DOM);
