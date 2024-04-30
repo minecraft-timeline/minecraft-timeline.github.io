@@ -806,7 +806,30 @@ const EDITIONS = [
           { "text": "Hanging Signs" }
         ]
       },
-
+       {
+        "subtitle": "1.20.4",
+        "type": "minor",
+        "date": "2023-12-07",
+        "learnMore": "#Java_Edition_1.20.3",
+        "mainFeatures": [
+          { "text": "Small Changes & Bug Fixes  },
+          { "text": "Last version to run on 32-bit Operating Systems" }
+          { "text": "Last version to run on Java 17 - 20" }
+        ]
+      },
+      {
+        "subtitle": "1.20.3",
+        "description": "Better Decorated Pots",
+        "type": "minor",
+        "date": "2023-12-05",
+        "learnMore": "#Java_Edition_1.20.3",
+        "mainFeatures": [
+          { "text": "Decorated Pots can now hold items" },
+          { "text": "Decorated Pots now can be destroyed by projectiles" },
+          { "text": "Shields now can rotate vertically" }
+          { "text": "Added the Update 1.21 experimental toggle" }
+        ]
+      },
       {
         "subtitle": "1.20.2",
         "type": "minor",
@@ -1872,18 +1895,6 @@ const EDITIONS = [
     ],
 
     "upcomings": [
-      {
-        "subtitle": "1.20.3",
-        "description": "Better Decorated Pots",
-        "type": "minor",
-        "possibleDate": "Late 2023 - Early 2024",
-        "learnMore": "#Java_Edition_1.20.3",
-        "mainFeatures": [
-          { "text": "Decorated Pots can now hold items" },
-          { "text": "Decorated Pots now can be destroyed by projectiles" },
-          { "text": "Shields now can rotate vertically" }
-        ]
-      },
       {
         "title": "???",
         "subtitle": "1.21",
