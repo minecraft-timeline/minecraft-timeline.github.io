@@ -806,7 +806,8 @@ const EDITIONS = [
           { "text": "Hanging Signs" }
         ]
       },
- {
+      
+      {
         "subtitle": "1.20.6",
         "type": "minor",
         "date": "2024-04-29",
@@ -815,6 +816,7 @@ const EDITIONS = [
           { "text": "Small Changes and Bug Fixes" }
         ]
       },
+      
         {
         "subtitle": "1.20.5",
         "description": "Armored Paws Drop",
@@ -2700,11 +2702,67 @@ const EDITIONS = [
           { "text": "Hanging Signs" }
         ]
       },
+
+       {
+        "subtitle": "1.20.81",
+        "type": "minor",
+        "date": "2024-04-01",
+        "learnMore": "#Bedrock_Edition_1.20.81",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.80",
+        "description": "Armored Paws Drop",
+        "type": "minor",
+        "date": "2024-04-23",
+        "Fun fact": "This is the first minor update with a name and trailer!"
+        "learnMore": "#Bedrock_Edition_1.20.80",
+        "mainFeatures": [
+          { "text": "Added Armadillos" }
+          { "text": "Added Wolf Armor & Different Wolf Varients" }
+          { "text": "Updated Trial Chambers in 1.21 Experimental" }
+          { "text": "Added Mace & Breeze Rod to 1.21 Experimental" }
+        ]
+          "minorFeatures": [
+          { "text": "Rework of Bad Omen Effect" }
+          { "text": "Small Changes & Bug Fixes" }
+          { "text": "Many Technical Changes" }
+        ]
+      },
+      
+      {
+        "subtitle": "1.20.73",
+        "type": "minor",
+        "date": "2024-04-01",
+        "funFact": "Did you know? This update was released on April Fools day, but did not include any April Fools changes!",
+        "learnMore": "#Bedrock_Edition_1.20.73",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.72",
+        "type": "minor",
+        "date": "2024-03-19",
+        "funFact": "Did you know? This update had a bug on Windows, so it was unplayable until 3 days later!",
+        "learnMore": "#Bedrock_Edition_1.20.72",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.71",
+        "type": "minor",
+        "date": "2024-03-12",
+        "funFact": "Did you know? This update had a bug on Windows, so it was unplayable until 1 week later!",
+        "learnMore": "#Bedrock_Edition_1.20.71",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
       
        {
         "subtitle": "1.20.70",
         "type": "minor",
-        "date": "2024-02-15",
+        "date": "2024-03-12",
+        "funFact": "Did you know? This update had a bug on Windows, so it was unplayable until 1 week later!",
         "learnMore": "#Bedrock_Edition_1.20.70",
         "mainFeatures": [
           { "text": "Small Changes and Bug Fixes" }
