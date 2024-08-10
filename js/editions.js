@@ -806,6 +806,62 @@ const EDITIONS = [
           { "text": "Hanging Signs" }
         ]
       },
+      
+      {
+        "subtitle": "1.20.6",
+        "type": "minor",
+        "date": "2024-04-29",
+        "learnMore": "#Java_Edition_1.20.6",
+        "mainFeatures": [
+          { "text": "Small Changes and Bug Fixes" }
+        ]
+      },
+      
+        {
+        "subtitle": "1.20.5",
+        "description": "Armored Paws Drop",
+        "type": "minor",
+        "date": "2024-04-23",
+        "funFact": "Did you know? This was the first update to wolves since Java 1.4.2! That was over 11 years ago!\n Fun fact: This is the first minor update with a name and trailer!"
+        "learnMore": "#Java_Edition_1.20.5",
+        "mainFeatures": [
+          { "text": "Added Armadillos" }
+          { "text": "Added Wolf Armor & Different Wolf Varients" }
+          { "text": "Updated Trial Chambers in 1.21 Experimental" }
+          { "text": "Added Mace & Breeze Rod to 1.21 Experimental" }
+        ]
+          "minorFeatures": [
+          { "text": "Rework of Bad Omen Effect" }
+          { "text": "Small Changes & Bug Fixes" }
+          { "text": "Many Technical Changes" }
+        ]
+      },
+
+       {
+        "subtitle": "1.20.4",
+        "type": "minor",
+        "date": "2023-12-07",
+        "learnMore": "#Java_Edition_1.20.4",
+        "mainFeatures": [
+          { "text": "Small Changes & Bug Fixes" },
+          { "text": "Last version to run on 32-bit Operating Systems" }
+          { "text": "Last version to run on Java 17 - 20" }
+        ]
+      },
+
+      {
+        "subtitle": "1.20.3",
+        "description": "Better Decorated Pots",
+        "type": "minor",
+        "date": "2023-12-05",
+        "learnMore": "#Java_Edition_1.20.3",
+        "mainFeatures": [
+          { "text": "Decorated Pots can now hold items" },
+          { "text": "Decorated Pots now can be destroyed by projectiles" },
+          { "text": "Shields now can rotate vertically" }
+          { "text": "Added the Update 1.21 experimental toggle" }
+        ]
+      },
 
       {
         "subtitle": "1.20.2",
@@ -1873,19 +1929,7 @@ const EDITIONS = [
 
     "upcomings": [
       {
-        "subtitle": "1.20.3",
-        "description": "Better Decorated Pots",
-        "type": "minor",
-        "possibleDate": "Late 2023 - Early 2024",
-        "learnMore": "#Java_Edition_1.20.3",
-        "mainFeatures": [
-          { "text": "Decorated Pots can now hold items" },
-          { "text": "Decorated Pots now can be destroyed by projectiles" },
-          { "text": "Shields now can rotate vertically" }
-        ]
-      },
-      {
-        "title": "???",
+        "title": "Tricky Trials",
         "subtitle": "1.21",
         "description": "Trial Chambers, Auto Crafting & Armadillos",
         "type": "major",
@@ -1897,6 +1941,7 @@ const EDITIONS = [
           { "text": "Auto Crafter Block" },
           { "text": "Many New Copper Blocks" },
           { "text": "The Breeze" },
+          { "text": "Armadillos" },
           { "text": "Many unnanounced feaures" }
         ]
       },
@@ -2658,6 +2703,129 @@ const EDITIONS = [
         ]
       },
 
+       {
+        "subtitle": "1.20.81",
+        "type": "minor",
+        "date": "2024-04-01",
+        "learnMore": "#Bedrock_Edition_1.20.81",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.80",
+        "description": "Armored Paws Drop",
+        "type": "minor",
+        "date": "2024-04-23",
+        "Fun fact": "This is the first minor update with a name and trailer!"
+        "learnMore": "#Bedrock_Edition_1.20.80",
+        "mainFeatures": [
+          { "text": "Added Armadillos" }
+          { "text": "Added Wolf Armor & Different Wolf Varients" }
+          { "text": "Updated Trial Chambers in 1.21 Experimental" }
+          { "text": "Added Mace & Breeze Rod to 1.21 Experimental" }
+        ]
+          "minorFeatures": [
+          { "text": "Rework of Bad Omen Effect" }
+          { "text": "Small Changes & Bug Fixes" }
+          { "text": "Many Technical Changes" }
+        ]
+      },
+      
+      {
+        "subtitle": "1.20.73",
+        "type": "minor",
+        "date": "2024-04-01",
+        "funFact": "Did you know? This update was released on April Fools day, but did not include any April Fools changes!",
+        "learnMore": "#Bedrock_Edition_1.20.73",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.72",
+        "type": "minor",
+        "date": "2024-03-19",
+        "funFact": "Did you know? This update had a bug on Windows, so it was unplayable until 3 days later!",
+        "learnMore": "#Bedrock_Edition_1.20.72",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.71",
+        "type": "minor",
+        "date": "2024-03-12",
+        "funFact": "Did you know? This update had a bug on Windows, so it was unplayable until 1 week later!",
+        "learnMore": "#Bedrock_Edition_1.20.71",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+       {
+        "subtitle": "1.20.70",
+        "type": "minor",
+        "date": "2024-03-12",
+        "funFact": "Did you know? This update had a bug on Windows, so it was unplayable until 1 week later!",
+        "learnMore": "#Bedrock_Edition_1.20.70",
+        "mainFeatures": [
+          { "text": "Small Changes and Bug Fixes" }
+          { "text": "Added new 'Update 1.21' Experimental features, such as The Vault" }
+        ]
+      },
+
+       {
+        "subtitle": "1.20.62",
+        "type": "minor",
+        "date": "2024-02-15",
+        "learnMore": "#Bedrock_Edition_1.20.62",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+
+        {
+        "subtitle": "1.20.60",
+        "type": "minor",
+        "date": "2024-02-06",
+        "learnMore": "#Bedrock_Edition_1.20.60",
+        "mainFeatures": [
+          { "text": "Added  'Armadillo and Wolf Armor' experimental toggle" }
+          { "text": "Small Changes and Bug Fixes" }
+      },
+      
+      {
+        "subtitle": "1.20.51",
+        "type": "minor",
+        "date": "2023-12-14",
+        "learnMore": "#Bedrock_Edition_1.20.51",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+       {
+        "subtitle": "1.20.50",
+        "type": "minor",
+        "date": "2023-12-05",
+        "learnMore": "#Bedrock_Edition_1.20.50",
+        "mainFeatures": [
+          { "text": "Small Changes and Bug Fixes" }
+          { "text": "Added 'Update 1.21' Expexperimental Toggle" }
+           ]
+      },
+      
+      {
+        "subtitle": "1.20.41",
+        "type": "minor",
+        "date": "2023-11-02",
+        "learnMore": "#Bedrock_Edition_1.20.41",
+        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+      },
+      
+      {
+        "subtitle": "1.20.40",
+        "type": "minor",
+        "date": "2023-10-24",
+        "learnMore": "#Bedrock_Edition_1.20.40",
+        "mainFeatures": [
+          { "text": "Small Changes and Bug Fixes" },
+          { "text": "New Touch Controls" }
+          ]
+      },
+      
       {
         "subtitle": "1.20.32",
         "type": "minor",
@@ -4067,21 +4235,18 @@ const EDITIONS = [
 
     "upcomings": [
       {
-        "subtitle": "1.20.50",
+        "subtitle": "1.20.70",
         "type": "minor",
-        "possibleDate": "Late 2023",
-        "learnMore": "#Bedrock_Edition_1.20.50",
-        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
+        "date": "2024-02-15",
+        "learnMore": "#Bedrock_Edition_1.20.60",
+        "mainFeatures": [
+          { "text": "Small Changes and Bug Fixes" }
+          { "text": "Added new 'Update 1.21' Experimental features, such as The Vault" }
+        ]
       },
+
       {
-        "subtitle": "1.20.40",
-        "type": "minor",
-        "possibleDate": "Late 2023",
-        "learnMore": "#Bedrock_Edition_1.20.40",
-        "mainFeatures": [{ "text": "Small Changes and Bug Fixes" }]
-      },
-      {
-        "title": "???",
+        "title": "Tricky Trials",
         "subtitle": "1.21",
         "description": "Trial Chambers, Auto Crafting & Armadillos",
         "type": "major",
