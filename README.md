@@ -1,63 +1,47 @@
-# [Minecraft Timeline](https://minecraft-timeline.github.io/)
-Repository of the Minecraft Timeline project, listing every update to the game in one timeline for each edition.
+# Svelte + TS + Vite
 
-![Banner](images/banner.png)
+This template should help get you started developing with Svelte and TypeScript in Vite.
 
-This began as a simple static image [posted on Reddit](https://www.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/) that gained a lot of traction (even appearing briefly in some videos [[1]](https://www.youtube.com/watch?v=3m5BAIA2-4Q?t=35) [[2]](https://youtu.be/tTLhWEXxtx4?t=174)); enough to motivate me to create this simple, interactable timeline easily available to all.
+## Recommended IDE Setup
 
-You are welcome to contribute by fixing bugs, but mainly, by adding missing versions of the game to `editions.js` :)
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
-## editions.js
+## Need an official Svelte framework?
 
-All timeline data is stored in a single JS file (formerly a JSON file) that gets loaded alongside other scripts, in an array of game editions called `EDITIONS`.
+Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
 
-Each edition has `versions` and `upcomings`. Both are lists of the same type (Version) that have the following fields:
+## Technical considerations
 
-- `type`: Either `major` (major updates, appears big on the timeline), `minor` (minor updates, appears small on the timeline), `event` (for important events to the history of the edition, appears as an exclamation mark on the timeline) or `memory` (for famous nostalgic moments, appears as a heart on the timeline). **Required.**
-- `date`: The date of the version, in the format yyyy-MM-dd[T[hh][:mm][:ss]]. **Required for `versions`**.
-- `possibleDate`: A possible date of the version, in no particular format. Optional, but only appears in `upcomings`.
-- `title`: The big display title of the version (e.g. **"Update Aquatic"**). Optional.
-- `subtitle`: The smaller subtitle of the version (e.g. *"1.13"*). Optional.
-- `description`: The short description of the version (e.g. "Ocean Overhaul & Phantoms"). Optional.
-- `longDescription`: A very long description of the version. Optional, but use very sparingly (pretty much just for big `event`s).
-- `funFact`: A light hearted medium description of the version, meant for not widely known "fun facts" or "did you know?" lines. Optional.
-- `icon`: Path to an image icon of the version, relative to `images/versions`. Optional.
-- `learnMore`: URL for more information of the version. You can also use the syntax `#NAME` as a shorthand to `minecraft.wiki/w/NAME`. Optional.
-- `video`: A YouTube video ID (the string after ?w= in a YT URL). Displays a video frame on the info panel, and if there is no `icon` will add a Youtube icon to the timeline. Optional.
-- `mainFeatures`: A list of Feature objects, which only contain a `text` field (others may be added in the future). Contains the most important features of an update.
-- `minorFeatures`: The same as `mainFeatures` but for less important yet noteworthy features.
+**Why use this over SvelteKit?**
 
-## Building
+- It brings its own routing solution which might not be preferable for some users.
+- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
 
-This project uses good old pure HTML and JS, so you can just open `index.html` in your browser and it should work!
+This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
-SCSS is used for styling though, so you can use `sass --watch sass:css` to automatically compile it.
+Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-## Icons
+**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
 
-Timeline icons are located in `images/versions`, but *update* icons (unique for each major update) are in the subfolder `versions/<edition>/version_<version>.png`.
+Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
 
-![Icon example](images/versions/versions/java/version_cave_game.png) ![Icon example](images/versions/versions/java/version_indev_0_31.png) ![Icon example](images/versions/versions/java/version_1_16.png)
+**Why include `.vscode/extensions.json`?**
 
-All timeline icons must have 64px of height and at most 128px of width. They should all follow the same art style, following these guidelines:
+Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
 
-- Include as few elements as needed to properly represent the update, but no fewer.
-- Blocks should always be 3D.
-- Pixel art must have a constant, integer pixel size.
-- Structures should have its own custom pixel art.
-- Mobs should only be depicted as a head, unless more is needed.
-- All items in a same icon must have the same pixel size.
-- There must be a drop shadow of 2px vertical offset and 50% opacity.
+**Why enable `allowJs` in the TS template?**
 
-## Thank you
+While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
 
-Thanks to everyone who shared, enjoyed and contributed to this small project. Over the years, I have received many kind messages of people thanking me for creating Minecraft Timeline, and if it wasn't for your support, I wouldn't be still mantaining this. So, thank you, and let's enjoy many Minecraft updates to come!
+**Why is HMR not preserving my local component state?**
 
-\- Henrique
+HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
 
----
+If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
 
-```
-"Minecraft" is a trademark of Mojang Studios.
-This project is not affiliated with Mojang, or Microsoft.
+```ts
+// store.ts
+// An extremely simple external store
+import { writable } from 'svelte/store'
+export default writable(0)
 ```
