@@ -806,6 +806,121 @@ const EDITIONS = [
           { "text": "Hanging Signs" }
         ]
       },
+      
+      {
+        "title": "Tricky Trials",
+        "subtitle": "1.21",
+        "description": "Trial Chambers, Auto Crafting & Armadillos",
+        "type": "major",
+        "date": "2024-06-13, ",
+        "icon": "versions/java/version_1_21.png",
+        "learnMore": "#Java_Edition_1.21",
+        "mainFeatures": [
+          { "text": "Trial Chambers" },
+          { "text": "Auto Crafter Block" },
+          { "text": "Many New Copper Blocks" },
+          { "text": "The Breeze" },
+          { "text": "Added new weapon , the Mace" },
+          { "text": "Added Breeze" },
+          { "text": "Infested, weaving and Oozing effects" }
+        ],
+        "minorFeatures": [
+          { "text": "Trial explorer map" },
+          { "text": "Added new music discs" },
+          { "text": "Added new armor trims" }
+        ]
+      },
+      
+      {
+        "subtitle": "1.21.4",
+        "description": "Bundles of Bravery",
+        "type": "minor",
+        "date": "2024-12-03",
+        "learnMore": "#Java_Edition_1.21.4",
+        "mainFeatures": [
+          { "text": "Added the Pale Garden biome" },
+          { "text": "Added the Creaking" },
+          { "text": "Added the Creaking Heart" },
+        ]
+      },
+      
+      {
+        "subtitle": "1.21.3",
+        "type": "minor",
+        "date": "2024-10-22",
+        "learnMore": "#Java_Edition_1.21.3",
+        "mainFeatures": [
+          { "text": "critical Bug Fixes" }
+        ]
+      },
+      
+      {
+        "subtitle": "1.21.2",
+        "description": "Bundles of Bravery",
+        "type": "minor",
+        "date": "2024-10-22",
+        "learnMore": "#Java_Edition_1.21.2",
+        "mainFeatures": [
+          { "text": "Bundle was added" }
+        ]
+      },
+      
+      {
+        "subtitle": "1.21.1",
+        "type": "minor",
+        "date": "2024-08-08",
+        "learnMore": "#Java_Edition_1.21.1",
+        "mainFeatures": [
+          { "text": "Added support for Tzotzil and Belarusian" },
+          { "text": "critical Bug Fixes" }
+        ]
+      },
+
+      {
+        "subtitle": "1.20.6",
+        "type": "minor",
+        "date": "2024-04-29",
+        "learnMore": "#Java_Edition_1.20.6",
+        "mainFeatures": [
+          { "text": "critical Bug Fixes" }
+        ]
+      },
+
+      {
+        "subtitle": "1.20.5",
+        "description": "Armored Paws",
+        "type": "minor",
+        "date": "2024-04-23",
+        "learnMore": "#Java_Edition_1.20.5",
+        "mainFeatures": [
+          { "text": "Armadillo was added" },
+          { "text": "Wolf armor was added" },
+          { "text": "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
+        "subtitle": "1.20.4",
+        "type": "minor",
+        "date": "2023-12-07",
+        "learnMore": "#Java_Edition_1.20.4",
+        "mainFeatures": [
+          { "text": "critical Bug Fixes" }
+        ]
+      },
+      
+      {
+        "subtitle": "1.20.3",
+        "description": "Better Decorated Pots",
+        "type": "minor",
+        "date": "2023-12-05",
+        "learnMore": "#Java_Edition_1.20.3",
+        "mainFeatures": [
+          { "text": "Decorated Pots can now hold items" },
+          { "text": "Decorated Pots now can be destroyed by projectiles" },
+          { "text": "Shields now can rotate vertically" }
+        ]
+      },
 
       {
         "subtitle": "1.20.2",
@@ -1872,34 +1987,7 @@ const EDITIONS = [
     ],
 
     "upcomings": [
-      {
-        "subtitle": "1.20.3",
-        "description": "Better Decorated Pots",
-        "type": "minor",
-        "possibleDate": "Late 2023 - Early 2024",
-        "learnMore": "#Java_Edition_1.20.3",
-        "mainFeatures": [
-          { "text": "Decorated Pots can now hold items" },
-          { "text": "Decorated Pots now can be destroyed by projectiles" },
-          { "text": "Shields now can rotate vertically" }
-        ]
-      },
-      {
-        "title": "???",
-        "subtitle": "1.21",
-        "description": "Trial Chambers, Auto Crafting & Armadillos",
-        "type": "major",
-        "possibleDate": "Mid 2024",
-        "icon": "versions/java/version_1_21.png",
-        "learnMore": "#Java_Edition_1.21",
-        "mainFeatures": [
-          { "text": "Trial Chambers" },
-          { "text": "Auto Crafter Block" },
-          { "text": "Many New Copper Blocks" },
-          { "text": "The Breeze" },
-          { "text": "Many unnanounced feaures" }
-        ]
-      },
+      
     ]
   },
 
