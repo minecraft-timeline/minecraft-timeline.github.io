@@ -21,9 +21,6 @@
   let { edition, types }: { edition: Edition; types: VersionType[] } = $props();
   let years = $derived(calculateYears(edition));
 </script>
-
-<h2>{edition.title} - {edition.description}</h2>
-
 <div class="timeline">
   <div class="ruler-base"></div>
   <div class="years">

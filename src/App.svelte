@@ -22,7 +22,7 @@
 </script>
 
 <main>
-  <h1>Available editions</h1>
+  <!-- <h1>Available editions</h1>
   <ul>
     {#each EDITIONS as edition}
       <li>
@@ -50,7 +50,7 @@
   <label>
     <input type="checkbox" bind:checked={enableMemories} />
     Memories
-  </label>
+  </label> -->
   <Timeline edition={currentEdition} types={getEnabledTypes()} />
   {#each hoveredVersions as version}
     <Tooltip {version} />

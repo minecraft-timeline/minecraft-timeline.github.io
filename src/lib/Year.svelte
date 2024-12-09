@@ -41,7 +41,7 @@
     {#each versions as { version, ratio }, i}
       <div class="spacer" style="flex-grow: {spaces[i]};"></div>
       {#if first && i === 0}
-        <span>{edition.firstMessage}</span>
+        <div class="first-message"><span>{edition.firstMessage}</span></div>
         <div class="spacer" style="flex-grow: 0.05;"></div>
       {/if}
       <div class="version">
@@ -53,6 +53,16 @@
 </div>
 
 <style>
+  .first-message {
+    border: 8px solid transparent;
+    border-image: url('borders/panel_basic.png') 8 fill stretch stretch;
+    padding: 8px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    display: flex;
+  }
   .year {
     display: flex;
     align-items: center;
@@ -66,14 +76,13 @@
     text-align: center;
   }
   .ruler .number {
-    font-size: 32px;
-    line-height: 0.75em;
-    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
   }
   .ruler .ago {
     display: none;
-    font-size: 24px;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
   }
   .spacer {
     flex-shrink: 0;
@@ -99,11 +108,20 @@
     align-items: center;
   }
   @media (min-width: 768px) {
+    /* .first-message {
+      padding: 0px;
+      font-size: 32px;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    }
+    .first-message span {
+      margin-top: -6px;
+    } */
     .ruler {
       min-width: 128px;
     }
     .ruler .number {
-      font-size: 48px;
+      font-size: 24px;
+      text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
     }
     .ruler .ago {
       display: block;
