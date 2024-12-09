@@ -1,72 +1,59 @@
-<script lang="ts" module>
-  let mouseX = $state(0);
-  let mouseY = $state(0);
-  document.addEventListener(
-    "mousemove",
-    (event) => {
-      mouseX = event.clientX;
-      mouseY = event.clientY;
-    },
-    false,
-  );
-</script>
-
 <script lang="ts">
-  import type { Version } from "../edition";
+  import type { Version } from '../edition';
+  import { hoveredVersions } from './tooltip.svelte';
   let { version }: { version: Version } = $props();
-  let selfReference: Element | null = $state(null);
-  function selfX() {
-    if (!selfReference) return 0;
-    return selfReference.getBoundingClientRect().x;
-  }
-  function selfY() {
-    if (!selfReference) return 0;
-    return selfReference.getBoundingClientRect().y;
-  }
 </script>
 
-<div class="version" bind:this={selfReference}>
-  <span
-    class="tooltip"
-    style="left: {mouseX - selfX()}px; top: {mouseY - selfY()}px;"
-  >
-    {version.title}<br />{version.subtitle}
-  </span>
+<div
+  class="version {version.type}"
+  role="contentinfo"
+  onmouseenter={() => {
+    hoveredVersions.push(version);
+  }}
+  onmouseleave={() => {
+    for (let i = 0; i < hoveredVersions.length; i++) {
+      if (hoveredVersions[i] === version) {
+        hoveredVersions.splice(i, 1);
+        break;
+      }
+    }
+  }}
+>
+  <img class="icon" src="versions/{version.icon}" alt="" />
 </div>
 
 <style>
   .version {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%; /* Example styling */
-
-    /* Default placement on the horizontal axis */
-    /* left: var(--position); */
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
   }
-  .tooltip {
-    display: none;
-    pointer-events: none;
-    background: #c8c8c8;
-    padding: 10px;
-    position: absolute;
-    z-index: 1000000000;
-    width: 200px;
-    height: 100px;
+  .version.major {
+    border-image: url('timeline/icon_update_major.png') 4 fill repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    padding: 4px 4px 6px 4px;
+    min-width: 48px;
+    min-height: 48px;
   }
-
-  .version:hover .tooltip {
-    display: block;
+  .version.minor {
+    border-image: url('timeline/icon_update_minor.png') 4 fill repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    min-width: 20px;
+    min-height: 20px;
   }
-
-  @media (max-width: 600px) {
-    /* Switch to positioning along the vertical axis */
-    .version {
-      left: 50%; /* Center horizontally */
-      top: var(--position); /* Use custom vertical position */
-    }
+  .version.event {
+    border-image: url('timeline/icon_update_event.png') 12 fill repeat;
+    border-image-width: 12px;
+    border-image-outset: 0px;
+    padding: 0;
+    min-width: 48px;
+    min-height: 48px;
+  }
+  .version .icon {
+    margin: 0 auto;
   }
 </style>
