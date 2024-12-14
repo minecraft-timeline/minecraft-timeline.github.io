@@ -60,8 +60,9 @@
     font-size: 24px;
     color: white;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
     display: flex;
+    text-align: center;
+    margin: 0 16px;
   }
   .year {
     display: flex;
@@ -108,14 +109,9 @@
     align-items: center;
   }
   @media (min-width: 768px) {
-    /* .first-message {
-      padding: 0px;
-      font-size: 32px;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    .first-message {
+      margin: 0;
     }
-    .first-message span {
-      margin-top: -6px;
-    } */
     .ruler {
       min-width: 128px;
     }

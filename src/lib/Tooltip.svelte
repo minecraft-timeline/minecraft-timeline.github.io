@@ -1,40 +1,76 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import type { Version } from '../edition';
 
+  function clamp(value: number, min: number, max: number): number {
+    return Math.min(Math.max(value, min), max);
+  }
   let { version }: { version: Version } = $props();
-  let { x, y }: { x: number; y: number } = $state({ x: 0, y: 0 });
+  let { mouseX, mouseY } = $state({
+    mouseX: 0,
+    mouseY: 0,
+  });
+  let docWidth = $state(0);
+  let docHeight = $state(0);
+  let docTop = $state(0);
+  let docLeft = $state(0);
+  let tipWidth = $state(0);
+  let tipHeight = $state(0);
+  let windowScrollX = $state(0);
+  let windowScrollY = $state(0);
+  let { x, y }: { x: number; y: number } = $derived({
+    x:
+      clamp(
+        mouseX,
+        windowScrollX + tipWidth / 2,
+        windowScrollX + docWidth - tipWidth / 2,
+      ) + docLeft,
+    y:
+      clamp(
+        mouseY + tipHeight / 2 + 16,
+        windowScrollY + tipHeight / 2,
+        windowScrollY + docHeight - tipHeight / 2,
+      ) + docTop,
+  });
+  onMount(() => {
+    docWidth = document.documentElement.clientWidth;
+    docHeight = document.documentElement.clientHeight;
+    docTop = document.documentElement.scrollTop;
+    docLeft = document.documentElement.scrollLeft;
+  });
 </script>
 
-{#if version.title && version.subtitle}
-  <div class="tooltip" style="left: {x}px; top: {32 + y}px;">
+<div
+  bind:offsetWidth={tipWidth}
+  bind:offsetHeight={tipHeight}
+  class="tooltip"
+  style="left: {x}px; top: {y}px;"
+>
+  {#if version.title && version.subtitle}
     <div class="title">{version.title}</div>
     {#if version.description}
       <div class="description">{version.description}</div>
     {/if}
     <div class="subtitle">{version.subtitle}</div>
-  </div>
-{/if}
-{#if version.title && !version.subtitle}
-  <div class="tooltip" style="left: {x}px; top: {32 + y}px;">
+  {/if}
+  {#if version.title && !version.subtitle}
     <div class="title">{version.title}</div>
     {#if version.description}
       <div class="description">{version.description}</div>
     {/if}
-  </div>
-{/if}
-{#if !version.title && version.subtitle}
-  <div class="tooltip" style="left: {x}px; top: {32 + y}px;">
+  {/if}
+  {#if !version.title && version.subtitle}
     <div class="title">{version.subtitle}</div>
     {#if version.description}
       <div class="description">{version.description}</div>
     {/if}
-  </div>
-{/if}
+  {/if}
+</div>
 
-<svelte:window
+<svelte:body
   onmousemove={(mouseEvent) => {
-    x = mouseEvent.pageX;
-    y = mouseEvent.pageY;
+    mouseX = mouseEvent.clientX;
+    mouseY = mouseEvent.clientY;
   }}
 />
 
@@ -48,8 +84,7 @@
     border-image: url('backgrounds/tooltip.png') 6 fill repeat;
     border-image-width: 6px;
     padding: 8px 10px;
-    z-index: 1000;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     overflow: hidden;
     text-wrap: nowrap;
     line-height: 1.5em;

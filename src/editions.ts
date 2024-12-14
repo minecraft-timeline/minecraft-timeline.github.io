@@ -4098,17 +4098,6 @@ const EDITIONS: Edition[] = [
         ]
       },
     ]
-  },
-
-  {
-    title: "Legacy Console Edition",
-    description: "The console game by 4JStudios",
-    firstMessage: "Console Edition is born",
-    logo: "logo_console.png",
-
-    versions: [],
-
-    upcomings: []
   }
 ];
 export default EDITIONS
