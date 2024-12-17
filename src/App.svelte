@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { VersionType } from './edition.js';
   import EDITIONS from './editions.js';
+  import Book from './lib/Book.svelte';
   import Header from './lib/Header.svelte';
   import Timeline from './lib/Timeline.svelte';
   import Tooltip from './lib/Tooltip.svelte';
@@ -23,35 +24,6 @@
 </script>
 
 <main>
-  <!-- <h1>Available editions</h1>
-  <ul>
-    {#each EDITIONS as edition}
-      <li>
-        <button
-          onclick={() => {
-            chosenEdition = edition;
-          }}>{edition.title}</button
-        >
-      </li>
-    {/each}
-  </ul>
-  <h1>Settings</h1>
-  <label>
-    <input type="checkbox" bind:checked={enableMajors} />
-    Major versions
-  </label>
-  <label>
-    <input type="checkbox" bind:checked={enableMinors} />
-    Minor versions
-  </label>
-  <label>
-    <input type="checkbox" bind:checked={enableEvents} />
-    Events
-  </label>
-  <label>
-    <input type="checkbox" bind:checked={enableMemories} />
-    Memories
-  </label> -->
   <Header
     bind:chosenEdition
     bind:enableMajors
@@ -63,4 +35,5 @@
   {#each hoveredVersions as version}
     <Tooltip {version} />
   {/each}
+  <Book />
 </main>

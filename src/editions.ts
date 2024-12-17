@@ -13,7 +13,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2009-05-10",
         icon: "versions/java/version_cave_game.png",
-        learnMore: "#Cave_game_tech_test",
+        learnMore: "@Cave_game_tech_test",
         mainFeatures: [
           { text: "Cobblestone" },
           { text: "Grass Block" }
@@ -31,7 +31,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2009-05-16",
         icon: "versions/java/version_early_classic.png",
-        learnMore: "#Early_Classic_Creative",
+        learnMore: "@Early_Classic_Creative",
         mainFeatures: [
           { text: "Trees" },
           { text: "Coal, iron and gold ores" }
@@ -49,7 +49,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2009-05-31",
         icon: "versions/java/version_multiplayer_test.png",
-        learnMore: "#Multiplayer_Test",
+        learnMore: "@Multiplayer_Test",
         mainFeatures: [
           { text: "Flowers" },
           { text: "Glass" },
@@ -69,7 +69,7 @@ const EDITIONS: Edition[] = [
         date: "2009-09-01",
         icon: "versions/java/version_survival_test.png",
         funFact: "Did you know? Creepers were originally broken Pigs.",
-        learnMore: "#Survival_Test",
+        learnMore: "@Survival_Test",
         mainFeatures: [
           { text: "Health" },
           { text: "Creepers" },
@@ -90,7 +90,7 @@ const EDITIONS: Edition[] = [
         date: "2009-10-27",
         icon: "versions/java/version_late_classic.png",
         funFact: "Did you know? This update overlapped with \"Survival Test\".",
-        learnMore: "#Late_Classic_Creative",
+        learnMore: "@Late_Classic_Creative",
         mainFeatures: [{ text: "Block Placement Controls" }]
       },
 
@@ -101,7 +101,7 @@ const EDITIONS: Edition[] = [
         date: "2009-12-23",
         icon: "versions/java/version_indev_0_31.png",
         funFact: "Did you know? Notch released 24 updates under this name.",
-        learnMore: "#Indev_0.31",
+        learnMore: "@Indev_0.31",
         mainFeatures: [
           { text: "Crafting Tables" },
           { text: "Chests" },
@@ -122,7 +122,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2010-02-06",
         icon: "versions/java/version_indev.png",
-        learnMore: "#Minecraft_Indev",
+        learnMore: "@Minecraft_Indev",
         mainFeatures: [
           { text: "Farming" },
           { text: "Armor" },
@@ -143,7 +143,7 @@ const EDITIONS: Edition[] = [
         date: "2010-02-27",
         icon: "versions/java/version_infdev.png",
         funFact: "Did you know? \"Infdev\" stands for \"Infinite Development\".",
-        learnMore: "#Minecraft_Infdev",
+        learnMore: "@Minecraft_Infdev",
         mainFeatures: [
           { text: "Dungeons" },
           { text: "Rails" },
@@ -163,7 +163,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2010-07-03",
         icon: "versions/java/version_alpha_1_0.png",
-        learnMore: "#Java_Edition_Alpha_v1.0.1",
+        learnMore: "@Java_Edition_Alpha_v1.0.1",
         mainFeatures: [
           { text: "Redstone Dust" },
           { text: "Redstone Torch" },
@@ -181,7 +181,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2010-09-10",
         icon: "versions/java/version_alpha_1_1.png",
-        learnMore: "#Java_Edition_Alpha_v1.1.0",
+        learnMore: "@Java_Edition_Alpha_v1.1.0",
         mainFeatures: [{ text: "Compasses" }],
         minorFeatures: [{ text: "Lava buckets as furnace fuel" }]
       },
@@ -193,7 +193,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2010-10-30",
         icon: "versions/java/version_alpha_1_2.png",
-        learnMore: "#Halloween_Update",
+        learnMore: "@Halloween_Update",
         mainFeatures: [
           { text: "The Nether" },
           { text: "Nether Portal" },
@@ -208,7 +208,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2010-12-20",
         icon: "versions/java/version_beta_1_0.png",
-        learnMore: "#Java_Edition_Beta_1.0",
+        learnMore: "@Java_Edition_Beta_1.0",
         mainFeatures: [{ text: "Throwable Eggs" }]
       },
 
@@ -218,7 +218,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2010-12-22",
         icon: "versions/java/version_beta_1_1.png",
-        learnMore: "#Java_Edition_Beta_1.1",
+        learnMore: "@Java_Edition_Beta_1.1",
         mainFeatures: [{ text: "Better Leaf Decay" }]
       },
 
@@ -228,7 +228,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2011-01-13",
         icon: "versions/java/version_beta_1_2.png",
-        learnMore: "#Java_Edition_Beta_1.2",
+        learnMore: "@Java_Edition_Beta_1.2",
         mainFeatures: [
           { text: "Note Blocks" },
           { text: "Cakes" },
@@ -249,7 +249,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2011-02-22",
         icon: "versions/java/version_beta_1_3.png",
-        learnMore: "#Java_Edition_Beta_1.3",
+        learnMore: "@Java_Edition_Beta_1.3",
         mainFeatures: [{ text: "Beds" }, { text: "Repeaters" }],
         minorFeatures: [{ text: "Graphics Settings" }]
       },
@@ -261,7 +261,7 @@ const EDITIONS: Edition[] = [
         date: "2011-03-31",
         icon: "versions/java/version_beta_1_4.png",
         funFact: "Did you know? The mod \"Better than Wolves\" was created because its creator disliked this update.",
-        learnMore: "#Java_Edition_Beta_1.4",
+        learnMore: "@Java_Edition_Beta_1.4",
         mainFeatures: [{ text: "Wolves" }, { text: "New Logo" }],
         minorFeatures: [{ text: "Cookies" }]
       },
@@ -272,7 +272,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2011-04-19",
         icon: "versions/java/version_beta_1_5.png",
-        learnMore: "#Java_Edition_Beta_1.5",
+        learnMore: "@Java_Edition_Beta_1.5",
         mainFeatures: [
           { text: "Achievements" },
           { text: "Powered Rails" },
@@ -287,7 +287,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2011-05-26",
         icon: "versions/java/version_beta_1_6.png",
-        learnMore: "#Java_Edition_Beta_1.6",
+        learnMore: "@Java_Edition_Beta_1.6",
         mainFeatures: [
           { text: "Maps" },
           { text: "Trapdoors" },
@@ -303,7 +303,7 @@ const EDITIONS: Edition[] = [
         date: "2011-06-30",
         icon: "versions/java/version_beta_1_7.png",
         funFact: "Did you know? Pistons were originally a mod.",
-        learnMore: "#Java_Edition_Beta_1.7",
+        learnMore: "@Java_Edition_Beta_1.7",
         mainFeatures: [
           { text: "Pistons" },
           { text: "Sticky Pistons" },
@@ -320,7 +320,7 @@ const EDITIONS: Edition[] = [
         date: "2011-09-14",
         icon: "versions/java/version_beta_1_8.png",
         funFact: "Did you know? The hunger system was somewhat controversial.",
-        learnMore: "#Java_Edition_Beta_1.8",
+        learnMore: "@Java_Edition_Beta_1.8",
         mainFeatures: [
           { text: "Endermen" },
           { text: "Hunger" },
@@ -345,7 +345,7 @@ const EDITIONS: Edition[] = [
         date: "2011-11-18",
         icon: "versions/java/version_1_0.png",
         funFact: "Did you know? The game was fully released during Minecon 2011.",
-        learnMore: "#Java_Edition_1.0.0",
+        learnMore: "@Java_Edition_1.0.0",
         mainFeatures: [
           { text: "The End" },
           { text: "Enchanting" },
@@ -368,7 +368,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-01-12",
         icon: "versions/java/version_1_1.png",
-        learnMore: "#Java_Edition_1.1",
+        learnMore: "@Java_Edition_1.1",
         mainFeatures: [{ text: "Spawn Eggs" }],
         minorFeatures: [
           { text: "Superflat worlds" },
@@ -382,7 +382,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-03-01",
         icon: "versions/java/version_1_2.png",
-        learnMore: "#Java_Edition_1.2.1",
+        learnMore: "@Java_Edition_1.2.1",
         mainFeatures: [
           { text: "Jungles" },
           { text: "Iron Golems" },
@@ -402,7 +402,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-08-01",
         icon: "versions/java/version_1_3.png",
-        learnMore: "#Java_Edition_1.3.1",
+        learnMore: "@Java_Edition_1.3.1",
         mainFeatures: [
           { text: "Villager Trading" },
           { text: "Desert Temples" },
@@ -425,7 +425,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-10-25",
         icon: "versions/java/version_1_4.png",
-        learnMore: "#Pretty_Scary_Update",
+        learnMore: "@Pretty_Scary_Update",
         mainFeatures: [
           { text: "Withers" },
           { text: "Anvils" },
@@ -449,7 +449,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2013-03-13",
         icon: "versions/java/version_1_5.png",
-        learnMore: "#Redstone_Update",
+        learnMore: "@Redstone_Update",
         mainFeatures: [
           { text: "Hopper" },
           { text: "Block of Redstone" },
@@ -472,7 +472,7 @@ const EDITIONS: Edition[] = [
         date: "2013-07-01",
         icon: "versions/java/version_1_6.png",
         funFact: "Did you know? Horses were originally from the mod \"Mo' Creatures.\"",
-        learnMore: "#Horse_Update",
+        learnMore: "@Horse_Update",
         mainFeatures: [{ text: "Horses" }],
         minorFeatures: [
           { text: "Leads" },
@@ -489,7 +489,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2013-10-25",
         icon: "versions/java/version_1_7.png",
-        learnMore: "#The_Update_that_Changed_the_World",
+        learnMore: "@The_Update_that_Changed_the_World",
         mainFeatures: [
           { text: "11 new Biomes such as Mesas and Mega Taigas" },
           { text: "New world generator" },
@@ -505,7 +505,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2014-09-02",
         icon: "versions/java/version_1_8.png",
-        learnMore: "#Bountiful_Update",
+        learnMore: "@Bountiful_Update",
         mainFeatures: [
           { text: "Ocean Monuments" },
           { text: "Slime Blocks" },
@@ -531,7 +531,7 @@ const EDITIONS: Edition[] = [
         date: "2016-02-29",
         icon: "versions/java/version_1_9.png",
         funFact: "Did you know? This update is considered the most controversial one so far, due to the combat changes.",
-        learnMore: "#Combat_Update",
+        learnMore: "@Combat_Update",
         mainFeatures: [
           { text: "End Cities" },
           { text: "Elytra Wings" },
@@ -558,7 +558,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2016-06-08",
         icon: "versions/java/version_1_10.png",
-        learnMore: "#Frostburn_Update",
+        learnMore: "@Frostburn_Update",
         mainFeatures: [
           { text: "Polar Bears" },
           { text: "Magma Blocks" },
@@ -579,7 +579,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2016-11-14",
         icon: "versions/java/version_1_11.png",
-        learnMore: "#Exploration_Update",
+        learnMore: "@Exploration_Update",
         mainFeatures: [
           { text: "Woodland Mansions" },
           { text: "Shulker Boxes" },
@@ -597,7 +597,7 @@ const EDITIONS: Edition[] = [
         date: "2017-06-07",
         icon: "versions/java/version_1_12.png",
         funFact: "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now, cookies instantly kill parrots. Tame them with seeds instead.",
-        learnMore: "#World_of_Color_Update",
+        learnMore: "@World_of_Color_Update",
         mainFeatures: [
           { text: "Colored Concrete" },
           { text: "Colored Concrete Powder" },
@@ -620,7 +620,7 @@ const EDITIONS: Edition[] = [
         date: "2018-07-18",
         icon: "versions/java/version_1_13.png",
         funFact: "Did you know? The name of this update is a reference to the movie \"The Life Aquatic\".",
-        learnMore: "#Update_Aquatic",
+        learnMore: "@Update_Aquatic",
         mainFeatures: [
           { text: "Kelp and Seagrass" },
           { text: "Fish mobs" },
@@ -650,7 +650,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-04-23",
         icon: "versions/java/version_1_14.png",
-        learnMore: "#Village_%26_Pillage",
+        learnMore: "@Village_%26_Pillage",
         mainFeatures: [
           { text: "Village overhaul" },
           { text: "Pillagers" },
@@ -671,7 +671,7 @@ const EDITIONS: Edition[] = [
         date: "2019-12-10",
         icon: "versions/java/version_1_15.png",
         funFact: "Did you know? This was the first major update with bug fixes and performance improvements as one of its main points. 1.13 was originally supposed to be this, before they added the aquatic features.",
-        learnMore: "#Buzzy_Bees",
+        learnMore: "@Buzzy_Bees",
         mainFeatures: [
           { text: "Bees" },
           { text: "Beehives" },
@@ -692,7 +692,7 @@ const EDITIONS: Edition[] = [
         date: "2020-06-23",
         icon: "versions/java/version_1_16.png",
         funFact: "Did you know? Netherite is the first new tool tier since diamonds (added over 10 years ago).",
-        learnMore: "#Nether_Update",
+        learnMore: "@Nether_Update",
         mainFeatures: [
           { text: "Warped Forests" },
           { text: "Crimson Forests" },
@@ -717,7 +717,7 @@ const EDITIONS: Edition[] = [
         date: "2021-06-08",
         icon: "versions/java/version_1_17.png",
         funFact: "Did you know? Goats will target and ram all other mobs, including armor stands!",
-        learnMore: "#Java_Edition_1.17",
+        learnMore: "@Java_Edition_1.17",
         mainFeatures: [
           { text: "Various cave plants" },
           { text: "Axolotls" },
@@ -744,7 +744,7 @@ const EDITIONS: Edition[] = [
         date: "2021-11-30",
         icon: "versions/java/version_1_18.png",
         funFact: "Did you know? This was the first major world generation update since 1.7 (over 7 years ago)!\nCaves & Cliffs was split into two updates mainly due to the 2020 COVID-19 Pandemic.",
-        learnMore: "#Java_Edition_1.18",
+        learnMore: "@Java_Edition_1.18",
         mainFeatures: [
           { text: "Completely overhauled world generation" },
           { text: "Added huge and complex cave systems" },
@@ -767,7 +767,7 @@ const EDITIONS: Edition[] = [
         date: "2022-06-07",
         icon: "versions/java/version_1_19.png",
         funFact: "Did you know? The Deep Dark was meant to come during Caves & Cliffs, but Mojang couldn't finish it in time.",
-        learnMore: "#Java_Edition_1.19",
+        learnMore: "@Java_Edition_1.19",
         mainFeatures: [
           { text: "The Deep Dark" },
           { text: "Ancient Cities" },
@@ -791,7 +791,7 @@ const EDITIONS: Edition[] = [
         date: "2023-06-07",
         icon: "versions/java/version_1_20.png",
         funFact: "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
-        learnMore: "#Java_Edition_1.20",
+        learnMore: "@Java_Edition_1.20",
         mainFeatures: [
           { text: "Archeology Features" },
           { text: "Brushes and Suspicious Sand" },
@@ -812,7 +812,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.2",
         type: "minor",
         date: "2023-09-21",
-        learnMore: "#Java_Edition_1.20.2",
+        learnMore: "@Java_Edition_1.20.2",
         mainFeatures: [
           { text: "Added /random command" },
           { text: "Added experimental Villager Trade Rebalancing" },
@@ -824,7 +824,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.1",
         type: "minor",
         date: "2023-06-12",
-        learnMore: "#Java_Edition_1.20.1",
+        learnMore: "@Java_Edition_1.20.1",
         mainFeatures: [
           { text: "Small Changes and Bug Fixes" }
         ]
@@ -834,7 +834,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.4",
         type: "minor",
         date: "2023-03-14",
-        learnMore: "#Java_Edition_1.19.4",
+        learnMore: "@Java_Edition_1.19.4",
         mainFeatures: [
           { text: "Added /ride and /damage commands" },
           { text: "Small Changes and Bug Fixes" }
@@ -845,7 +845,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.3",
         type: "minor",
         date: "2022-12-07",
-        learnMore: "#Java_Edition_1.19.3",
+        learnMore: "@Java_Edition_1.19.3",
         mainFeatures: [
           { text: "Creative Mode inventory overhaul" },
           { text: "Many new spawn eggs" },
@@ -859,7 +859,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.2",
         type: "minor",
         date: "2022-08-05",
-        learnMore: "#Java_Edition_1.19.2",
+        learnMore: "@Java_Edition_1.19.2",
         mainFeatures: [
           { text: "Critical Bug Fixes" }
         ]
@@ -869,7 +869,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.1",
         type: "minor",
         date: "2022-07-27",
-        learnMore: "#Java_Edition_1.19.1",
+        learnMore: "@Java_Edition_1.19.1",
         mainFeatures: [
           { text: "Allay Duplication" },
           { text: "Player Chat reporting" },
@@ -882,7 +882,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.2",
         type: "minor",
         date: "2022-02-28",
-        learnMore: "#Java_Edition_1.18.2",
+        learnMore: "@Java_Edition_1.18.2",
         mainFeatures: [
           { text: "Added the /placefeature command" },
           { text: "Small Changes to custom world generation and Bug Fixes" }
@@ -893,7 +893,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.1",
         type: "minor",
         date: "2021-12-10",
-        learnMore: "#Java_Edition_1.18.1",
+        learnMore: "@Java_Edition_1.18.1",
         mainFeatures: [
           { text: "Fixed various bugs and tweaked fog" },
           { text: "Fixed a severe vulnerability in the Log4j logging library, that affected many Java programs worldwide" }
@@ -904,7 +904,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.1",
         type: "minor",
         date: "2021-07-06",
-        learnMore: "#Java_Edition_1.17.1",
+        learnMore: "@Java_Edition_1.17.1",
         mainFeatures: [
           { text: "Fixed various bugs and tweaked game mechanics" }
         ]
@@ -914,7 +914,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.5",
         type: "minor",
         date: "2021-01-15",
-        learnMore: "#Java_Edition_1.16.5",
+        learnMore: "@Java_Edition_1.16.5",
         mainFeatures: [
           { text: "Fixed various bugs including major stability issues" }
         ]
@@ -924,7 +924,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.4",
         type: "minor",
         date: "2020-11-02",
-        learnMore: "#Java_Edition_1.16.4",
+        learnMore: "@Java_Edition_1.16.4",
         mainFeatures: [
           { text: "Changed worn netherite leggings model" },
           {
@@ -944,7 +944,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.3",
         type: "minor",
         date: "2020-09-10",
-        learnMore: "#Java_Edition_1.16.3",
+        learnMore: "@Java_Edition_1.16.3",
         mainFeatures: [
           {
             text: "Improved piglin, piglin brutes, hoglins, and zoglins pathfinding"
@@ -958,7 +958,7 @@ const EDITIONS: Edition[] = [
         description: "Piglin Brutes",
         type: "minor",
         date: "2020-08-11T10:13:46",
-        learnMore: "#Java_Edition_1.16.2",
+        learnMore: "@Java_Edition_1.16.2",
         mainFeatures: [
           { text: "Piglin Brutes" },
           { text: "Small Changes and Bug Fixes" }
@@ -969,7 +969,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.1",
         type: "minor",
         date: "2020-06-24T10:31:40",
-        learnMore: "#Java_Edition_1.16.1",
+        learnMore: "@Java_Edition_1.16.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -977,7 +977,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.15.2",
         type: "minor",
         date: "2020-01-17T10:03:52",
-        learnMore: "#Java_Edition_1.15.2",
+        learnMore: "@Java_Edition_1.15.2",
         mainFeatures: [
           { text: "Added some gamerules" },
           {
@@ -991,7 +991,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.15.1",
         type: "minor",
         date: "2019-12-16T10:29:47",
-        learnMore: "#Java_Edition_1.15.1",
+        learnMore: "@Java_Edition_1.15.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -999,7 +999,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.4",
         type: "minor",
         date: "2019-07-19T09:25:47",
-        learnMore: "#Java_Edition_1.14.4",
+        learnMore: "@Java_Edition_1.14.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1007,7 +1007,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.3",
         type: "minor",
         date: "2019-06-24T12:52:52",
-        learnMore: "#Java_Edition_1.14.3",
+        learnMore: "@Java_Edition_1.14.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1015,7 +1015,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.2",
         type: "minor",
         date: "2019-05-27T11:48:25",
-        learnMore: "#Java_Edition_1.14.2",
+        learnMore: "@Java_Edition_1.14.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1023,7 +1023,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.1",
         type: "minor",
         date: "2019-05-13T11:10:12",
-        learnMore: "#Java_Edition_1.14.1",
+        learnMore: "@Java_Edition_1.14.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1031,7 +1031,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.13.2",
         type: "minor",
         date: "2018-10-22T11:41:07",
-        learnMore: "#Java_Edition_1.13.2",
+        learnMore: "@Java_Edition_1.13.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1039,7 +1039,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.13.1",
         type: "minor",
         date: "2018-08-22T14:03:42",
-        learnMore: "#Java_Edition_1.13.1",
+        learnMore: "@Java_Edition_1.13.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1049,7 +1049,7 @@ const EDITIONS: Edition[] = [
         description: "Renamed game",
         date: "2017-09-18T08:39:46",
         icon: "versions/java/version_1_12_2.png",
-        learnMore: "#Java_Edition_1.12.2",
+        learnMore: "@Java_Edition_1.12.2",
         mainFeatures: [
           {
             text: "Renamed game from \"Minecraft\" to \"Minecraft: Java Edition\""
@@ -1062,7 +1062,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.12.1",
         type: "minor",
         date: "2017-08-03T12:40:39",
-        learnMore: "#Java_Edition_1.12.1",
+        learnMore: "@Java_Edition_1.12.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1070,7 +1070,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.11.2",
         type: "minor",
         date: "2016-12-21T09:29:12",
-        learnMore: "#Java_Edition_1.11.2",
+        learnMore: "@Java_Edition_1.11.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1080,7 +1080,7 @@ const EDITIONS: Edition[] = [
         description: "Rocket Powered Elytras",
         date: "2016-12-20T14:05:34",
         icon: "versions/java/version_1_11_1.png",
-        learnMore: "#Java_Edition_1.11.1",
+        learnMore: "@Java_Edition_1.11.1",
         funFact: "Did you know? Rocket Elytras were suggested by a player. Despite being included in a minor update, this was a game changer.",
         mainFeatures: [
           { text: "Rocket Powered Elytras" },
@@ -1092,7 +1092,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.10.2",
         type: "minor",
         date: "2016-06-23T09:17:32",
-        learnMore: "#Java_Edition_1.10.2",
+        learnMore: "@Java_Edition_1.10.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1100,7 +1100,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.10.1",
         type: "minor",
         date: "2016-06-22T10:13:22",
-        learnMore: "#Java_Edition_1.10.1",
+        learnMore: "@Java_Edition_1.10.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1108,7 +1108,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.9.4",
         type: "minor",
         date: "2016-05-10T10:17:16",
-        learnMore: "#Java_Edition_1.9.4",
+        learnMore: "@Java_Edition_1.9.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1116,7 +1116,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.9.3",
         type: "minor",
         date: "2016-05-10T08:33:35",
-        learnMore: "#Java_Edition_1.9.3",
+        learnMore: "@Java_Edition_1.9.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1124,7 +1124,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.9.2",
         type: "minor",
         date: "2016-03-30T15:23:55",
-        learnMore: "#Java_Edition_1.9.2",
+        learnMore: "@Java_Edition_1.9.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1132,7 +1132,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.9.1",
         type: "minor",
         date: "2016-03-30T13:43:07",
-        learnMore: "#Java_Edition_1.9.1",
+        learnMore: "@Java_Edition_1.9.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1140,7 +1140,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.9",
         type: "minor",
         date: "2015-12-03T09:24:39",
-        learnMore: "#Java_Edition_1.8.9",
+        learnMore: "@Java_Edition_1.8.9",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1148,7 +1148,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.8",
         type: "minor",
         date: "2015-07-27T10:31:28",
-        learnMore: "#Java_Edition_1.8.8",
+        learnMore: "@Java_Edition_1.8.8",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1156,7 +1156,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.7",
         type: "minor",
         date: "2015-06-05T10:10:44",
-        learnMore: "#Java_Edition_1.8.7",
+        learnMore: "@Java_Edition_1.8.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1164,7 +1164,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.6",
         type: "minor",
         date: "2015-05-25T10:31:19",
-        learnMore: "#Java_Edition_1.8.6",
+        learnMore: "@Java_Edition_1.8.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1172,7 +1172,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.5",
         type: "minor",
         date: "2015-05-22T11:15:28",
-        learnMore: "#Java_Edition_1.8.5",
+        learnMore: "@Java_Edition_1.8.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1180,7 +1180,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.4",
         type: "minor",
         date: "2015-04-17T11:37:50",
-        learnMore: "#Java_Edition_1.8.4",
+        learnMore: "@Java_Edition_1.8.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1188,7 +1188,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.3",
         type: "minor",
         date: "2015-02-20T14:00:09",
-        learnMore: "#Java_Edition_1.8.3",
+        learnMore: "@Java_Edition_1.8.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1196,7 +1196,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.2",
         type: "minor",
         date: "2015-02-19T15:47:29",
-        learnMore: "#Java_Edition_1.8.2",
+        learnMore: "@Java_Edition_1.8.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1204,7 +1204,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.1",
         type: "minor",
         date: "2014-11-24T14:13:31",
-        learnMore: "#Java_Edition_1.8.1",
+        learnMore: "@Java_Edition_1.8.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1212,7 +1212,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.10",
         type: "minor",
         date: "2014-05-14T17:29:23",
-        learnMore: "#Java_Edition_1.7.10",
+        learnMore: "@Java_Edition_1.7.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1220,7 +1220,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.9",
         type: "minor",
         date: "2014-04-14T13:29:23",
-        learnMore: "#Java_Edition_1.7.9",
+        learnMore: "@Java_Edition_1.7.9",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1228,7 +1228,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.8",
         type: "minor",
         date: "2014-04-09T07:58:16",
-        learnMore: "#Java_Edition_1.7.8",
+        learnMore: "@Java_Edition_1.7.8",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1236,7 +1236,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.7",
         type: "minor",
         date: "2014-04-09T07:52:16",
-        learnMore: "#Java_Edition_1.7.7",
+        learnMore: "@Java_Edition_1.7.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1244,7 +1244,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.6",
         type: "minor",
         date: "2014-04-09T07:52:06",
-        learnMore: "#Java_Edition_1.7.6",
+        learnMore: "@Java_Edition_1.7.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1252,7 +1252,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.5",
         type: "minor",
         date: "2014-02-26T09:22:17",
-        learnMore: "#Java_Edition_1.7.5",
+        learnMore: "@Java_Edition_1.7.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1260,7 +1260,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.4",
         type: "minor",
         date: "2013-12-09T12:28:10",
-        learnMore: "#Java_Edition_1.7.4",
+        learnMore: "@Java_Edition_1.7.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1268,7 +1268,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.3",
         type: "minor",
         date: "2013-12-06T13:55:34",
-        learnMore: "#Java_Edition_1.7.3",
+        learnMore: "@Java_Edition_1.7.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1276,7 +1276,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.2",
         type: "minor",
         date: "2013-10-25T13:00:00",
-        learnMore: "#Java_Edition_1.7.2",
+        learnMore: "@Java_Edition_1.7.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1284,7 +1284,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.6.4",
         type: "minor",
         date: "2013-09-19T15:52:37",
-        learnMore: "#Java_Edition_1.6.4",
+        learnMore: "@Java_Edition_1.6.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1292,7 +1292,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.6.2",
         type: "minor",
         date: "2013-07-05T13:09:02",
-        learnMore: "#Java_Edition_1.6.2",
+        learnMore: "@Java_Edition_1.6.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1300,7 +1300,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.6.1",
         type: "minor",
         date: "2013-06-28T14:48:41",
-        learnMore: "#Java_Edition_1.6.1",
+        learnMore: "@Java_Edition_1.6.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1308,7 +1308,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.5.2",
         type: "minor",
         date: "2013-04-25T15:45:00",
-        learnMore: "#Java_Edition_1.5.2",
+        learnMore: "@Java_Edition_1.5.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1316,7 +1316,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.5.1",
         type: "minor",
         date: "2013-03-20T10:00:00",
-        learnMore: "#Java_Edition_1.5.1",
+        learnMore: "@Java_Edition_1.5.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1324,7 +1324,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.7",
         type: "minor",
         date: "2012-12-27T22:00:00",
-        learnMore: "#Java_Edition_1.4.7",
+        learnMore: "@Java_Edition_1.4.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1332,7 +1332,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.5",
         type: "minor",
         date: "2012-12-19T22:00:00",
-        learnMore: "#Java_Edition_1.4.5",
+        learnMore: "@Java_Edition_1.4.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1340,7 +1340,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.6",
         type: "minor",
         date: "2012-12-19T22:00:00",
-        learnMore: "#Java_Edition_1.4.6",
+        learnMore: "@Java_Edition_1.4.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1348,7 +1348,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.4",
         type: "minor",
         date: "2012-12-13T22:00:00",
-        learnMore: "#Java_Edition_1.4.4",
+        learnMore: "@Java_Edition_1.4.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1356,7 +1356,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.2",
         type: "minor",
         date: "2012-11-24T22:00:00",
-        learnMore: "#Java_Edition_1.4.2",
+        learnMore: "@Java_Edition_1.4.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1364,7 +1364,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.3.2",
         type: "minor",
         date: "2012-08-15T22:00:00",
-        learnMore: "#Java_Edition_1.3.2",
+        learnMore: "@Java_Edition_1.3.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1372,7 +1372,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.3.1",
         type: "minor",
         date: "2012-07-31T22:00:00",
-        learnMore: "#Java_Edition_1.3.1",
+        learnMore: "@Java_Edition_1.3.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1380,7 +1380,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.5",
         type: "minor",
         date: "2012-03-29T22:00:00",
-        learnMore: "#Java_Edition_1.2.5",
+        learnMore: "@Java_Edition_1.2.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1388,7 +1388,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.4",
         type: "minor",
         date: "2012-03-21T22:00:00",
-        learnMore: "#Java_Edition_1.2.4",
+        learnMore: "@Java_Edition_1.2.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1396,7 +1396,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.3",
         type: "minor",
         date: "2012-03-01T22:00:00",
-        learnMore: "#Java_Edition_1.2.3",
+        learnMore: "@Java_Edition_1.2.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1404,7 +1404,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.2",
         type: "minor",
         date: "2012-02-29T22:00:01",
-        learnMore: "#Java_Edition_1.2.2",
+        learnMore: "@Java_Edition_1.2.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1412,7 +1412,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.1",
         type: "minor",
         date: "2012-02-29T22:00:00",
-        learnMore: "#Java_Edition_1.2.1",
+        learnMore: "@Java_Edition_1.2.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1420,7 +1420,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.8.1",
         type: "minor",
         date: "2011-09-18T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.8.1",
+        learnMore: "@Java_Edition_Beta_1.8.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1428,7 +1428,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.7.3",
         type: "minor",
         date: "2011-07-07T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.7.3",
+        learnMore: "@Java_Edition_Beta_1.7.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1436,7 +1436,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.7.2",
         type: "minor",
         date: "2011-06-30T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.7.2",
+        learnMore: "@Java_Edition_Beta_1.7.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1444,7 +1444,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.6.6",
         type: "minor",
         date: "2011-05-30T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.6.6",
+        learnMore: "@Java_Edition_Beta_1.6.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1452,7 +1452,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.6.5",
         type: "minor",
         date: "2011-05-27T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.6.5",
+        learnMore: "@Java_Edition_Beta_1.6.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1460,7 +1460,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.6.4",
         type: "minor",
         date: "2011-05-25T22:00:04",
-        learnMore: "#Java_Edition_Beta_1.6.4",
+        learnMore: "@Java_Edition_Beta_1.6.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1468,7 +1468,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.6.3",
         type: "minor",
         date: "2011-05-25T22:00:03",
-        learnMore: "#Java_Edition_Beta_1.6.3",
+        learnMore: "@Java_Edition_Beta_1.6.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1476,7 +1476,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.6.2",
         type: "minor",
         date: "2011-05-25T22:00:02",
-        learnMore: "#Java_Edition_Beta_1.6.2",
+        learnMore: "@Java_Edition_Beta_1.6.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1484,7 +1484,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.6.1",
         type: "minor",
         date: "2011-05-25T22:00:01",
-        learnMore: "#Java_Edition_Beta_1.6.1",
+        learnMore: "@Java_Edition_Beta_1.6.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1492,7 +1492,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.5_01",
         type: "minor",
         date: "2011-04-19T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.5_01",
+        learnMore: "@Java_Edition_Beta_1.5_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1500,7 +1500,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.4_01",
         type: "minor",
         date: "2011-04-04T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.4_01",
+        learnMore: "@Java_Edition_Beta_1.4_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1508,7 +1508,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.3_01",
         type: "minor",
         date: "2011-02-22T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.3_01",
+        learnMore: "@Java_Edition_Beta_1.3_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1516,7 +1516,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.3b",
         type: "minor",
         date: "2011-02-21T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.3b",
+        learnMore: "@Java_Edition_Beta_1.3b",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1524,7 +1524,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.2_02",
         type: "minor",
         date: "2011-01-20T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.2_02",
+        learnMore: "@Java_Edition_Beta_1.2_02",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1532,7 +1532,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.2_01",
         type: "minor",
         date: "2011-01-13T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.2_01",
+        learnMore: "@Java_Edition_Beta_1.2_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1540,7 +1540,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.1_02",
         type: "minor",
         date: "2010-12-21T22:00:01",
-        learnMore: "#Java_Edition_Beta_1.1_02",
+        learnMore: "@Java_Edition_Beta_1.1_02",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1548,7 +1548,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.1_01",
         type: "minor",
         date: "2010-12-21T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.1_01",
+        learnMore: "@Java_Edition_Beta_1.1_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1556,7 +1556,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.0.2",
         type: "minor",
         date: "2010-12-20T22:00:00",
-        learnMore: "#Java_Edition_Beta_1.0.2",
+        learnMore: "@Java_Edition_Beta_1.0.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1564,7 +1564,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Beta 1.0_01",
         type: "minor",
         date: "2010-12-19T22:00:01",
-        learnMore: "#Java_Edition_Beta_1.0_01",
+        learnMore: "@Java_Edition_Beta_1.0_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1572,7 +1572,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.6",
         type: "minor",
         date: "2010-12-02T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.6",
+        learnMore: "@Java_Edition_Alpha_v1.2.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1580,7 +1580,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.5",
         type: "minor",
         date: "2010-11-30T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.5",
+        learnMore: "@Java_Edition_Alpha_v1.2.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1588,7 +1588,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.4_01",
         type: "minor",
         date: "2010-11-29T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.4_01",
+        learnMore: "@Java_Edition_Alpha_v1.2.4_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1596,7 +1596,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.3_04",
         type: "minor",
         date: "2010-11-25T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.3_04",
+        learnMore: "@Java_Edition_Alpha_v1.2.3_04",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1604,7 +1604,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.3_02",
         type: "minor",
         date: "2010-11-24T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.3_02",
+        learnMore: "@Java_Edition_Alpha_v1.2.3_02",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1612,7 +1612,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.3_01",
         type: "minor",
         date: "2010-11-23T22:00:01",
-        learnMore: "#Java_Edition_Alpha_v1.2.3_01",
+        learnMore: "@Java_Edition_Alpha_v1.2.3_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1620,7 +1620,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.3",
         type: "minor",
         date: "2010-11-23T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.3",
+        learnMore: "@Java_Edition_Alpha_v1.2.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1628,7 +1628,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.2b",
         type: "minor",
         date: "2010-11-09T22:00:01",
-        learnMore: "#Java_Edition_Alpha_v1.2.2b",
+        learnMore: "@Java_Edition_Alpha_v1.2.2b",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1636,7 +1636,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.2a",
         type: "minor",
         date: "2010-11-09T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.2a",
+        learnMore: "@Java_Edition_Alpha_v1.2.2a",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1644,7 +1644,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.1_01",
         type: "minor",
         date: "2010-11-04T22:00:01",
-        learnMore: "#Java_Edition_Alpha_v1.2.1_01",
+        learnMore: "@Java_Edition_Alpha_v1.2.1_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1652,7 +1652,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.1",
         type: "minor",
         date: "2010-11-04T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.1",
+        learnMore: "@Java_Edition_Alpha_v1.2.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1660,7 +1660,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.0_02",
         type: "minor",
         date: "2010-11-03T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.0_02",
+        learnMore: "@Java_Edition_Alpha_v1.2.0_02",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1668,7 +1668,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.2.0_01",
         type: "minor",
         date: "2010-10-30T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.2.0_01",
+        learnMore: "@Java_Edition_Alpha_v1.2.0_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1676,7 +1676,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.1.2_01",
         type: "minor",
         date: "2010-09-22T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.1.2_01",
+        learnMore: "@Java_Edition_Alpha_v1.1.2_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1684,7 +1684,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.1.2",
         type: "minor",
         date: "2010-09-19T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.1.2",
+        learnMore: "@Java_Edition_Alpha_v1.1.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1692,7 +1692,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.17_04",
         type: "minor",
         date: "2010-08-22T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.17_04",
+        learnMore: "@Java_Edition_Alpha_v1.0.17_04",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1700,7 +1700,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.17_02",
         type: "minor",
         date: "2010-08-19T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.17_02",
+        learnMore: "@Java_Edition_Alpha_v1.0.17_02",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1708,7 +1708,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.16",
         type: "minor",
         date: "2010-08-11T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.16",
+        learnMore: "@Java_Edition_Alpha_v1.0.16",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1716,7 +1716,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.15",
         type: "minor",
         date: "2010-08-03T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.15",
+        learnMore: "@Java_Edition_Alpha_v1.0.15",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1725,7 +1725,7 @@ const EDITIONS: Edition[] = [
         type: "minor",
         description: "Chickens & Jukeboxes",
         date: "2010-07-29T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.14",
+        learnMore: "@Java_Edition_Alpha_v1.0.14",
         mainFeatures: [{ text: "Chickens" }, { text: "Jukeboxes" }]
       },
 
@@ -1733,7 +1733,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.11",
         type: "minor",
         date: "2010-07-22T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.11",
+        learnMore: "@Java_Edition_Alpha_v1.0.11",
         mainFeatures: [{ text: "Sugar Canes" }, { text: "Clay" }]
       },
 
@@ -1741,7 +1741,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.5_01",
         type: "minor",
         date: "2010-07-12T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.5_01",
+        learnMore: "@Java_Edition_Alpha_v1.0.5_01",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1749,7 +1749,7 @@ const EDITIONS: Edition[] = [
         subtitle: "Alpha 1.0.4",
         type: "minor",
         date: "2010-07-08T22:00:00",
-        learnMore: "#Java_Edition_Alpha_v1.0.4",
+        learnMore: "@Java_Edition_Alpha_v1.0.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -1862,7 +1862,7 @@ const EDITIONS: Edition[] = [
         type: "event",
         date: "2014-11-06",
         icon: "events/event_microsoft.png",
-        learnMore: "https://www.mojang.com/2014/09/yes-were-being-bought-by-microsoft/",
+        learnMore: "https://web.archive.org/web/20140915195135/https://mojang.com/2014/09/yes-were-being-bought-by-microsoft/",
         longDescription: [
           "On November of 2014, all of Mojang was acquired by Microsoft for $2.5 billion. This included Minecraft, of course.",
           "The process began a few months earlier. Many suspected this acquisition was happening, but Mojang only confirmed it on September.",
@@ -1878,7 +1878,7 @@ const EDITIONS: Edition[] = [
         description: "Better Decorated Pots",
         type: "minor",
         possibleDate: "Late 2023 - Early 2024",
-        learnMore: "#Java_Edition_1.20.3",
+        learnMore: "@Java_Edition_1.20.3",
         mainFeatures: [
           { text: "Decorated Pots can now hold items" },
           { text: "Decorated Pots now can be destroyed by projectiles" },
@@ -1892,7 +1892,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         possibleDate: "Mid 2024",
         icon: "versions/java/version_1_21.png",
-        learnMore: "#Java_Edition_1.21",
+        learnMore: "@Java_Edition_1.21",
         mainFeatures: [
           { text: "Trial Chambers" },
           { text: "Auto Crafter Block" },
@@ -1919,7 +1919,7 @@ const EDITIONS: Edition[] = [
         possibleDate: "Late 2011",
         icon: "versions/bedrock/version_pe_pre_release.png",
         funFact: "Not much is known about this version, as it was never publicly released.",
-        learnMore: "#Pocket_Edition_Pre-release",
+        learnMore: "@Pocket_Edition_Pre-release",
         mainFeatures: [{ text: "Grass Block" }, { text: "Wool" }],
         minorFeatures: [{ text: "The Player" }]
       },
@@ -1931,7 +1931,7 @@ const EDITIONS: Edition[] = [
         date: "2011-08-16",
         icon: "versions/bedrock/version_pe_alpha_0_1.png",
         funFact: "Did you know? This update added many blocks, being close to Java Edition Infdev.",
-        learnMore: "#Pocket_Edition_Alpha_0.1.0",
+        learnMore: "@Pocket_Edition_Alpha_0.1.0",
         mainFeatures: [
           { text: "Random Worlds with Biomes" },
           { text: "Multiplayer" }
@@ -1952,7 +1952,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-02-11",
         icon: "versions/bedrock/version_pe_alpha_0_2.png",
-        learnMore: "#Pocket_Edition_Alpha_0.2.0",
+        learnMore: "@Pocket_Edition_Alpha_0.2.0",
         mainFeatures: [
           { text: "Survival Mode" },
           { text: "Pigs" },
@@ -1973,7 +1973,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-04-24",
         icon: "versions/bedrock/version_pe_alpha_0_3.png",
-        learnMore: "#Pocket_Edition_Alpha_0.3.0",
+        learnMore: "@Pocket_Edition_Alpha_0.3.0",
         mainFeatures: [
           { text: "Crafting Tables" },
           { text: "Furnaces" },
@@ -2000,7 +2000,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-09-06",
         icon: "versions/bedrock/version_pe_alpha_0_4.png",
-        learnMore: "#Pocket_Edition_Alpha_0.4.0",
+        learnMore: "@Pocket_Edition_Alpha_0.4.0",
         mainFeatures: [
           { text: "Creepers" },
           { text: "Chests" },
@@ -2022,7 +2022,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2012-11-15",
         icon: "versions/bedrock/version_pe_alpha_0_5.png",
-        learnMore: "#Pocket_Edition_Alpha_0.5.0",
+        learnMore: "@Pocket_Edition_Alpha_0.5.0",
         mainFeatures: [
           { text: "Nether Reactor" },
           { text: "Melons" },
@@ -2038,7 +2038,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2013-01-30",
         icon: "versions/bedrock/version_pe_alpha_0_6.png",
-        learnMore: "#Pocket_Edition_Alpha_0.6.0",
+        learnMore: "@Pocket_Edition_Alpha_0.6.0",
         mainFeatures: [
           { text: "Netherrack" },
           { text: "Stonecutter" },
@@ -2060,7 +2060,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2013-06-05",
         icon: "versions/bedrock/version_pe_alpha_0_7.png",
-        learnMore: "#Pocket_Edition_Alpha_0.7.0",
+        learnMore: "@Pocket_Edition_Alpha_0.7.0",
         mainFeatures: [
           { text: "Buckets" },
           { text: "Spawn Eggs" },
@@ -2081,7 +2081,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2013-12-12",
         icon: "versions/bedrock/version_pe_alpha_0_8.png",
-        learnMore: "#Pocket_Edition_Alpha_0.8.0",
+        learnMore: "@Pocket_Edition_Alpha_0.8.0",
         mainFeatures: [
           { text: "Rails" },
           { text: "Powered Rails" },
@@ -2103,7 +2103,7 @@ const EDITIONS: Edition[] = [
         date: "2014-07-10",
         icon: "versions/bedrock/version_pe_alpha_0_9.png",
         funFact: "Did you know? This huge update made the game almost equivalent to Java Edition 1.8.",
-        learnMore: "#Pocket_Edition_Alpha_0.9.0",
+        learnMore: "@Pocket_Edition_Alpha_0.9.0",
         mainFeatures: [
           { text: "Infinite Worlds" },
           { text: "All Biomes from Java Edition 1.7" },
@@ -2126,7 +2126,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2014-11-18",
         icon: "versions/bedrock/version_pe_alpha_0_10.png",
-        learnMore: "#Pocket_Edition_Alpha_0.10.0",
+        learnMore: "@Pocket_Edition_Alpha_0.10.0",
         mainFeatures: [
           { text: "Day-Night Cycle for Creative Mode" },
           { text: "Fences and Gates for each wood type" }
@@ -2143,7 +2143,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2015-06-04",
         icon: "versions/bedrock/version_pe_alpha_0_11.png",
-        learnMore: "#Pocket_Edition_Alpha_0.11.0",
+        learnMore: "@Pocket_Edition_Alpha_0.11.0",
         mainFeatures: [
           { text: "Boats" },
           { text: "Skins" },
@@ -2168,7 +2168,7 @@ const EDITIONS: Edition[] = [
         date: "2015-07-29",
         icon: "versions/bedrock/version_pe_alpha_0_12.png",
         funFact: "Did you know? This was the first version of the Windows 10 Edition.",
-        learnMore: "#Pocket_Edition_Alpha_0.12.0",
+        learnMore: "@Pocket_Edition_Alpha_0.12.0",
         mainFeatures: [
           { text: "The Nether" },
           { text: "Enchanting Tables" },
@@ -2192,7 +2192,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2015-11-19",
         icon: "versions/bedrock/version_pe_alpha_0_13.png",
-        learnMore: "#Pocket_Edition_Alpha_0.13.0",
+        learnMore: "@Pocket_Edition_Alpha_0.13.0",
         mainFeatures: [
           { text: "Redstone" },
           { text: "Redstone Torches" },
@@ -2218,7 +2218,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2016-02-18",
         icon: "versions/bedrock/version_pe_alpha_0_14.png",
-        learnMore: "#Overworld_Update",
+        learnMore: "@Overworld_Update",
         mainFeatures: [
           { text: "Dispensers" },
           { text: "Droppers" },
@@ -2242,7 +2242,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2016-06-10",
         icon: "versions/bedrock/version_pe_alpha_0_15.png",
-        learnMore: "#Friendly_Update",
+        learnMore: "@Friendly_Update",
         mainFeatures: [
           { text: "Realms" },
           { text: "Pistons" },
@@ -2264,7 +2264,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2016-10-21",
         icon: "versions/bedrock/version_pe_alpha_0_16.png",
-        learnMore: "#Boss_Update",
+        learnMore: "@Boss_Update",
         mainFeatures: [
           { text: "Ocean Monuments" },
           { text: "Withers" }
@@ -2280,7 +2280,7 @@ const EDITIONS: Edition[] = [
         date: "2016-12-19",
         icon: "versions/bedrock/version_pe_1_0.png",
         funFact: "This update is equivalent to Java Edition 1.9, without combat changes.",
-        learnMore: "#Ender_Update",
+        learnMore: "@Ender_Update",
         mainFeatures: [
           { text: "The End" },
           { text: "Ender Dragon" },
@@ -2305,7 +2305,7 @@ const EDITIONS: Edition[] = [
         date: "2017-06-01",
         icon: "versions/bedrock/version_pe_1_1.png",
         funFact: "This update is equivalent to Java Edition 1.11.",
-        learnMore: "#Discovery_Update",
+        learnMore: "@Discovery_Update",
         mainFeatures: [
           { text: "Woodland Mansions" },
           { text: "Minecraft Marketplace" },
@@ -2325,7 +2325,7 @@ const EDITIONS: Edition[] = [
         date: "2017-09-20",
         icon: "versions/bedrock/version_1_2.png",
         funFact: "Did you know? The PS4 did not receive this update because Sony didn't allow the game to have cross-play.",
-        learnMore: "#Better_Together_Update",
+        learnMore: "@Better_Together_Update",
         mainFeatures: [
           { text: "Merged Pocket Edition with Console Edition" },
           { text: "Added Cross-Play between all platforms" },
@@ -2348,7 +2348,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2018-05-16",
         icon: "versions/bedrock/version_1_4.png",
-        learnMore: "#Bedrock_Edition_1.4.0",
+        learnMore: "@Bedrock_Edition_1.4.0",
         mainFeatures: [
           { text: "Kelp and Seagrass" },
           { text: "Fish mobs" },
@@ -2374,7 +2374,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2018-07-10",
         icon: "versions/bedrock/version_1_5.png",
-        learnMore: "#Bedrock_Edition_1.5.0",
+        learnMore: "@Bedrock_Edition_1.5.0",
         mainFeatures: [
           { text: "Turtles" },
           { text: "Conduits" },
@@ -2388,7 +2388,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2018-08-28",
         icon: "versions/bedrock/version_1_6.png",
-        learnMore: "#Bedrock_Edition_1.6.0",
+        learnMore: "@Bedrock_Edition_1.6.0",
         mainFeatures: [{ text: "Phantoms" }, { text: "Barriers" }],
         minorFeatures: [{ text: "Potions of Slow Falling" }]
       },
@@ -2400,7 +2400,7 @@ const EDITIONS: Edition[] = [
         date: "2018-10-15",
         icon: "versions/bedrock/version_1_7.png",
         funFact: "Did you know? This is the major update with the least amount of content in Minecraft history.",
-        learnMore: "#Bedrock_Edition_1.7.0",
+        learnMore: "@Bedrock_Edition_1.7.0",
         mainFeatures: [{ text: "/scoreboard Command" }],
         minorFeatures: [
           {
@@ -2415,7 +2415,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2018-12-11",
         icon: "versions/bedrock/version_1_8.png",
-        learnMore: "#Bedrock_Edition_1.8.0",
+        learnMore: "@Bedrock_Edition_1.8.0",
         mainFeatures: [
           { text: "Pandas" },
           { text: "Scaffolding" },
@@ -2433,7 +2433,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-02-05",
         icon: "versions/bedrock/version_1_9.png",
-        learnMore: "#Bedrock_Edition_1.9.0",
+        learnMore: "@Bedrock_Edition_1.9.0",
         mainFeatures: [
           { text: "Walls, Slabs and Stairs of most rock types" },
           { text: "Signs of all wood types" },
@@ -2447,7 +2447,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-03-19",
         icon: "versions/bedrock/version_1_10.png",
-        learnMore: "#Bedrock_Edition_1.10.0",
+        learnMore: "@Bedrock_Edition_1.10.0",
         mainFeatures: [
           { text: "Looms" },
           { text: "Lecterns" },
@@ -2466,7 +2466,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-04-23",
         icon: "versions/bedrock/version_1_11.png",
-        learnMore: "#Village_%26_Pillage",
+        learnMore: "@Village_%26_Pillage",
         mainFeatures: [
           { text: "Village overhaul" },
           { text: "Pillagers" },
@@ -2484,7 +2484,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-07-09",
         icon: "versions/bedrock/version_1_12.png",
-        learnMore: "#Bedrock_Edition_1.12.0",
+        learnMore: "@Bedrock_Edition_1.12.0",
         mainFeatures: [
           { text: "Cameras re-added" },
           { text: "New gamerules" }
@@ -2498,7 +2498,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-10-29",
         icon: "versions/bedrock/version_1_13.png",
-        learnMore: "#Bedrock_Edition_1.13.0",
+        learnMore: "@Bedrock_Edition_1.13.0",
         mainFeatures: [
           { text: "Foxes" },
           { text: "Brown mooshrooms" },
@@ -2521,7 +2521,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2019-12-10",
         icon: "versions/bedrock/version_1_14.png",
-        learnMore: "#Buzzy_Bees",
+        learnMore: "@Buzzy_Bees",
         mainFeatures: [
           { text: "Bees" },
           { text: "Beehives" },
@@ -2543,7 +2543,7 @@ const EDITIONS: Edition[] = [
         date: "2020-06-23",
         icon: "versions/bedrock/version_1_16.png",
         funFact: "Did you know? Netherite is the first new tool tier since diamonds (added 8 years ago).",
-        learnMore: "#Nether_Update",
+        learnMore: "@Nether_Update",
         mainFeatures: [
           { text: "Warped Forests" },
           { text: "Crimsom Forests" },
@@ -2568,7 +2568,7 @@ const EDITIONS: Edition[] = [
         date: "2021-06-08",
         icon: "versions/bedrock/version_1_17.png",
         funFact: "Did you know? Goats will target and ram all other mobs, including armor stands!",
-        learnMore: "#Bedrock_Edition_1.17.0",
+        learnMore: "@Bedrock_Edition_1.17.0",
         mainFeatures: [
           { text: "Various cave plants" },
           { text: "Axolotls" },
@@ -2595,7 +2595,7 @@ const EDITIONS: Edition[] = [
         date: "2021-11-30",
         icon: "versions/bedrock/version_1_18.png",
         funFact: "Did you know? For the first time, a Java Edition world seed generates the same world in Bedrock!\nCaves & Cliffs was split into two updates mainly due to the 2020 COVID-19 Pandemic.",
-        learnMore: "#Bedrock_Edition_1.18.0",
+        learnMore: "@Bedrock_Edition_1.18.0",
         mainFeatures: [
           { text: "Completely overhauled world generation" },
           { text: "Added huge and complex cave systems" },
@@ -2618,7 +2618,7 @@ const EDITIONS: Edition[] = [
         date: "2022-06-07",
         icon: "versions/bedrock/version_1_19.png",
         funFact: "Did you know? The Deep Dark was meant to come during Caves & Cliffs, but Mojang couldn't finish it in time.",
-        learnMore: "#Bedrock_Edition_1.19.0",
+        learnMore: "@Bedrock_Edition_1.19.0",
         mainFeatures: [
           { text: "The Deep Dark" },
           { text: "Ancient Cities" },
@@ -2642,7 +2642,7 @@ const EDITIONS: Edition[] = [
         date: "2023-06-07",
         icon: "versions/bedrock/version_1_20.png",
         funFact: "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
-        learnMore: "#Bedrock_Edition_1.20.0",
+        learnMore: "@Bedrock_Edition_1.20.0",
         mainFeatures: [
           { text: "Archeology Features" },
           { text: "Brushes and Suspicious Sand" },
@@ -2663,7 +2663,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.32",
         type: "minor",
         date: "2023-10-05",
-        learnMore: "#Bedrock_Edition_1.20.32",
+        learnMore: "@Bedrock_Edition_1.20.32",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2671,7 +2671,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.31",
         type: "minor",
         date: "2023-09-26",
-        learnMore: "#Bedrock_Edition_1.20.31",
+        learnMore: "@Bedrock_Edition_1.20.31",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2679,7 +2679,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.30",
         type: "minor",
         date: "2023-09-19",
-        learnMore: "#Bedrock_Edition_1.20.30",
+        learnMore: "@Bedrock_Edition_1.20.30",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2687,7 +2687,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.15",
         type: "minor",
         date: "2023-08-16",
-        learnMore: "#Bedrock_Edition_1.20.15",
+        learnMore: "@Bedrock_Edition_1.20.15",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2695,7 +2695,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.14",
         type: "minor",
         date: "2023-08-08",
-        learnMore: "#Bedrock_Edition_1.20.14",
+        learnMore: "@Bedrock_Edition_1.20.14",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2703,7 +2703,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.13",
         type: "minor",
         date: "2023-07-24",
-        learnMore: "#Bedrock_Edition_1.20.13",
+        learnMore: "@Bedrock_Edition_1.20.13",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2711,7 +2711,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.12",
         type: "minor",
         date: "2023-06-18",
-        learnMore: "#Bedrock_Edition_1.20.12",
+        learnMore: "@Bedrock_Edition_1.20.12",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2719,7 +2719,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.10",
         type: "minor",
         date: "2023-07-11",
-        learnMore: "#Bedrock_Edition_1.20.10",
+        learnMore: "@Bedrock_Edition_1.20.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2727,7 +2727,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.1",
         type: "minor",
         date: "2023-06-21",
-        learnMore: "#Bedrock_Edition_1.20.1",
+        learnMore: "@Bedrock_Edition_1.20.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2735,7 +2735,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.83",
         type: "minor",
         date: "2023-05-17",
-        learnMore: "#Bedrock_Edition_1.19.83",
+        learnMore: "@Bedrock_Edition_1.19.83",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2743,7 +2743,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.81",
         type: "minor",
         date: "2023-04-27",
-        learnMore: "#Bedrock_Edition_1.19.81",
+        learnMore: "@Bedrock_Edition_1.19.81",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2751,7 +2751,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.80",
         type: "minor",
         date: "2023-04-26",
-        learnMore: "#Bedrock_Edition_1.19.80",
+        learnMore: "@Bedrock_Edition_1.19.80",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2759,7 +2759,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.73",
         type: "minor",
         date: "2023-03-29",
-        learnMore: "#Bedrock_Edition_1.19.73",
+        learnMore: "@Bedrock_Edition_1.19.73",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2767,7 +2767,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.72",
         type: "minor",
         date: "2023-03-20",
-        learnMore: "#Bedrock_Edition_1.19.72",
+        learnMore: "@Bedrock_Edition_1.19.72",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2775,7 +2775,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.71",
         type: "minor",
         date: "2023-03-17",
-        learnMore: "#Bedrock_Edition_1.19.71",
+        learnMore: "@Bedrock_Edition_1.19.71",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2783,7 +2783,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.70",
         type: "minor",
         date: "2023-03-14",
-        learnMore: "#Bedrock_Edition_1.19.70",
+        learnMore: "@Bedrock_Edition_1.19.70",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2791,7 +2791,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.63",
         type: "minor",
         date: "2023-02-24",
-        learnMore: "#Bedrock_Edition_1.19.63",
+        learnMore: "@Bedrock_Edition_1.19.63",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2799,7 +2799,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.62",
         type: "minor",
         date: "2023-02-16",
-        learnMore: "#Bedrock_Edition_1.19.62",
+        learnMore: "@Bedrock_Edition_1.19.62",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2807,7 +2807,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.60",
         type: "minor",
         date: "2023-02-07",
-        learnMore: "#Bedrock_Edition_1.19.60",
+        learnMore: "@Bedrock_Edition_1.19.60",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2815,7 +2815,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.51",
         type: "minor",
         date: "2022-12-13",
-        learnMore: "#Bedrock_Edition_1.19.51",
+        learnMore: "@Bedrock_Edition_1.19.51",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2823,7 +2823,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.50",
         type: "minor",
         date: "2022-11-29",
-        learnMore: "#Bedrock_Edition_1.19.50",
+        learnMore: "@Bedrock_Edition_1.19.50",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2831,7 +2831,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.41",
         type: "minor",
         date: "2022-11-03",
-        learnMore: "#Bedrock_Edition_1.19.41",
+        learnMore: "@Bedrock_Edition_1.19.41",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2839,7 +2839,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.40",
         type: "minor",
         date: "2022-10-25",
-        learnMore: "#Bedrock_Edition_1.19.40",
+        learnMore: "@Bedrock_Edition_1.19.40",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2847,7 +2847,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.31",
         type: "minor",
         date: "2022-10-04",
-        learnMore: "#Bedrock_Edition_1.19.31",
+        learnMore: "@Bedrock_Edition_1.19.31",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2855,7 +2855,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.30",
         type: "minor",
         date: "2022-09-20",
-        learnMore: "#Bedrock_Edition_1.19.30",
+        learnMore: "@Bedrock_Edition_1.19.30",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2863,7 +2863,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.22",
         type: "minor",
         date: "2022-09-01",
-        learnMore: "#Bedrock_Edition_1.19.22",
+        learnMore: "@Bedrock_Edition_1.19.22",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2871,7 +2871,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.21",
         type: "minor",
         date: "2022-08-23",
-        learnMore: "#Bedrock_Edition_1.19.21",
+        learnMore: "@Bedrock_Edition_1.19.21",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2879,7 +2879,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.20",
         type: "minor",
         date: "2022-08-09",
-        learnMore: "#Bedrock_Edition_1.19.20",
+        learnMore: "@Bedrock_Edition_1.19.20",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2887,7 +2887,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.11",
         type: "minor",
         date: "2022-07-26",
-        learnMore: "#Bedrock_Edition_1.19.11",
+        learnMore: "@Bedrock_Edition_1.19.11",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2895,7 +2895,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.10",
         type: "minor",
         date: "2022-07-12",
-        learnMore: "#Bedrock_Edition_1.19.10",
+        learnMore: "@Bedrock_Edition_1.19.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2903,7 +2903,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.19.2",
         type: "minor",
         date: "2022-06-22",
-        learnMore: "#Bedrock_Edition_1.19.2",
+        learnMore: "@Bedrock_Edition_1.19.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2911,7 +2911,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.33",
         type: "minor",
         date: "2022-05-13",
-        learnMore: "#Bedrock_Edition_1.18.33",
+        learnMore: "@Bedrock_Edition_1.18.33",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2919,7 +2919,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.32",
         type: "minor",
         date: "2022-05-05",
-        learnMore: "#Bedrock_Edition_1.18.32",
+        learnMore: "@Bedrock_Edition_1.18.32",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2927,7 +2927,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.31",
         type: "minor",
         date: "2022-04-27",
-        learnMore: "#Bedrock_Edition_1.18.31",
+        learnMore: "@Bedrock_Edition_1.18.31",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2935,7 +2935,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.30",
         type: "minor",
         date: "2022-04-19",
-        learnMore: "#Bedrock_Edition_1.18.30",
+        learnMore: "@Bedrock_Edition_1.18.30",
         mainFeatures: [
           { text: "Spectator mode" },
           { text: "Bigger world seeds" },
@@ -2948,7 +2948,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.12",
         type: "minor",
         date: "2022-02-16",
-        learnMore: "#Bedrock_Edition_1.18.12",
+        learnMore: "@Bedrock_Edition_1.18.12",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2956,7 +2956,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.11",
         type: "minor",
         date: "2022-02-11",
-        learnMore: "#Bedrock_Edition_1.18.11",
+        learnMore: "@Bedrock_Edition_1.18.11",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2964,7 +2964,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.10",
         type: "minor",
         date: "2022-02-08",
-        learnMore: "#Bedrock_Edition_1.18.10",
+        learnMore: "@Bedrock_Edition_1.18.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2972,7 +2972,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.2",
         type: "minor",
         date: "2021-12-09",
-        learnMore: "#Bedrock_Edition_1.18.2",
+        learnMore: "@Bedrock_Edition_1.18.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2980,7 +2980,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.18.1",
         type: "minor",
         date: "2021-12-02",
-        learnMore: "#Bedrock_Edition_1.18.1",
+        learnMore: "@Bedrock_Edition_1.18.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2988,7 +2988,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.41",
         type: "minor",
         date: "2021-10-27",
-        learnMore: "#Bedrock_Edition_1.17.41",
+        learnMore: "@Bedrock_Edition_1.17.41",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -2996,7 +2996,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.40",
         type: "minor",
         date: "2021-10-19",
-        learnMore: "#Bedrock_Edition_1.17.40",
+        learnMore: "@Bedrock_Edition_1.17.40",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3004,7 +3004,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.34",
         type: "minor",
         date: "2021-10-05",
-        learnMore: "#Bedrock_Edition_1.17.34",
+        learnMore: "@Bedrock_Edition_1.17.34",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3012,7 +3012,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.33",
         type: "minor",
         date: "2021-10-04",
-        learnMore: "#Bedrock_Edition_1.17.33",
+        learnMore: "@Bedrock_Edition_1.17.33",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3020,7 +3020,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.30",
         type: "minor",
         date: "2021-09-21",
-        learnMore: "#Bedrock_Edition_1.17.30",
+        learnMore: "@Bedrock_Edition_1.17.30",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3028,7 +3028,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.11",
         type: "minor",
         date: "2021-08-09",
-        learnMore: "#Bedrock_Edition_1.17.11",
+        learnMore: "@Bedrock_Edition_1.17.11",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3036,7 +3036,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.10",
         type: "minor",
         date: "2021-07-13",
-        learnMore: "#Bedrock_Edition_1.17.10",
+        learnMore: "@Bedrock_Edition_1.17.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3044,7 +3044,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.2",
         type: "minor",
         date: "2021-06-22",
-        learnMore: "#Bedrock_Edition_1.17.2",
+        learnMore: "@Bedrock_Edition_1.17.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3052,7 +3052,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.17.1",
         type: "minor",
         date: "2021-06-14",
-        learnMore: "#Bedrock_Edition_1.17.1",
+        learnMore: "@Bedrock_Edition_1.17.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3061,7 +3061,7 @@ const EDITIONS: Edition[] = [
         type: "minor",
         funFact: "Did you know? This update marks the end of support for the Fire TV.",
         date: "2021-04-22",
-        learnMore: "#Bedrock_Edition_1.16.221",
+        learnMore: "@Bedrock_Edition_1.16.221",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3069,7 +3069,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.220",
         type: "minor",
         date: "2021-04-06",
-        learnMore: "#Bedrock_Edition_1.16.220",
+        learnMore: "@Bedrock_Edition_1.16.220",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3077,7 +3077,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.210",
         type: "minor",
         date: "2021-03-09",
-        learnMore: "#Bedrock_Edition_1.16.210",
+        learnMore: "@Bedrock_Edition_1.16.210",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3086,7 +3086,7 @@ const EDITIONS: Edition[] = [
         type: "minor",
         funFact: "Did you know? This update marks the end of support for the Fire Phone.",
         date: "2020-12-15",
-        learnMore: "#Bedrock_Edition_1.16.201",
+        learnMore: "@Bedrock_Edition_1.16.201",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3095,7 +3095,7 @@ const EDITIONS: Edition[] = [
         description: "Ray Tracing",
         type: "minor",
         date: "2020-12-08",
-        learnMore: "#Bedrock_Edition_1.16.200",
+        learnMore: "@Bedrock_Edition_1.16.200",
         mainFeatures: [
           { text: "RenderDragon on Windows 10" },
           { text: "Ray tracing features on Windows 10" },
@@ -3108,7 +3108,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.101",
         type: "minor",
         date: "2020-11-23",
-        learnMore: "#Bedrock_Edition_1.16.101",
+        learnMore: "@Bedrock_Edition_1.16.101",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3117,7 +3117,7 @@ const EDITIONS: Edition[] = [
         description: "Many new commands",
         type: "minor",
         date: "2020-11-16",
-        learnMore: "#Bedrock_Edition_1.16.100",
+        learnMore: "@Bedrock_Edition_1.16.100",
         mainFeatures: [
           { text: "Many new commands" },
           { text: "More parity with Java Edition" },
@@ -3129,7 +3129,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.61",
         type: "minor",
         date: "2020-09-25",
-        learnMore: "#Bedrock_Edition_1.16.61",
+        learnMore: "@Bedrock_Edition_1.16.61",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3137,7 +3137,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.60",
         type: "minor",
         date: "2020-09-23",
-        learnMore: "#Bedrock_Edition_1.16.60",
+        learnMore: "@Bedrock_Edition_1.16.60",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3145,7 +3145,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.50",
         type: "minor",
         date: "2020-09-22T00:00:01",
-        learnMore: "#Bedrock_Edition_1.16.50",
+        learnMore: "@Bedrock_Edition_1.16.50",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3153,7 +3153,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.42",
         type: "minor",
         date: "2020-09-22T00:00:00",
-        learnMore: "#Bedrock_Edition_1.16.42",
+        learnMore: "@Bedrock_Edition_1.16.42",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3161,7 +3161,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.40",
         type: "minor",
         date: "2020-09-03",
-        learnMore: "#Bedrock_Edition_1.16.40",
+        learnMore: "@Bedrock_Edition_1.16.40",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3169,7 +3169,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.21",
         type: "minor",
         date: "2020-08-20",
-        learnMore: "#Bedrock_Edition_1.16.21",
+        learnMore: "@Bedrock_Edition_1.16.21",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3178,7 +3178,7 @@ const EDITIONS: Edition[] = [
         description: "Piglin Brutes",
         type: "minor",
         date: "2020-08-11",
-        learnMore: "#Bedrock_Edition_1.16.20",
+        learnMore: "@Bedrock_Edition_1.16.20",
         mainFeatures: [
           { text: "Piglin Brutes" },
           { text: "Small Changes and Bug Fixes" }
@@ -3189,7 +3189,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.10",
         type: "minor",
         date: "2020-07-21",
-        learnMore: "#Bedrock_Edition_1.16.10",
+        learnMore: "@Bedrock_Edition_1.16.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3197,7 +3197,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.1.04",
         type: "minor",
         date: "2020-07-16",
-        learnMore: "#Bedrock_Edition_1.16.1.04",
+        learnMore: "@Bedrock_Edition_1.16.1.04",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3205,7 +3205,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.1.03",
         type: "minor",
         date: "2020-07-08",
-        learnMore: "#Bedrock_Edition_1.16.1.03",
+        learnMore: "@Bedrock_Edition_1.16.1.03",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3213,7 +3213,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.16.1",
         type: "minor",
         date: "2020-06-29",
-        learnMore: "#Bedrock_Edition_1.16.1",
+        learnMore: "@Bedrock_Edition_1.16.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3221,7 +3221,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.60",
         type: "minor",
         date: "2020-04-15",
-        learnMore: "#Bedrock_Edition_1.14.60",
+        learnMore: "@Bedrock_Edition_1.14.60",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3229,7 +3229,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.41",
         type: "minor",
         date: "2020-03-03",
-        learnMore: "#Bedrock_Edition_1.14.41",
+        learnMore: "@Bedrock_Edition_1.14.41",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3237,7 +3237,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.30",
         type: "minor",
         date: "2020-02-11",
-        learnMore: "#Bedrock_Edition_1.14.30",
+        learnMore: "@Bedrock_Edition_1.14.30",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3245,7 +3245,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.20",
         type: "minor",
         date: "2020-01-28",
-        learnMore: "#Bedrock_Edition_1.14.20",
+        learnMore: "@Bedrock_Edition_1.14.20",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3253,7 +3253,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.1",
         type: "minor",
         date: "2019-12-18",
-        learnMore: "#Bedrock_Edition_1.14.1",
+        learnMore: "@Bedrock_Edition_1.14.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3261,7 +3261,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.14.0.12",
         type: "minor",
         date: "2019-12-13",
-        learnMore: "#Bedrock_Edition_1.14.0.12",
+        learnMore: "@Bedrock_Edition_1.14.0.12",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3269,7 +3269,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.13.3",
         type: "minor",
         date: "2019-11-20",
-        learnMore: "#Bedrock_Edition_1.13.3",
+        learnMore: "@Bedrock_Edition_1.13.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3277,7 +3277,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.13.2",
         type: "minor",
         date: "2019-11-14",
-        learnMore: "#Bedrock_Edition_1.13.2",
+        learnMore: "@Bedrock_Edition_1.13.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3285,7 +3285,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.13.1",
         type: "minor",
         date: "2019-11-12",
-        learnMore: "#Bedrock_Edition_1.13.1",
+        learnMore: "@Bedrock_Edition_1.13.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3293,7 +3293,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.12.1",
         type: "minor",
         date: "2019-09-02",
-        learnMore: "#Bedrock_Edition_1.12.1",
+        learnMore: "@Bedrock_Edition_1.12.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3301,7 +3301,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.11.4",
         type: "minor",
         date: "2019-05-23",
-        learnMore: "#Bedrock_Edition_1.11.4",
+        learnMore: "@Bedrock_Edition_1.11.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3309,7 +3309,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.11.3",
         type: "minor",
         date: "2019-05-17",
-        learnMore: "#Bedrock_Edition_1.11.3",
+        learnMore: "@Bedrock_Edition_1.11.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3317,7 +3317,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.11.2",
         type: "minor",
         date: "2019-05-02",
-        learnMore: "#Bedrock_Edition_1.11.2",
+        learnMore: "@Bedrock_Edition_1.11.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3325,7 +3325,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.11.1",
         type: "minor",
         date: "2019-04-26",
-        learnMore: "#Bedrock_Edition_1.11.1",
+        learnMore: "@Bedrock_Edition_1.11.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3333,7 +3333,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.10.1",
         type: "minor",
         date: "2019-03-27",
-        learnMore: "#Bedrock_Edition_1.10.1",
+        learnMore: "@Bedrock_Edition_1.10.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3341,7 +3341,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.8.1",
         type: "minor",
         date: "2019-01-08",
-        learnMore: "#Bedrock_Edition_1.8.1",
+        learnMore: "@Bedrock_Edition_1.8.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3349,7 +3349,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.7.1",
         type: "minor",
         date: "2018-11-07",
-        learnMore: "#Bedrock_Edition_1.7.1",
+        learnMore: "@Bedrock_Edition_1.7.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3357,7 +3357,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.6.2",
         type: "minor",
         date: "2018-10-01",
-        learnMore: "#Bedrock_Edition_1.6.2",
+        learnMore: "@Bedrock_Edition_1.6.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3365,7 +3365,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.6.1",
         type: "minor",
         date: "2018-09-17",
-        learnMore: "#Bedrock_Edition_1.6.1",
+        learnMore: "@Bedrock_Edition_1.6.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3373,7 +3373,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.5.3",
         type: "minor",
         date: "2018-08-07",
-        learnMore: "#Bedrock_Edition_1.5.3",
+        learnMore: "@Bedrock_Edition_1.5.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3381,7 +3381,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.5.2",
         type: "minor",
         date: "2018-07-24",
-        learnMore: "#Bedrock_Edition_1.5.2",
+        learnMore: "@Bedrock_Edition_1.5.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3389,7 +3389,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.5.1",
         type: "minor",
         date: "2018-07-20",
-        learnMore: "#Bedrock_Edition_1.5.1",
+        learnMore: "@Bedrock_Edition_1.5.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3397,7 +3397,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.4",
         type: "minor",
         date: "2018-06-07",
-        learnMore: "#Bedrock_Edition_1.4.4",
+        learnMore: "@Bedrock_Edition_1.4.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3405,7 +3405,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.3",
         type: "minor",
         date: "2018-06-05",
-        learnMore: "#Bedrock_Edition_1.4.3",
+        learnMore: "@Bedrock_Edition_1.4.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3413,7 +3413,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.2",
         type: "minor",
         date: "2018-05-23",
-        learnMore: "#Bedrock_Edition_1.4.2",
+        learnMore: "@Bedrock_Edition_1.4.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3421,7 +3421,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.4.1",
         type: "minor",
         date: "2018-05-17",
-        learnMore: "#Bedrock_Edition_1.4.1",
+        learnMore: "@Bedrock_Edition_1.4.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3429,7 +3429,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.16",
         type: "minor",
         date: "2018-04-20",
-        learnMore: "#Bedrock_Edition_1.2.16",
+        learnMore: "@Bedrock_Edition_1.2.16",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3437,7 +3437,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.15",
         type: "minor",
         date: "2018-04-12",
-        learnMore: "#Bedrock_Edition_1.2.15",
+        learnMore: "@Bedrock_Edition_1.2.15",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3445,7 +3445,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.14",
         type: "minor",
         date: "2018-04-04",
-        learnMore: "#Bedrock_Edition_1.2.14",
+        learnMore: "@Bedrock_Edition_1.2.14",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3453,7 +3453,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.13",
         type: "minor",
         date: "2018-04-03",
-        learnMore: "#Bedrock_Edition_1.2.13",
+        learnMore: "@Bedrock_Edition_1.2.13",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3461,7 +3461,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.11",
         type: "minor",
         date: "2018-03-09",
-        learnMore: "#Bedrock_Edition_1.2.11",
+        learnMore: "@Bedrock_Edition_1.2.11",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3469,7 +3469,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.10",
         type: "minor",
         date: "2018-02-07",
-        learnMore: "#Bedrock_Edition_1.2.10",
+        learnMore: "@Bedrock_Edition_1.2.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3477,7 +3477,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.9",
         type: "minor",
         date: "2018-01-16",
-        learnMore: "#Bedrock_Edition_1.2.9",
+        learnMore: "@Bedrock_Edition_1.2.9",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3485,7 +3485,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.8",
         type: "minor",
         date: "2017-12-18",
-        learnMore: "#Bedrock_Edition_1.2.8",
+        learnMore: "@Bedrock_Edition_1.2.8",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3493,7 +3493,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.7",
         type: "minor",
         date: "2017-12-14",
-        learnMore: "#Bedrock_Edition_1.2.7",
+        learnMore: "@Bedrock_Edition_1.2.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3501,7 +3501,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.6.1",
         type: "minor",
         date: "2017-12-07",
-        learnMore: "#Bedrock_Edition_1.2.6.1",
+        learnMore: "@Bedrock_Edition_1.2.6.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3509,7 +3509,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.6",
         type: "minor",
         date: "2017-12-06",
-        learnMore: "#Bedrock_Edition_1.2.6",
+        learnMore: "@Bedrock_Edition_1.2.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3517,7 +3517,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.5",
         type: "minor",
         date: "2017-11-21",
-        learnMore: "#Bedrock_Edition_1.2.5",
+        learnMore: "@Bedrock_Edition_1.2.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3525,7 +3525,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.3",
         type: "minor",
         date: "2017-10-18",
-        learnMore: "#Bedrock_Edition_1.2.3",
+        learnMore: "@Bedrock_Edition_1.2.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3533,7 +3533,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.2",
         type: "minor",
         date: "2017-10-04",
-        learnMore: "#Bedrock_Edition_1.2.2",
+        learnMore: "@Bedrock_Edition_1.2.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3541,7 +3541,7 @@ const EDITIONS: Edition[] = [
         subtitle: "1.2.1",
         type: "minor",
         date: "2017-09-26",
-        learnMore: "#Bedrock_Edition_1.2.1",
+        learnMore: "@Bedrock_Edition_1.2.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3549,7 +3549,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.1.7",
         type: "minor",
         date: "2017-09-15",
-        learnMore: "#Pocket_Edition_1.1.7",
+        learnMore: "@Pocket_Edition_1.1.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3557,7 +3557,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.1.5",
         type: "minor",
         date: "2017-08-03",
-        learnMore: "#Pocket_Edition_1.1.5",
+        learnMore: "@Pocket_Edition_1.1.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3565,7 +3565,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.1.4",
         type: "minor",
         date: "2017-07-19",
-        learnMore: "#Pocket_Edition_1.1.4",
+        learnMore: "@Pocket_Edition_1.1.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3573,7 +3573,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.1.3",
         type: "minor",
         date: "2017-07-06",
-        learnMore: "#Pocket_Edition_1.1.3",
+        learnMore: "@Pocket_Edition_1.1.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3581,7 +3581,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.1.2",
         type: "minor",
         date: "2017-06-23",
-        learnMore: "#Pocket_Edition_1.1.2",
+        learnMore: "@Pocket_Edition_1.1.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3589,7 +3589,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.1.1",
         type: "minor",
         date: "2017-06-20",
-        learnMore: "#Pocket_Edition_1.1.1",
+        learnMore: "@Pocket_Edition_1.1.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3597,7 +3597,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.9",
         type: "minor",
         date: "2017-05-18",
-        learnMore: "#Pocket_Edition_1.0.9",
+        learnMore: "@Pocket_Edition_1.0.9",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3605,7 +3605,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.8",
         type: "minor",
         date: "2017-05-04",
-        learnMore: "#Pocket_Edition_1.0.8",
+        learnMore: "@Pocket_Edition_1.0.8",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3613,7 +3613,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.7",
         type: "minor",
         date: "2017-04-20",
-        learnMore: "#Pocket_Edition_1.0.7",
+        learnMore: "@Pocket_Edition_1.0.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3621,7 +3621,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.6",
         type: "minor",
         date: "2017-04-11",
-        learnMore: "#Pocket_Edition_1.0.6",
+        learnMore: "@Pocket_Edition_1.0.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3629,7 +3629,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.5",
         type: "minor",
         date: "2017-03-28",
-        learnMore: "#Pocket_Edition_1.0.5",
+        learnMore: "@Pocket_Edition_1.0.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3637,7 +3637,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.4",
         type: "minor",
         date: "2017-03-09",
-        learnMore: "#Pocket_Edition_1.0.4",
+        learnMore: "@Pocket_Edition_1.0.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3645,7 +3645,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.3",
         type: "minor",
         date: "2017-02-08",
-        learnMore: "#Pocket_Edition_1.0.3",
+        learnMore: "@Pocket_Edition_1.0.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3653,7 +3653,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.2",
         type: "minor",
         date: "2017-01-19",
-        learnMore: "#Pocket_Edition_1.0.2",
+        learnMore: "@Pocket_Edition_1.0.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3661,7 +3661,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE 1.0.1",
         type: "minor",
         date: "2017-01-06",
-        learnMore: "#Pocket_Edition_1.0.1",
+        learnMore: "@Pocket_Edition_1.0.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3669,7 +3669,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.16.2",
         type: "minor",
         date: "2016-11-17",
-        learnMore: "#Pocket_Edition_Alpha_0.16.2",
+        learnMore: "@Pocket_Edition_Alpha_0.16.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3677,7 +3677,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.16.1",
         type: "minor",
         date: "2016-11-05",
-        learnMore: "#Pocket_Edition_Alpha_0.16.1",
+        learnMore: "@Pocket_Edition_Alpha_0.16.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3685,7 +3685,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.10",
         type: "minor",
         date: "2016-10-03",
-        learnMore: "#Pocket_Edition_Alpha_0.15.10",
+        learnMore: "@Pocket_Edition_Alpha_0.15.10",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3693,7 +3693,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.9",
         type: "minor",
         date: "2016-09-22",
-        learnMore: "#Pocket_Edition_Alpha_0.15.9",
+        learnMore: "@Pocket_Edition_Alpha_0.15.9",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3701,7 +3701,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.8",
         type: "minor",
         date: "2016-09-15",
-        learnMore: "#Pocket_Edition_Alpha_0.15.8",
+        learnMore: "@Pocket_Edition_Alpha_0.15.8",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3709,7 +3709,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.7",
         type: "minor",
         date: "2016-08-31",
-        learnMore: "#Pocket_Edition_Alpha_0.15.7",
+        learnMore: "@Pocket_Edition_Alpha_0.15.7",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3717,7 +3717,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.6",
         type: "minor",
         date: "2016-08-10",
-        learnMore: "#Pocket_Edition_Alpha_0.15.6",
+        learnMore: "@Pocket_Edition_Alpha_0.15.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3725,7 +3725,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.4",
         type: "minor",
         date: "2016-07-28",
-        learnMore: "#Pocket_Edition_Alpha_0.15.4",
+        learnMore: "@Pocket_Edition_Alpha_0.15.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3733,7 +3733,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.3",
         type: "minor",
         date: "2016-07-19",
-        learnMore: "#Pocket_Edition_Alpha_0.15.3",
+        learnMore: "@Pocket_Edition_Alpha_0.15.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3741,7 +3741,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.2",
         type: "minor",
         date: "2016-07-07",
-        learnMore: "#Pocket_Edition_Alpha_0.15.2",
+        learnMore: "@Pocket_Edition_Alpha_0.15.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3749,7 +3749,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.15.1",
         type: "minor",
         date: "2016-06-26",
-        learnMore: "#Pocket_Edition_Alpha_0.15.1",
+        learnMore: "@Pocket_Edition_Alpha_0.15.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3757,7 +3757,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.14.3",
         type: "minor",
         date: "2016-05-18",
-        learnMore: "#Pocket_Edition_Alpha_0.14.3",
+        learnMore: "@Pocket_Edition_Alpha_0.14.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3765,7 +3765,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.14.2",
         type: "minor",
         date: "2016-04-26",
-        learnMore: "#Pocket_Edition_Alpha_0.14.2",
+        learnMore: "@Pocket_Edition_Alpha_0.14.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3773,7 +3773,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.14.1",
         type: "minor",
         date: "2016-04-05",
-        learnMore: "#Pocket_Edition_Alpha_0.14.1",
+        learnMore: "@Pocket_Edition_Alpha_0.14.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3781,7 +3781,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.13.2",
         type: "minor",
         date: "2016-02-03",
-        learnMore: "#Pocket_Edition_Alpha_0.13.2",
+        learnMore: "@Pocket_Edition_Alpha_0.13.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3789,7 +3789,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.13.1",
         type: "minor",
         date: "2015-12-16",
-        learnMore: "#Pocket_Edition_Alpha_0.13.1",
+        learnMore: "@Pocket_Edition_Alpha_0.13.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3797,7 +3797,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.12.3",
         type: "minor",
         date: "2015-10-22",
-        learnMore: "#Pocket_Edition_Alpha_0.12.3",
+        learnMore: "@Pocket_Edition_Alpha_0.12.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3805,7 +3805,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.12.2",
         type: "minor",
         date: "2015-10-11",
-        learnMore: "#Pocket_Edition_Alpha_0.12.2",
+        learnMore: "@Pocket_Edition_Alpha_0.12.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3813,7 +3813,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.12.1",
         type: "minor",
         date: "2015-09-09",
-        learnMore: "#Pocket_Edition_Alpha_0.12.1",
+        learnMore: "@Pocket_Edition_Alpha_0.12.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3821,7 +3821,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.12.0.1",
         type: "minor",
         date: "2015-08-11",
-        learnMore: "#Pocket_Edition_Alpha_0.12.0.1",
+        learnMore: "@Pocket_Edition_Alpha_0.12.0.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3829,7 +3829,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.11.2",
         type: "minor",
         date: "2015-06-05",
-        learnMore: "#Pocket_Edition_Alpha_0.11.2",
+        learnMore: "@Pocket_Edition_Alpha_0.11.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3837,7 +3837,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.11.1",
         type: "minor",
         date: "2015-06-04",
-        learnMore: "#Pocket_Edition_Alpha_0.11.1",
+        learnMore: "@Pocket_Edition_Alpha_0.11.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3845,7 +3845,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.10.5",
         type: "minor",
         date: "2015-01-12",
-        learnMore: "#Pocket_Edition_Alpha_0.10.5",
+        learnMore: "@Pocket_Edition_Alpha_0.10.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3853,7 +3853,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.10.4",
         type: "minor",
         date: "2014-11-24",
-        learnMore: "#Pocket_Edition_Alpha_0.10.4",
+        learnMore: "@Pocket_Edition_Alpha_0.10.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3861,7 +3861,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.10.3",
         type: "minor",
         date: "2014-11-21",
-        learnMore: "#Pocket_Edition_Alpha_0.10.3",
+        learnMore: "@Pocket_Edition_Alpha_0.10.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3869,7 +3869,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.10.2",
         type: "minor",
         date: "2014-11-20",
-        learnMore: "#Pocket_Edition_Alpha_0.10.2",
+        learnMore: "@Pocket_Edition_Alpha_0.10.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3877,7 +3877,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.10.1",
         type: "minor",
         date: "2014-11-19",
-        learnMore: "#Pocket_Edition_Alpha_0.10.1",
+        learnMore: "@Pocket_Edition_Alpha_0.10.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3885,7 +3885,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.9.5",
         type: "minor",
         date: "2014-07-24",
-        learnMore: "#Pocket_Edition_Alpha_0.9.5",
+        learnMore: "@Pocket_Edition_Alpha_0.9.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3893,7 +3893,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.9.4",
         type: "minor",
         date: "2014-07-17",
-        learnMore: "#Pocket_Edition_Alpha_0.9.4",
+        learnMore: "@Pocket_Edition_Alpha_0.9.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3901,7 +3901,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.9.3",
         type: "minor",
         date: "2014-07-16",
-        learnMore: "#Pocket_Edition_Alpha_0.9.3",
+        learnMore: "@Pocket_Edition_Alpha_0.9.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3909,7 +3909,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.9.2",
         type: "minor",
         date: "2014-07-15",
-        learnMore: "#Pocket_Edition_Alpha_0.9.2",
+        learnMore: "@Pocket_Edition_Alpha_0.9.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3917,7 +3917,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.9.1",
         type: "minor",
         date: "2014-07-11",
-        learnMore: "#Pocket_Edition_Alpha_0.9.1",
+        learnMore: "@Pocket_Edition_Alpha_0.9.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3925,7 +3925,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.8.2",
         type: "minor",
         date: "2014-04-02",
-        learnMore: "#Pocket_Edition_Alpha_0.8.2",
+        learnMore: "@Pocket_Edition_Alpha_0.8.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3933,7 +3933,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.8.1",
         type: "minor",
         date: "2013-12-19",
-        learnMore: "#Pocket_Edition_Alpha_0.8.1",
+        learnMore: "@Pocket_Edition_Alpha_0.8.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3941,7 +3941,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.7.6",
         type: "minor",
         date: "2013-10-11",
-        learnMore: "#Pocket_Edition_Alpha_0.7.6",
+        learnMore: "@Pocket_Edition_Alpha_0.7.6",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3949,7 +3949,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.7.5",
         type: "minor",
         date: "2013-09-04",
-        learnMore: "#Pocket_Edition_Alpha_0.7.5",
+        learnMore: "@Pocket_Edition_Alpha_0.7.5",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3957,7 +3957,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.7.4",
         type: "minor",
         date: "2013-09-02",
-        learnMore: "#Pocket_Edition_Alpha_0.7.4",
+        learnMore: "@Pocket_Edition_Alpha_0.7.4",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3965,7 +3965,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.7.3",
         type: "minor",
         date: "2013-08-15",
-        learnMore: "#Pocket_Edition_Alpha_0.7.3",
+        learnMore: "@Pocket_Edition_Alpha_0.7.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3973,7 +3973,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.7.2",
         type: "minor",
         date: "2013-07-04",
-        learnMore: "#Pocket_Edition_Alpha_0.7.2",
+        learnMore: "@Pocket_Edition_Alpha_0.7.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3981,7 +3981,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.7.1",
         type: "minor",
         date: "2013-06-07",
-        learnMore: "#Pocket_Edition_Alpha_0.7.1",
+        learnMore: "@Pocket_Edition_Alpha_0.7.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3989,7 +3989,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.6.1",
         type: "minor",
         date: "2013-01-31",
-        learnMore: "#Pocket_Edition_Alpha_0.6.1",
+        learnMore: "@Pocket_Edition_Alpha_0.6.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -3997,7 +3997,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.4.0 rev 2",
         type: "minor",
         date: "2012-09-14",
-        learnMore: "#Pocket_Edition_Alpha_0.4.0_rev_2",
+        learnMore: "@Pocket_Edition_Alpha_0.4.0_rev_2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4005,7 +4005,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.3.3",
         type: "minor",
         date: "2012-08-09",
-        learnMore: "#Pocket_Edition_Alpha_0.3.3",
+        learnMore: "@Pocket_Edition_Alpha_0.3.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4013,7 +4013,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.3.2",
         type: "minor",
         date: "2012-07-16",
-        learnMore: "#Pocket_Edition_Alpha_0.3.2",
+        learnMore: "@Pocket_Edition_Alpha_0.3.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4021,7 +4021,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.2.2",
         type: "minor",
         date: "2012-03-18",
-        learnMore: "#Pocket_Edition_Alpha_0.2.2",
+        learnMore: "@Pocket_Edition_Alpha_0.2.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4029,7 +4029,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.2.1 alpha 2",
         type: "minor",
         date: "2012-03-17",
-        learnMore: "#Pocket_Edition_Alpha_0.2.1_alpha_2",
+        learnMore: "@Pocket_Edition_Alpha_0.2.1_alpha_2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4037,7 +4037,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.2.1",
         type: "minor",
         date: "2012-03-14",
-        learnMore: "#Pocket_Edition_Alpha_0.2.1",
+        learnMore: "@Pocket_Edition_Alpha_0.2.1",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4045,7 +4045,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.1.3",
         type: "minor",
         date: "2011-12-03",
-        learnMore: "#Pocket_Edition_Alpha_0.1.3",
+        learnMore: "@Pocket_Edition_Alpha_0.1.3",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4053,7 +4053,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.1.2",
         type: "minor",
         date: "2011-10-13",
-        learnMore: "#Pocket_Edition_Alpha_0.1.2",
+        learnMore: "@Pocket_Edition_Alpha_0.1.2",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
@@ -4061,7 +4061,7 @@ const EDITIONS: Edition[] = [
         subtitle: "PE Alpha 0.1.1j",
         type: "minor",
         date: "2011-10-07",
-        learnMore: "#Pocket_Edition_Alpha_0.1.1j",
+        learnMore: "@Pocket_Edition_Alpha_0.1.1j",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       }
     ],
@@ -4071,14 +4071,14 @@ const EDITIONS: Edition[] = [
         subtitle: "1.20.50",
         type: "minor",
         possibleDate: "Late 2023",
-        learnMore: "#Bedrock_Edition_1.20.50",
+        learnMore: "@Bedrock_Edition_1.20.50",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
       {
         subtitle: "1.20.40",
         type: "minor",
         possibleDate: "Late 2023",
-        learnMore: "#Bedrock_Edition_1.20.40",
+        learnMore: "@Bedrock_Edition_1.20.40",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
       {
@@ -4088,7 +4088,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         possibleDate: "Mid 2024",
         icon: "versions/bedrock/version_1_21.png",
-        learnMore: "#Bedrock_Edition_1.21.0",
+        learnMore: "@Bedrock_Edition_1.21.0",
         mainFeatures: [
           { text: "Trial Chambers" },
           { text: "Auto Crafter Block" },

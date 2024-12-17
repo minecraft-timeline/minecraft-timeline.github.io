@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Version } from '../edition';
+  import { setReadingVersion } from './book.svelte';
   import { hoveredVersions } from './tooltip.svelte';
   let { version }: { version: Version } = $props();
 </script>
@@ -7,6 +8,9 @@
 <div
   class="version {version.type}"
   role="contentinfo"
+  onclick={() => {
+    setReadingVersion(version);
+  }}
   onmouseenter={() => {
     hoveredVersions.push(version);
   }}
