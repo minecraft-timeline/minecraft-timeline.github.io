@@ -1,4 +1,10 @@
+<script lang="ts" module>
+  let scrollY = 0;
+</script>
+
 <script lang="ts">
+    import { readableType } from '../edition';
+
   import { clearReadingVersion, readingVersion } from './book.svelte';
   const formatter = new Intl.DateTimeFormat('en-US', {
     month: 'long',
@@ -17,6 +23,17 @@
   function formatDate(date: string) {
     return formatter.format(parseDate(date));
   }
+  $effect(() => {
+    if (readingVersion.version) {
+      scrollY = window.scrollY;
+      document.body.style.top = `-${scrollY}px`;
+      document.body.classList.add('noscroll');
+    } else {
+      document.body.style.top = '';
+      document.body.classList.remove('noscroll');
+      document.documentElement.scrollTo(0, scrollY);
+    }
+  });
 </script>
 
 <!-- {@debug readingVersion} -->
@@ -24,7 +41,8 @@
 {#if readingVersion.version}
   {@const v = readingVersion.version}
   <!-- svelte-ignore a11y_click_events_have_key_events,a11y_no_noninteractive_element_interactions -->
-  <div class="background" onclick={clearReadingVersion} role="dialog">
+  <div class="page">
+    <div class="background" onclick={clearReadingVersion} role="dialog"></div>
     <div class="infopanel">
       <div class="top-bar">
         <img class="icon" src={'versions/' + v.icon} alt="Icon" />
@@ -34,19 +52,23 @@
         {#if !('date' in v) && 'possibleDate' in v}
           <span class="date">{v.possibleDate}</span>
         {/if}
-        <button class="close" aria-label="Close Info Panel"></button>
+        <button
+          class="close"
+          aria-label="Close Info Panel"
+          onclick={clearReadingVersion}
+        ></button>
       </div>
       <section class="content">
         <header>
           {#if v.title || v.subtitle}
-            <h1 id="infopanel-title">
+            <h1>
               {v.subtitle}{v.title && v.subtitle ? ' - ' : ''}
               {v.title}
             </h1>
           {/if}
         </header>
         {#if v.funFact}
-          <div id="infopanel-fun-fact">{v.funFact}</div>
+          <div class="fun-fact">{v.funFact}</div>
         {/if}
         {#if v.longDescription}
           {#each v.longDescription as line}
@@ -54,18 +76,16 @@
           {/each}
         {/if}
         {#if v.mainFeatures}
-          <h2 id="infopanel-main-label">
-            The main features of this update are...
-          </h2>
-          <ul id="infopanel-main-features">
+          <h2>The main features of this update are...</h2>
+          <ul>
             {#each v.mainFeatures as feature}
               <li>{feature.text}</li>
             {/each}
           </ul>
         {/if}
         {#if v.minorFeatures}
-          <h2 id="infopanel-minor-label">But it also brings...</h2>
-          <ul id="infopanel-minor-features">
+          <h2>But it also brings...</h2>
+          <ul>
             {#each v.minorFeatures as feature}
               <li>{feature.text}</li>
             {/each}
@@ -73,50 +93,41 @@
         {/if}
         {#if v.learnMore}
           <a
-            id="infopanel-learn-more"
             target="_blank"
             rel="noopener noreferrer"
             href={v.learnMore.startsWith('@')
               ? 'https://minecraft.wiki/w/' + v.learnMore.slice(1)
               : v.learnMore}
-            >Learn more about this {v.type == 'event'
-              ? 'event'
-              : v.type == 'memory'
-                ? 'memorable moment'
-                : 'update'}</a
+            >Learn more about this {readableType(v.type)}</a
           >
         {/if}
-        <!-- {#if v.videoLink}
-          <div id="infopanel-video-link-wrapper">
-            <a id="infopanel-video-link" href={v.videoLink} target="_blank">
-              Watch the official video
-            </a>
-          </div>
-          <div id="infopanel-video-wrapper">
-            <iframe
-              src={v.videoLink.replace('watch?v=', 'embed/')}
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        {/if} -->
       </section>
     </div>
   </div>
 {/if}
 
 <style>
-  .background {
+  .page {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
+    overscroll-behavior: contain;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .infopanel {
@@ -202,7 +213,7 @@
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   }
-  .infopanel .content #infopanel-fun-fact {
+  .infopanel .content .fun-fact {
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);

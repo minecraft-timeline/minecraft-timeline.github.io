@@ -8,13 +8,11 @@
     enableMajors = $bindable(),
     enableMinors = $bindable(),
     enableEvents = $bindable(),
-    enableMemories = $bindable(),
   }: {
     chosenEdition: Edition;
     enableMajors: boolean;
     enableMinors: boolean;
     enableEvents: boolean;
-    enableMemories: boolean;
   } = $props();
   let toolbox = $state(false);
   let editionIndex = $state(0);
@@ -46,9 +44,6 @@
     >
     <button onclick={() => (enableEvents = !enableEvents)}
       >Events: {enableEvents ? 'ON' : 'OFF'}</button
-    >
-    <button onclick={() => (enableMemories = !enableMemories)}
-      >Memories: {enableMemories ? 'ON' : 'OFF'}</button
     >
   </div>
   <div class="content">

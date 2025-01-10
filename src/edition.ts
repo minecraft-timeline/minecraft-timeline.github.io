@@ -1,4 +1,4 @@
-export type VersionType = "major" | "minor" | "event" | "memory";
+export type VersionType = "major" | "minor" | "event";
 
 export type NaiveVersion = {
     title?: string;
@@ -8,7 +8,6 @@ export type NaiveVersion = {
     type: VersionType;
     possibleDate?: string;
     icon?: string;
-    video?: string;
     learnMore?: string;
     mainFeatures?: { text: string }[];
     minorFeatures?: { text: string }[];
@@ -25,3 +24,14 @@ export type Edition = {
     versions: Version[];
     upcomings: NaiveVersion[];
 };
+
+export function readableType(type: VersionType): string {
+    switch (type) {
+        case "major":
+            return "major update";
+        case "minor":
+            return "minor update";
+        case "event":
+            return "event";
+    }
+}

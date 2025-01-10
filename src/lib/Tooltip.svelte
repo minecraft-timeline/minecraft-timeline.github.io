@@ -38,35 +38,39 @@
     docTop = document.documentElement.scrollTop;
     docLeft = document.documentElement.scrollLeft;
   });
+  function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  }
 </script>
 
-<div
-  bind:offsetWidth={tipWidth}
-  bind:offsetHeight={tipHeight}
-  class="tooltip"
-  style="left: {x}px; top: {y}px;"
->
-  {#if version.title && version.subtitle}
-    <div class="title">{version.title}</div>
-    {#if version.description}
-      <div class="description">{version.description}</div>
+{#if !isTouchDevice()}
+  <div
+    bind:offsetWidth={tipWidth}
+    bind:offsetHeight={tipHeight}
+    class="tooltip"
+    style="left: {x}px; top: {y}px;"
+  >
+    {#if version.title && version.subtitle}
+      <div class="title">{version.title}</div>
+      {#if version.description}
+        <div class="description">{version.description}</div>
+      {/if}
+      <div class="subtitle">{version.subtitle}</div>
     {/if}
-    <div class="subtitle">{version.subtitle}</div>
-  {/if}
-  {#if version.title && !version.subtitle}
-    <div class="title">{version.title}</div>
-    {#if version.description}
-      <div class="description">{version.description}</div>
+    {#if version.title && !version.subtitle}
+      <div class="title">{version.title}</div>
+      {#if version.description}
+        <div class="description">{version.description}</div>
+      {/if}
     {/if}
-  {/if}
-  {#if !version.title && version.subtitle}
-    <div class="title">{version.subtitle}</div>
-    {#if version.description}
-      <div class="description">{version.description}</div>
+    {#if !version.title && version.subtitle}
+      <div class="title">{version.subtitle}</div>
+      {#if version.description}
+        <div class="description">{version.description}</div>
+      {/if}
     {/if}
-  {/if}
-</div>
-
+  </div>
+{/if}
 <svelte:body
   onmousemove={(mouseEvent) => {
     mouseX = mouseEvent.clientX;

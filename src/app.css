@@ -27,3 +27,9 @@ body {
   font-family: "Minecraft", "Minecraftia", monospace, sans-serif;
   overflow-x: hidden;
 }
+
+body.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
