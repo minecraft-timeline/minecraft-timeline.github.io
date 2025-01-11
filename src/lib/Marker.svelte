@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Version } from '../edition';
+  import type { NaiveVersion, Version } from '../edition';
   import { setReadingVersion } from './book.svelte';
   import { hoveredVersions } from './tooltip.svelte';
-  let { version }: { version: Version } = $props();
+  let { version }: { version: Version | NaiveVersion } = $props();
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->

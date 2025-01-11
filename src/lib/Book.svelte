@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-    import { readableType } from '../edition';
+  import { readableType } from '../edition';
 
   import { clearReadingVersion, readingVersion } from './book.svelte';
   const formatter = new Intl.DateTimeFormat('en-US', {
@@ -35,8 +35,6 @@
     }
   });
 </script>
-
-<!-- {@debug readingVersion} -->
 
 {#if readingVersion.version}
   {@const v = readingVersion.version}
@@ -97,8 +95,7 @@
             rel="noopener noreferrer"
             href={v.learnMore.startsWith('@')
               ? 'https://minecraft.wiki/w/' + v.learnMore.slice(1)
-              : v.learnMore}
-            >Learn more about this {readableType(v.type)}</a
+              : v.learnMore}>Learn more about this {readableType(v.type)}</a
           >
         {/if}
       </section>
@@ -195,10 +192,6 @@
   .infopanel .content h1 {
     font-size: 24px;
   }
-
-  /* .infopanel .content p {
-    margin-bottom: 0.4em;
-  } */
   .infopanel .content li {
     list-style: none;
   }
@@ -219,37 +212,6 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     color: #914949;
   }
-  /* .infopanel .content #infopanel-video-link-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .infopanel .content #infopanel-video-link-wrapper:before {
-    content: '';
-    width: 16px;
-    height: 11px;
-    display: inline-block;
-    margin-right: 5px;
-    background: url('icons/ui/youtube.png') no-repeat center center;
-    background-size: cover;
-  }
-  .infopanel .content #infopanel-video-wrapper {
-    position: relative;
-    padding-bottom: 45%;
-    padding-top: 25px;
-    height: 0;
-    width: 80%;
-    margin-top: 10px;
-  }
-  .infopanel .content #infopanel-video-wrapper iframe {
-    padding: 4px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  } */
   @media (min-width: 768px) {
     .infopanel {
       max-width: 600px;

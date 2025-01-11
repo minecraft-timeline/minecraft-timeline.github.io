@@ -1,3 +1,3 @@
-import type { Version } from "../edition";
+import type { NaiveVersion, Version } from "../edition";
 
-export const hoveredVersions: Version[] = $state([]);
+export const hoveredVersions: (Version | NaiveVersion)[] = $state([]);

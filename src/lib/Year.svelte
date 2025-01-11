@@ -32,7 +32,13 @@
 <div class="year {first ? 'first' : ''} {last ? 'last' : ''}">
   <div class="ruler">
     <div class="number">{year}</div>
-    <div class="ago">{new Date().getFullYear() - year}y ago</div>
+    <div class="ago">
+      {#if year === new Date().getFullYear()}
+        Now
+      {:else}
+        {new Date().getFullYear() - year}y ago
+      {/if}
+    </div>
   </div>
   <div
     class="versions"
@@ -48,6 +54,10 @@
         <Marker {version} />
       </div>
     {/each}
+    {#if last}
+      <div class="spacer" style="flex-grow: 0.05;"></div>
+      <div class="first-message"><span>Present day</span></div>
+    {/if}
     <div class="spacer" style="flex-grow: {spaces[spaces.length - 1]};"></div>
   </div>
 </div>

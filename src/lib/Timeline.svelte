@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Edition, Version, VersionType } from '../edition';
+    import NaiveYear from './NaiveYear.svelte';
   import Year from './Year.svelte';
 
   function calculateYears(e: Edition) {
@@ -20,25 +21,40 @@
 
   let { edition, types }: { edition: Edition; types: VersionType[] } = $props();
   let years = $derived(calculateYears(edition));
+  let min_year = $derived(Math.min(...Object.keys(years).map(Number)));
+  let max_year = $derived(Math.max(...Object.keys(years).map(Number)));
+  let this_year = new Date().getFullYear();
+  let all_years = $derived(
+    Array.from({ length: this_year - min_year + 1 }, (_, i) => min_year + i),
+  );
 </script>
+
 <div class="timeline">
   <div class="ruler-base"></div>
   <div class="years">
-    {#each Object.entries(years).sort((a, b) => Number(a[0]) - Number(b[0])) as entry, i}
+    {#each all_years as year}
       <Year
         {edition}
-        year={Number(entry[0])}
-        versions={entry[1]
-          .filter((pair) => types.includes(pair.version.type))
-          .sort(
-            (a, b) =>
-              new Date(a.version.date).getTime() -
-              new Date(b.version.date).getTime(),
-          )}
-        first={i === 0}
-        last={i === Object.keys(years).length - 1}
+        {year}
+        versions={year in years
+          ? years[year]
+              .filter((pair) => types.includes(pair.version.type))
+              .sort(
+                (a, b) =>
+                  new Date(a.version.date).getTime() -
+                  new Date(b.version.date).getTime(),
+              )
+          : []}
+        first={year === min_year}
+        last={year >= this_year}
       />
     {/each}
+    {#if edition.upcomings.length > 0}
+      <NaiveYear
+        {edition}
+        versions={edition.upcomings}
+      />
+    {/if}
   </div>
 </div>
 
