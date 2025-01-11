@@ -33,7 +33,7 @@
   >
 {/snippet}
 
-<div class="header">
+<header>
   <div class="toolbox {toolbox ? 'visible' : 'hidden'}">
     {#if !isBig}
       {@render editionToggle()}
@@ -68,12 +68,12 @@
       onclick={() => (toolbox = !toolbox)}
     ></button>
   </div>
-</div>
+</header>
 
 <svelte:window onresize={handleResize} />
 
 <style>
-  .header {
+  header {
     position: sticky;
     top: 0;
     height: 80px;
@@ -193,7 +193,7 @@
     .toolbox {
       top: 96px;
     }
-    .header {
+    header {
       height: 96px;
     }
 
