@@ -72,8 +72,8 @@
     right: 0;
     z-index: -1;
     background:
-      url('backgrounds/ruler_old.png') repeat-x left top,
-      url('backgrounds/ruler.png') repeat left top,
+      url('/backgrounds/ruler_old.png') repeat-x left top,
+      url('/backgrounds/ruler.png') repeat left top,
       #54442a;
   }
 </style>

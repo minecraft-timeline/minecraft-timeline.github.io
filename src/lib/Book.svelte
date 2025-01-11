@@ -138,7 +138,7 @@
   .infopanel .top-bar {
     border: 12px solid transparent;
     border-bottom-width: 4px;
-    border-image: url('borders/panel_book_top.png') 12 12 4 12 fill repeat
+    border-image: url('/borders/panel_book_top.png') 12 12 4 12 fill repeat
       repeat;
     display: flex;
     flex-direction: row;
@@ -152,7 +152,7 @@
   .infopanel .top-bar .close {
     outline: none;
     border: none;
-    background: url('icons/ui/button_close.png') no-repeat center center;
+    background: url('/icons/ui/button_close.png') no-repeat center center;
     cursor: pointer;
     width: 36px;
     height: 36px;
@@ -172,7 +172,7 @@
     flex: 1;
     border: 48px solid transparent;
     border-top-width: 18px;
-    border-image: url('borders/panel_book.png') 18 48 48 48 fill repeat repeat;
+    border-image: url('/borders/panel_book.png') 18 48 48 48 fill repeat repeat;
     display: flex;
     flex-direction: column;
     overflow-y: auto;

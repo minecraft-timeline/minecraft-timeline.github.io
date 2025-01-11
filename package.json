@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },
@@ -19,6 +20,7 @@
     "vite": "^6.0.1"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "normalize.css": "^8.0.1"
   }
 }

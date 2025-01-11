@@ -11,7 +11,7 @@ const EDITIONS: Edition[] = [
         description: "Cobble & Grass",
         type: "major",
         date: "2009-05-10",
-        icon: "java/version_cave_game.png",
+        icon: "/java/version_cave_game.png",
         learnMore: "@Cave_game_tech_test",
         mainFeatures: [
           { text: "Cobblestone" },
@@ -29,7 +29,7 @@ const EDITIONS: Edition[] = [
         description: "Trees & Ores",
         type: "major",
         date: "2009-05-16",
-        icon: "java/version_early_classic.png",
+        icon: "/java/version_early_classic.png",
         learnMore: "@Early_Classic_Creative",
         mainFeatures: [
           { text: "Trees" },
@@ -47,7 +47,7 @@ const EDITIONS: Edition[] = [
         description: "Flowers & Glass",
         type: "major",
         date: "2009-05-31",
-        icon: "java/version_multiplayer_test.png",
+        icon: "/java/version_multiplayer_test.png",
         learnMore: "@Multiplayer_Test",
         mainFeatures: [
           { text: "Flowers" },
@@ -66,7 +66,7 @@ const EDITIONS: Edition[] = [
         description: "Health & Creepers",
         type: "major",
         date: "2009-09-01",
-        icon: "java/version_survival_test.png",
+        icon: "/java/version_survival_test.png",
         funFact: "Did you know? Creepers were originally broken Pigs.",
         learnMore: "@Survival_Test",
         mainFeatures: [
@@ -87,7 +87,7 @@ const EDITIONS: Edition[] = [
         description: "Block Placement Controls",
         type: "major",
         date: "2009-10-27",
-        icon: "java/version_late_classic.png",
+        icon: "/java/version_late_classic.png",
         funFact: "Did you know? This update overlapped with \"Survival Test\".",
         learnMore: "@Late_Classic_Creative",
         mainFeatures: [{ text: "Block Placement Controls" }]
@@ -98,7 +98,7 @@ const EDITIONS: Edition[] = [
         description: "Crafting Tables, Tools & Diamonds",
         type: "major",
         date: "2009-12-23",
-        icon: "java/version_indev_0_31.png",
+        icon: "/java/version_indev_0_31.png",
         funFact: "Did you know? Notch released 24 updates under this name.",
         learnMore: "@Indev_0.31",
         mainFeatures: [
@@ -120,7 +120,7 @@ const EDITIONS: Edition[] = [
         description: "Farming & Armor",
         type: "major",
         date: "2010-02-06",
-        icon: "java/version_indev.png",
+        icon: "/java/version_indev.png",
         learnMore: "@Minecraft_Indev",
         mainFeatures: [
           { text: "Farming" },
@@ -140,7 +140,7 @@ const EDITIONS: Edition[] = [
         description: "Dungeons, Rails & Infinite World",
         type: "major",
         date: "2010-02-27",
-        icon: "java/version_infdev.png",
+        icon: "/java/version_infdev.png",
         funFact: "Did you know? \"Infdev\" stands for \"Infinite Development\".",
         learnMore: "@Minecraft_Infdev",
         mainFeatures: [
@@ -161,7 +161,7 @@ const EDITIONS: Edition[] = [
         description: "Redstone",
         type: "major",
         date: "2010-07-03",
-        icon: "java/version_alpha_1_0.png",
+        icon: "/java/version_alpha_1_0.png",
         learnMore: "@Java_Edition_Alpha_v1.0.1",
         mainFeatures: [
           { text: "Redstone Dust" },
@@ -179,7 +179,7 @@ const EDITIONS: Edition[] = [
         description: "Compasses",
         type: "major",
         date: "2010-09-10",
-        icon: "java/version_alpha_1_1.png",
+        icon: "/java/version_alpha_1_1.png",
         learnMore: "@Java_Edition_Alpha_v1.1.0",
         mainFeatures: [{ text: "Compasses" }],
         minorFeatures: [{ text: "Lava buckets as furnace fuel" }]
@@ -191,7 +191,7 @@ const EDITIONS: Edition[] = [
         description: "The Nether",
         type: "major",
         date: "2010-10-30",
-        icon: "java/version_alpha_1_2.png",
+        icon: "/java/version_alpha_1_2.png",
         learnMore: "@Halloween_Update",
         mainFeatures: [
           { text: "The Nether" },
@@ -206,7 +206,7 @@ const EDITIONS: Edition[] = [
         description: "Eggs",
         type: "major",
         date: "2010-12-20",
-        icon: "java/version_beta_1_0.png",
+        icon: "/java/version_beta_1_0.png",
         learnMore: "@Java_Edition_Beta_1.0",
         mainFeatures: [{ text: "Throwable Eggs" }]
       },
@@ -216,7 +216,7 @@ const EDITIONS: Edition[] = [
         description: "Leaf Decay",
         type: "major",
         date: "2010-12-22",
-        icon: "java/version_beta_1_1.png",
+        icon: "/java/version_beta_1_1.png",
         learnMore: "@Java_Edition_Beta_1.1",
         mainFeatures: [{ text: "Better Leaf Decay" }]
       },
@@ -226,7 +226,7 @@ const EDITIONS: Edition[] = [
         description: "Note Blocks & Cakes",
         type: "major",
         date: "2011-01-13",
-        icon: "java/version_beta_1_2.png",
+        icon: "/java/version_beta_1_2.png",
         learnMore: "@Java_Edition_Beta_1.2",
         mainFeatures: [
           { text: "Note Blocks" },
@@ -247,7 +247,7 @@ const EDITIONS: Edition[] = [
         description: "Beds & Repeaters",
         type: "major",
         date: "2011-02-22",
-        icon: "java/version_beta_1_3.png",
+        icon: "/java/version_beta_1_3.png",
         learnMore: "@Java_Edition_Beta_1.3",
         mainFeatures: [{ text: "Beds" }, { text: "Repeaters" }],
         minorFeatures: [{ text: "Graphics Settings" }]
@@ -258,7 +258,7 @@ const EDITIONS: Edition[] = [
         description: "Wolves & New Logo",
         type: "major",
         date: "2011-03-31",
-        icon: "java/version_beta_1_4.png",
+        icon: "/java/version_beta_1_4.png",
         funFact: "Did you know? The mod \"Better than Wolves\" was created because its creator disliked this update.",
         learnMore: "@Java_Edition_Beta_1.4",
         mainFeatures: [{ text: "Wolves" }, { text: "New Logo" }],
@@ -270,7 +270,7 @@ const EDITIONS: Edition[] = [
         description: "Achievements & Powered Rails",
         type: "major",
         date: "2011-04-19",
-        icon: "java/version_beta_1_5.png",
+        icon: "/java/version_beta_1_5.png",
         learnMore: "@Java_Edition_Beta_1.5",
         mainFeatures: [
           { text: "Achievements" },
@@ -285,7 +285,7 @@ const EDITIONS: Edition[] = [
         description: "Maps & Trapdoors",
         type: "major",
         date: "2011-05-26",
-        icon: "java/version_beta_1_6.png",
+        icon: "/java/version_beta_1_6.png",
         learnMore: "@Java_Edition_Beta_1.6",
         mainFeatures: [
           { text: "Maps" },
@@ -300,7 +300,7 @@ const EDITIONS: Edition[] = [
         description: "Pistons",
         type: "major",
         date: "2011-06-30",
-        icon: "java/version_beta_1_7.png",
+        icon: "/java/version_beta_1_7.png",
         funFact: "Did you know? Pistons were originally a mod.",
         learnMore: "@Java_Edition_Beta_1.7",
         mainFeatures: [
@@ -317,7 +317,7 @@ const EDITIONS: Edition[] = [
         description: "Endermen & Hunger",
         type: "major",
         date: "2011-09-14",
-        icon: "java/version_beta_1_8.png",
+        icon: "/java/version_beta_1_8.png",
         funFact: "Did you know? The hunger system was somewhat controversial.",
         learnMore: "@Java_Edition_Beta_1.8",
         mainFeatures: [
@@ -342,7 +342,7 @@ const EDITIONS: Edition[] = [
         description: "The End & Enchanting",
         type: "major",
         date: "2011-11-18",
-        icon: "java/version_1_0.png",
+        icon: "/java/version_1_0.png",
         funFact: "Did you know? The game was fully released during Minecon 2011.",
         learnMore: "@Java_Edition_1.0.0",
         mainFeatures: [
@@ -366,7 +366,7 @@ const EDITIONS: Edition[] = [
         description: "Spawn Eggs",
         type: "major",
         date: "2012-01-12",
-        icon: "java/version_1_1.png",
+        icon: "/java/version_1_1.png",
         learnMore: "@Java_Edition_1.1",
         mainFeatures: [{ text: "Spawn Eggs" }],
         minorFeatures: [
@@ -380,7 +380,7 @@ const EDITIONS: Edition[] = [
         description: "Jungles & Iron Golems",
         type: "major",
         date: "2012-03-01",
-        icon: "java/version_1_2.png",
+        icon: "/java/version_1_2.png",
         learnMore: "@Java_Edition_1.2.1",
         mainFeatures: [
           { text: "Jungles" },
@@ -400,7 +400,7 @@ const EDITIONS: Edition[] = [
         description: "Trading & Temples",
         type: "major",
         date: "2012-08-01",
-        icon: "java/version_1_3.png",
+        icon: "/java/version_1_3.png",
         learnMore: "@Java_Edition_1.3.1",
         mainFeatures: [
           { text: "Villager Trading" },
@@ -423,7 +423,7 @@ const EDITIONS: Edition[] = [
         description: "Withers, Anvils & Cmd. Blocks",
         type: "major",
         date: "2012-10-25",
-        icon: "java/version_1_4.png",
+        icon: "/java/version_1_4.png",
         learnMore: "@Pretty_Scary_Update",
         mainFeatures: [
           { text: "Withers" },
@@ -447,7 +447,7 @@ const EDITIONS: Edition[] = [
         description: "More Redstone components & Quartz",
         type: "major",
         date: "2013-03-13",
-        icon: "java/version_1_5.png",
+        icon: "/java/version_1_5.png",
         learnMore: "@Redstone_Update",
         mainFeatures: [
           { text: "Hopper" },
@@ -469,7 +469,7 @@ const EDITIONS: Edition[] = [
         description: "Horses",
         type: "major",
         date: "2013-07-01",
-        icon: "java/version_1_6.png",
+        icon: "/java/version_1_6.png",
         funFact: "Did you know? Horses were originally from the mod \"Mo' Creatures.\"",
         learnMore: "@Horse_Update",
         mainFeatures: [{ text: "Horses" }],
@@ -487,7 +487,7 @@ const EDITIONS: Edition[] = [
         description: "New Biomes & World Generator",
         type: "major",
         date: "2013-10-25",
-        icon: "java/version_1_7.png",
+        icon: "/java/version_1_7.png",
         learnMore: "@The_Update_that_Changed_the_World",
         mainFeatures: [
           { text: "11 new Biomes such as Mesas and Mega Taigas" },
@@ -503,7 +503,7 @@ const EDITIONS: Edition[] = [
         description: "Ocean Monuments & Slime Blocks",
         type: "major",
         date: "2014-09-02",
-        icon: "java/version_1_8.png",
+        icon: "/java/version_1_8.png",
         learnMore: "@Bountiful_Update",
         mainFeatures: [
           { text: "Ocean Monuments" },
@@ -528,7 +528,7 @@ const EDITIONS: Edition[] = [
         description: "End Cities, Elytra Wings & Combat Changes",
         type: "major",
         date: "2016-02-29",
-        icon: "java/version_1_9.png",
+        icon: "/java/version_1_9.png",
         funFact: "Did you know? This update is considered the most controversial one so far, due to the combat changes.",
         learnMore: "@Combat_Update",
         mainFeatures: [
@@ -556,7 +556,7 @@ const EDITIONS: Edition[] = [
         description: "Polar Bears & Magma Blocks",
         type: "major",
         date: "2016-06-08",
-        icon: "java/version_1_10.png",
+        icon: "/java/version_1_10.png",
         learnMore: "@Frostburn_Update",
         mainFeatures: [
           { text: "Polar Bears" },
@@ -577,7 +577,7 @@ const EDITIONS: Edition[] = [
         description: "Woodland Mansions & Shulker Boxes",
         type: "major",
         date: "2016-11-14",
-        icon: "java/version_1_11.png",
+        icon: "/java/version_1_11.png",
         learnMore: "@Exploration_Update",
         mainFeatures: [
           { text: "Woodland Mansions" },
@@ -594,7 +594,7 @@ const EDITIONS: Edition[] = [
         description: "Colorful Blocks & Parrots",
         type: "major",
         date: "2017-06-07",
-        icon: "java/version_1_12.png",
+        icon: "/java/version_1_12.png",
         funFact: "Did you know? Originally parrots were tamed using cookies, until Mojang discovered that in real life they are poisonous to them. Now, cookies instantly kill parrots. Tame them with seeds instead.",
         learnMore: "@World_of_Color_Update",
         mainFeatures: [
@@ -617,7 +617,7 @@ const EDITIONS: Edition[] = [
         description: "Ocean Overhaul & Phantoms",
         type: "major",
         date: "2018-07-18",
-        icon: "java/version_1_13.png",
+        icon: "/java/version_1_13.png",
         funFact: "Did you know? The name of this update is a reference to the movie \"The Life Aquatic\".",
         learnMore: "@Update_Aquatic",
         mainFeatures: [
@@ -648,7 +648,7 @@ const EDITIONS: Edition[] = [
         description: "Village Overhaul, New Textures & Bamboo Forests",
         type: "major",
         date: "2019-04-23",
-        icon: "java/version_1_14.png",
+        icon: "/java/version_1_14.png",
         learnMore: "@Village_%26_Pillage",
         mainFeatures: [
           { text: "Village overhaul" },
@@ -668,7 +668,7 @@ const EDITIONS: Edition[] = [
         description: "Bees & Bug Fixes",
         type: "major",
         date: "2019-12-10",
-        icon: "java/version_1_15.png",
+        icon: "/java/version_1_15.png",
         funFact: "Did you know? This was the first major update with bug fixes and performance improvements as one of its main points. 1.13 was originally supposed to be this, before they added the aquatic features.",
         learnMore: "@Buzzy_Bees",
         mainFeatures: [
@@ -689,7 +689,7 @@ const EDITIONS: Edition[] = [
         description: "Nether Overhaul & Netherite",
         type: "major",
         date: "2020-06-23",
-        icon: "java/version_1_16.png",
+        icon: "/java/version_1_16.png",
         funFact: "Did you know? Netherite is the first new tool tier since diamonds (added over 10 years ago).",
         learnMore: "@Nether_Update",
         mainFeatures: [
@@ -714,7 +714,7 @@ const EDITIONS: Edition[] = [
         description: "New Cave Blocks & Mobs",
         type: "major",
         date: "2021-06-08",
-        icon: "java/version_1_17.png",
+        icon: "/java/version_1_17.png",
         funFact: "Did you know? Goats will target and ram all other mobs, including armor stands!",
         learnMore: "@Java_Edition_1.17",
         mainFeatures: [
@@ -741,7 +741,7 @@ const EDITIONS: Edition[] = [
         description: "Complete World Generation Overhaul",
         type: "major",
         date: "2021-11-30",
-        icon: "java/version_1_18.png",
+        icon: "/java/version_1_18.png",
         funFact: "Did you know? This was the first major world generation update since 1.7 (over 7 years ago)!\nCaves & Cliffs was split into two updates mainly due to the 2020 COVID-19 Pandemic.",
         learnMore: "@Java_Edition_1.18",
         mainFeatures: [
@@ -764,7 +764,7 @@ const EDITIONS: Edition[] = [
         description: "The Deep Dark & Mangrove Swamps",
         type: "major",
         date: "2022-06-07",
-        icon: "java/version_1_19.png",
+        icon: "/java/version_1_19.png",
         funFact: "Did you know? The Deep Dark was meant to come during Caves & Cliffs, but Mojang couldn't finish it in time.",
         learnMore: "@Java_Edition_1.19",
         mainFeatures: [
@@ -788,7 +788,7 @@ const EDITIONS: Edition[] = [
         description: "Archeology, Cherry Trees & Storytelling",
         type: "major",
         date: "2023-06-07",
-        icon: "java/version_1_20.png",
+        icon: "/java/version_1_20.png",
         funFact: "Did you know? This update didn't get its name and theme revealed until well into the snapshots.\nFun fact: This update brings the first change to desert wells since they were added, over 11 years ago!",
         learnMore: "@Java_Edition_1.20",
         mainFeatures: [
@@ -1047,7 +1047,7 @@ const EDITIONS: Edition[] = [
         type: "minor",
         description: "Renamed game",
         date: "2017-09-18T08:39:46",
-        icon: "java/version_1_12_2.png",
+        icon: "/java/version_1_12_2.png",
         learnMore: "@Java_Edition_1.12.2",
         mainFeatures: [
           {
@@ -1078,7 +1078,7 @@ const EDITIONS: Edition[] = [
         type: "minor",
         description: "Rocket Powered Elytras",
         date: "2016-12-20T14:05:34",
-        icon: "java/version_1_11_1.png",
+        icon: "/java/version_1_11_1.png",
         learnMore: "@Java_Edition_1.11.1",
         funFact: "Did you know? Rocket Elytras were suggested by a player. Despite being included in a minor update, this was a game changer.",
         mainFeatures: [
@@ -1756,7 +1756,7 @@ const EDITIONS: Edition[] = [
         title: "Game bought by Microsoft",
         type: "event",
         date: "2014-11-06",
-        icon: "event_microsoft.png",
+        icon: "/event_microsoft.png",
         learnMore: "https://web.archive.org/web/20140915195135/https://mojang.com/2014/09/yes-were-being-bought-by-microsoft/",
         longDescription: [
           "On November of 2014, all of Mojang was acquired by Microsoft for $2.5 billion. This included Minecraft, of course.",
@@ -1786,7 +1786,7 @@ const EDITIONS: Edition[] = [
         description: "Trial Chambers, Auto Crafting & Armadillos",
         type: "major",
         possibleDate: "Mid 2024",
-        icon: "java/version_1_21.png",
+        icon: "/java/version_1_21.png",
         learnMore: "@Java_Edition_1.21",
         mainFeatures: [
           { text: "Trial Chambers" },
@@ -1811,7 +1811,7 @@ const EDITIONS: Edition[] = [
         type: "major",
         date: "2011-07-01",
         possibleDate: "Late 2011",
-        icon: "bedrock/version_pe_pre_release.png",
+        icon: "/bedrock/version_pe_pre_release.png",
         funFact: "Not much is known about this version, as it was never publicly released.",
         learnMore: "@Pocket_Edition_Pre-release",
         mainFeatures: [{ text: "Grass Block" }, { text: "Wool" }],
@@ -1823,7 +1823,7 @@ const EDITIONS: Edition[] = [
         description: "Random Worlds & Multiplayer",
         type: "major",
         date: "2011-08-16",
-        icon: "bedrock/version_pe_alpha_0_1.png",
+        icon: "/bedrock/version_pe_alpha_0_1.png",
         funFact: "Did you know? This update added many blocks, being close to Java Edition Infdev.",
         learnMore: "@Pocket_Edition_Alpha_0.1.0",
         mainFeatures: [
@@ -1845,7 +1845,7 @@ const EDITIONS: Edition[] = [
         description: "Survival Mode & Mobs",
         type: "major",
         date: "2012-02-11",
-        icon: "bedrock/version_pe_alpha_0_2.png",
+        icon: "/bedrock/version_pe_alpha_0_2.png",
         learnMore: "@Pocket_Edition_Alpha_0.2.0",
         mainFeatures: [
           { text: "Survival Mode" },
@@ -1866,7 +1866,7 @@ const EDITIONS: Edition[] = [
         description: "Crafting Table & Furnaces",
         type: "major",
         date: "2012-04-24",
-        icon: "bedrock/version_pe_alpha_0_3.png",
+        icon: "/bedrock/version_pe_alpha_0_3.png",
         learnMore: "@Pocket_Edition_Alpha_0.3.0",
         mainFeatures: [
           { text: "Crafting Tables" },
@@ -1893,7 +1893,7 @@ const EDITIONS: Edition[] = [
         description: "Creepers & Chests",
         type: "major",
         date: "2012-09-06",
-        icon: "bedrock/version_pe_alpha_0_4.png",
+        icon: "/bedrock/version_pe_alpha_0_4.png",
         learnMore: "@Pocket_Edition_Alpha_0.4.0",
         mainFeatures: [
           { text: "Creepers" },
@@ -1915,7 +1915,7 @@ const EDITIONS: Edition[] = [
         description: "Nether Reactor & Melons",
         type: "major",
         date: "2012-11-15",
-        icon: "bedrock/version_pe_alpha_0_5.png",
+        icon: "/bedrock/version_pe_alpha_0_5.png",
         learnMore: "@Pocket_Edition_Alpha_0.5.0",
         mainFeatures: [
           { text: "Nether Reactor" },
@@ -1931,7 +1931,7 @@ const EDITIONS: Edition[] = [
         description: "Netherrack & Stonecutter",
         type: "major",
         date: "2013-01-30",
-        icon: "bedrock/version_pe_alpha_0_6.png",
+        icon: "/bedrock/version_pe_alpha_0_6.png",
         learnMore: "@Pocket_Edition_Alpha_0.6.0",
         mainFeatures: [
           { text: "Netherrack" },
@@ -1953,7 +1953,7 @@ const EDITIONS: Edition[] = [
         description: "Buckets, Spawn Eggs & Sky features",
         type: "major",
         date: "2013-06-05",
-        icon: "bedrock/version_pe_alpha_0_7.png",
+        icon: "/bedrock/version_pe_alpha_0_7.png",
         learnMore: "@Pocket_Edition_Alpha_0.7.0",
         mainFeatures: [
           { text: "Buckets" },
@@ -1974,7 +1974,7 @@ const EDITIONS: Edition[] = [
         description: "Rails & Beetroots",
         type: "major",
         date: "2013-12-12",
-        icon: "bedrock/version_pe_alpha_0_8.png",
+        icon: "/bedrock/version_pe_alpha_0_8.png",
         learnMore: "@Pocket_Edition_Alpha_0.8.0",
         mainFeatures: [
           { text: "Rails" },
@@ -1995,7 +1995,7 @@ const EDITIONS: Edition[] = [
         description: "Infinite Worlds & Endermen",
         type: "major",
         date: "2014-07-10",
-        icon: "bedrock/version_pe_alpha_0_9.png",
+        icon: "/bedrock/version_pe_alpha_0_9.png",
         funFact: "Did you know? This huge update made the game almost equivalent to Java Edition 1.8.",
         learnMore: "@Pocket_Edition_Alpha_0.9.0",
         mainFeatures: [
@@ -2019,7 +2019,7 @@ const EDITIONS: Edition[] = [
         description: "Creative Day-Night Cycle & More Fences",
         type: "major",
         date: "2014-11-18",
-        icon: "bedrock/version_pe_alpha_0_10.png",
+        icon: "/bedrock/version_pe_alpha_0_10.png",
         learnMore: "@Pocket_Edition_Alpha_0.10.0",
         mainFeatures: [
           { text: "Day-Night Cycle for Creative Mode" },
@@ -2036,7 +2036,7 @@ const EDITIONS: Edition[] = [
         description: "Boats & Skins",
         type: "major",
         date: "2015-06-04",
-        icon: "bedrock/version_pe_alpha_0_11.png",
+        icon: "/bedrock/version_pe_alpha_0_11.png",
         learnMore: "@Pocket_Edition_Alpha_0.11.0",
         mainFeatures: [
           { text: "Boats" },
@@ -2060,7 +2060,7 @@ const EDITIONS: Edition[] = [
         description: "The Nether, Enchanting & Anvils",
         type: "major",
         date: "2015-07-29",
-        icon: "bedrock/version_pe_alpha_0_12.png",
+        icon: "/bedrock/version_pe_alpha_0_12.png",
         funFact: "Did you know? This was the first version of the Windows 10 Edition.",
         learnMore: "@Pocket_Edition_Alpha_0.12.0",
         mainFeatures: [
@@ -2085,7 +2085,7 @@ const EDITIONS: Edition[] = [
         description: "Redstone",
         type: "major",
         date: "2015-11-19",
-        icon: "bedrock/version_pe_alpha_0_13.png",
+        icon: "/bedrock/version_pe_alpha_0_13.png",
         learnMore: "@Pocket_Edition_Alpha_0.13.0",
         mainFeatures: [
           { text: "Redstone" },
@@ -2111,7 +2111,7 @@ const EDITIONS: Edition[] = [
         description: "More Redstone Components, Witches & Maps",
         type: "major",
         date: "2016-02-18",
-        icon: "bedrock/version_pe_alpha_0_14.png",
+        icon: "/bedrock/version_pe_alpha_0_14.png",
         learnMore: "@Overworld_Update",
         mainFeatures: [
           { text: "Dispensers" },
@@ -2135,7 +2135,7 @@ const EDITIONS: Edition[] = [
         description: "Realms, Pistons & Horses",
         type: "major",
         date: "2016-06-10",
-        icon: "bedrock/version_pe_alpha_0_15.png",
+        icon: "/bedrock/version_pe_alpha_0_15.png",
         learnMore: "@Friendly_Update",
         mainFeatures: [
           { text: "Realms" },
@@ -2157,7 +2157,7 @@ const EDITIONS: Edition[] = [
         description: "Ocean Monuments & Withers",
         type: "major",
         date: "2016-10-21",
-        icon: "bedrock/version_pe_alpha_0_16.png",
+        icon: "/bedrock/version_pe_alpha_0_16.png",
         learnMore: "@Boss_Update",
         mainFeatures: [
           { text: "Ocean Monuments" },
@@ -2172,7 +2172,7 @@ const EDITIONS: Edition[] = [
         description: "The End",
         type: "major",
         date: "2016-12-19",
-        icon: "bedrock/version_pe_1_0.png",
+        icon: "/bedrock/version_pe_1_0.png",
         funFact: "This update is equivalent to Java Edition 1.9, without combat changes.",
         learnMore: "@Ender_Update",
         mainFeatures: [
@@ -2197,7 +2197,7 @@ const EDITIONS: Edition[] = [
         description: "Woodland Mansions & The Marketplace",
         type: "major",
         date: "2017-06-01",
-        icon: "bedrock/version_pe_1_1.png",
+        icon: "/bedrock/version_pe_1_1.png",
         funFact: "This update is equivalent to Java Edition 1.11.",
         learnMore: "@Discovery_Update",
         mainFeatures: [
@@ -2217,7 +2217,7 @@ const EDITIONS: Edition[] = [
         description: "Merged Pocket Edition with Console Edition",
         type: "major",
         date: "2017-09-20",
-        icon: "bedrock/version_1_2.png",
+        icon: "/bedrock/version_1_2.png",
         funFact: "Did you know? The PS4 did not receive this update because Sony didn't allow the game to have cross-play.",
         learnMore: "@Better_Together_Update",
         mainFeatures: [
@@ -2241,7 +2241,7 @@ const EDITIONS: Edition[] = [
         description: "Ocean Overhaul",
         type: "major",
         date: "2018-05-16",
-        icon: "bedrock/version_1_4.png",
+        icon: "/bedrock/version_1_4.png",
         learnMore: "@Bedrock_Edition_1.4.0",
         mainFeatures: [
           { text: "Kelp and Seagrass" },
@@ -2267,7 +2267,7 @@ const EDITIONS: Edition[] = [
         description: "Turtles & Conduits",
         type: "major",
         date: "2018-07-10",
-        icon: "bedrock/version_1_5.png",
+        icon: "/bedrock/version_1_5.png",
         learnMore: "@Bedrock_Edition_1.5.0",
         mainFeatures: [
           { text: "Turtles" },
@@ -2281,7 +2281,7 @@ const EDITIONS: Edition[] = [
         description: "Phantoms & Barriers",
         type: "major",
         date: "2018-08-28",
-        icon: "bedrock/version_1_6.png",
+        icon: "/bedrock/version_1_6.png",
         learnMore: "@Bedrock_Edition_1.6.0",
         mainFeatures: [{ text: "Phantoms" }, { text: "Barriers" }],
         minorFeatures: [{ text: "Potions of Slow Falling" }]
@@ -2292,7 +2292,7 @@ const EDITIONS: Edition[] = [
         description: "/scoreboard Command",
         type: "major",
         date: "2018-10-15",
-        icon: "bedrock/version_1_7.png",
+        icon: "/bedrock/version_1_7.png",
         funFact: "Did you know? This is the major update with the least amount of content in Minecraft history.",
         learnMore: "@Bedrock_Edition_1.7.0",
         mainFeatures: [{ text: "/scoreboard Command" }],
@@ -2308,7 +2308,7 @@ const EDITIONS: Edition[] = [
         description: "Pandas & Scaffolding",
         type: "major",
         date: "2018-12-11",
-        icon: "bedrock/version_1_8.png",
+        icon: "/bedrock/version_1_8.png",
         learnMore: "@Bedrock_Edition_1.8.0",
         mainFeatures: [
           { text: "Pandas" },
@@ -2326,7 +2326,7 @@ const EDITIONS: Edition[] = [
         description: "Many Walls, Slabs & Stairs",
         type: "major",
         date: "2019-02-05",
-        icon: "bedrock/version_1_9.png",
+        icon: "/bedrock/version_1_9.png",
         learnMore: "@Bedrock_Edition_1.9.0",
         mainFeatures: [
           { text: "Walls, Slabs and Stairs of most rock types" },
@@ -2340,7 +2340,7 @@ const EDITIONS: Edition[] = [
         description: "Looms, Lecterns & Shields",
         type: "major",
         date: "2019-03-19",
-        icon: "bedrock/version_1_10.png",
+        icon: "/bedrock/version_1_10.png",
         learnMore: "@Bedrock_Edition_1.10.0",
         mainFeatures: [
           { text: "Looms" },
@@ -2359,7 +2359,7 @@ const EDITIONS: Edition[] = [
         description: "Village Overhaul, New Textures & Bamboo Forests",
         type: "major",
         date: "2019-04-23",
-        icon: "bedrock/version_1_11.png",
+        icon: "/bedrock/version_1_11.png",
         learnMore: "@Village_%26_Pillage",
         mainFeatures: [
           { text: "Village overhaul" },
@@ -2377,7 +2377,7 @@ const EDITIONS: Edition[] = [
         description: "Cameras Re-added",
         type: "major",
         date: "2019-07-09",
-        icon: "bedrock/version_1_12.png",
+        icon: "/bedrock/version_1_12.png",
         learnMore: "@Bedrock_Edition_1.12.0",
         mainFeatures: [
           { text: "Cameras re-added" },
@@ -2391,7 +2391,7 @@ const EDITIONS: Edition[] = [
         description: "Foxes, Light Blocks & Character Creator",
         type: "major",
         date: "2019-10-29",
-        icon: "bedrock/version_1_13.png",
+        icon: "/bedrock/version_1_13.png",
         learnMore: "@Bedrock_Edition_1.13.0",
         mainFeatures: [
           { text: "Foxes" },
@@ -2414,7 +2414,7 @@ const EDITIONS: Edition[] = [
         description: "Bees & PS4 Support",
         type: "major",
         date: "2019-12-10",
-        icon: "bedrock/version_1_14.png",
+        icon: "/bedrock/version_1_14.png",
         learnMore: "@Buzzy_Bees",
         mainFeatures: [
           { text: "Bees" },
@@ -2435,7 +2435,7 @@ const EDITIONS: Edition[] = [
         description: "Nether Overhaul & Netherite",
         type: "major",
         date: "2020-06-23",
-        icon: "bedrock/version_1_16.png",
+        icon: "/bedrock/version_1_16.png",
         funFact: "Did you know? Netherite is the first new tool tier since diamonds (added 8 years ago).",
         learnMore: "@Nether_Update",
         mainFeatures: [
@@ -2460,7 +2460,7 @@ const EDITIONS: Edition[] = [
         description: "New Cave Blocks & Mobs",
         type: "major",
         date: "2021-06-08",
-        icon: "bedrock/version_1_17.png",
+        icon: "/bedrock/version_1_17.png",
         funFact: "Did you know? Goats will target and ram all other mobs, including armor stands!",
         learnMore: "@Bedrock_Edition_1.17.0",
         mainFeatures: [
@@ -2487,7 +2487,7 @@ const EDITIONS: Edition[] = [
         description: "Complete World Generation Overhaul",
         type: "major",
         date: "2021-11-30",
-        icon: "bedrock/version_1_18.png",
+        icon: "/bedrock/version_1_18.png",
         funFact: "Did you know? For the first time, a Java Edition world seed generates the same world in Bedrock!\nCaves & Cliffs was split into two updates mainly due to the 2020 COVID-19 Pandemic.",
         learnMore: "@Bedrock_Edition_1.18.0",
         mainFeatures: [
@@ -2510,7 +2510,7 @@ const EDITIONS: Edition[] = [
         description: "The Deep Dark & Mangrove Swamps",
         type: "major",
         date: "2022-06-07",
-        icon: "bedrock/version_1_19.png",
+        icon: "/bedrock/version_1_19.png",
         funFact: "Did you know? The Deep Dark was meant to come during Caves & Cliffs, but Mojang couldn't finish it in time.",
         learnMore: "@Bedrock_Edition_1.19.0",
         mainFeatures: [
@@ -2534,7 +2534,7 @@ const EDITIONS: Edition[] = [
         description: "Archeology, Cherry Trees & Storytelling",
         type: "major",
         date: "2023-06-07",
-        icon: "bedrock/version_1_20.png",
+        icon: "/bedrock/version_1_20.png",
         funFact: "Did you know? This update didn't get its name and theme revealed until well into the snapshots.",
         learnMore: "@Bedrock_Edition_1.20.0",
         mainFeatures: [
@@ -3981,7 +3981,7 @@ const EDITIONS: Edition[] = [
         description: "Trial Chambers, Auto Crafting & Armadillos",
         type: "major",
         possibleDate: "Mid 2024",
-        icon: "bedrock/version_1_21.png",
+        icon: "/bedrock/version_1_21.png",
         learnMore: "@Bedrock_Edition_1.21.0",
         mainFeatures: [
           { text: "Trial Chambers" },

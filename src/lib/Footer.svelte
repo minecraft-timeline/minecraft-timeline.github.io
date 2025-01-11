@@ -37,7 +37,7 @@
 
 <style>
   footer {
-    background: url('backgrounds/stone_dark.png');
+    background: url('/backgrounds/stone_dark.png');
     height: 100%;
     width: 100%;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);

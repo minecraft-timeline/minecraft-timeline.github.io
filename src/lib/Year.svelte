@@ -48,7 +48,7 @@
   </div>
   <div
     class="versions"
-    style="--year: url({'"'}years/{edition.id}/{year}.png{'"'})"
+    style="--year: url({'"'}/years/{edition.id}/{year}.png{'"'})"
   >
     {#each versions as { version, ratio }, i}
       <div class="spacer" style="flex-grow: {spaces[i]};"></div>
@@ -71,7 +71,7 @@
 <style>
   .first-message {
     border: 8px solid transparent;
-    border-image: url('borders/panel_basic.png') 8 fill stretch stretch;
+    border-image: url('/borders/panel_basic.png') 8 fill stretch stretch;
     padding: 8px;
     font-size: 24px;
     color: white;
@@ -103,7 +103,7 @@
   }
   .spacer {
     flex-shrink: 0;
-    background: url('timeline/timeline_v.png') repeat-y;
+    background: url('/timeline/timeline_v.png') repeat-y;
     width: 10px;
   }
   .year.first .spacer:nth-child(1) {
@@ -120,7 +120,7 @@
     overflow-y: hidden;
     flex: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      var(--year), url('years/fallback.png');
+      var(--year), url('/years/fallback.png');
     box-shadow: inset 20px -20px 20px -10px rgb(0 0 0 / 43%);
     align-items: center;
   }
@@ -139,7 +139,7 @@
       display: block;
     }
     .year.horizontal .spacer {
-      background: url('timeline/timeline_h.png') repeat-x;
+      background: url('/timeline/timeline_h.png') repeat-x;
       width: unset;
       height: 10px;
     }

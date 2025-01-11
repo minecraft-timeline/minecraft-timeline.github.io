@@ -52,7 +52,7 @@
     >
   </div>
   <div class="content">
-    <img class="logo" src="logo.png" alt="Minecraft Timeline Logo" />
+    <img class="logo" src="/logo.png" alt="Minecraft Timeline Logo" />
   </div>
   <div class="button-box">
     {#if isBig}
@@ -78,7 +78,7 @@
   }
 
   .content {
-    background: url('backgrounds/stone_dark.png');
+    background: url('/backgrounds/stone_dark.png');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@
     border-bottom: 6px solid transparent;
     outline: none;
     background: none;
-    border-image-source: url('borders/button.png');
+    border-image-source: url('/borders/button.png');
     border-image-slice: 4 4 6 4 fill;
     border-image-repeat: repeat repeat;
     color: white;
@@ -135,7 +135,7 @@
   .hamburger::after {
     position: absolute;
     content: '';
-    background: url('icons/ui/button_hamburger.png');
+    background: url('/icons/ui/button_hamburger.png');
     left: -4px;
     right: -4px;
     top: -4px;
@@ -144,7 +144,7 @@
   }
 
   button:hover {
-    border-image-source: url('borders/button_pressed.png');
+    border-image-source: url('/borders/button_pressed.png');
     color: #ffffa0;
   }
 
@@ -154,7 +154,7 @@
     right: 0;
     display: flex;
     flex-direction: column;
-    background: url('backgrounds/stone_dark.png');
+    background: url('/backgrounds/stone_dark.png');
     /* border: 4px solid rgba(0, 0, 0, 0.5); */
     border-top: none;
     z-index: -1000;

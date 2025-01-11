@@ -37,7 +37,7 @@
     position: relative;
   }
   .version.major {
-    border-image: url('timeline/icon_update_major.png') 4 fill repeat;
+    border-image: url('/timeline/icon_update_major.png') 4 fill repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     padding: 4px 4px 6px 4px;
@@ -45,14 +45,14 @@
     min-height: 48px;
   }
   .version.minor {
-    border-image: url('timeline/icon_update_minor.png') 4 fill repeat;
+    border-image: url('/timeline/icon_update_minor.png') 4 fill repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     min-width: 20px;
     min-height: 20px;
   }
   .version.event {
-    border-image: url('timeline/icon_update_event.png') 12 fill repeat;
+    border-image: url('/timeline/icon_update_event.png') 12 fill repeat;
     border-image-width: 12px;
     border-image-outset: 0px;
     padding: 0;

@@ -85,7 +85,7 @@
     color: white;
     pointer-events: none;
     position: absolute;
-    border-image: url('backgrounds/tooltip.png') 6 fill repeat;
+    border-image: url('/backgrounds/tooltip.png') 6 fill repeat;
     border-image-width: 6px;
     padding: 8px 10px;
     transform: translate(-50%, -50%);
