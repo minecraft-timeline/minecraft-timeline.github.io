@@ -8,11 +8,13 @@
     enableMajors = $bindable(),
     enableMinors = $bindable(),
     enableEvents = $bindable(),
+    isVertical = $bindable(false),
   }: {
     chosenEdition: Edition;
     enableMajors: boolean;
     enableMinors: boolean;
     enableEvents: boolean;
+    isVertical: boolean;
   } = $props();
   let toolbox = $state(false);
   let editionIndex = $state(0);
@@ -44,6 +46,9 @@
     >
     <button onclick={() => (enableEvents = !enableEvents)}
       >Events: {enableEvents ? 'ON' : 'OFF'}</button
+    >
+    <button onclick={() => (isVertical = !isVertical)}
+      >Layout: {isVertical ? 'Vertical' : 'Horizontal'}</button
     >
   </div>
   <div class="content">

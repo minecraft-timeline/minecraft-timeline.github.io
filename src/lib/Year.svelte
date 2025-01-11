@@ -19,17 +19,23 @@
     edition,
     first,
     last,
+    isVertical,
   }: {
     year: number;
     edition: Edition;
     versions: { version: Version; ratio: number }[];
     first: boolean;
     last: boolean;
+    isVertical: boolean;
   } = $props();
   let spaces = $derived(calculateSpaces(versions));
 </script>
 
-<div class="year {first ? 'first' : ''} {last ? 'last' : ''}">
+<div
+  class="year {first ? 'first' : ''} {last ? 'last' : ''} {isVertical
+    ? ''
+    : 'horizontal'}"
+>
   <div class="ruler">
     <div class="number">{year}</div>
     <div class="ago">
@@ -119,7 +125,7 @@
     align-items: center;
   }
   @media (min-width: 768px) {
-    .first-message {
+    .year.horizontal .first-message {
       margin: 0;
     }
     .ruler {
@@ -132,12 +138,12 @@
     .ruler .ago {
       display: block;
     }
-    .spacer {
+    .year.horizontal .spacer {
       background: url('timeline/timeline_h.png') repeat-x;
       width: unset;
       height: 10px;
     }
-    .versions {
+    .year.horizontal .versions {
       min-height: 192px;
       flex-direction: row;
     }

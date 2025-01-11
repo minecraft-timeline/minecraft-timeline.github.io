@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Edition, Version, VersionType } from '../edition';
-    import NaiveYear from './NaiveYear.svelte';
+  import NaiveYear from './NaiveYear.svelte';
   import Year from './Year.svelte';
 
   function calculateYears(e: Edition) {
@@ -19,7 +19,11 @@
     return years;
   }
 
-  let { edition, types }: { edition: Edition; types: VersionType[] } = $props();
+  let {
+    edition,
+    types,
+    isVertical,
+  }: { edition: Edition; types: VersionType[]; isVertical: boolean } = $props();
   let years = $derived(calculateYears(edition));
   let min_year = $derived(Math.min(...Object.keys(years).map(Number)));
   let max_year = $derived(Math.max(...Object.keys(years).map(Number)));
@@ -36,6 +40,7 @@
       <Year
         {edition}
         {year}
+        {isVertical}
         versions={year in years
           ? years[year]
               .filter((pair) => types.includes(pair.version.type))
@@ -50,10 +55,7 @@
       />
     {/each}
     {#if edition.upcomings.length > 0}
-      <NaiveYear
-        {edition}
-        versions={edition.upcomings}
-      />
+      <NaiveYear {edition} {isVertical} versions={edition.upcomings} />
     {/if}
   </div>
 </div>

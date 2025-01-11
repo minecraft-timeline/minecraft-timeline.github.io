@@ -11,6 +11,7 @@
   let enableMajors = $state(true);
   let enableMinors = $state(false);
   let enableEvents = $state(true);
+  let isVertical = $state(false);
 
   function getEnabledTypes(): VersionType[] {
     let types: VersionType[] = [];
@@ -27,8 +28,9 @@
     bind:enableMajors
     bind:enableMinors
     bind:enableEvents
+    bind:isVertical
   />
-  <Timeline edition={chosenEdition} types={getEnabledTypes()} />
+  <Timeline edition={chosenEdition} types={getEnabledTypes()} {isVertical} />
   {#each hoveredVersions as version}
     <Tooltip {version} />
   {/each}

@@ -4,13 +4,15 @@
 
   let {
     versions,
+    isVertical,
   }: {
     edition: Edition;
     versions: NaiveVersion[];
+    isVertical: boolean;
   } = $props();
 </script>
 
-<div class="year">
+<div class="year {isVertical ? '' : 'horizontal'}">
   <div class="ruler">
     <div class="number">???</div>
     <div class="ago">Future</div>
@@ -28,14 +30,6 @@
 </div>
 
 <style>
-  .upcoming {
-    background: url('backgrounds/stone_dark.png');
-    color: white;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-align: center;
-    outline: 4px solid rgba(0, 0, 0, 0.25);
-  }
   .year {
     display: flex;
     align-items: center;
@@ -81,7 +75,7 @@
     .ruler .ago {
       display: block;
     }
-    .versions {
+    .year.horizontal .versions {
       min-height: 192px;
       flex-direction: row;
     }
