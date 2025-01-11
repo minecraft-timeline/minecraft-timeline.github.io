@@ -19,7 +19,7 @@
   </div>
   <div
     class="versions"
-    style="--year: url({'"'}backgrounds/years/future.png{'"'})"
+    style="--year: url({'"'}years/future.png{'"'})"
   >
     {#each versions as version, i}
       <div class="version">

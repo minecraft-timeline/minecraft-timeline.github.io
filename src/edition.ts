@@ -17,10 +17,9 @@ export type NaiveVersion = {
 export type Version = NaiveVersion & { date: string };
 
 export type Edition = {
+    id: string,
     title: string;
-    description: string;
     firstMessage: string;
-    logo: string;
     versions: Version[];
     upcomings: NaiveVersion[];
 };

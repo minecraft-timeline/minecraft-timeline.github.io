@@ -48,7 +48,7 @@
   </div>
   <div
     class="versions"
-    style="--year: url({'"'}backgrounds/years/{year}.png{'"'})"
+    style="--year: url({'"'}years/{edition.id}/{year}.png{'"'})"
   >
     {#each versions as { version, ratio }, i}
       <div class="spacer" style="flex-grow: {spaces[i]};"></div>
@@ -120,7 +120,7 @@
     overflow-y: hidden;
     flex: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      var(--year), url('backgrounds/years/fallback.png');
+      var(--year), url('years/fallback.png');
     box-shadow: inset 20px -20px 20px -10px rgb(0 0 0 / 43%);
     align-items: center;
   }
