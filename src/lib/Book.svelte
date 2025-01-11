@@ -43,7 +43,9 @@
     <div class="background" onclick={clearReadingVersion} role="dialog"></div>
     <div class="infopanel">
       <div class="top-bar">
-        <img class="icon" src={'versions/' + v.icon} alt="Icon" />
+        {#if v.icon}
+          <img class="icon" src={'versions/' + v.icon} alt="Icon" />
+        {/if}
         {#if 'date' in v}
           <span class="date">{formatDate(v.date)}</span>
         {/if}
@@ -146,7 +148,6 @@
   }
   .infopanel .top-bar .icon {
     height: 32px;
-    margin-right: 10px;
   }
   .infopanel .top-bar .close {
     outline: none;
@@ -165,6 +166,7 @@
     color: #f1eccf;
     margin-bottom: -4px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
   }
   .infopanel .content {
     flex: 1;
