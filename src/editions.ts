@@ -1903,7 +1903,21 @@ const EDITIONS: Edition[] = [
     ],
 
     upcomings: [
-
+      {
+        title: "Spring Drop?",
+        subtitle: "1.21.5",
+        type: "drop",
+        possibleDate: "Spring 2025?",
+        icon: "/java/version_1_21_5.png",
+        funFact: "It's not yet clear whether this version will be 1.21.5 or 1.22.",
+        learnMore: "@Java_Edition_1.21.5",
+        mainFeatures: [
+          { text: "Leaf Litter in forests" },
+          { text: "Wildflowers" },
+          { text: "Pig Variants" },
+          { text: "More?" }
+        ]
+      }
     ]
   },
 
