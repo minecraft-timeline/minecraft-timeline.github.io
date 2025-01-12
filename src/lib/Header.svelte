@@ -4,12 +4,12 @@
 
   let isBig = $state(false);
   let {
-    chosenEdition = $bindable(EDITIONS[0]),
+    chosenEdition = $bindable(),
     enableMajors = $bindable(),
     enableMinors = $bindable(),
     enableDrops = $bindable(),
     enableEvents = $bindable(),
-    isVertical = $bindable(false),
+    isVertical = $bindable(),
   }: {
     chosenEdition: Edition;
     enableMajors: boolean;
