@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
   }
   .version.major {
     border-image: url('/timeline/icon_update_major.png') 4 fill repeat;
