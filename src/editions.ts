@@ -861,6 +861,8 @@ const EDITIONS: Edition[] = [
         ],
         minorFeatures: [
           { text: "Twenty new original paintings" },
+          { text: "Six new Potion Effects" },
+          { text: "Bogged Skeletons" },
           { text: "Ominous Bottles" }
         ]
       },
@@ -1909,7 +1911,7 @@ const EDITIONS: Edition[] = [
         type: "drop",
         possibleDate: "Spring 2025?",
         icon: "/java/version_1_21_5.png",
-        funFact: "It's not yet clear whether this version will be 1.21.5 or 1.22.",
+        funFact: "It's not yet clear what will be this update's number; 1.21.5 is the most likely.",
         learnMore: "@Java_Edition_1.21.5",
         mainFeatures: [
           { text: "Leaf Litter in forests" },
@@ -2673,6 +2675,290 @@ const EDITIONS: Edition[] = [
           { text: "More bamboo blocks and items" },
           { text: "Hanging Signs" }
         ]
+      },
+
+      {
+        title: "Bats and Pots",
+        subtitle: "1.20.50",
+        description: "Better Decorated Pots & Bats",
+        type: "drop",
+        date: "2023-12-05",
+        icon: "/bedrock/version_1_20_50.png",
+        funFact: "Did you know? This minor update was retroactively labeled as a \"game drop\", making it the first of its kind.",
+        learnMore: "@Bedrock_Edition_1.20.50",
+        mainFeatures: [
+          { text: "Decorated Pots can now hold items" },
+          { text: "Decorated Pots now can be destroyed by projectiles" },
+          { text: "Brand new model and texture for bats" },
+        ],
+        minorFeatures: [
+          { text: "Improved mob attack reach calculation" }
+        ]
+      },
+
+      {
+        title: "Armored Paws",
+        subtitle: "1.20.80",
+        description: "Armadillos & Wolf Armor",
+        type: "drop",
+        date: "2024-04-23",
+        icon: "/bedrock/version_1_20_80.png",
+        learnMore: "@Bedrock_Edition_1.20.80",
+        mainFeatures: [
+          { text: "Armadillos" },
+          { text: "Wolf Armor" },
+          { text: "Wolf Variants" },
+        ]
+      },
+
+      {
+        title: "Tricky Trials",
+        subtitle: "1.21.0",
+        description: "Trial Chambers & Auto Crafting",
+        type: "major",
+        date: "2024-06-13",
+        icon: "/bedrock/version_1_21.png",
+        learnMore: "@Bedrock_Edition_1.21.0",
+        mainFeatures: [
+          { text: "Trial Chambers" },
+          { text: "Auto Crafter Block" },
+          { text: "Many New Copper Blocks" },
+          { text: "The Breeze & Breeze Rods" },
+          { text: "Mace Weapon" }
+        ],
+        minorFeatures: [
+          { text: "Twenty new original paintings" },
+          { text: "Six new Potion Effects" },
+          { text: "Bogged Skeletons" },
+          { text: "Ominous Bottles" }
+        ]
+      },
+
+      {
+        title: "Bundles of Bravery",
+        subtitle: "1.21.40",
+        description: "Bundles & Hardcore Mode",
+        type: "drop",
+        date: "2024-10-22",
+        icon: "/bedrock/version_1_21_40.png",
+        funFact: "Did you know? Bundles were originally planned for the Caves & Cliffs update (in 2021), but were delayed several times. They went through an extensive experimental phase before finally being added, 3 years later.",
+        learnMore: "@Bedrock_Edition_1.21.40",
+        mainFeatures: [
+          { text: "Bundles" },
+          { text: "Hardcore Mode" }
+        ]
+      },
+
+      {
+        title: "The Garden Awakens",
+        subtitle: "1.21.50",
+        description: "The Pale Garden & Creaking",
+        type: "drop",
+        date: "2024-12-03",
+        icon: "/bedrock/version_1_21_50.png",
+        learnMore: "@Bedrock_Edition_1.21.50",
+        mainFeatures: [
+          { text: "The Pale Garden Biome" },
+          { text: "The Creaking Mob" },
+          { text: "Pale Oak" },
+          { text: "Eyeblossom Flowers" },
+          { text: "Resin" }
+        ],
+        minorFeatures: [
+          { text: "The Bedrock Editor tool released" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.51",
+        type: "minor",
+        date: "2024-12-09",
+        learnMore: "@Bedrock_Edition_1.21.51",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.44",
+        type: "minor",
+        date: "2024-10-31",
+        learnMore: "@Bedrock_Edition_1.21.44",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.43",
+        type: "minor",
+        date: "2024-10-25",
+        learnMore: "@Bedrock_Edition_1.21.43",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.42",
+        type: "minor",
+        date: "2024-10-23",
+        learnMore: "@Bedrock_Edition_1.21.42",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.41",
+        type: "minor",
+        date: "2024-10-22",
+        learnMore: "@Bedrock_Edition_1.21.41",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.31",
+        type: "minor",
+        date: "2024-09-30",
+        learnMore: "@Bedrock_Edition_1.21.31",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.30",
+        type: "minor",
+        date: "2024-09-17",
+        learnMore: "@Bedrock_Edition_1.21.30",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.23",
+        type: "minor",
+        date: "2024-09-03",
+        learnMore: "@Bedrock_Edition_1.21.23",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.22",
+        type: "minor",
+        date: "2024-08-27",
+        learnMore: "@Bedrock_Edition_1.21.22",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.21",
+        type: "minor",
+        date: "2024-08-20",
+        learnMore: "@Bedrock_Edition_1.21.21",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.20",
+        type: "minor",
+        date: "2024-08-13",
+        learnMore: "@Bedrock_Edition_1.21.20",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.3",
+        type: "minor",
+        date: "2024-07-15",
+        learnMore: "@Bedrock_Edition_1.21.3",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.2",
+        type: "minor",
+        date: "2024-07-09",
+        learnMore: "@Bedrock_Edition_1.21.2",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.1",
+        type: "minor",
+        date: "2024-06-20",
+        learnMore: "@Bedrock_Edition_1.21.1",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.81",
+        type: "minor",
+        date: "2024-04-29",
+        learnMore: "@Bedrock_Edition_1.20.81",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.73",
+        type: "minor",
+        date: "2024-04-01",
+        learnMore: "@Bedrock_Edition_1.20.73",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.72",
+        type: "minor",
+        date: "2024-03-19",
+        learnMore: "@Bedrock_Edition_1.20.72",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.71",
+        type: "minor",
+        date: "2024-03-12",
+        learnMore: "@Bedrock_Edition_1.20.71",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.70",
+        type: "minor",
+        date: "2024-03-12",
+        learnMore: "@Bedrock_Edition_1.20.70",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.62",
+        type: "minor",
+        date: "2024-02-15",
+        learnMore: "@Bedrock_Edition_1.20.62",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.60",
+        type: "minor",
+        date: "2024-02-06",
+        learnMore: "@Bedrock_Edition_1.20.60",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.51",
+        type: "minor",
+        date: "2023-12-14",
+        learnMore: "@Bedrock_Edition_1.20.51",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.41",
+        type: "minor",
+        date: "2023-11-02",
+        learnMore: "@Bedrock_Edition_1.20.41",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.20.40",
+        type: "minor",
+        date: "2023-10-24",
+        learnMore: "@Bedrock_Edition_1.20.40",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
       {
@@ -4084,35 +4370,23 @@ const EDITIONS: Edition[] = [
 
     upcomings: [
       {
-        subtitle: "1.20.50",
-        type: "minor",
-        possibleDate: "Late 2023",
-        learnMore: "@Bedrock_Edition_1.20.50",
-        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
-      },
-      {
-        subtitle: "1.20.40",
-        type: "minor",
-        possibleDate: "Late 2023",
-        learnMore: "@Bedrock_Edition_1.20.40",
-        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
-      },
-      {
-        title: "???",
-        subtitle: "1.21",
-        description: "Trial Chambers, Auto Crafting & Armadillos",
-        type: "major",
-        possibleDate: "Mid 2024",
-        icon: "/bedrock/version_1_21.png",
-        learnMore: "@Bedrock_Edition_1.21.0",
+        title: "Spring Drop?",
+        subtitle: "1.21.60?",
+        type: "drop",
+        possibleDate: "Spring 2025?",
+        icon: "/bedrock/version_1_21_60.png",
+        funFact: "It's not yet clear what will be this update's number; 1.21.60 is the most likely.",
+        learnMore: "@Bedrock_Edition_1.21.60",
         mainFeatures: [
-          { text: "Trial Chambers" },
-          { text: "Auto Crafter Block" },
-          { text: "Many New Copper Blocks" },
-          { text: "The Breeze" },
-          { text: "Many unnanounced feaures" }
+          { text: "Leaf Litter in forests" },
+          { text: "Wildflowers" },
+          { text: "Pig Variants" },
+          { text: "More?" }
+        ],
+        minorFeatures: [
+          { text: "Ability to pause the game (yes, you read that right)" }
         ]
-      },
+      }
     ]
   }
 ];
