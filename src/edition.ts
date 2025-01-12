@@ -1,4 +1,4 @@
-export type VersionType = "major" | "minor" | "event";
+export type VersionType = "major" | "minor" | "drop" | "event";
 
 export type NaiveVersion = {
     title?: string;
@@ -30,6 +30,8 @@ export function readableType(type: VersionType): string {
             return "major update";
         case "minor":
             return "minor update";
+        case "drop":
+            return "game drop";
         case "event":
             return "event";
     }

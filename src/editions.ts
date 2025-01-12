@@ -808,6 +808,141 @@ const EDITIONS: Edition[] = [
       },
 
       {
+        title: "Bats and Pots",
+        subtitle: "1.20.3",
+        description: "Better Decorated Pots & Bats",
+        type: "drop",
+        date: "2023-12-05",
+        icon: "/java/version_1_20_3.png",
+        funFact: "Did you know? This minor update was retroactively labeled as a \"game drop\", making it the first of its kind.",
+        learnMore: "@Java_Edition_1.20.3",
+        mainFeatures: [
+          { text: "Decorated Pots can now hold items" },
+          { text: "Decorated Pots now can be destroyed by projectiles" },
+          { text: "Brand new model and texture for bats" },
+        ],
+        minorFeatures: [
+          { text: "Shields now can rotate vertically" }
+        ]
+      },
+
+      {
+        title: "Armored Paws",
+        subtitle: "1.20.5",
+        description: "Armadillos & Wolf Armor",
+        type: "drop",
+        date: "2024-04-23",
+        icon: "/java/version_1_20_5.png",
+        learnMore: "@Java_Edition_1.20.5",
+        mainFeatures: [
+          { text: "Armadillos" },
+          { text: "Wolf Armor" },
+          { text: "Wolf Variants" },
+        ],
+        minorFeatures: [
+          { text: "Added /transfer command" }
+        ]
+      },
+
+      {
+        title: "Tricky Trials",
+        subtitle: "1.21",
+        description: "Trial Chambers & Auto Crafting",
+        type: "major",
+        date: "2024-06-13",
+        icon: "/java/version_1_21.png",
+        learnMore: "@Java_Edition_1.21",
+        mainFeatures: [
+          { text: "Trial Chambers" },
+          { text: "Auto Crafter Block" },
+          { text: "Many New Copper Blocks" },
+          { text: "The Breeze & Breeze Rods" },
+          { text: "Mace Weapon" }
+        ],
+        minorFeatures: [
+          { text: "Twenty new original paintings" },
+          { text: "Ominous Bottles" }
+        ]
+      },
+
+      {
+        title: "Bundles of Bravery",
+        subtitle: "1.21.2",
+        description: "Bundles",
+        type: "drop",
+        date: "2024-10-22",
+        icon: "/java/version_1_21_2.png",
+        funFact: "Did you know? Bundles were originally planned for the Caves & Cliffs update (in 2021), but were delayed several times. They went through an extensive experimental phase before finally being added, 3 years later.",
+        learnMore: "@Java_Edition_1.21.2",
+        mainFeatures: [
+          { text: "Bundles" },
+        ],
+        minorFeatures: [
+          { text: "Ender Pearls are now Chunk Loaders" }
+        ]
+      },
+
+      {
+        title: "The Garden Awakens",
+        subtitle: "1.21.4",
+        description: "The Pale Garden & Creaking",
+        type: "drop",
+        date: "2024-12-03",
+        icon: "/java/version_1_21_4.png",
+        learnMore: "@Java_Edition_1.21.4",
+        mainFeatures: [
+          { text: "The Pale Garden Biome" },
+          { text: "The Creaking Mob" },
+          { text: "Pale Oak" },
+          { text: "Eyeblossom Flowers" },
+          { text: "Resin" }
+        ],
+        minorFeatures: [
+          { text: "Experience Orbs are now bouncy" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.3",
+        type: "minor",
+        date: "2024-10-23",
+        learnMore: "@Java_Edition_1.21.3",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.1",
+        type: "minor",
+        date: "2024-08-08",
+        learnMore: "@Java_Edition_1.21.1",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
+        subtitle: "1.20.6",
+        type: "minor",
+        date: "2023-04-29",
+        learnMore: "@Java_Edition_1.20.6",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
+        subtitle: "1.20.4",
+        type: "minor",
+        date: "2023-12-07",
+        learnMore: "@Java_Edition_1.20.4",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
         subtitle: "1.20.2",
         type: "minor",
         date: "2023-09-21",
@@ -1768,34 +1903,7 @@ const EDITIONS: Edition[] = [
     ],
 
     upcomings: [
-      {
-        subtitle: "1.20.3",
-        description: "Better Decorated Pots",
-        type: "minor",
-        possibleDate: "Late 2023 - Early 2024",
-        learnMore: "@Java_Edition_1.20.3",
-        mainFeatures: [
-          { text: "Decorated Pots can now hold items" },
-          { text: "Decorated Pots now can be destroyed by projectiles" },
-          { text: "Shields now can rotate vertically" }
-        ]
-      },
-      {
-        title: "???",
-        subtitle: "1.21",
-        description: "Trial Chambers, Auto Crafting & Armadillos",
-        type: "major",
-        possibleDate: "Mid 2024",
-        icon: "/java/version_1_21.png",
-        learnMore: "@Java_Edition_1.21",
-        mainFeatures: [
-          { text: "Trial Chambers" },
-          { text: "Auto Crafter Block" },
-          { text: "Many New Copper Blocks" },
-          { text: "The Breeze" },
-          { text: "Many unnanounced feaures" }
-        ]
-      },
+
     ]
   },
 

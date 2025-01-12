@@ -11,6 +11,7 @@
   let chosenEdition = $state(EDITIONS[0]);
   let enableMajors = $state(true);
   let enableMinors = $state(false);
+  let enableDrops = $state(true);
   let enableEvents = $state(true);
   let isVertical = $state(false);
 
@@ -18,6 +19,7 @@
     let types: VersionType[] = [];
     if (enableMajors) types.push('major');
     if (enableMinors) types.push('minor');
+    if (enableDrops) types.push('drop');
     if (enableEvents) types.push('event');
     return types;
   }
@@ -28,6 +30,7 @@
     bind:chosenEdition
     bind:enableMajors
     bind:enableMinors
+    bind:enableDrops
     bind:enableEvents
     bind:isVertical
   />

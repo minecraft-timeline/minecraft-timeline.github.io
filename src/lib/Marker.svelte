@@ -37,7 +37,7 @@
     position: relative;
     cursor: pointer;
   }
-  .version.major {
+  .version.major, .version.drop {
     border-image: url('/timeline/icon_update_major.png') 4 fill repeat;
     border-image-width: 4px;
     border-image-outset: 0px;

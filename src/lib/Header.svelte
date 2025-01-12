@@ -7,12 +7,14 @@
     chosenEdition = $bindable(EDITIONS[0]),
     enableMajors = $bindable(),
     enableMinors = $bindable(),
+    enableDrops = $bindable(),
     enableEvents = $bindable(),
     isVertical = $bindable(false),
   }: {
     chosenEdition: Edition;
     enableMajors: boolean;
     enableMinors: boolean;
+    enableDrops: boolean;
     enableEvents: boolean;
     isVertical: boolean;
   } = $props();
@@ -43,6 +45,9 @@
     >
     <button onclick={() => (enableMinors = !enableMinors)}
       >Minor Versions: {enableMinors ? 'ON' : 'OFF'}</button
+    >
+    <button onclick={() => (enableDrops = !enableDrops)}
+      >Drop Versions: {enableDrops ? 'ON' : 'OFF'}</button
     >
     <button onclick={() => (enableEvents = !enableEvents)}
       >Events: {enableEvents ? 'ON' : 'OFF'}</button
