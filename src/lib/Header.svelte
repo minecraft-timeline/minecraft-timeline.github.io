@@ -52,9 +52,11 @@
     <button onclick={() => (enableEvents = !enableEvents)}
       >Events: {enableEvents ? 'ON' : 'OFF'}</button
     >
-    <button onclick={() => (isVertical = !isVertical)}
-      >Layout: {isVertical ? 'Vertical' : 'Horizontal'}</button
-    >
+    {#if isBig}
+      <button onclick={() => (isVertical = !isVertical)}
+        >Layout: {isVertical ? 'Vertical' : 'Horizontal'}</button
+      >
+    {/if}
   </div>
   <div class="content">
     <img class="logo" src="/logo.png" alt="Minecraft Timeline Logo" />
