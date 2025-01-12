@@ -1,7 +1,6 @@
-# [Minecraft Timeline](https://minecraft-timeline.github.io/)
-Repository of the Minecraft Timeline project, listing every update to the game in one timeline for each edition.
-
 ![Banner](public/logo.png)
+
+Repository of the [Minecraft Timeline](https://minecraft-timeline.github.io/) project, listing every update to the game in one timeline for each edition.
 
 This began as a simple static image [posted on Reddit](https://old.reddit.com/r/Minecraft/comments/akco1t/seeing_as_a_lot_of_redditors_are_coming_back_to/) that gained a lot of traction (even appearing briefly in some videos [[1]](https://www.youtube.com/watch?v=3m5BAIA2-4Q?t=35) [[2]](https://youtu.be/tTLhWEXxtx4?t=174)); enough to motivate me to create this simple, interactable timeline easily available to all.
 
