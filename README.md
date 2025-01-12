@@ -21,7 +21,7 @@ Each edition has `versions` and `upcomings`. Both are lists of the same type (Ve
 - `longDescription`: A very long description of the version. Optional, but use very sparingly (pretty much just for big `event`s).
 - `funFact`: A light hearted medium description of the version, meant for not widely known "fun facts" or "did you know?" lines. Optional.
 - `icon`: Path to an image icon of the version, relative to `images/versions`. Optional.
-- `learnMore`: URL for more information of the version. You can also use the syntax `#NAME` as a shorthand to `minecraft.wiki/w/NAME`. Optional.
+- `learnMore`: URL for more information of the version. You can also use the syntax `@NAME` as a shorthand to `minecraft.wiki/w/NAME`. Optional.
 - `mainFeatures`: A list of Feature objects, which only contain a `text` field (others may be added in the future). Contains the most important features of an update.
 - `minorFeatures`: The same as `mainFeatures` but for less important yet noteworthy features.
 
