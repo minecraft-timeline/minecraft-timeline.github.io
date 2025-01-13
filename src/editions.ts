@@ -927,7 +927,7 @@ const EDITIONS: Edition[] = [
       {
         subtitle: "1.20.6",
         type: "minor",
-        date: "2023-04-29",
+        date: "2024-04-29",
         learnMore: "@Java_Edition_1.20.6",
         mainFeatures: [
           { text: "Small Changes and Bug Fixes" }
