@@ -545,7 +545,7 @@ const EDITIONS: Edition[] = [
           { text: "New arrows" },
           { text: "Revamped Ender Dragon fight" },
           { text: "Ability to use your second hand" },
-          { text: "Removed Enchanted Golden Apples" },
+          { text: "Removed Enchanted Golden Apple Recipe" },
           { text: "Better Command Blocks" }
         ]
       },
