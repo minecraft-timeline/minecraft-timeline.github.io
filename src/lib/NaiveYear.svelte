@@ -17,10 +17,7 @@
     <div class="number">???</div>
     <div class="ago">Future</div>
   </div>
-  <div
-    class="versions"
-    style="--year: url({'"'}/years/future.png{'"'})"
-  >
+  <div class="versions" style="--year: url({'"'}/years/future.png{'"'})">
     {#each versions as version, i}
       <div class="version">
         <Marker {version} />
@@ -52,17 +49,20 @@
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
   }
   .versions {
-    min-height: 768px;
+    padding: 60px 0;
     flex-direction: column;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     flex: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    var(--year), url('/years/fallback.png');
+      var(--year), url('/years/fallback.png');
     box-shadow: inset 20px -20px 20px -10px rgb(0 0 0 / 43%);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .versions .version:not(:first-child) {
+    margin-top: 20px;
   }
   @media (min-width: 768px) {
     .ruler {
@@ -76,8 +76,13 @@
       display: block;
     }
     .year.horizontal .versions {
+      padding: 0;
       min-height: 192px;
       flex-direction: row;
+    }
+    .year.horizontal .versions .version:not(:first-child) {
+      margin-top: 0;
+      margin-left: 20px;
     }
   }
 </style>
