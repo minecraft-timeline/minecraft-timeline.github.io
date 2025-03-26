@@ -905,6 +905,32 @@ const EDITIONS: Edition[] = [
       },
 
       {
+        title: "Spring To Life",
+        subtitle: "1.21.5",
+        type: "drop",
+        date: "2025-03-25",
+        icon: "/java/version_1_21_5.png",
+        funFact: "Did you know? This version's number was not revealed until the pre-releases.",
+        learnMore: "@Java_Edition_1.21.5",
+        mainFeatures: [
+          { text: "Pig, Cow and Chicken Variants" },
+          { text: "Unique Textures for every Spawn Egg" },
+          { text: "Leaf Litter in forests" },
+          { text: "Wildflowers" },
+          { text: "Firefly Bushes" },
+          { text: "Cactus Flowers" },
+        ],
+        minorFeatures: [
+          { text: "Falling Leaves" },
+          { text: "Bushes" },
+          { text: "Dry Grass" },
+          { text: "Village Maps" },
+          { text: "Cheaper Lodestone Recipe" },
+          { text: "Some Bedrock-exclusive features" },
+        ]
+      },
+
+      {
         subtitle: "1.21.3",
         type: "minor",
         date: "2024-10-23",
@@ -1906,18 +1932,36 @@ const EDITIONS: Edition[] = [
 
     upcomings: [
       {
-        title: "Spring Drop?",
-        subtitle: "1.21.5",
+        title: "Summer Drop",
+        subtitle: "1.21.6?",
         type: "drop",
-        possibleDate: "Spring 2025?",
-        icon: "/java/version_1_21_5.png",
-        funFact: "It's not yet clear what will be this update's number; 1.21.5 is the most likely.",
-        learnMore: "@Java_Edition_1.21.5",
+        possibleDate: "Summer 2025",
+        icon: "/java/version_1_21_6.png",
+        funFact: "It's not yet clear what will be this update's number; 1.21.6 is the most likely.",
+        learnMore: "@Java_Edition_1.21.6",
         mainFeatures: [
-          { text: "Leaf Litter in forests" },
-          { text: "Wildflowers" },
-          { text: "Pig Variants" },
+          { text: "Dried Ghasts" },
+          { text: "Ghastlings" },
+          { text: "Rideable, Happy Ghasts" },
           { text: "More?" }
+        ],
+        minorFeatures: [
+          { text: "Player Locator Bar" }
+        ]
+      },
+      {
+        title: "Vibrant Visuals",
+        type: "minor",
+        possibleDate: "Future",
+        icon: "/bedrock/version_vibrant_visuals.png",
+        funFact: "Did you know? A similar update, the \"Super Duper Graphics Pack\" was announced in 2017, but was cancelled in 2019 due to technical limitations.",
+        learnMore: "@Vibrant_Visuals",
+        mainFeatures: [
+          { text: "Major visual overhaul" },
+          { text: "Directional Lights with Pixel-aligned shadows" },
+          { text: "Specular highlights" },
+          { text: "Emissive texures" },
+          { text: "Water Reflections" },
         ]
       }
     ]
@@ -2767,6 +2811,56 @@ const EDITIONS: Edition[] = [
         minorFeatures: [
           { text: "The Bedrock Editor tool released" }
         ]
+      },
+
+      {
+        title: "Spring To Life",
+        subtitle: "1.21.70",
+        type: "drop",
+        date: "2025-03-25",
+        icon: "/bedrock/version_1_21_70.png",
+        learnMore: "@Bedrock_Edition_1.21.70",
+        mainFeatures: [
+          { text: "Pig, Cow and Chicken Variants" },
+          { text: "Unique Textures for every Spawn Egg" },
+          { text: "Leaf Litter in forests" },
+          { text: "Wildflowers" },
+          { text: "Firefly Bushes" },
+          { text: "Cactus Flowers" },
+        ],
+        minorFeatures: [
+          { text: "Falling Leaves" },
+          { text: "Bushes" },
+          { text: "Dry Grass" },
+          { text: "Village Maps" },
+          { text: "Cheaper Lodestone Recipe" },
+          { text: "Some Bedrock-exclusive features" },
+          { text: "Ability to pause the game" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.62",
+        type: "minor",
+        date: "2025-02-25",
+        learnMore: "@Bedrock_Edition_1.21.62",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.61",
+        type: "minor",
+        date: "2025-02-19",
+        learnMore: "@Bedrock_Edition_1.21.61",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.60",
+        type: "minor",
+        date: "2025-02-11",
+        learnMore: "@Bedrock_Edition_1.21.60",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
       },
 
       {
@@ -4370,21 +4464,36 @@ const EDITIONS: Edition[] = [
 
     upcomings: [
       {
-        title: "Spring Drop?",
-        subtitle: "1.21.60?",
+        title: "Summer Drop",
+        subtitle: "1.21.80?",
         type: "drop",
-        possibleDate: "Spring 2025?",
-        icon: "/bedrock/version_1_21_60.png",
-        funFact: "It's not yet clear what will be this update's number; 1.21.60 is the most likely.",
-        learnMore: "@Bedrock_Edition_1.21.60",
+        possibleDate: "Summer 2025",
+        icon: "/bedrock/version_1_21_80.png",
+        funFact: "It's not yet clear what will be this update's number; 1.21.80 is the most likely.",
+        learnMore: "@Bedrock_Edition_1.21.80",
         mainFeatures: [
-          { text: "Leaf Litter in forests" },
-          { text: "Wildflowers" },
-          { text: "Pig Variants" },
+          { text: "Dried Ghasts" },
+          { text: "Ghastlings" },
+          { text: "Rideable, Happy Ghasts" },
           { text: "More?" }
         ],
         minorFeatures: [
-          { text: "Ability to pause the game (yes, you read that right)" }
+          { text: "Player Locator Bar" }
+        ]
+      },
+      {
+        title: "Vibrant Visuals",
+        type: "minor",
+        possibleDate: "In the Next Few Months",
+        icon: "/bedrock/version_vibrant_visuals.png",
+        funFact: "Did you know? A similar update, the \"Super Duper Graphics Pack\" was announced in 2017, but was cancelled in 2019 due to technical limitations.",
+        learnMore: "@Vibrant_Visuals",
+        mainFeatures: [
+          { text: "Major visual overhaul" },
+          { text: "Directional Lights with Pixel-aligned shadows" },
+          { text: "Specular highlights" },
+          { text: "Emissive texures" },
+          { text: "Water Reflections" },
         ]
       }
     ]
