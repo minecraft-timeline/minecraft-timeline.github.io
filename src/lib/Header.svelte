@@ -41,13 +41,13 @@
       {@render editionToggle()}
     {/if}
     <button onclick={() => (enableMajors = !enableMajors)}
-      >Major Versions: {enableMajors ? 'ON' : 'OFF'}</button
+      >Major Updates: {enableMajors ? 'ON' : 'OFF'}</button
     >
     <button onclick={() => (enableMinors = !enableMinors)}
-      >Minor Versions: {enableMinors ? 'ON' : 'OFF'}</button
+      >Minor Updates: {enableMinors ? 'ON' : 'OFF'}</button
     >
     <button onclick={() => (enableDrops = !enableDrops)}
-      >Drop Versions: {enableDrops ? 'ON' : 'OFF'}</button
+      >Game Drops: {enableDrops ? 'ON' : 'OFF'}</button
     >
     <button onclick={() => (enableEvents = !enableEvents)}
       >Events: {enableEvents ? 'ON' : 'OFF'}</button
