@@ -931,6 +931,26 @@ const EDITIONS: Edition[] = [
       },
 
       {
+        title: "Chase the Skies",
+        subtitle: "1.21.6",
+        type: "drop",
+        date: "2025-06-17",
+        icon: "/java/version_1_21_6.png",
+        learnMore: "@Java_Edition_1.21.6",
+        mainFeatures: [
+          { text: "Dried Ghasts" },
+          { text: "Ghastlings" },
+          { text: "Rideable, Happy Ghasts" }
+        ],
+        minorFeatures: [
+          { text: "Player Locator Bar" },
+          { text: "A new music disc by Amos Roddy" },
+          { text: "The dialog command" },
+          { text: "The waypoint command" }
+        ]
+      },
+
+      {
         subtitle: "1.21.3",
         type: "minor",
         date: "2024-10-23",
@@ -1932,28 +1952,10 @@ const EDITIONS: Edition[] = [
 
     upcomings: [
       {
-        title: "Summer Drop",
-        subtitle: "1.21.6?",
-        type: "drop",
-        possibleDate: "Summer 2025",
-        icon: "/java/version_1_21_6.png",
-        funFact: "It's not yet clear what will be this update's number; 1.21.6 is the most likely.",
-        learnMore: "@Java_Edition_1.21.6",
-        mainFeatures: [
-          { text: "Dried Ghasts" },
-          { text: "Ghastlings" },
-          { text: "Rideable, Happy Ghasts" },
-          { text: "More?" }
-        ],
-        minorFeatures: [
-          { text: "Player Locator Bar" }
-        ]
-      },
-      {
         title: "Vibrant Visuals",
         type: "minor",
         possibleDate: "Future",
-        icon: "/bedrock/version_vibrant_visuals.png",
+        icon: "/java/version_vibrant_visuals.png",
         funFact: "Did you know? A similar update, the \"Super Duper Graphics Pack\" was announced in 2017, but was cancelled in 2019 due to technical limitations.",
         learnMore: "@Vibrant_Visuals",
         mainFeatures: [
@@ -2836,6 +2838,32 @@ const EDITIONS: Edition[] = [
           { text: "Cheaper Lodestone Recipe" },
           { text: "Some Bedrock-exclusive features" },
           { text: "Ability to pause the game" }
+        ]
+      },
+
+      {
+        title: "Chase the Skies",
+        subtitle: "1.21.90",
+        type: "drop",
+        date: "2025-06-17",
+        icon: "/bedrock/version_1_21_90.png",
+        learnMore: "@Bedrock_Edition_1.21.90",
+        funFact: "Did you know? Only Bedrock Edition received the new vibrant visuals in this drop.",
+        mainFeatures: [
+          { text: "Dried Ghasts" },
+          { text: "Ghastlings" },
+          { text: "Rideable, Happy Ghasts" },
+          { text: "Major visual overhaul" },
+          { text: "Directional Lights with Pixel-aligned shadows" },
+          { text: "Specular highlights" },
+          { text: "Emissive texures" },
+          { text: "Water Reflections" },
+        ],
+        minorFeatures: [
+          { text: "Player Locator Bar" },
+          { text: "A new music disc by Amos Roddy" },
+          { text: "The dialog command" },
+          { text: "The waypoint command" }
         ]
       },
 
@@ -4463,39 +4491,6 @@ const EDITIONS: Edition[] = [
     ],
 
     upcomings: [
-      {
-        title: "Summer Drop",
-        subtitle: "1.21.80?",
-        type: "drop",
-        possibleDate: "Summer 2025",
-        icon: "/bedrock/version_1_21_80.png",
-        funFact: "It's not yet clear what will be this update's number; 1.21.80 is the most likely.",
-        learnMore: "@Bedrock_Edition_1.21.80",
-        mainFeatures: [
-          { text: "Dried Ghasts" },
-          { text: "Ghastlings" },
-          { text: "Rideable, Happy Ghasts" },
-          { text: "More?" }
-        ],
-        minorFeatures: [
-          { text: "Player Locator Bar" }
-        ]
-      },
-      {
-        title: "Vibrant Visuals",
-        type: "minor",
-        possibleDate: "In the Next Few Months",
-        icon: "/bedrock/version_vibrant_visuals.png",
-        funFact: "Did you know? A similar update, the \"Super Duper Graphics Pack\" was announced in 2017, but was cancelled in 2019 due to technical limitations.",
-        learnMore: "@Vibrant_Visuals",
-        mainFeatures: [
-          { text: "Major visual overhaul" },
-          { text: "Directional Lights with Pixel-aligned shadows" },
-          { text: "Specular highlights" },
-          { text: "Emissive texures" },
-          { text: "Water Reflections" },
-        ]
-      }
     ]
   }
 ];
