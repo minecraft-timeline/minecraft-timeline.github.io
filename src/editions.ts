@@ -2879,6 +2879,82 @@ const EDITIONS: Edition[] = [
       },
 
       {
+        subtitle: "1.21.92",
+        type: "minor",
+        date: "2025-06-19",
+        learnMore: "@Bedrock_Edition_1.21.92",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.91",
+        type: "minor",
+        date: "2025-06-18",
+        learnMore: "@Bedrock_Edition_1.21.91",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.84",
+        type: "minor",
+        date: "2025-06-05",
+        learnMore: "@Bedrock_Edition_1.21.84",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.82",
+        type: "minor",
+        date: "2025-05-19",
+        learnMore: "@Bedrock_Edition_1.21.82",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.81",
+        type: "minor",
+        date: "2025-05-14",
+        learnMore: "@Bedrock_Edition_1.21.81",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.80",
+        type: "minor",
+        date: "2025-05-06",
+        learnMore: "@Bedrock_Edition_1.21.80",
+        mainFeatures: [
+          { text: "Flat world presets" },
+          { text: "Experimental Vibrant Visuals" },
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.73",
+        type: "minor",
+        date: "2025-04-11",
+        learnMore: "@Bedrock_Edition_1.21.73",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.72",
+        type: "minor",
+        date: "2025-04-08",
+        learnMore: "@Bedrock_Edition_1.21.72",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.71",
+        type: "minor",
+        date: "2025-03-28",
+        learnMore: "@Bedrock_Edition_1.21.71",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
         subtitle: "1.21.62",
         type: "minor",
         date: "2025-02-25",
