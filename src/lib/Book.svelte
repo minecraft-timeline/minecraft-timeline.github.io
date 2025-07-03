@@ -68,7 +68,11 @@
           {/if}
         </header>
         {#if v.funFact}
-          <div class="fun-fact">{v.funFact}</div>
+          <div class="fun-fact">
+            {#each v.funFact.split('\n') as funFact}
+              <p>{funFact}</p>
+            {/each}
+          </div>
         {/if}
         {#if v.longDescription}
           {#each v.longDescription as line}
@@ -213,6 +217,13 @@
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     color: #914949;
+  }
+  .infopanel .content .fun-fact p {
+    margin: 0;
+    margin-top: 0.5em;
+  }
+  .infopanel .content .fun-fact p:first-child {
+    margin: 0;
   }
   @media (min-width: 768px) {
     .infopanel {
