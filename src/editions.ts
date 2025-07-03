@@ -951,6 +951,17 @@ const EDITIONS: Edition[] = [
       },
 
       {
+        subtitle: "1.21.7",
+        type: "minor",
+        date: "2025-06-30",
+        learnMore: "@Java_Edition_1.21.7",
+        mainFeatures: [
+          { text: "A new music disc and painting referencing A Minecraft Movie" },
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
+
+      {
         subtitle: "1.21.3",
         type: "minor",
         date: "2024-10-23",
