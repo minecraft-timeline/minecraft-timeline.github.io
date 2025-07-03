@@ -1967,7 +1967,7 @@ const EDITIONS: Edition[] = [
         type: "minor",
         possibleDate: "Future",
         icon: "/java/version_vibrant_visuals.png",
-        funFact: "Did you know? A similar update, the \"Super Duper Graphics Pack\" was announced in 2017, but was cancelled in 2019 due to technical limitations.",
+        funFact: "Did you know? A similar update, the \"Super Duper Graphics Pack\" was announced in 2017, but was cancelled in 2019 due to technical limitations.\n\nThis update has already been released for the Bedrock Edition of the game, as part of the Chase the Skies game drop.",
         learnMore: "@Vibrant_Visuals",
         mainFeatures: [
           { text: "Major visual overhaul" },
