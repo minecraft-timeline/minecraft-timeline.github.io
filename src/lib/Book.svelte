@@ -5,7 +5,7 @@
 <script lang="ts">
   import { readableType } from '../edition';
 
-  import { clearReadingVersion, readingVersion } from './book.svelte';
+  import { clearReadingVersion, readingVersion } from './book.svelte.js';
   const formatter = new Intl.DateTimeFormat('en-US', {
     month: 'long',
     day: 'numeric',
