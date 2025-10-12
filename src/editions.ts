@@ -960,6 +960,21 @@ const EDITIONS: Edition[] = [
           { text: "Small Changes and Bug Fixes" }
         ]
       },
+      {
+        title: "The Copper Age",
+        subtitle: "1.21.9",
+        possibleDate: "Fall 2025",
+        type: "drop",
+        icon: "/java/version_fall_drop.png",
+        funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
+        learnMore: "@Fall_Drop_2025",
+        mainFeatures: [
+          { text: "Copper Golem" },
+          { text: "Copper Chest" },
+          { text: "Copper Tools & Armor" },
+          { text: "More copper blocks"}
+        ]
+      }
 
       {
         subtitle: "1.21.3",
@@ -4593,20 +4608,6 @@ const EDITIONS: Edition[] = [
     ],
 
     upcomings: [
-      {
-        title: "Fall Drop 2025",
-        subtitle: "1.21.X",
-        possibleDate: "Fall 2025",
-        type: "drop",
-        icon: "/java/version_fall_drop.png",
-        funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
-        learnMore: "@Fall_Drop_2025",
-        mainFeatures: [
-          { text: "Copper Golem" },
-          { text: "Copper Chest" },
-          { text: "Copper Tools & Armor" },
-        ]
-      }
     ]
   }
 ];
