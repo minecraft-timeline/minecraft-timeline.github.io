@@ -1979,9 +1979,9 @@ const EDITIONS: Edition[] = [
         ],
         minorFeatures: [
           { text: "Mannequins" },
-          { text: "Hanging Signs" }
-          { text: "Debug Screen (F3) Customization" }
-          { text: "End Flashes" }
+          { text: "Hanging Signs" },
+          { text: "Debug Screen (F3) Customization" },
+          { text: "End Flashes" },
         ]
       },
 
