@@ -949,6 +949,39 @@ const EDITIONS: Edition[] = [
           { text: "The waypoint command" }
         ]
       },
+      
+      {
+        title: "The Copper Age",
+        subtitle: "1.21.9",
+        date: "2025-09-30",
+        type: "drop",
+        icon: "/java/version_1_21_9.png",
+        funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
+        learnMore: "@Java_Edition_1.21.9",
+        mainFeatures: [
+          { text: "Copper Golem" },
+          { text: "Copper Chest" },
+          { text: "Copper Tools & Armor" },
+          { text: "New Copper Building Blocks" },
+          { text: "Shelves" }
+        ],
+        minorFeatures: [
+          { text: "Mannequins" },
+          { text: "Hanging Signs" },
+          { text: "Debug Screen (F3) Customization" },
+          { text: "End Flashes" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.8",
+        type: "minor",
+        date: "2025-07-17",
+        learnMore: "@Java_Edition_1.21.8",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
 
       {
         subtitle: "1.21.7",
@@ -1978,17 +2011,43 @@ const EDITIONS: Edition[] = [
 
     upcomings: [
       {
-        title: "Fall Drop 2025",
+        title: "The Copper Age",
         subtitle: "1.21.X",
         possibleDate: "Fall 2025",
         type: "drop",
         icon: "/java/version_fall_drop.png",
         funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
-        learnMore: "@Fall_Drop_2025",
+        learnMore: "@The_Copper_Age",
         mainFeatures: [
           { text: "Copper Golem" },
           { text: "Copper Chest" },
           { text: "Copper Tools & Armor" },
+          { text: "New Copper Building Blocks" },
+          { text: "Shelves" },
+        ],
+        minorFeatures: [
+          { text: "Mannequins" },
+          { text: "Hanging Signs" },
+          { text: "Debug Screen (F3) Customization" },
+          { text: "End Flashes" },
+        ]
+      },
+      {
+        title: "Mounts of Mayhem",
+        subtitle: "1.21.X",
+        possibleDate: "Winter 2025",
+        type: "drop",
+        icon: "/java/version_mounts_of_mayhem.png",
+        funFact: "Did you know? The Zombie Horse was added in the game back in 2013 in java snapshot 13w16a.",
+        learnMore: "@Mounts_of_Mayhem",
+        mainFeatures: [
+          { text: "Nautilus" },
+          { text: "Spear" },
+          { text: "Zombie Nautilus" },
+        ],
+        minorFeatures: [
+          { text: "Breath of the Nautilus" },
+          { text: "Zombie Horse can now naturally spawn in survival" }
         ]
       },
 
@@ -2905,6 +2964,68 @@ const EDITIONS: Edition[] = [
           { text: "A new music disc by Amos Roddy" },
           { text: "The dialog command" },
           { text: "The waypoint command" }
+        ]
+      },
+
+      {
+        title: "The Copper Age",
+        subtitle: "1.21.110",
+        date: "2025-09-30",
+        type: "drop",
+        icon: "/bedrock/version_1_21_110.png",
+        funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
+        learnMore: "@Bedrock_Edition_1.21.110",
+        mainFeatures: [
+          { text: "Copper Golem" },
+          { text: "Copper Chest" },
+          { text: "Copper Tools & Armor" },
+          { text: "New Copper Building Blocks" },
+          { text: "Shelves" }
+        ],
+        minorFeatures: [
+          { text: "Mannequins" },
+          { text: "Hanging Signs" },
+          { text: "Debug Screen (F3) Customization" },
+          { text: "End Flashes" }
+        ]
+      },
+
+      {
+        subtitle: "1.21.101",
+        type: "minor",
+        date: "2025-08-13",
+        learnMore: "@Bedrock_Edition_1.21.101",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.100",
+        type: "minor",
+        date: "2025-08-05",
+        learnMore: "@Bedrock_Edition_1.21.100",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" },
+          { text: "'The void' flat world preset" },
+          { text: "Experimental features for The Copper Age game drop" },
+        ]
+      },
+
+      {
+        subtitle: "1.21.94",
+        type: "minor",
+        date: "2025-07-14",
+        learnMore: "@Bedrock_Edition_1.21.94",
+        mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
+      },
+
+      {
+        subtitle: "1.21.93",
+        type: "minor",
+        date: "2025-07-03",
+        learnMore: "@Bedrock_Edition_1.21.93",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" },
+          { text: "A new music disc referencing A Minecraft Movie" },
         ]
       },
 
@@ -4608,6 +4729,24 @@ const EDITIONS: Edition[] = [
     ],
 
     upcomings: [
+      {
+        title: "Mounts of Mayhem",
+        subtitle: "1.21.X",
+        possibleDate: "Winter 2025",
+        type: "drop",
+        icon: "/java/version_mounts_of_mayhem.png",
+        funFact: "Did you know? The Zombie Horse was added in the game back in 2013 in java snapshot 13w16a.",
+        learnMore: "@Mounts_of_Mayhem",
+        mainFeatures: [
+          { text: "Nautilus" },
+          { text: "Spear" },
+          { text: "Zombie Nautilus" },
+        ],
+        minorFeatures: [
+          { text: "Breath of the Nautilus" },
+          { text: "Zombie Horse can now naturally spawn in survival" }
+        ]
+      }
     ]
   }
 ];
