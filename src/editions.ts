@@ -993,6 +993,7 @@ const EDITIONS: Edition[] = [
           { text: "Small Changes and Bug Fixes" }
         ]
       },
+      
       {
         title: "The Copper Age",
         subtitle: "1.21.9",
@@ -1007,7 +1008,7 @@ const EDITIONS: Edition[] = [
           { text: "Copper Tools & Armor" },
           { text: "More copper blocks"}
         ]
-      }
+      },
 
       {
         subtitle: "1.21.3",
