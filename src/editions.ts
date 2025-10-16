@@ -1996,6 +1996,28 @@ const EDITIONS: Edition[] = [
 
     upcomings: [
       {
+        title: "The Copper Age",
+        subtitle: "1.21.X",
+        possibleDate: "Fall 2025",
+        type: "drop",
+        icon: "/java/version_fall_drop.png",
+        funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
+        learnMore: "@The_Copper_Age",
+        mainFeatures: [
+          { text: "Copper Golem" },
+          { text: "Copper Chest" },
+          { text: "Copper Tools & Armor" },
+          { text: "New Copper Building Blocks" },
+          { text: "Shelves" },
+        ],
+        minorFeatures: [
+          { text: "Mannequins" },
+          { text: "Hanging Signs" },
+          { text: "Debug Screen (F3) Customization" },
+          { text: "End Flashes" },
+        ]
+      },
+      {
         title: "Mounts of Mayhem",
         subtitle: "1.21.X",
         possibleDate: "Winter 2025",
