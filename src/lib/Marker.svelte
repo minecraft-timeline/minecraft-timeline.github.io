@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { NaiveVersion, Version } from '../edition';
-  import { setReadingVersion } from './book.svelte';
-  import { hoveredVersions } from './tooltip.svelte';
+  import { setReadingVersion } from './book.svelte.js';
+  import { hoveredVersions } from './tooltip.svelte.js';
   let { version }: { version: Version | NaiveVersion } = $props();
 </script>
 
