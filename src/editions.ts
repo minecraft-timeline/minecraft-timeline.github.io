@@ -1991,29 +1991,31 @@ const EDITIONS: Edition[] = [
           "According to Notch, he sold Mojang because he didn't want the responsibility of owning a company of such global significance.",
           "As soon as Mojang was sold, Notch and the other two founders (Carl and Jakob) left the company."
         ]
-      }
-    ],
-
-    upcomings: [
+      },
       {
         title: "Mounts of Mayhem",
-        subtitle: "1.21.X",
-        possibleDate: "Winter 2025",
+        subtitle: "1.21.11",
+        date: "Winter 2025",
         type: "drop",
         icon: "/java/version_mounts_of_mayhem.png",
         funFact: "Did you know? The Zombie Horse was added in the game back in 2013 in java snapshot 13w16a.",
         learnMore: "@Mounts_of_Mayhem",
         mainFeatures: [
+          { text: "Camel Horse" },
           { text: "Nautilus" },
+          { text: "Parched" },
           { text: "Spear" },
           { text: "Zombie Nautilus" },
         ],
         minorFeatures: [
           { text: "Breath of the Nautilus" },
-          { text: "Zombie Horse can now naturally spawn in survival" }
+          { text: "Zombie Horse can now naturally spawn in survival" },
+          { text: "Horses, Donkeys, Mules, Camels, Llamas and Trader Llamas no longer sinks in water while beeing riden."}
         ]
-      },
+      }
+    ],
 
+    upcomings: [
       {
         title: "Vibrant Visuals",
         type: "minor",
@@ -4688,28 +4690,32 @@ const EDITIONS: Edition[] = [
         date: "2011-10-07",
         learnMore: "@Pocket_Edition_Alpha_0.1.1j",
         mainFeatures: [{ text: "Small Changes and Bug Fixes" }]
-      }
-    ],
-
-    upcomings: [
+      },
+      
       {
         title: "Mounts of Mayhem",
-        subtitle: "1.21.X",
-        possibleDate: "Winter 2025",
+        subtitle: "1.21.130",
+        date: "2025-12-09",
         type: "drop",
         icon: "/java/version_mounts_of_mayhem.png",
         funFact: "Did you know? The Zombie Horse was added in the game back in 2013 in java snapshot 13w16a.",
         learnMore: "@Mounts_of_Mayhem",
         mainFeatures: [
+          { text: "Camel Horse" },
           { text: "Nautilus" },
+          { text: "Parched" },
           { text: "Spear" },
           { text: "Zombie Nautilus" },
         ],
         minorFeatures: [
           { text: "Breath of the Nautilus" },
-          { text: "Zombie Horse can now naturally spawn in survival" }
+          { text: "Zombie Horse can now naturally spawn in survival" },
+          { text: "Horses, Donkeys, Mules, Camels, Llamas and Trader Llamas no longer sinks in water while beeing riden."}
         ]
       }
+    ],
+
+    upcomings: [
     ]
   }
 ];
