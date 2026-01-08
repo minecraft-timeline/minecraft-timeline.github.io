@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { Edition } from '../edition';
-  import EDITIONS from '../editions';
+  import type { Edition } from '$lib/editions';
+  import { editions } from '$lib/editions';
 
   let isBig = $state(false);
   let {
@@ -29,8 +29,8 @@
 {#snippet editionToggle()}
   <button
     onclick={() => {
-      editionIndex = (editionIndex + 1) % EDITIONS.length;
-      chosenEdition = EDITIONS[editionIndex];
+      editionIndex = (editionIndex + 1) % editions.length;
+      chosenEdition = editions[editionIndex];
     }}>{chosenEdition.title}</button
   >
 {/snippet}

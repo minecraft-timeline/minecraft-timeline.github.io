@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Edition, Version, VersionType } from '../edition';
+  import type { Edition, Version } from '$lib/editions';
   import Marker from './Marker.svelte';
 
   function calculateSpaces(versions: { version: Version; ratio: number }[]) {

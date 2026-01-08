@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Edition, NaiveVersion, Version, VersionType } from '../edition';
+  import type { Edition, NaiveVersion } from '$lib/editions';
   import Marker from './Marker.svelte';
 
   let {

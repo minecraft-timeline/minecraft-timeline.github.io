@@ -1,7 +1,8 @@
 <script lang="ts">
-  import type { NaiveVersion, Version } from '../edition';
-  import { setReadingVersion } from './book.svelte.js';
-  import { hoveredVersions } from './tooltip.svelte.js';
+  import type { NaiveVersion, Version } from '$lib/editions';
+  import { setReadingVersion } from '$lib/book.svelte';
+  import { hoveredVersions } from '$lib/tooltip.svelte';
+
   let { version }: { version: Version | NaiveVersion } = $props();
 </script>
 
@@ -37,7 +38,8 @@
     position: relative;
     cursor: pointer;
   }
-  .version.major, .version.drop {
+  .version.major,
+  .version.drop {
     border-image: url('/timeline/icon_update_major.png') 4 fill repeat;
     border-image-width: 4px;
     border-image-outset: 0px;

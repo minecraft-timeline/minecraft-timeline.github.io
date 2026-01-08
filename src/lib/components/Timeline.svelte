@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Edition, Version, VersionType } from '../edition';
+  import type { Edition, Version, VersionType } from '$lib/editions';
   import NaiveYear from './NaiveYear.svelte';
   import Year from './Year.svelte';
 

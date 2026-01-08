@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import type { NaiveVersion, Version } from '../edition';
+  import type { NaiveVersion, Version } from '$lib/editions';
 
   function clamp(value: number, min: number, max: number): number {
     return Math.min(Math.max(value, min), max);

@@ -1,12 +1,12 @@
 <script lang="ts">
-  import type { VersionType } from './edition.js';
-  import EDITIONS from './editions.js';
-  import Book from './lib/Book.svelte';
-  import Footer from './lib/Footer.svelte';
-  import Header from './lib/Header.svelte';
-  import Timeline from './lib/Timeline.svelte';
-  import Tooltip from './lib/Tooltip.svelte';
-  import { hoveredVersions } from './lib/tooltip.svelte.js';
+  import type { VersionType } from '$lib/editions';
+  import { editions } from '$lib/editions';
+  import Book from '$lib/components/Book.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  import Header from '$lib/components/Header.svelte';
+  import Timeline from '$lib/components/Timeline.svelte';
+  import Tooltip from '$lib/components/Tooltip.svelte';
+  import { hoveredVersions } from '$lib/tooltip.svelte';
   import Cookies from 'js-cookie';
 
   function getCookieFlag(name: string, defaultValue: boolean): boolean {
@@ -21,14 +21,14 @@
     let cookie = Cookies.get('chosenEdition');
     if (cookie) {
       let index = Number(cookie);
-      if (index >= 0 && index < EDITIONS.length) {
+      if (index >= 0 && index < editions.length) {
         return index;
       }
     }
     return 0;
   }
 
-  let chosenEdition = $state(EDITIONS[getCookieEdition()]);
+  let chosenEdition = $state(editions[getCookieEdition()]);
   let enableMajors = $state(getCookieFlag('enableMajors', true));
   let enableMinors = $state(getCookieFlag('enableMinors', false));
   let enableDrops = $state(getCookieFlag('enableDrops', true));
@@ -47,9 +47,9 @@
   $effect(() => {
     Cookies.set(
       'chosenEdition',
-      EDITIONS.findIndex(
-        (edition) => edition.id === chosenEdition.id,
-      ).toString(),
+      editions
+        .findIndex((edition) => edition.id === chosenEdition.id)
+        .toString(),
     );
   });
   $effect(() => {
@@ -67,7 +67,6 @@
   $effect(() => {
     Cookies.set('isVertical', isVertical.toString());
   });
-  // });
 </script>
 
 <main>
