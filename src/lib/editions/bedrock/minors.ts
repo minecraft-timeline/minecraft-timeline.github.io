@@ -2148,5 +2148,106 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
+  },
+
+  {
+    subtitle: "1.21.112",
+    type: "minor",
+    date: "2025-10-03",
+    learnMore: "@Bedrock_Edition_1.21.112",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.113",
+    type: "minor",
+    date: "2025-10-09",
+    learnMore: "@Bedrock_Edition_1.21.113",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.114",
+    type: "minor",
+    date: "2025-10-16",
+    learnMore: "@Bedrock_Edition_1.21.114",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.120",
+    type: "minor",
+    date: "2025-10-28",
+    learnMore: "@Bedrock_Edition_1.21.120",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.121",
+    type: "minor",
+    date: "2025-11-04",
+    learnMore: "@Bedrock_Edition_1.21.121",
+    funFact: "Hey, what a fun version number!",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.122",
+    type: "minor",
+    date: "2025-11-10",
+    learnMore: "@Bedrock_Edition_1.21.122",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.123",
+    type: "minor",
+    date: "2025-11-13",
+    learnMore: "@Bedrock_Edition_1.21.123",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.124",
+    type: "minor",
+    date: "2025-11-21",
+    learnMore: "@Bedrock_Edition_1.21.124",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.131",
+    type: "minor",
+    date: "2025-12-16",
+    learnMore: "@Bedrock_Edition_1.21.131",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "1.21.132",
+    type: "minor",
+    date: "2026-01-08",
+    learnMore: "@Bedrock_Edition_1.21.132",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
   }
 ] as const;

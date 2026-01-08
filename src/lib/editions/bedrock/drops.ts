@@ -124,12 +124,12 @@ export const drops: Version[] = [
 
   {
     title: "The Copper Age",
-    subtitle: "1.21.110",
+    subtitle: "1.21.111",
     date: "2025-09-30",
     type: "drop",
-    icon: "/bedrock/version_1_21_110.png",
+    icon: "/bedrock/version_1_21_111.png",
     funFact: "Did you know? The Copper Golem was a candidate in the Minecraft Live 2021 Mob Vote, finishing in second place with 45.7% of votes. The winner was the Allay, having 54.7% of the votes.",
-    learnMore: "@Bedrock_Edition_1.21.110",
+    learnMore: "@Bedrock_Edition_1.21.111",
     mainFeatures: [
       { text: "Copper Golem" },
       { text: "Copper Chest" },
@@ -144,4 +144,27 @@ export const drops: Version[] = [
       { text: "End Flashes" }
     ]
   },
+
+  {
+    title: "Mounts of Mayhem",
+    subtitle: "1.21.130",
+    date: "2025-12-09",
+    type: "drop",
+    icon: "/bedrock/version_1_21_130.png",
+    funFact: "Did you know? The Zombie Horse had been present in Java Edition since 2013, and in Bedrock Edition since 2016, but was unobtainable in survival mode until this drop.",
+    learnMore: "@Bedrock_Edition_1.21.130",
+    mainFeatures: [
+      { text: "Spear" },
+      { text: "Nautilus" },
+      { text: "Zombie Nautilus" },
+      { text: "Camel Husks" },
+      { text: "Parched (Desert Skeletons)" },
+    ],
+    minorFeatures: [
+      { text: "Zombies riding Zombie Horses" },
+      { text: "Drowned riding Zombie Nautilus" },
+      { text: "Husks riding Camel Husks" },
+      { text: "Netherite Horse Armor" }
+    ]
+  }
 ] as const;
