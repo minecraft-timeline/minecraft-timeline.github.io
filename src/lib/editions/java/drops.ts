@@ -143,4 +143,27 @@ export const drops: Version[] = [
       { text: "End Flashes" }
     ]
   },
+
+  {
+    title: "Mounts of Mayhem",
+    subtitle: "1.21.11",
+    date: "2025-12-09",
+    type: "drop",
+    icon: "/java/version_1_21_11.png",
+    funFact: "Did you know? The Zombie Horse was originally added in the game back in 2013 (12 years prior) in java snapshot 13w16a, but was unobtainable in survival mode.",
+    learnMore: "@Java_Edition_1.21.11",
+    mainFeatures: [
+      { text: "Spear" },
+      { text: "Nautilus" },
+      { text: "Zombie Nautilus" },
+      { text: "Camel Husks" },
+      { text: "Parched (Desert Skeletons)" },
+    ],
+    minorFeatures: [
+      { text: "Zombies riding Zombie Horses" },
+      { text: "Drowned riding Zombie Nautilus" },
+      { text: "Husks riding Camel Husks" },
+      { text: "Netherite Horse Armor" }
+    ]
+  },
 ] as const;

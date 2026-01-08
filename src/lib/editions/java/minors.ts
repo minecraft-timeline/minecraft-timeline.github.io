@@ -1181,5 +1181,15 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
+  },
+
+  {
+    subtitle: "1.21.10",
+    type: "minor",
+    date: "2025-10-07",
+    learnMore: "@Java_Edition_1.21.10",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
   }
 ] as const;
