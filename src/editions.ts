@@ -949,6 +949,37 @@ const EDITIONS: Edition[] = [
           { text: "The waypoint command" }
         ]
       },
+      {
+        title: "Mounts of Mayhem",
+        subtitle: "1.21.11",
+        date: "2025-12-09",
+        type: "drop",
+        icon: "/java/version_mounts_of_mayhem.png",
+        funFact: "Did you know? The Zombie Horse was added in the game back in 2013 in java snapshot 13w16a.",
+        learnMore: "@Mounts_of_Mayhem",
+        mainFeatures: [
+          { text: "Nautilus" },
+          { text: "Spear" },
+          { text: "Zombie Nautilus" },
+          { text: "Parched"},
+          { text: "Camel husk"}
+        ],
+        minorFeatures: [
+          { text: "Nautilus Armor" },
+          { text: "Breath of the Nautilus" },
+          { text: "Lunge enchantment for spears" },
+          { text: "Zombie Horse can now naturally spawn in survival" }
+        ]
+      },
+      {
+        subtitle: "1.21.10",
+        type: "minor",
+        date: "2025-10-07",
+        learnMore: "@Java_Edition_1.21.10",
+        mainFeatures: [
+          { text: "Small Changes and Bug Fixes" }
+        ]
+      },
       
       {
         title: "The Copper Age",
@@ -1995,24 +2026,6 @@ const EDITIONS: Edition[] = [
     ],
 
     upcomings: [
-      {
-        title: "Mounts of Mayhem",
-        subtitle: "1.21.X",
-        possibleDate: "Winter 2025",
-        type: "drop",
-        icon: "/java/version_mounts_of_mayhem.png",
-        funFact: "Did you know? The Zombie Horse was added in the game back in 2013 in java snapshot 13w16a.",
-        learnMore: "@Mounts_of_Mayhem",
-        mainFeatures: [
-          { text: "Nautilus" },
-          { text: "Spear" },
-          { text: "Zombie Nautilus" },
-        ],
-        minorFeatures: [
-          { text: "Breath of the Nautilus" },
-          { text: "Zombie Horse can now naturally spawn in survival" }
-        ]
-      },
 
       {
         title: "Vibrant Visuals",
