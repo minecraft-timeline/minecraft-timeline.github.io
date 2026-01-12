@@ -2,20 +2,24 @@ import type { Version } from "..";
 
 export const majors: Version[] = [
   {
-    subtitle: "Cave Game",
-    description: "Cobble & Grass",
+    subtitle: "Pre-Classic",
+    description: "Stone, Grass, Dirt",
     type: "major",
     date: "2009-05-10",
     icon: "/java/version_cave_game.png",
-    learnMore: "@Cave_game_tech_test",
+    funFact: "Did you know? Pre-Classic refers to the very first prototype versions of Minecraft, most of which were never publicly released. It lasted from May 10th to May 16th.\nThe very first version of the game was simply called \"Cave Game tech test\", and it only had two blocks: Stone (which had a cobblestone texture) and Grass Blocks.",
+    learnMore: "@Java_Edition_pre-Classic",
     mainFeatures: [
+      { text: "Grass Block" },
+      { text: "Stone" },
+      { text: "Dirt" },
       { text: "Cobblestone" },
-      { text: "Grass Block" }
+      { text: "Planks" }
     ],
     minorFeatures: [
       { text: "Physics" },
-      { text: "The player" },
-      { text: "Basic caves" }
+      { text: "Placing and Breaking Blocks" },
+      { text: "Basic world generation" }
     ]
   },
 
