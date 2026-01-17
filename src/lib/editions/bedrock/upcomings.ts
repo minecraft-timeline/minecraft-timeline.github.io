@@ -11,6 +11,9 @@ export const upcomings: NaiveVersion[] = [
       { text: "Small Changes and Bug Fixes" },
       { text: "Subtitles" },
       { text: "Experimental features for The First Drop 2026" }
+    ],
+    minorFeatures: [
+      { text: "Clicking with a Spawn Egg on an animal spawns a baby" }
     ]
   },
   {
@@ -23,9 +26,6 @@ export const upcomings: NaiveVersion[] = [
     mainFeatures: [
       { text: "Unique new models for baby animals" },
       { text: "Name Tags are now craftable" },
-    ],
-    minorFeatures: [
-      { text: "Clicking with a Spawn Egg on an animal spawns a baby" }
     ]
   }
 ] as const;
