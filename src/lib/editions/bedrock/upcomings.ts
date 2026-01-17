@@ -3,7 +3,7 @@ import type { NaiveVersion } from "..";
 export const upcomings: NaiveVersion[] = [
   {
     title: "First Drop 2026",
-    subtitle: "26.1",
+    subtitle: "26.10",
     possibleDate: "Presumed Early 2026",
     type: "drop",
     icon: "/bedrock/version_26_1.png",
