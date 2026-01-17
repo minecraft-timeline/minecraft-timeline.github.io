@@ -117,8 +117,7 @@ export const drops: Version[] = [
     minorFeatures: [
       { text: "Player Locator Bar" },
       { text: "A new music disc by Amos Roddy" },
-      { text: "The dialog command" },
-      { text: "The waypoint command" }
+      { text: "End Flashes" }
     ]
   },
 
@@ -136,11 +135,6 @@ export const drops: Version[] = [
       { text: "Copper Tools & Armor" },
       { text: "New Copper Building Blocks" },
       { text: "Shelves" }
-    ],
-    minorFeatures: [
-      { text: "Mannequins" },
-      { text: "Hanging Signs" },
-      { text: "End Flashes" }
     ]
   },
 
