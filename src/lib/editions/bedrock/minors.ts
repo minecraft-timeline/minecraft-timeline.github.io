@@ -2249,5 +2249,20 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
+  },
+
+  {
+    subtitle: "26.0",
+    type: "minor",
+    date: "2026-02-10",
+    funFact: "Did you know? This is the first version of the game to use a two-digit year in its versioning system, marking a new era for Minecraft updates.",
+    learnMore: "@Bedrock_Edition_26.0",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" },
+      { text: "Experimental features for The First Drop 2026" }
+    ],
+    minorFeatures: [
+      { text: "Clicking with a Spawn Egg on an animal spawns a baby" }
+    ]
   }
 ] as const;

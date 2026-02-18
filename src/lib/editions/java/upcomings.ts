@@ -10,8 +10,13 @@ export const upcomings: NaiveVersion[] = [
     funFact: "Did you know? This is the first version of the game to use a two-digit year in its versioning system, marking a new era for Minecraft updates.",
     learnMore: "@First_Drop_2026",
     mainFeatures: [
-      { text: "Unique new models for baby animals" },
+      { text: "Unique new models for baby mobs and rabbit" },
       { text: "Name Tags are now craftable" },
+      { text: "Golden dandelion to pause the growth of baby animals." },
+    ],
+    minorFeatures: [
+      { text: "Trumpet instrument in note block with copper blocks" },
+      { text: "New sound variants for some animals" }
     ]
   },
   {
