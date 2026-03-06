@@ -2,7 +2,7 @@ import type { NaiveVersion } from "..";
 
 export const upcomings: NaiveVersion[] = [
   {
-    title: "First Drop 2026",
+    title: "Tiny Takeover",
     subtitle: "26.1",
     possibleDate: "Presumed Early 2026",
     type: "drop",
