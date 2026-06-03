@@ -2249,5 +2249,83 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
-  }
+  },
+
+  {
+    subtitle: "26.11",
+    type: "minor",
+    date: "2026-03-26",
+    learnMore: "@Bedrock_Edition_26.11",
+    mainFeatures: [
+      { text: "Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.12",
+    type: "minor",
+    date: "2026-03-31",
+    learnMore: "@Bedrock_Edition_26.12",
+    mainFeatures: [
+      { text: "Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.13",
+    type: "minor",
+    date: "2026-04-07",
+    learnMore: "@Bedrock_Edition_26.13",
+    mainFeatures: [
+      { text: "Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.20",
+    type: "minor",
+    date: "2026-04-07",
+    learnMore: "@Bedrock_Edition_26.20",
+    mainFeatures: [
+      { text: "Closed captions" },
+      { text: "Parties" },
+      { text: "Realms Hub" },
+    ],
+    minorFeatures: [
+      { text: "Improved Ore UI safe-area scrolling" },
+      { text: "Single biome worlds can now generate dripstone caves" },
+      { text: "Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.21",
+    type: "minor",
+    date: "2026-05-14",
+    learnMore: "@Bedrock_Edition_26.21",
+    mainFeatures: [
+      { text: "Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.22",
+    type: "minor",
+    date: "2026-05-21",
+    learnMore: "@Bedrock_Edition_26.22",
+    mainFeatures: [
+      { text: "Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.23",
+    type: "minor",
+    date: "2026-05-21",
+    learnMore: "@Bedrock_Edition_26.23",
+    funFact: "Did you know? This update is an hotfix for Android only, and it does have the same changelog as 26.22.",
+    mainFeatures: [
+      { text: "Bug Fixes" }
+    ]
+  },
 ] as const;

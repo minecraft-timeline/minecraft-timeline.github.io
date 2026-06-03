@@ -159,5 +159,28 @@ export const drops: Version[] = [
       { text: "Husks riding Camel Husks" },
       { text: "Netherite Horse Armor" }
     ]
-  }
+  },
+
+  {
+    title: "Tiny Takeover",
+    subtitle: "26.10",
+    date: "2026-03-24",
+    type: "drop",
+    icon: "/java/version_26_1.png",
+    funFact: "Did you know? This is the first version of the game to use a two-digit year in its versioning system, marking a new era for Minecraft updates.",
+    learnMore: "@Tiny_Takeover",
+    mainFeatures: [
+      { text: "Unique new models for baby animals and mobs" },
+      { text: "Name Tags are now craftable" },
+      { text: "Golden Dandelion" },
+    ],
+    minorFeatures: [
+      { text: "Armors models for baby zombies, husks and drowned" },
+      { text: "New trumpet instrument in noteblocks" },
+      { text: "New model for adult Rabbit" },
+      { text: "Librarians no longer offers name tags as a trade, now offers red candles and yellow candles for the price of three emeralds (per candle) at the Master level." },
+      { text: "Stonecutter can now directly turn stone and deepslate into their respective cobbled variants" },
+      { text: "New sound variants for Cats, Pigs, Cows and Chickens" }
+    ]
+  },
 ] as const;
