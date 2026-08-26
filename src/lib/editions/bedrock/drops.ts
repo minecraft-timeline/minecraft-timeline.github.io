@@ -159,5 +159,48 @@ export const drops: Version[] = [
       { text: "Husks riding Camel Husks" },
       { text: "Netherite Horse Armor" }
     ]
-  }
+  },
+
+  {
+    title: "Tiny Takeover",
+    subtitle: "26.10",
+    type: "drop",
+    date: "2026-03-24",
+    icon: "/bedrock/version_26_10.png",
+    funFact: "Did you know? This is the first version of the game to use a two-digit year in its versioning system, marking a new era for Minecraft updates.",
+    learnMore: "@Tiny_Takeover",
+    mainFeatures: [
+      { text: "Unique models for every baby mob" },
+      { text: "Golden Dandelion" },
+      { text: "Craftable Name Tags" },
+      { text: "Reworked Rabbit models" }
+    ],
+    minorFeatures: [
+      { text: "Unique armor models for baby mobs" },
+      { text: "Sound variants for Cats, Chickens, Cows and Pigs" },
+      { text: "Trumpet note block instrument on Copper blocks" },
+      { text: "Stonecutters can turn Stone and Deepslate into their cobbled variants" }
+    ]
+  },
+
+  {
+    title: "Chaos Cubed",
+    subtitle: "26.30",
+    type: "drop",
+    date: "2026-06-16",
+    icon: "/bedrock/version_26_30.png",
+    funFact: "Did you know? Sulfur Caves are the first place where Cave Spiders spawn naturally. Before this update, they could only be found through Monster Spawners and Trial Spawners.",
+    learnMore: "@Chaos_Cubed",
+    mainFeatures: [
+      { text: "Sulfur Cubes" },
+      { text: "Sulfur Caves" },
+      { text: "Sulfur & Cinnabar Block Sets" },
+      { text: "Sulfur Springs & Geysers" }
+    ],
+    minorFeatures: [
+      { text: "Friends List" },
+      { text: "A new music disc and five new tracks by fingerspit" },
+      { text: "Cave Spiders now spawn in Sulfur Caves" }
+    ]
+  },
 ] as const;
