@@ -13,6 +13,13 @@
     return spaces;
   }
 
+  function todayRatio() {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now.getTime() - start.getTime();
+    return diff / (1000 * 60 * 60 * 24 * 365);
+  }
+
   let {
     year,
     versions,
@@ -29,6 +36,13 @@
     isVertical: boolean;
   } = $props();
   let spaces = $derived(calculateSpaces(versions));
+  // In the current year, "Present day" sits at today's date rather than right
+  // after the newest version, so the gap after the last release is real space.
+  let lastRatio = $derived(
+    versions.length > 0 ? versions[versions.length - 1].ratio : 0,
+  );
+  let presentSpace = $derived(Math.max(0.08, todayRatio() - lastRatio));
+  let afterPresentSpace = $derived(Math.max(0.05, 1 - todayRatio()));
 </script>
 
 <div
@@ -61,10 +75,12 @@
       </div>
     {/each}
     {#if last}
-      <div class="spacer" style="flex-grow: 0.05;"></div>
+      <div class="spacer" style="flex-grow: {presentSpace};"></div>
       <div class="first-message"><span>Present day</span></div>
+      <div class="spacer" style="flex-grow: {afterPresentSpace};"></div>
+    {:else}
+      <div class="spacer" style="flex-grow: {spaces[spaces.length - 1]};"></div>
     {/if}
-    <div class="spacer" style="flex-grow: {spaces[spaces.length - 1]};"></div>
   </div>
 </div>
 

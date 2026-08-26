@@ -2249,5 +2249,203 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
-  }
+  },
+
+  {
+    subtitle: "26.0",
+    type: "minor",
+    date: "2026-02-10",
+    learnMore: "@Bedrock_Edition_26.0",
+    mainFeatures: [
+      { text: "Command Macros" },
+      { text: "Experimental features for Tiny Takeover" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.1",
+    type: "minor",
+    date: "2026-02-19",
+    learnMore: "@Bedrock_Edition_26.1",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.2",
+    type: "minor",
+    date: "2026-02-25",
+    learnMore: "@Bedrock_Edition_26.2",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.3",
+    type: "minor",
+    date: "2026-03-02",
+    learnMore: "@Bedrock_Edition_26.3",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.11",
+    type: "minor",
+    date: "2026-03-26",
+    learnMore: "@Bedrock_Edition_26.11",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.12",
+    type: "minor",
+    date: "2026-03-31",
+    learnMore: "@Bedrock_Edition_26.12",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.13",
+    type: "minor",
+    date: "2026-04-06",
+    learnMore: "@Bedrock_Edition_26.13",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.20",
+    type: "minor",
+    date: "2026-05-05",
+    learnMore: "@Bedrock_Edition_26.20",
+    mainFeatures: [
+      { text: "Closed Captions" },
+      { text: "Parties" },
+      { text: "Realms Hub" },
+      { text: "Experimental features for Chaos Cubed" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.21",
+    type: "minor",
+    date: "2026-05-14",
+    learnMore: "@Bedrock_Edition_26.21",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.22",
+    type: "minor",
+    date: "2026-05-21",
+    learnMore: "@Bedrock_Edition_26.22",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.23",
+    type: "minor",
+    date: "2026-05-21",
+    learnMore: "@Bedrock_Edition_26.23",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.31",
+    type: "minor",
+    date: "2026-06-19",
+    learnMore: "@Bedrock_Edition_26.31",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.32",
+    type: "minor",
+    date: "2026-06-25",
+    learnMore: "@Bedrock_Edition_26.32",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.33",
+    type: "minor",
+    date: "2026-07-09",
+    learnMore: "@Bedrock_Edition_26.33",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.34",
+    type: "minor",
+    date: "2026-07-23",
+    learnMore: "@Bedrock_Edition_26.34",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.35",
+    type: "minor",
+    date: "2026-07-28",
+    learnMore: "@Bedrock_Edition_26.35",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.40",
+    type: "minor",
+    date: "2026-08-04",
+    learnMore: "@Bedrock_Edition_26.40",
+    mainFeatures: [
+      { text: "Cloud Storage on Windows" },
+      { text: "Experimental features for the Third Drop 2026" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.41",
+    type: "minor",
+    date: "2026-08-07",
+    learnMore: "@Bedrock_Edition_26.41",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.44",
+    type: "minor",
+    date: "2026-08-14",
+    learnMore: "@Bedrock_Edition_26.44",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
 ] as const;
