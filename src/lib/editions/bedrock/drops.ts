@@ -159,5 +159,55 @@ export const drops: Version[] = [
       { text: "Husks riding Camel Husks" },
       { text: "Netherite Horse Armor" }
     ]
+  },
+
+  {
+    title: "Tiny Takeover",
+    subtitle: "26.10",
+    date: "2026-03-24",
+    type: "drop",
+    icon: "/bedrock/version_26_1.png",
+    funFact: "Did you know? The killer bunny got updated after 12 years!",
+    learnMore: "@Bedrock_Edition_26_10",
+    mainFeatures: [
+      { text: "Unique new models for baby mobs" },
+      { text: "Unique new textures for baby mobs" },
+      { text: "Unique new sounds for baby mobs" },
+      { text: "Name Tags are now craftable" },
+      { text: "Golden dandelion" },
+      { text: "\"Identify block\": tells what block you're looking at" }
+    ],
+    minorFeatures: [
+      { text: "Stonecutter cobbles"},
+      { text: "Trumpet noteblock with copper blocks" },
+      { text: "Leashed mobs don't despawn" },
+      { text: "Creepers explode controlled"},
+      { text: "Baby squids can now spawn" },
+      { text: "Name tags aren't special loot anymore" }
+    ]
+  },
+
+  {
+    title: "Chaos Cubed",
+    subtitle: "26.30",
+    date: "2026-06-16",
+    type: "drop",
+    icon: "/bedrock/version_26_30.png",
+    funFact: "Did you know? Sulfur cubes has been used to make suspended railings!",
+    learnMore: "@Bedrock_Edition_26.30",
+    mainFeatures: [
+      { text: "Bedrock Parties" },
+      { text: "Sulfur cube" },
+      { text: "Sulfur blocks" },
+      { text: "Cinnabar blocks" },
+      { text: "Sulfur caves" },
+      { text: "Sulfur springs" },
+      { text: "Music by Fingerspit" },
+      { text: "Geysers" }
+    ],
+    minorFeatures: [
+      { text: "Nausa effect in sulfur fumes" },
+      { text: "Bounce music disc" }
+    ]
   }
 ] as const;
