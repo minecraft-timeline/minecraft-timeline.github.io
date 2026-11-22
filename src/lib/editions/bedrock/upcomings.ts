@@ -2,30 +2,25 @@ import type { NaiveVersion } from "..";
 
 export const upcomings: NaiveVersion[] = [
   {
-    subtitle: "26.0",
-    type: "minor",
-    possibleDate: "Someday February",
-    funFact: "Did you know? This is the first version of the game to use a two-digit year in its versioning system, marking a new era for Minecraft updates.",
-    learnMore: "@Bedrock_Edition_26.0",
+    title: "Deep Freeze",
+    subtitle: "26.70",
+    description: "Ice Caves & Frostbites",
+    possibleDate: "Q4 2026",
+    type: "drop",
+    icon: "/bedrock/version_26_70.png",
+    funFact: "Did you know? The name of this drop was revealed during MC Championship: Absolute Zero on November 15, 2026.",
+    learnMore: "@Bedrock_Edition_26.70",
     mainFeatures: [
-      { text: "Small Changes and Bug Fixes" },
-      { text: "Subtitles" },
-      { text: "Experimental features for The First Drop 2026" }
+      { text: "Ice Caves" },
+      { text: "Frostbites, Ice Balls and the Freezing effect" },
+      { text: "Icicles, Ice Crystals and Brittle Ice" },
+      { text: "Brick sets for Packed Ice, Snow and Calcite" },
+      { text: "Jukebox playlists" }
     ],
     minorFeatures: [
-      { text: "Clicking with a Spawn Egg on an animal spawns a baby" }
-    ]
-  },
-  {
-    title: "First Drop 2026",
-    subtitle: "26.10",
-    possibleDate: "Presumed Early 2026",
-    type: "drop",
-    icon: "/bedrock/version_26_1.png",
-    learnMore: "@First_Drop_2026",
-    mainFeatures: [
-      { text: "Unique new models for baby animals" },
-      { text: "Name Tags are now craftable" },
+      { text: "Cold Sulfur Cubes made with Blue Ice" },
+      { text: "Music Disc \"Flurry\"" },
+      { text: "Potions and Arrows of Freezing" }
     ]
   }
 ] as const;

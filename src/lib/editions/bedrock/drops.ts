@@ -159,5 +159,74 @@ export const drops: Version[] = [
       { text: "Husks riding Camel Husks" },
       { text: "Netherite Horse Armor" }
     ]
+  },
+
+  {
+    title: "Tiny Takeover",
+    subtitle: "26.10",
+    description: "Cute Baby Mobs & Golden Dandelion",
+    date: "2026-03-24",
+    type: "drop",
+    icon: "/bedrock/version_26_1.png",
+    funFact: "Did you know? Throughout its development, Tiny Takeover was described as the \"cutest\" game drop yet. Its marketing even had baby chicks \"taking over\" Minecraft's social media and website.",
+    learnMore: "@Bedrock_Edition_26.10",
+    mainFeatures: [
+      { text: "Unique new models for baby mobs" },
+      { text: "Golden Dandelion" },
+      { text: "New Rabbit models and textures" },
+      { text: "Name Tags are now craftable" }
+    ],
+    minorFeatures: [
+      { text: "Baby mobs stop aging when fed a Golden Dandelion" },
+      { text: "New sound variants for Cats, Chickens, Cows and Pigs" },
+      { text: "Trumpet note block instrument" },
+      { text: "Stonecutters turn stone and deepslate into their cobbled variants" }
+    ]
+  },
+
+  {
+    title: "Chaos Cubed",
+    subtitle: "26.30",
+    description: "Sulfur Caves & Sulfur Cubes",
+    date: "2026-06-16",
+    type: "drop",
+    icon: "/bedrock/version_26_30.png",
+    funFact: "Did you know? Sulfur cubes behave differently depending on the block they absorb: wool makes a light beach ball, packed ice a sliding hockey puck, and TNT turns them into a ticking bomb.",
+    learnMore: "@Bedrock_Edition_26.30",
+    mainFeatures: [
+      { text: "Sulfur Caves" },
+      { text: "Sulfur Cubes that absorb blocks" },
+      { text: "Sulfur and Cinnabar block sets" },
+      { text: "Geysers" }
+    ],
+    minorFeatures: [
+      { text: "Sulfur Spikes" },
+      { text: "Bucket of Sulfur Cube" },
+      { text: "Music Disc \"Bounce\"" },
+      { text: "New ambient music by fingerspit" }
+    ]
+  },
+
+  {
+    title: "Wilderness Bound",
+    subtitle: "26.50",
+    description: "Dappled Forest & Abandoned Camps",
+    date: "2026-09-15",
+    type: "drop",
+    icon: "/bedrock/version_26_50.png",
+    funFact: "Did you know? Straw beds let you sleep through the night, but they never set your spawn point and are destroyed after a single use.",
+    learnMore: "@Bedrock_Edition_26.50",
+    mainFeatures: [
+      { text: "Dappled Forest biome" },
+      { text: "Poplar trees with red, orange and yellow leaves" },
+      { text: "Abandoned Camps" },
+      { text: "Cushions and Straw Beds" },
+      { text: "Wool and Concrete Stairs and Slabs" }
+    ],
+    minorFeatures: [
+      { text: "Red Shrubs and Shelf Mushrooms" },
+      { text: "New Map textures and abandoned camp maps" },
+      { text: "Stews can be crafted with any two mushrooms" }
+    ]
   }
 ] as const;

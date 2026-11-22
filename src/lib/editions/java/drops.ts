@@ -166,4 +166,73 @@ export const drops: Version[] = [
       { text: "Netherite Horse Armor" }
     ]
   },
+
+  {
+    title: "Tiny Takeover",
+    subtitle: "26.1",
+    description: "Cute Baby Mobs & Golden Dandelion",
+    date: "2026-03-24",
+    type: "drop",
+    icon: "/java/version_26_1.png",
+    funFact: "Did you know? This is the first Java Edition release to use the new year-based version numbers, and the first to require Java 25. Its release changelog also mentions \"Removed baby Herobrine\".",
+    learnMore: "@Java_Edition_26.1",
+    mainFeatures: [
+      { text: "Unique new models for baby mobs" },
+      { text: "Golden Dandelion" },
+      { text: "New Rabbit models and textures" },
+      { text: "Name Tags are now craftable" }
+    ],
+    minorFeatures: [
+      { text: "Baby mobs stop aging when fed a Golden Dandelion" },
+      { text: "New sound variants for Cats, Chickens, Cows and Pigs" },
+      { text: "Trumpet note block instrument" },
+      { text: "Stonecutters turn stone and deepslate into their cobbled variants" }
+    ]
+  },
+
+  {
+    title: "Chaos Cubed",
+    subtitle: "26.2",
+    description: "Sulfur Caves & Sulfur Cubes",
+    date: "2026-06-16",
+    type: "drop",
+    icon: "/java/version_26_2.png",
+    funFact: "Did you know? Sulfur cubes behave differently depending on the block they absorb: wool makes a light beach ball, packed ice a sliding hockey puck, and TNT turns them into a ticking bomb.",
+    learnMore: "@Java_Edition_26.2",
+    mainFeatures: [
+      { text: "Sulfur Caves" },
+      { text: "Sulfur Cubes that absorb blocks" },
+      { text: "Sulfur and Cinnabar block sets" },
+      { text: "Geysers" }
+    ],
+    minorFeatures: [
+      { text: "Sulfur Spikes" },
+      { text: "Bucket of Sulfur Cube" },
+      { text: "Music Disc \"Bounce\"" },
+      { text: "New ambient music by fingerspit" }
+    ]
+  },
+
+  {
+    title: "Wilderness Bound",
+    subtitle: "26.3",
+    description: "Dappled Forest & Abandoned Camps",
+    date: "2026-09-15",
+    type: "drop",
+    icon: "/java/version_26_3.png",
+    funFact: "Did you know? Straw beds let you sleep through the night, but they never set your spawn point and are destroyed after a single use.",
+    learnMore: "@Java_Edition_26.3",
+    mainFeatures: [
+      { text: "Dappled Forest biome" },
+      { text: "Poplar trees with red, orange and yellow leaves" },
+      { text: "Abandoned Camps" },
+      { text: "Cushions and Straw Beds" },
+      { text: "Wool and Concrete Stairs and Slabs" }
+    ],
+    minorFeatures: [
+      { text: "Red Shrubs and Shelf Mushrooms" },
+      { text: "New Map textures and abandoned camp maps" },
+      { text: "Stews can be crafted with any two mushrooms" }
+    ]
+  },
 ] as const;

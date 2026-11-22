@@ -2249,5 +2249,289 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
+  },
+
+  {
+    subtitle: "26.0",
+    type: "minor",
+    date: "2026-02-10",
+    learnMore: "@Bedrock_Edition_26.0",
+    funFact: "Did you know? This is the first Bedrock Edition release to use the new year-based version format.",
+    mainFeatures: [
+      { text: "Command Macros" },
+      { text: "Experimental features for Tiny Takeover" },
+      { text: "Nautilus, drowned and baby mob tweaks" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.1",
+    type: "minor",
+    date: "2026-02-19",
+    learnMore: "@Bedrock_Edition_26.1",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.2",
+    type: "minor",
+    date: "2026-02-25",
+    learnMore: "@Bedrock_Edition_26.2",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.3",
+    type: "minor",
+    date: "2026-03-02",
+    learnMore: "@Bedrock_Edition_26.3",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.11",
+    type: "minor",
+    date: "2026-03-26",
+    learnMore: "@Bedrock_Edition_26.11",
+    mainFeatures: [
+      { text: "Fixes a mouse sensitivity bug (Windows only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.12",
+    type: "minor",
+    date: "2026-03-31",
+    learnMore: "@Bedrock_Edition_26.12",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.13",
+    type: "minor",
+    date: "2026-04-06",
+    learnMore: "@Bedrock_Edition_26.13",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.20",
+    type: "minor",
+    date: "2026-05-05",
+    learnMore: "@Bedrock_Edition_26.20",
+    mainFeatures: [
+      { text: "Closed Captions" },
+      { text: "Parties" },
+      { text: "Realms Hub" },
+      { text: "Experimental features for Chaos Cubed" }
+    ]
+  },
+
+  {
+    subtitle: "26.21",
+    type: "minor",
+    date: "2026-05-14",
+    learnMore: "@Bedrock_Edition_26.21",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.22",
+    type: "minor",
+    date: "2026-05-21",
+    learnMore: "@Bedrock_Edition_26.22",
+    mainFeatures: [
+      { text: "Bug fixes (Android only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.23",
+    type: "minor",
+    date: "2026-05-21",
+    learnMore: "@Bedrock_Edition_26.23",
+    mainFeatures: [
+      { text: "Bug fixes (Android only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.31",
+    type: "minor",
+    date: "2026-06-19",
+    learnMore: "@Bedrock_Edition_26.31",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.32",
+    type: "minor",
+    date: "2026-06-25",
+    learnMore: "@Bedrock_Edition_26.32",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.33",
+    type: "minor",
+    date: "2026-07-09",
+    learnMore: "@Bedrock_Edition_26.33",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.34",
+    type: "minor",
+    date: "2026-07-23",
+    learnMore: "@Bedrock_Edition_26.34",
+    mainFeatures: [
+      { text: "Fixes texture bleed on custom blocks (PlayStation and Switch only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.35",
+    type: "minor",
+    date: "2026-07-28",
+    learnMore: "@Bedrock_Edition_26.35",
+    mainFeatures: [
+      { text: "Bug fixes (Nintendo Switch only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.40",
+    type: "minor",
+    date: "2026-08-04",
+    learnMore: "@Bedrock_Edition_26.40",
+    mainFeatures: [
+      { text: "Cloud Storage on Windows" },
+      { text: "Screen distortion accessibility option" },
+      { text: "Experimental features for Wilderness Bound" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.41",
+    type: "minor",
+    date: "2026-08-07",
+    learnMore: "@Bedrock_Edition_26.41",
+    mainFeatures: [
+      { text: "Disables cloud storage and fixes bugs (Windows and Switch only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.44",
+    type: "minor",
+    date: "2026-08-14",
+    learnMore: "@Bedrock_Edition_26.44",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.45",
+    type: "minor",
+    date: "2026-08-28",
+    learnMore: "@Bedrock_Edition_26.45",
+    mainFeatures: [
+      { text: "Not multiplayer-compatible with 26.44 and below" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.51",
+    type: "minor",
+    date: "2026-09-15",
+    learnMore: "@Bedrock_Edition_26.51",
+    mainFeatures: [
+      { text: "Fixes a crash" }
+    ]
+  },
+
+  {
+    subtitle: "26.52",
+    type: "minor",
+    date: "2026-09-25",
+    learnMore: "@Bedrock_Edition_26.52",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.60",
+    type: "minor",
+    date: "2026-10-27",
+    learnMore: "@Bedrock_Edition_26.60",
+    mainFeatures: [
+      { text: "Sound Effect Packs" },
+      { text: "Native Nintendo Switch 2 version" },
+      { text: "Experimental features for Deep Freeze" },
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.62",
+    type: "minor",
+    date: "2026-11-04",
+    learnMore: "@Bedrock_Edition_26.62",
+    mainFeatures: [
+      { text: "Small Changes and Bug Fixes" }
+    ]
+  },
+
+  {
+    subtitle: "26.63",
+    type: "minor",
+    date: "2026-11-06",
+    learnMore: "@Bedrock_Edition_26.63",
+    mainFeatures: [
+      { text: "Bug fixes (Windows and PlayStation 5 only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.65",
+    type: "minor",
+    date: "2026-11-16",
+    learnMore: "@Bedrock_Edition_26.65",
+    mainFeatures: [
+      { text: "Fixes a security vulnerability (Windows only)" }
+    ]
+  },
+
+  {
+    subtitle: "26.66",
+    type: "minor",
+    date: "2026-11-18",
+    learnMore: "@Bedrock_Edition_26.66",
+    mainFeatures: [
+      { text: "Released for Android and ChromeOS only, with no changelog" }
+    ]
   }
 ] as const;

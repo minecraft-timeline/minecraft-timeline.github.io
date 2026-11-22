@@ -1191,5 +1191,25 @@ export const minors: Version[] = [
     mainFeatures: [
       { text: "Small Changes and Bug Fixes" }
     ]
+  },
+
+  {
+    subtitle: "26.1.1",
+    type: "minor",
+    date: "2026-04-01",
+    learnMore: "@Java_Edition_26.1.1",
+    mainFeatures: [
+      { text: "Fixes an issue with chat reporting" }
+    ]
+  },
+
+  {
+    subtitle: "26.1.2",
+    type: "minor",
+    date: "2026-04-09",
+    learnMore: "@Java_Edition_26.1.2",
+    mainFeatures: [
+      { text: "Small UI tweaks and an exploit fix" }
+    ]
   }
 ] as const;
