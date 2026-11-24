@@ -24,6 +24,18 @@ export const upcomings: NaiveVersion[] = [
     ]
   },
   {
+    title: "First Drop 2027",
+    subtitle: "27.1",
+    possibleDate: "Q1 2027",
+    type: "drop",
+    icon: "/java/version_27_1.png",
+    learnMore: "@First_Drop_2027",
+    mainFeatures: [
+      { text: "Throwing Discs in Copper, Iron, Golden, Diamond and Netherite tiers" },
+      { text: "Throwing Discs pierce entities, return like a boomerang and ricochet off surfaces" }
+    ]
+  },
+  {
     title: "Vibrant Visuals",
     type: "minor",
     possibleDate: "Future",
